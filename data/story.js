@@ -55,14 +55,14 @@
     thesis: {
       beat: "The question",
       headline: "Congestion pricing cleaned Manhattan's air. Did the Bronx get the leftovers?",
-      takeaway: "Since January 2025, drivers pay $9 to enter lower Manhattan, and the air inside the zone got about 22% cleaner at rush hour. A few miles north, one air sensor beside the Major Deegan Expressway went the other way. It posted the biggest rise of any sensor in the South Bronx.",
+      takeaway: "Since January 2025, drivers pay $9 to enter lower Manhattan, and the air inside the zone got about 22% cleaner at rush hour. A few miles north, one air sensor beside the Major Deegan Expressway went the other way and posted the biggest rise of any sensor in the South Bronx.",
       lookat: "The photo looks north up the Deegan from the East 138th Street overpass. The sensor sits a few blocks south, where the highway meets the Third Avenue Bridge.",
       blocks: [
         {
           text: "Mott Haven is the corner of the Bronx where the Deegan, the Bruckner and the bridges into Manhattan all come together. Trucks and cars pass within a block of apartment windows all day. Adults here land in the ER for asthma at 193.5 per 10,000, almost three times the city rate of 66.4."
         },
         {
-          text: "So when the fee started, people here asked a fair question: if drivers stop going into Manhattan, where do they go instead? South Bronx Unite, a neighborhood group, had 19 low-cost air sensors running with researchers from Columbia, Brown and CU Boulder. From 2024 to 2025, 12 to 14 of them read a little dirtier. On average the rise was small, +0.22. The Deegan sensor rose +1.29, about six times that."
+          text: "So when the fee started, people here asked a fair question: if drivers stop going into Manhattan, where do they go instead? South Bronx Unite, a neighborhood group, had 19 low-cost air sensors running with researchers from Columbia, Brown and CU Boulder. From 2024 to 2025, 12 to 14 of them read a little dirtier, but the average rise was small, +0.22, while the Deegan sensor rose +1.29, about six times as much."
         },
         {
           sub: "What we set out to answer",
@@ -101,13 +101,13 @@
         takeaway: "If drivers were detouring around the fee, Bronx bridges would have gotten busier than bridges far away. They didn't.",
         blocks: [
           {
-            text: "The first worry was simple. Charge drivers to enter Manhattan, and some will look for another way around. The Bronx has no fee gates at all, so a detour would show up the only place it can: on the bridges in and out of the borough."
+            text: "The first worry was simple. Charge drivers to enter Manhattan, and some will look for another way around. Because the Bronx has no fee gates at all, a detour could only show up on the bridges in and out of the borough."
           },
           {
-            text: "We compared traffic growth on Bronx bridges with bridges far from the fee zone, 2024 against 2025. If the Bronx were soaking up detours, its bridges should have grown faster. They grew 1.04 points slower, and the honest range runs from 3.6 slower to 1.6 faster. That range crosses zero, so there is no sign of a spill."
+            text: "We compared traffic growth on Bronx bridges with bridges far from the fee zone, 2024 against 2025. If the Bronx were soaking up detours, its bridges should have grown faster, but they grew 1.04 points slower, with an honest range from 3.6 slower to 1.6 faster. Because that range crosses zero, there is no sign of a spill."
           },
           {
-            text: "Could the test just be blind? We ran it on the tunnels into the paid zone, where drivers really did change their habits. It caught a 2.29 point drop. So the test can see a real change when one happens. It saw none in the Bronx."
+            text: "To make sure the test was not blind, we ran it on the tunnels into the paid zone, where drivers really did change their habits, and it caught a 2.29 point drop. The test can see a real change when one happens, and it saw none in the Bronx."
           },
           {
             sub: "Data",
@@ -127,22 +127,22 @@
       controls: {
         beat: "The check",
         headline: "Not the fee. Not the climate. Something local.",
-        takeaway: "Places away from heavy traffic got cleaner, even Houston, which has no fee. The rises showed up right beside busy roads: the Cross Bronx, the Williamsburg Bridge, and the Deegan. So the problem sits at the roadside, not in the sky.",
+        takeaway: "Places away from heavy traffic got cleaner, even Houston, which has no fee, while the rises showed up right beside busy roads like the Cross Bronx, the Williamsburg Bridge and the Deegan. The problem sits at the roadside, not in the sky.",
         blocks: [
           {
-            text: "A rise at one sensor can mean one of three things. The fee pushed traffic north. The year was worse for air everywhere, from heat, smoke or weather. Or something changed on that one stretch of road. The last slide ruled out the first. This one tests the second."
+            text: "A rise at one sensor can mean one of three things: the fee pushed traffic north into the Bronx, the whole year was worse for air because of heat, smoke or weather, or something changed on that one stretch of road. The bridge counts already showed no sign of drivers detouring north, so the next question is whether 2025 was simply a bad year for air everywhere."
           },
           {
             sub: "Start with the sky",
-            text: "Houston has no congestion fee. At an EPA monitor beside its truck and rail yards, yearly PM2.5 fell from 13.10 to 12.17. Downtown Manhattan fell from 8.70 to 7.56. The Van Wyck in Queens, the highway the city uses as its own comparison, showed no change big enough to blame on the fee. If 2025 were simply a bad year for air, these would have gone up. They didn't."
+            text: "Houston has no congestion fee, yet at an EPA monitor beside its truck and rail yards, yearly PM2.5 fell from 13.10 to 12.17. Downtown Manhattan fell from 8.70 to 7.56, and the Van Wyck in Queens, the highway the city uses as its own comparison, showed no change big enough to blame on the fee. If 2025 had simply been a bad year for air, all three would have gotten worse, and none of them did."
           },
           {
             sub: "Now the roadsides",
-            text: "A team led by Goldberg checked six of the city's official real-time monitors, before and after the fee. Only one got clearly cleaner: the Queensboro Bridge, down 9.1%. Three got clearly dirtier: the Williamsburg Bridge up 6.3%, the Cross Bronx Expressway up 3.7%, Broadway at 35th up 2.5%. So the Deegan isn't a one-off. Air right beside busy roads can get worse even while the city as a whole gets better."
+            text: "A research team led by Goldberg compared six of the city's official real-time monitors before and after the fee. Only the Queensboro Bridge got clearly cleaner, down 9.1%, while three got clearly dirtier: the Williamsburg Bridge rose 6.3%, the Cross Bronx Expressway 3.7%, and Broadway at 35th Street 2.5%. That means the Deegan is not a one-off, because air right beside busy roads can get worse even while the city as a whole gets better."
           },
           {
             sub: "What local means",
-            text: "On the Deegan, the sensor rose about six times as much as its neighbors a few blocks away. Our best lead is trucks: nearly a third of truck crossings (31.8%) happen overnight, against a fifth of car crossings (19.7%), and the Deegan is a truck route. That is a lead, not proof. The Deegan reading comes from one low-cost community sensor over one year, so treat it as a warning light, not a verdict."
+            text: "On the Deegan, the sensor rose about six times as much as its neighbors a few blocks away. Our best lead is trucks, because nearly a third of truck crossings (31.8%) happen overnight compared with a fifth of car crossings (19.7%), and the Deegan is a major truck route. That is a lead rather than proof, since the reading comes from a single low-cost community sensor over one year, so it works as a warning light, not a verdict."
           },
           {
             sub: "Data",
@@ -167,14 +167,14 @@
         takeaway: "We asked three questions of every stretch of street in the city. Is the air bad? Are people already sick? Will trees work here? East 138th came out #3 on need and #4 once we counted the people who live there. Jerome Ave is #1.",
         blocks: [
           {
-            text: "Mott Haven adults go to the emergency room for asthma at 193.5 visits per 10,000 people. The city average is 66.4, so that is almost three times as often. Median household income is $15,510, second lowest of the city's 55 neighborhood areas. About 14,525 people live within 400 meters of our stretch, a five-minute walk."
+            text: "Mott Haven adults go to the emergency room for asthma at 193.5 visits per 10,000 people. That is almost three times the city average of 66.4, and median household income is $15,510, the second lowest of the city's 55 neighborhood areas. About 14,525 people live within 400 meters of our stretch, a five-minute walk."
           },
           {
-            text: "Need alone isn't enough. A road through the Bronx Zoo scores high on need, but nobody lives there to breathe the cleaner air. So we multiplied need by the number of people living along each kilometer. Jerome Ave wins that race: it is just as sick and far more crowded, 43,861 people per km against 25,910 here. It should go next."
+            text: "Need alone is not enough, because a road through the Bronx Zoo scores high on need but nobody lives there to breathe the cleaner air, so we multiplied need by the number of people living along each kilometer. Jerome Ave wins that race because it is just as sick and far more crowded, with 43,861 people per km against 25,910 here, and it should go next."
           },
           {
             sub: "Why start at East 138th",
-            text: "It sits right at the sensor that rose, so any change can be measured. And the pick doesn't hang on our choice of weights: across 10,000 random ways to weigh the factors, East 138th stays in the top 5 in 92% of them."
+            text: "It sits right at the sensor that rose, so any change can be measured, and the pick does not hang on our choice of weights: across 10,000 random ways to weigh the factors, East 138th stays in the top 5 in 92% of them."
           }
         ],
         methods_expandable: {
@@ -203,10 +203,10 @@
         takeaway: "We cut East 138th into ten blocks of about 120 meters and counted every living street tree. Six blocks are short on trees and open enough to plant. Start there.",
         blocks: [
           {
-            text: "Trees on East 138th are bunched up. Block 8 has 21. Block 4 has none. The average is 7. Planting the same number everywhere would waste trees where there are already plenty and leave the bare blocks bare."
+            text: "Trees on East 138th are bunched up: block 8 has 21, block 4 has none, and the average is 7. Planting the same number everywhere would waste trees where there are already plenty and leave the bare blocks bare."
           },
           {
-            text: "Shape matters too. On a narrow block with tall buildings, a thick row of trees can act like a lid and trap exhaust at street level. One block is narrow enough for that, so it gets green walls instead. Three blocks already have enough trees and are left alone."
+            text: "Shape matters too. On a narrow block with tall buildings, a thick row of trees can act like a lid and trap exhaust at street level. One block is narrow enough for that, so it gets green walls instead, and three blocks that already have enough trees are left alone."
           },
           {
             sub: "The plan",
@@ -255,7 +255,7 @@
       close: {
         beat: "Reimagining NYC",
         headline: "Trees now. Later, reimagine the Deegan with a garden on top.",
-        takeaway: "Dallas put a park on top of a sunken freeway: Klyde Warren Park. Traffic still runs underneath, and people picnic on top. The Deegan between East 138th and 149th sits in the same kind of trench, with room for about 12.9 acres of garden.",
+        takeaway: "Dallas put a park called Klyde Warren on top of a sunken freeway, where traffic still runs underneath while people picnic on top. The Deegan between East 138th and 149th sits in the same kind of trench, with room for about 12.9 acres of garden.",
         blocks: [
           {
             sub: "Now",
@@ -266,7 +266,7 @@
             ]
           },
           {
-            text: "Be honest about trees. 10.6 lb of soot a year is small next to a highway. What trees do well is clean the air at breathing height, on the sidewalk where people walk, and cool the street in summer. They are the part we can start this year."
+            text: "To be honest about trees, 10.6 lb of soot a year is small next to a highway. What trees do well is clean the air at breathing height on the sidewalk and cool the street in summer, and they are the part we can start this year."
           },
           {
             sub: "Later: a garden on top of the Deegan",
