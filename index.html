@@ -575,7 +575,7 @@ h1,h2{
           <table class="sit-table">
             <caption data-caption="rank"></caption>
             <thead>
-              <tr><th>#</th><th>Street</th><th>Neighborhood</th><th>Score</th><th>Asthma ED</th><th>HVI</th><th>Monitor</th></tr>
+              <tr><th>#</th><th>Street</th><th>Neighborhood</th><th>Score</th><th>People</th><th>Asthma ED</th><th>HVI</th><th>Monitor</th></tr>
             </thead>
             <tbody id="rank-equal-body"></tbody>
           </table>
@@ -988,7 +988,7 @@ h1,h2{
         const ash = r.asthma_adult == null ? '-' : Number(r.asthma_adult).toFixed(1);
         const hvi = r.hvi == null ? '-' : Number(r.hvi).toFixed(0);
         const uhf = (r.uhf || '').replace('Hunts Point - Mott Haven', 'Mott Haven').replace('High Bridge - Morrisania', 'High Bridge').replace('Crotona - Tremont', 'Crotona').replace('Fordham - Bronx Park', 'Fordham');
-        return '<tr><td>'+r.rank+'</td><td>'+r.street+'</td><td>'+uhf+'</td><td>'+Number(r.total).toFixed(3)+'</td><td>'+ash+'</td><td>'+hvi+'</td><td>'+mon+'</td></tr>';
+        return '<tr><td>'+r.rank+'</td><td>'+r.street+'</td><td>'+uhf+'</td><td>'+Number(r.total).toFixed(3)+'</td><td>'+(r.people == null ? '-' : Number(r.people).toLocaleString('en-US'))+'</td><td>'+ash+'</td><td>'+hvi+'</td><td>'+mon+'</td></tr>';
       }).join('');
     }
     const cl = document.getElementById('choices-list');

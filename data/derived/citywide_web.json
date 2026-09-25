@@ -182,7 +182,8 @@
     "share_dubois": 1.0,
     "lon": -73.882227,
     "lat": 40.866237,
-    "e138_overlap": 0.0
+    "e138_overlap": 0.0,
+    "people": 13050
    },
    {
     "rank": 2,
@@ -201,7 +202,8 @@
     "share_dubois": 1.0,
     "lon": -73.928138,
     "lat": 40.811835,
-    "e138_overlap": 0.362
+    "e138_overlap": 0.362,
+    "people": 21655
    },
    {
     "rank": 3,
@@ -220,7 +222,8 @@
     "share_dubois": 1.0,
     "lon": -73.884288,
     "lat": 40.834401,
-    "e138_overlap": 0.0
+    "e138_overlap": 0.0,
+    "people": 21294
    },
    {
     "rank": 4,
@@ -239,7 +242,8 @@
     "share_dubois": 1.0,
     "lon": -73.908938,
     "lat": 40.805754,
-    "e138_overlap": 0.0
+    "e138_overlap": 0.0,
+    "people": 12609
    },
    {
     "rank": 5,
@@ -258,7 +262,8 @@
     "share_dubois": 0.8251,
     "lon": -73.900122,
     "lat": 40.846222,
-    "e138_overlap": 0.0
+    "e138_overlap": 0.0,
+    "people": 22657
    },
    {
     "rank": 6,
@@ -277,7 +282,8 @@
     "share_dubois": 1.0,
     "lon": -73.918535,
     "lat": 40.802192,
-    "e138_overlap": 0.0
+    "e138_overlap": 0.0,
+    "people": 7708
    },
    {
     "rank": 7,
@@ -296,7 +302,8 @@
     "share_dubois": 1.0,
     "lon": -73.930999,
     "lat": 40.818035,
-    "e138_overlap": 0.0
+    "e138_overlap": 0.0,
+    "people": 12719
    },
    {
     "rank": 8,
@@ -315,7 +322,8 @@
     "share_dubois": 0.4991,
     "lon": -73.91229,
     "lat": 40.847672,
-    "e138_overlap": 0.0
+    "e138_overlap": 0.0,
+    "people": 70353
    }
   ],
   "burden": [
@@ -722,5 +730,96 @@
   "rank": "story-art/fig-citywide-rank.svg",
   "map": "story-art/map-citywide-heat.png"
  },
- "docs": "docs/CITYWIDE-SCAN.md"
+ "docs": "docs/CITYWIDE-SCAN.md",
+ "people_check": {
+  "radius_m": 400.0,
+  "source": "2020 Census blocks (TIGER tabblock20 POP20)",
+  "n": 26,
+  "top": [
+   {
+    "window_id": 4200,
+    "street": "JEROME AVE",
+    "borough": "Bronx",
+    "km": 1.604,
+    "need": 0.8664,
+    "need_rank": 10,
+    "people": 70353,
+    "impact": 60954,
+    "e138_design": false,
+    "people_rank": 1
+   },
+   {
+    "window_id": 4377,
+    "street": "WESTCHESTER AVE",
+    "borough": "Bronx",
+    "km": 1.502,
+    "need": 0.8658,
+    "need_rank": 11,
+    "people": 50445,
+    "impact": 43675,
+    "e138_design": false,
+    "people_rank": 2
+   },
+   {
+    "window_id": 5700,
+    "street": "W FARMS RD",
+    "borough": "Bronx",
+    "km": 1.642,
+    "need": 0.8595,
+    "need_rank": 15,
+    "people": 38851,
+    "impact": 33392,
+    "e138_design": false,
+    "people_rank": 3
+   },
+   {
+    "window_id": 3795,
+    "street": "E 139 ST",
+    "borough": "Bronx",
+    "km": 1.574,
+    "need": 0.8442,
+    "need_rank": 23,
+    "people": 39009,
+    "impact": 32931,
+    "e138_design": false,
+    "people_rank": 4
+   },
+   {
+    "window_id": 3737,
+    "street": "E 138 ST",
+    "borough": "Bronx",
+    "km": 1.249,
+    "need": 0.8973,
+    "need_rank": null,
+    "people": 32362,
+    "impact": 29038,
+    "e138_design": true,
+    "people_rank": 5
+   }
+  ],
+  "e138": {
+   "window_id": 3737,
+   "street": "E 138 ST",
+   "borough": "Bronx",
+   "km": 1.249,
+   "need": 0.8973,
+   "need_rank": null,
+   "people": 32362,
+   "impact": 29038,
+   "e138_design": true,
+   "people_rank": 5
+  },
+  "zoo": {
+   "window_id": 5874,
+   "street": "JUNGLE WORLD RD",
+   "borough": "Bronx",
+   "km": 1.051,
+   "need": 0.9461,
+   "need_rank": 1,
+   "people": 6823,
+   "impact": 6455,
+   "e138_design": false,
+   "people_rank": 26
+  }
+ }
 }

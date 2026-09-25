@@ -145,7 +145,7 @@
       scores: {
         beat: "The problem",
         headline: "East 138th is one of the worst places in NYC to breathe.",
-        takeaway: "We scored {n_windows} stretches of street. East 138th came in {rank_all}, the top 0.1%. Among separate streets, it is second.",
+        takeaway: "We scored {n_windows} stretches of street. East 138th ranked #{rank_all}, the top 0.1%. Count the people nearby too, and it is still top 5.",
         blocks: [
           {
             sub: "Why it ranks",
@@ -159,9 +159,10 @@
         methods_expandable: {
           summary: "Methods",
           bullets: [
-            "About 99,357 street pieces joined into 33,785 stretches. Zoo and airport roads removed.",
+            "About 99,357 street pieces joined into 33,785 stretches.",
             "Eight factors, 1/8 each: traffic exposure, air monitor, asthma ER, income, heat, height to width, tree gap, Du Bois share.",
             "East 138th stays near the top with health and income weighted up (rank 21).",
+            "People check: score times residents within 400 m (2020 Census). East 138th is 5th of the top 26. Jerome Ave reaches the most people (70,353). A Bronx Zoo road, 1st on score alone, drops to last.",
             "The table's 184.4 comes from the next health district over. Mott Haven's own rate is 193.5.",
             "Photos: East Coast Roads; Jim Henderson (public domain); Google Street View; Flickr imjustwalkin; DanTD (CC BY-SA 4.0)."
           ]
@@ -169,7 +170,7 @@
         captions: [
           "Household income by district. Darker is lower. Context only, not a score input."
         ],
-        rankCaption: "Top streets. Higher score means more reason to plant.",
+        rankCaption: "Top streets. Higher score means more reason to plant. People: residents within 400 m.",
         plan: []
       },
       location: {
