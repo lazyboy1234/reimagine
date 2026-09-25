@@ -54,23 +54,29 @@
   const STORY = {
     thesis: {
       beat: "The question",
-      headline: "Did congestion pricing push dirty air into the Bronx?",
-      takeaway: "Manhattan's paid zone got about 22% cleaner. The Deegan sensor in the South Bronx went up 1.29.",
-      lookat: "The photo is the Deegan from the East 138th overpass.",
+      headline: "Congestion pricing cleaned Manhattan's air. Did the Bronx get the leftovers?",
+      takeaway: "Since January 2025, drivers pay $9 to enter lower Manhattan, and the air inside the zone got about 22% cleaner at rush hour. A few miles north, one air sensor beside the Major Deegan Expressway went the other way. It posted the biggest rise of any sensor in the South Bronx.",
+      lookat: "The photo looks north up the Deegan from the East 138th Street overpass. The sensor sits a few blocks south, where the highway meets the Third Avenue Bridge.",
       blocks: [
         {
-          sub: "What we asked",
+          text: "Mott Haven is the corner of the Bronx where the Deegan, the Bruckner and the bridges into Manhattan all come together. Trucks and cars pass within a block of apartment windows all day. Adults here land in the ER for asthma at 193.5 per 10,000, almost three times the city rate of 66.4."
+        },
+        {
+          text: "So when the fee started, people here asked a fair question: if drivers stop going into Manhattan, where do they go instead? South Bronx Unite, a neighborhood group, had 19 low-cost air sensors running with researchers from Columbia, Brown and CU Boulder. From 2024 to 2025, 12 to 14 of them read a little dirtier. On average the rise was small, +0.22. The Deegan sensor rose +1.29, about six times that."
+        },
+        {
+          sub: "What we set out to answer",
           bullets: [
-            "Did cars dodge the fee by driving through the Bronx?",
-            "If not, why did the air get worse here?",
-            "What can the city do about it?"
+            "Did drivers dodge the fee by cutting through the Bronx?",
+            "If not, why did the air get worse right here?",
+            "What can the city do about it, now and later?"
           ]
         }
       ],
       methods_expandable: {
         summary: "Sources",
         bullets: [
-          "µg/m³ is micrograms of fine particles (PM2.5) in a cubic meter of air. Higher is dirtier. EPA's yearly limit is 9.",
+          "PM2.5 is soot and dust small enough to get deep into your lungs. It is counted in micrograms per cubic meter of air (µg/m³). Higher is dirtier. EPA's yearly limit is 9.",
           "22%: Fraser's paper, Figure 1, inside the paid zone only.",
           "+0.22 and +1.29: South Bronx Unite sensors, 2024 vs 2025. 12 to 14 of 19 sensors went up."
         ]
@@ -116,15 +122,16 @@
       controls: {
         beat: "The check",
         headline: "Not the fee. Not the climate. Something local.",
-        takeaway: "Places with no fee got cleaner. Only the Deegan edge jumped.",
+        takeaway: "If the whole region just had a bad year for air, the Deegan jump would mean nothing. So we checked places the fee can't touch. They got cleaner. The Deegan was the odd one out.",
         blocks: [
           {
-            sub: "Why",
-            bullets: [
-              "Climate would push air up everywhere. Houston has no fee, and its air fell 0.93.",
-              "Downtown fell 13%. The Van Wyck, the city's highway control, showed no fee-sized change.",
-              "The Deegan rose 1.29, about 6 times the South Bronx average of +0.22. That is a local hit."
-            ]
+            text: "A rise at one sensor can mean one of three things. The fee pushed traffic north. The year was worse for air everywhere, from heat, smoke or weather. Or something changed on that one stretch of road. The last slide ruled out the first. This one tests the second."
+          },
+          {
+            text: "Houston has no congestion fee. At an EPA monitor beside its truck and rail yards, yearly PM2.5 fell from 13.10 to 12.17. Downtown Manhattan fell from 8.70 to 7.56. The Van Wyck in Queens, the highway the city uses as its own comparison, showed no change big enough to blame on the fee. If a bad year were the story, these would have gone up too. None did."
+          },
+          {
+            text: "That leaves the street itself. The Deegan sensor rose about six times as much as its neighbors a few blocks away. Our best lead is trucks: nearly a third of truck crossings (31.8%) happen overnight, against a fifth of car crossings (19.7%), and the Deegan is a truck route. That is a lead, not proof."
           },
           {
             sub: "Data",
