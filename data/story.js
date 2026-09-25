@@ -213,18 +213,18 @@
           },
           {
             claim: "\"Trees fix the highway.\"",
-            refute: "They don't. 10.6 lb a year can't cancel +1.29. That is why the lid matters."
+            refute: "They don't. 10.6 lb a year can't cancel +1.29. That is why the greenway matters."
           },
           {
-            claim: "\"A lid costs billions.\"",
+            claim: "\"A highway park costs billions.\"",
             refute: "Dallas paid about $110M for about 5 acres. Our range is $250M to $1.2B."
           }
         ]
       },
       close: {
         beat: "Reimagining NYC",
-        headline: "Trees now. A park over the Deegan later.",
-        takeaway: "Trees can start this year. A lid over the highway is the long fix.",
+        headline: "Trees now. A Deegan Greenway later.",
+        takeaway: "Trees can start this year. The long fix is a greenway over the Deegan, like Klyde Warren Park in Dallas.",
         blocks: [
           {
             sub: "Now",
@@ -237,8 +237,9 @@
           {
             sub: "Later",
             bullets: [
-              "Deck over the sunken Deegan from East 138th to 149th: about 12.9 acres of park.",
-              "Dallas did it with Klyde Warren Park.",
+              "Build a park over the sunken Deegan from East 138th to 149th: about 12.9 acres of trees, lawn and paths.",
+              "Dallas did this. Klyde Warren Park sits over a sunken freeway and joined Uptown and Downtown again.",
+              "The highway edge becomes green space the neighborhood can use.",
               "The Deegan is a state road, so this takes years."
             ]
           }
@@ -246,24 +247,25 @@
         methods_expandable: {
           summary: "Methods",
           bullets: [
-            "i-Tree estimates for 180 trees. The lid adds about 25 lb of PM2.5 removal a year.",
+            "i-Tree estimates for 180 trees. The greenway trees add about 25 lb of PM2.5 removal a year.",
             "Klyde Warren Phase I: $110M to $112M for 5.2 to 5.4 acres. Paid with $20M city bonds, $20M TxDOT, $16.7M federal, private for the rest.",
             "Tree money: DEP green infrastructure ($3.5B program), Bronx Tree Fund ($2,800 a tree), CDBG, since 94 to 100% of nearby residents are low or moderate income.",
-            "Lid approvals: NYSDOT, NEPA, CEQR, ULURP.",
+            "The greenway sits on a deck over the trench. Cars keep running underneath, like the Woodall Rodgers Freeway under Klyde Warren.",
+            "Greenway approvals: NYSDOT, NEPA, CEQR, ULURP.",
             "We did not model removing the Deegan or the BQE."
           ]
         },
         captions: [
-          "The Deegan sits in a trench, so a lid decks over it.",
+          "The Deegan sits in a trench, so the greenway builds over it.",
           "East 135th beside the Deegan wall.",
-          "I-87 toward The Motto. The stretch a lid would cover."
+          "I-87 toward The Motto. The stretch the greenway would cover."
         ],
         options: {
           caption: "Three options.",
           rows: [
             { name: "Street trees", estimate: "$2,500 to $4,000 each", call: "Now", id: "est-trees" },
             { name: "Rain gardens", estimate: "$40,000 to $50,000 each", call: "Now", id: "est-gi" },
-            { name: "Deegan lid", estimate: "$250M to $1.2B", call: "Later", id: "est-lid" }
+            { name: "Deegan Greenway", estimate: "$250M to $1.2B", call: "Later", id: "est-lid" }
           ]
         },
         plan: []

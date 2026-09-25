@@ -663,10 +663,10 @@ h1,h2{
           </table>
         </div>
         <figure class="plate">
-          <img src="story-art/fig-solutions.svg" alt="Three options: trees, rain gardens, and a Deegan cap over the road." width="1100" height="560">
+          <img src="story-art/fig-solutions.svg" alt="Three options: trees, rain gardens, and a Deegan Greenway park over the road." width="1100" height="560">
         </figure>
         <figure class="plate captioned">
-          <img src="story-art/refs/deegan-corridor-room.png" alt="Sunken Major Deegan corridor with trucks and towers. The road sits below grade, so a lid decks upward over it." width="1280" height="720">
+          <img src="story-art/refs/deegan-corridor-room.png" alt="Sunken Major Deegan corridor with trucks and towers. The road sits below grade, so a greenway park can be built over it." width="1280" height="720">
           <figcaption data-cap="0"></figcaption>
         </figure>
         <figure class="plate tall captioned">
@@ -1426,7 +1426,7 @@ h1,h2{
     map.addSource('cap-pt', {type:'geojson', data:fc([pt(D.geo.deegan_cap[0][0], D.geo.deegan_cap[0][1], {})])});
     map.addLayer({id:'cap-label', type:'symbol', source:'cap-pt', layout:{
       visibility:'none',
-      'text-field':'lid later · 12.9 acres',
+      'text-field':'greenway later · 12.9 acres',
       'text-size':12,
       'text-font':['Noto Sans Bold']
     }, paint:{'text-color':PAPER, 'text-halo-color':TEAL, 'text-halo-width':1.6}});

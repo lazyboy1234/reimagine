@@ -1,6 +1,6 @@
 <svg style="letter-spacing:normal" xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560" role="img" aria-labelledby="t d">
   <title id="t">Solutions that were on the table</title>
-  <desc id="d">Trees about $2,500 to $4,000, rain gardens about $40k to $50k, and a Deegan lid about $250 million to $1.2 billion.</desc>
+  <desc id="d">Trees about $2,500 to $4,000, rain gardens about $40k to $50k, and a Deegan Greenway park about $250 million to $1.2 billion.</desc>
   <rect width="1100" height="560" fill="#fff"/>
   <rect x="40" y="24" width="320" height="512" fill="#f3f1ec"/>
   <text x="200" y="180" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" letter-spacing="normal" font-size="22" font-weight="700" fill="#111">Trees everywhere</text>
@@ -15,9 +15,9 @@
   <text x="550" y="420" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" letter-spacing="normal" font-size="24" font-weight="700" fill="#9f2f2d">$40k-$50k</text>
   <text x="550" y="452" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" letter-spacing="normal" font-size="15" fill="#5c574f">per garden</text>
   <rect x="740" y="24" width="320" height="512" fill="#111"/>
-  <text x="900" y="180" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" letter-spacing="normal" font-size="22" font-weight="700" fill="#fff">Deegan lid</text>
-  <text x="900" y="220" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" letter-spacing="normal" font-size="16" fill="#fff">Cars under,</text>
-  <text x="900" y="244" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" letter-spacing="normal" font-size="16" fill="#fff">park on top</text>
+  <text x="900" y="180" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" letter-spacing="normal" font-size="22" font-weight="700" fill="#fff">Deegan Greenway</text>
+  <text x="900" y="220" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" letter-spacing="normal" font-size="16" fill="#fff">A park over I-87,</text>
+  <text x="900" y="244" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" letter-spacing="normal" font-size="16" fill="#fff">like Dallas</text>
   <text x="900" y="420" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" letter-spacing="normal" font-size="24" font-weight="700" fill="#fff">$250M-$1.2B</text>
   <text x="900" y="452" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" letter-spacing="normal" font-size="15" fill="#c8c4bc">for this stretch</text>
 </svg>
