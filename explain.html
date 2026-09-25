@@ -61,6 +61,9 @@ summary{cursor:pointer;font-size:13px;font-weight:700;color:var(--mute)}
 details p,details li{font-size:14px;color:var(--mute)}
 .plan{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .plan .card{margin:0}
+figure.fig{margin:1rem 0}
+figure.fig img{width:100%;height:auto;border:1px solid var(--hair);background:#fff}
+figure.fig figcaption{font-size:13px;color:var(--mute);margin-top:.35rem}
 code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;background:var(--soft);padding:0 .25em}
 footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-size:13px;color:var(--mute)}
 @media (max-width:640px){
@@ -81,6 +84,7 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
     <a href="#datasets">Datasets</a>
     <a href="#graphs">Graphs</a>
     <a href="#weights">Weighting</a>
+    <a href="#math">The math</a>
     <a href="#tests">Tests</a>
     <a href="#plan">Plan</a>
     <a href="#limits">Limits</a>
@@ -401,6 +405,94 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 <li>Jerome looks easier on paper than it is. The 4 train runs on tracks above the street, so trees get less sun and less room to grow. Our street-shape grade only sees buildings.</li>
 <li>So East 138th is the pilot. Jerome Ave is the next street to study block by block.</li>
 </ul>
+
+<!-- math -->
+<p class="kicker" id="math">Guide &middot; The math, the map, the correlations</p>
+<h2>Why people decide the pick: map, math and correlations</h2>
+<div class="answer"><p><b>Short version.</b> Every finalist is already sick and polluted, so need barely separates them. How many people live on the street does. People explain 96% of the gap in the final score.</p></div>
+
+<h3>The map: where people live</h3>
+<figure class="fig"><img src="story-art/fig-math-map.png" alt="Left: NYC population density with finalist streets. Right: Bronx close-up with Census blocks near Jerome Ave, East 138th and the Bronx Zoo road colored by distance." loading="lazy" width="1361" height="818">
+<figcaption>Left: darker gray = more people per km&sup2; (2020 Census, 500 m squares). Dots are the finalist streets. Right: every dot is a Census block. Colored dots are within 400 m of a street; red is closest.</figcaption></figure>
+<ul class="tight">
+<li><b>How to read it:</b> The red dots cluster in the dark South and West Bronx. That is where sick, polluted and crowded overlap.</li>
+<li><b>The zoo road</b> sits in a pale gap: the zoo and the park. Its colored dots are thin and far away.</li>
+<li><b>The JFK roads</b> sit on the airport, where the map is white. Zero residents.</li>
+</ul>
+
+<h3>The math: turning people per km into crowding</h3>
+<p>Take 1 km of street. Everyone within 400 m on either side lives in a strip 0.8 km wide, so 0.8 km&sup2;. Divide people per km by 0.8 to get people per km&sup2;. The NYC average is 8,804,190 people &divide; 778 km&sup2; = <b>11,300 per km&sup2;</b>.</p>
+<div class="wrap"><table>
+<thead><tr><th>Street</th><th>People per km</th><th>&divide; 0.8 = people per km&sup2;</th><th>vs NYC average</th></tr></thead>
+<tbody>
+<tr><td>Jerome Ave</td><td>43,861</td><td>54,800</td><td>4.8&times;</td></tr>
+<tr><td>East 138th</td><td>25,910</td><td>32,400</td><td>2.9&times;</td></tr>
+<tr><td>Bronx Zoo road</td><td>6,492</td><td>8,100</td><td>0.7&times;, below average</td></tr>
+</tbody></table></div>
+
+<h3>Why people swing the pick and need does not</h3>
+<figure class="fig"><img src="story-art/fig-math-corr.png" alt="A: correlation grid of the eight grades, need and people. B: people per km in each 100 m ring for Jerome, East 138th and the zoo road. C: need against people per km with equal-pick curves." loading="lazy" width="1386" height="1119">
+<figcaption>A: which grades move together. B: how far from the street people live. C: need (up) against people (across). Each gray curve is one pick score; farther right = higher.</figcaption></figure>
+<ul class="tight">
+<li><b>Need runs from 0.67 to 0.90.</b> The best finalist is only 1.34&times; the worst.</li>
+<li><b>People per km runs from about 0 to 43,861.</b> That is thousands of times.</li>
+<li>Pick = need &times; people, so pick moves with whichever one moves more. On a log scale, the spread in people is <b>96%</b> of the spread in pick.</li>
+<li><b>Panel C:</b> the gray curves are &ldquo;same pick&rdquo; lines. East 138th and Jerome are at the same height (same need). Jerome is farther right (more people), so it crosses a higher curve.</li>
+</ul>
+
+<h3>The correlations: what moves together</h3>
+<p>A correlation (Spearman r) runs from &minus;1 to +1. +1 means when one grade is high, the other is high too. 0 means no link. Across the 35 finalist streets:</p>
+<div class="wrap"><table>
+<thead><tr><th>Pair</th><th>r</th><th>What it means</th><th>So we</th></tr></thead>
+<tbody>
+<tr><td>Asthma &harr; low income</td><td>+0.72</td><td>Poorer streets have more asthma ER visits.</td><td>Kept income small (8%). Asthma already carries most of it.</td></tr>
+<tr><td>Heat &harr; income, heat &harr; asthma</td><td>+0.8</td><td>The heat score almost repeats the other two.</td><td>Gave heat only 5%, so it is not counted twice.</td></tr>
+<tr><td>Few trees &harr; people</td><td>&minus;0.69</td><td>The barest streets are the emptiest: park roads, airport ramps.</td><td>This is why need alone picked the zoo road. Counting people fixes it.</td></tr>
+<tr><td>Need &harr; people</td><td>+0.65</td><td>Among finalists, sicker streets mostly are the crowded ones.</td><td>Good news: the pick and need mostly agree. The exceptions are the empty roads.</td></tr>
+<tr><td>Traffic &harr; highway</td><td>+0.07</td><td>Among finalists these barely move together, because every finalist is already near traffic.</td><td>Honest note: the &ldquo;counts twice&rdquo; worry is about the whole city, not the finalists.</td></tr>
+<tr><td>Open street &harr; people</td><td>+0.24</td><td>Crowded streets are not all canyons.</td><td>Trees can still work where people are.</td></tr>
+</tbody></table></div>
+
+<h3>The spatial test: people nearest the street count most</h3>
+<p>Traffic fumes are worst at the curb and fade with distance. Panel B shows where each street&rsquo;s people live, per km of street. The zoo road has <b>nobody in the first 100 m</b>. East 138th has as many in that first ring as Jerome (about 5,000 per km).</p>
+<p>Test: count a person at full weight at the curb, half at 150 m, a quarter at 300 m. Then redo the pick.</p>
+<div class="wrap"><table>
+<thead><tr><th>Street</th><th>Pick with 400 m cutoff</th><th>Pick with fade</th></tr></thead>
+<tbody>
+<tr><td>Jerome Ave</td><td>#1</td><td>#1</td></tr>
+<tr><td>Westchester Ave</td><td>#2</td><td>#2</td></tr>
+<tr><td>Crotona Pkwy</td><td>#3</td><td>#3</td></tr>
+<tr><td>Southern Blvd</td><td>#6</td><td>#4</td></tr>
+<tr><td>East 138th</td><td>#4</td><td>#5</td></tr>
+<tr><td>Bronx Zoo road</td><td>#26</td><td>#24</td></tr>
+</tbody></table></div>
+<p>The top three do not move and East 138th stays top 5. So the pick is not an accident of where we drew the 400 m line. The 150 m fade is our assumption for this test, not a measured curve.</p>
+
+<h3>How sure are we? Some grades are the street, some are the whole neighborhood</h3>
+<p>Not every grade is measured on the street itself. Some are one number for a whole neighborhood, copied onto every street inside it. That hides differences between streets (the &ldquo;ecological&rdquo; problem: an area average is not each street&rsquo;s truth).</p>
+<div class="wrap"><table>
+<thead><tr><th>Grade</th><th>Weight</th><th>Measured at</th><th>Bias risk</th></tr></thead>
+<tbody>
+<tr><td>Traffic</td><td>15%</td><td>The street: distance to the nearest bridge, ramp or highway</td><td>It is distance, not car counts. A quiet street next to a ramp scores high.</td></tr>
+<tr><td>Beside a highway</td><td>8%</td><td>The street: share within 400 m of a sunken or raised highway</td><td>Low</td></tr>
+<tr><td>Few trees</td><td>17%</td><td>The street: street trees per 100 m (city tree census, 652,173 living trees)</td><td>Counts street trees only; park trees next door are missed.</td></tr>
+<tr><td>Open street</td><td>17%</td><td>The street: building height &divide; street width, from 1.08 million footprints</td><td>Misses the elevated train over Jerome.</td></tr>
+<tr><td>Air monitor</td><td>10%</td><td>Nearest of 6 monitors, only if within 1.5 km</td><td>High. 6 points for a whole city; most streets are blank (C).</td></tr>
+<tr><td>Asthma ER</td><td>20%</td><td>Neighborhood (42 health areas, about 200,000 people each)</td><td>High. Jerome and the zoo road share one area, so they get nearly the same asthma grade.</td></tr>
+<tr><td>Low income</td><td>8%</td><td>Neighborhood (55 PUMAs, about 150,000 people each)</td><td>High, same reason.</td></tr>
+<tr><td>Heat</td><td>5%</td><td>ZIP code, on a 1 to 5 scale</td><td>High. 19 of 35 finalists score the top 5, so it barely separates them.</td></tr>
+</tbody></table></div>
+<p><b>Split:</b> 57% of the weight is measured on the street, 10% at the nearest monitor, 33% is a neighborhood average. The 35 finalist streets sit in only 9 health areas.</p>
+<p><b>Test: does the pick survive if we only trust one kind?</b></p>
+<div class="wrap"><table>
+<thead><tr><th>Use only</th><th>Jerome need &rarr; pick</th><th>East 138th need &rarr; pick</th><th>Zoo road need &rarr; pick</th></tr></thead>
+<tbody>
+<tr><td>All eight grades</td><td>#4 &rarr; <b>#1</b></td><td>#3 &rarr; <b>#4</b></td><td>#1 &rarr; #26</td></tr>
+<tr><td>Street grades only</td><td>#24 &rarr; <b>#1</b></td><td>#23 &rarr; <b>#7</b></td><td>#4 &rarr; #26</td></tr>
+<tr><td>Neighborhood grades only</td><td>#3 &rarr; <b>#1</b></td><td>#4 &rarr; <b>#4</b></td><td>#13 &rarr; #25</td></tr>
+</tbody></table></div>
+<p>What it means: on street grades alone, Jerome and East 138th look ordinary, because their neighborhoods are what make them sick. But once people are counted, Jerome stays #1 and East 138th stays near the top either way. The people count comes from Census blocks, which are about one city block each, so it is the sharpest data we have.</p>
+<p><b>What would fix it:</b> finer asthma data by ZIP or Census tract, if the health department shares it, real car counts per street (DOT counts cover only some streets), and a low-cost sensor on East 138th and Jerome for a season.</p>
 
 <!-- 5 -->
 <p class="kicker" id="tests">5 &middot; Every test</p>

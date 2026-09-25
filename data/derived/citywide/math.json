@@ -1,0 +1,104 @@
+{
+ "n_streets": 35,
+ "n_live": 31,
+ "half_m": 150,
+ "nyc_density": 11314,
+ "need_min": 0.672,
+ "need_max": 0.9,
+ "ppk_max": 43861,
+ "ppk_min_live": 1,
+ "people_share_pct": 96,
+ "r_need_people": 0.65,
+ "r_trees_open": -0.06,
+ "r_traffic_highway": 0.07,
+ "r_asthma_income": 0.72,
+ "r_asthma_need": 0.67,
+ "r_open_people": 0.24,
+ "r_trees_people": -0.69,
+ "streets": {
+  "jerome": {
+   "need": 0.8709,
+   "ppk": 43861,
+   "density": 54826,
+   "rings_pk": [
+    4953,
+    10833,
+    15110,
+    12966
+   ],
+   "decay_pk": 17013,
+   "rank": 1,
+   "rank_decay": 1
+  },
+  "e138": {
+   "need": 0.8725,
+   "ppk": 25910,
+   "density": 32388,
+   "rings_pk": [
+    4978,
+    7484,
+    2691,
+    10758
+   ],
+   "decay_pk": 10793,
+   "rank": 4,
+   "rank_decay": 5
+  },
+  "zoo": {
+   "need": 0.8998,
+   "ppk": 6492,
+   "density": 8115,
+   "rings_pk": [
+    0,
+    1681,
+    2339,
+    2472
+   ],
+   "decay_pk": 1987,
+   "rank": 26,
+   "rank_decay": 24
+  }
+ },
+ "decay_top8": [
+  {
+   "street": "JEROME AVE",
+   "rank": 1,
+   "rank_decay": 1
+  },
+  {
+   "street": "WESTCHESTER AVE",
+   "rank": 2,
+   "rank_decay": 2
+  },
+  {
+   "street": "CROTONA PKWY",
+   "rank": 3,
+   "rank_decay": 3
+  },
+  {
+   "street": "SOUTHERN BLVD",
+   "rank": 6,
+   "rank_decay": 4
+  },
+  {
+   "street": "E 138 ST",
+   "rank": 4,
+   "rank_decay": 5
+  },
+  {
+   "street": "E 139 ST",
+   "rank": 8,
+   "rank_decay": 6
+  },
+  {
+   "street": "BOONE AVE",
+   "rank": 7,
+   "rank_decay": 7
+  },
+  {
+   "street": "WEBSTER AVE",
+   "rank": 11,
+   "rank_decay": 8
+  }
+ ]
+}
