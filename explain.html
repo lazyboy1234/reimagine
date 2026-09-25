@@ -79,6 +79,8 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
     <a href="#looked">What we looked at</a>
     <a href="#questions">The questions</a>
     <a href="#datasets">Datasets</a>
+    <a href="#graphs">Graphs</a>
+    <a href="#weights">Weighting</a>
     <a href="#tests">Tests</a>
     <a href="#plan">Plan</a>
     <a href="#limits">Limits</a>
@@ -97,7 +99,7 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
   <p><b>The question.</b> Did congestion pricing push dirty air into the Bronx? The paid zone got about 22% cleaner. The Deegan sensor in the South Bronx went up 1.29.</p>
   <p><b>The test.</b> Did cars dodge the fee through the Bronx? No. Bronx bridges grew no faster than far bridges.</p>
   <p><b>The check.</b> Not the climate either. Houston has no fee and fell 0.93. Downtown fell. Only the Deegan edge jumped, about 6 times the +0.22 average. That is a local hit.</p>
-  <p><b>The problem.</b> East 138th is one of the worst places in NYC to breathe: 22nd of 33,785 street stretches, the most asthma, the least money.</p>
+  <p><b>The problem.</b> East 138th is one of the worst places in NYC to breathe: 22nd of 33,785 street stretches, and 4th once we count who lives there.</p>
   <p><b>The idea.</b> Plant trees on the six blocks with the fewest.</p>
   <p><b>Reimagining NYC.</b> Trees now. A Deegan Greenway later: a park over the highway, like Klyde Warren Park in Dallas.</p>
 </div>
@@ -115,7 +117,7 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 <tr><td>Heat risk</td><td>Heat Vulnerability Index (HVI) <code>4mhf-duep</code></td><td>ZIP codes 10451, 10454, 10455 and 10459 all score 5 of 5, the worst score.</td></tr>
 <tr><td>Tree availability</td><td>2015 Street Tree Census <code>uvpi-gqnh</code></td><td>81 living trees on the East 138th band, 5 per 100 m. The area has 18% green cover; the city has 23.4% and wants 30% by 2040.</td></tr>
 <tr><td>Space between buildings across the street</td><td>Building Footprints <code>5zhs-2jue</code></td><td>Facade to facade is about 40 m. Building height divided by street width (H/W) is 0.38 on a typical block. One block is 0.58, too narrow for trees.</td></tr>
-<tr><td>Population density</td><td>CDBG tract counts; FAR zoning map (as a picture)</td><td>About 14,525 people in the 4 tracts on the street. 32,362 live within 400 m (2020 Census blocks), used in the people check. The FAR map shows how much building the zoning allows.</td></tr>
+<tr><td>Population density</td><td>CDBG tract counts; FAR zoning map (as a picture)</td><td>About 14,525 people in the 4 tracts on the street. 32,362 live within 400 m (2020 Census blocks), used to count who each street would help. The FAR map shows how much building the zoning allows.</td></tr>
 <tr><td>Fee gates by borough</td><td>MTA Congestion Relief Zone entries <code>t6yz-b64h</code></td><td>12 gates in 7 regions. Brooklyn has 4, New Jersey 2, Queens 2, and the four 60th Street crossings 1 each. The Bronx has 0.</td></tr>
 <tr><td>Traffic at travel points before and after</td><td>MTA Bridges &amp; Tunnels hourly crossings <code>ebfx-2m7v</code>; DOT traffic counts <code>7ym2-wayt</code></td><td>Bronx bridges stayed flat (+0.13% to +1.62%). Tunnels into the zone fell (&minus;1.34% and &minus;2.85%). Across all bridges and tunnels, traffic rose +0.17%.</td></tr>
 </tbody>
@@ -206,9 +208,199 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 <tr><td>17</td><td>CDBG eligibility by tract <code>qmcw-ur37</code></td><td>People count and low-income share; funding eligibility</td><td>Census-based, a few years old</td></tr>
 <tr><td>+</td><td>EPA AirData, Houston North Wayside 48-201-0046</td><td>Control city with no fee</td><td>2025 is 84% complete, not certified</td></tr>
 <tr><td>+</td><td>NYCCAS monitor 36005NY11534 (E 135th)</td><td>Nearest city air monitor, about 330 m south of the street</td><td>One point</td></tr>
-<tr><td>+</td><td>NYC FAR Zoning Map 2020; household income map</td><td>Background pictures on the story pages</td><td>Pictures only, not tested</td></tr>
+<tr><td>+</td><td>NYC FAR Zoning Map 2020</td><td>Background pictures on the story pages</td><td>Pictures only, not tested</td></tr>
 </tbody>
 </table></div>
+
+<!-- graphs -->
+<p class="kicker" id="graphs">Guide &middot; Every graph</p>
+<h2>Every graph on the site, in plain words</h2>
+<p>Each card says what the picture shows, how to read it, and what it tells us to do. They follow the six slides in order.</p>
+
+<div class="card">
+<h3>Slide 1. Fraser&rsquo;s map of the fee zone</h3>
+<dl>
+<dt>What it shows</dt><dd>A published map of fine-particle pollution (PM2.5) after the fee started in January 2025.</dd>
+<dt>How to read it</dt><dd>The 22% drop is inside the paid zone only, Manhattan below 60th St. The map says nothing about the Bronx.</dd>
+<dt>So we should</dt><dd>Trust that the fee cleaned the zone, then ask what happened just outside it.</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>Slide 1. The three-row table</h3>
+<dl>
+<dt>What it shows</dt><dd>One number per place: the paid zone, the average of 19 South Bronx sensors, and the one sensor at the Deegan.</dd>
+<dt>How to read it</dt><dd>A plus sign means dirtier air in 2025 than in 2024 (in &micro;g/m&sup3;). The Deegan went up 1.29, about 6 times the South Bronx average of 0.22.</dd>
+<dt>So we should</dt><dd>Look hard at the Deegan. Something there got worse.</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>Slide 2. Twelve fee gates</h3>
+<dl>
+<dt>What it shows</dt><dd>Where cars enter the paid zone, grouped by where they come from.</dd>
+<dt>How to read it</dt><dd>A longer bar means more gates. Brooklyn has 4. The Bronx has 0.</dd>
+<dt>So we should</dt><dd>Check Bronx bridges. A driver dodging the fee through the Bronx would show up there.</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>Slide 2. Bronx bridges vs far bridges (Figure 3)</h3>
+<dl>
+<dt>What it shows</dt><dd>How much faster Bronx bridge traffic grew than far-away bridge traffic. Panel A goes month by month. Panel B is the average after the fee.</dd>
+<dt>How to read it</dt><dd>0 means &ldquo;no difference.&rdquo; Each dot has a line for its 95% range. The Bronx dot is &minus;1.04 and its line crosses 0: no change. The tunnel dot is &minus;2.29 and its line stays below 0: a real drop.</dd>
+<dt>So we should</dt><dd>Drop the &ldquo;cars detoured through the Bronx&rdquo; idea. The test works, because it caught the tunnels.</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>Slide 4. The &ldquo;where to plant first&rdquo; table</h3>
+<dl>
+<dt>What it shows</dt><dd>The top 10 streets out of 35 finalists.</dd>
+<dt>How to read it</dt><dd>Need runs 0 to 1, and higher is worse. People per km is how many people live within 400 m, for each km of street. The order is need times people per km.</dd>
+<dt>So we should</dt><dd>Start on East 138th (#4), where the rise was measured and every block is studied. Do Jerome Ave (#1) next.</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>Slide 4. How much each factor counts, and who lives there</h3>
+<dl>
+<dt>What it shows</dt><dd>Top: the eight factors. Gray bars are the old weights (12.5% each). Colored bars are the new ones. Bottom: every finalist street as a dot.</dd>
+<dt>How to read it</dt><dd>Top: a longer bar counts more. Asthma is longest at 20%. Bottom: further right means sicker; higher up means more people. The top right corner is sick and crowded.</dd>
+<dt>So we should</dt><dd>Pick from the top right. The Bronx Zoo road is far right but low (few people). The JFK cargo road is bottom left (nobody lives there). Skip both.</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>Slide 4. The citywide heat map</h3>
+<dl>
+<dt>What it shows</dt><dd>All 33,785 stretches in the city, colored by the old equal-weight score.</dd>
+<dt>How to read it</dt><dd>Darker red means more need. The darkest belt is the South Bronx. East 138th is outlined.</dd>
+<dt>So we should</dt><dd>Start in the South Bronx. The problem is packed in one place, not spread evenly.</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>Slide 5. The zoning map (FAR)</h3>
+<dl>
+<dt>What it shows</dt><dd>How much building the city allows on each lot. Context only, not a test.</dd>
+<dt>How to read it</dt><dd>Darker means bigger buildings are allowed.</dd>
+<dt>So we should</dt><dd>Nothing directly. It explains why some streets are tall and narrow.</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>Slide 5. The block table</h3>
+<dl>
+<dt>What it shows</dt><dd>East 138th cut into ten 120 m blocks, with living trees on each.</dd>
+<dt>How to read it</dt><dd>Gap is trees minus 7, the street average. A minus number means short of trees. Block 4 has 0 trees; block 8 has 21.</dd>
+<dt>So we should</dt><dd>Plant the most-negative blocks first: 4, 3, 9, 5, 12 and 11.</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>Slide 5. Nine blocks open, one canyon (Figure 4)</h3>
+<dl>
+<dt>What it shows</dt><dd>Each block&rsquo;s height to width: building height divided by street width.</dd>
+<dt>How to read it</dt><dd>Above the 0.5 line is a canyon, where trees trap fumes instead of cleaning them. Only block 10 (0.58) crosses it. A typical block is 0.38.</dd>
+<dt>So we should</dt><dd>Put trees on nine blocks and green walls on block 10.</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>Slide 6. Three fixes and their price</h3>
+<dl>
+<dt>What it shows</dt><dd>Street trees, rain gardens and the Deegan Greenway, with what each costs.</dd>
+<dt>How to read it</dt><dd>Each step costs far more than the last: thousands per tree, tens of thousands per garden, hundreds of millions for the greenway.</dd>
+<dt>So we should</dt><dd>Do trees and gardens now; the city already pays for both. Plan the greenway as the long project.</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>Slide 6. The Deegan photos</h3>
+<dl>
+<dt>What it shows</dt><dd>The Deegan in its trench, the wall beside East 135th, and the stretch toward The Motto.</dd>
+<dt>How to read it</dt><dd>The highway sits below the street. That is what makes a deck possible.</dd>
+<dt>So we should</dt><dd>Build the park on a deck over the trench and keep cars running below, like Klyde Warren Park in Dallas.</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>Every slide. The map</h3>
+<dl>
+<dt>What it shows</dt><dd>The place each slide talks about: fee gates, sensors, top streets, East 138th blocks.</dd>
+<dt>How to read it</dt><dd>It moves when you change slides. Tap a dot or line to read what it is.</dd>
+<dt>So we should</dt><dd>Use it to check that each claim sits on a real place.</dd>
+</dl>
+</div>
+
+<!-- weights -->
+<p class="kicker" id="weights">Guide &middot; How we pick a street</p>
+<h2>How we pick a street, step by step</h2>
+<div class="answer"><p><b>Short version.</b> First ask how sick a street is (need). Then ask how many people live on it. Multiply the two. The biggest number goes first.</p></div>
+
+<h3>Step 1. Give every street eight grades</h3>
+<p>Each grade is a rank from 0 to 1 against every stretch in the city. A grade of 0.98 means worse than 98% of streets. Higher always means more reason to plant.</p>
+<div class="wrap"><table>
+<thead><tr><th>Question</th><th>Grade</th><th>Old</th><th>New</th><th>Why this weight</th></tr></thead>
+<tbody>
+<tr><td rowspan="3"><b>Is the air bad?</b><br>33%</td><td>Near heavy traffic</td><td>12.5%</td><td>15%</td><td>Traffic is the main source of the fumes, and we have it for every street.</td></tr>
+<tr><td>Air monitor reading</td><td>12.5%</td><td>10%</td><td>The best proof, but most streets have no monitor, so it cannot carry more.</td></tr>
+<tr><td>Beside a highway</td><td>12.5%</td><td>8%</td><td>Mostly says &ldquo;near traffic&rdquo; again, so it stays small.</td></tr>
+<tr><td rowspan="3"><b>Are people already sick?</b><br>33%</td><td>Asthma ER visits</td><td>12.5%</td><td>20%</td><td>This is the harm we want to cut, so it counts most.</td></tr>
+<tr><td>Low income</td><td>12.5%</td><td>8%</td><td>Less money to move away, buy filters or see a doctor.</td></tr>
+<tr><td>Heat risk</td><td>12.5%</td><td>5%</td><td>The city&rsquo;s heat score already includes income and green space. More would count them twice.</td></tr>
+<tr><td rowspan="2"><b>Will trees work here?</b><br>34%</td><td>Few trees now</td><td>12.5%</td><td>17%</td><td>Room to plant. The fix is trees, so the gap matters.</td></tr>
+<tr><td>Open street, not a canyon</td><td>12.5%</td><td>17%</td><td>In a narrow canyon, trees trap fumes instead of cleaning them.</td></tr>
+</tbody>
+</table></div>
+<p>Why a third each: a street needs a yes to all three. Bad air with healthy neighbors is less urgent. Sick neighbors on a street where trees would trap fumes is the wrong place for trees.</p>
+
+<h3>Step 2. Why the old weights looked wonky</h3>
+<ul class="tight">
+<li><b>Asthma counted as little as everything else.</b> The harm we want to cut had 1/8, the same as &ldquo;beside a highway.&rdquo;</li>
+<li><b>Some things counted twice.</b> &ldquo;Near traffic&rdquo; and &ldquo;beside a highway&rdquo; both mean near a highway. The heat score already has income and trees inside it.</li>
+<li><b>Blank grades helped.</b> A street with no air monitor was graded only on what it had, so a blank could lift it.</li>
+<li><b>Nobody asked who lives there.</b> A Bronx Zoo road came 1st. Airport ramps made one top 10.</li>
+</ul>
+
+<h3>Step 3. A blank counts as the middle</h3>
+<p>No monitor near a street? That grade counts as 0.5, the city middle. Think of a skipped test that gets a C, not your average grade. Missing data can no longer push a street up.</p>
+
+<h3>Step 4. Count the people</h3>
+<p>People means residents within 400 m, about a 5 minute walk, from 2020 Census blocks. We divide by the street&rsquo;s length, because a longer street costs more to plant. So people per km is people helped per dollar.</p>
+<p><b>Pick = need &times; people per km.</b></p>
+
+<h3>Worked example: three streets</h3>
+<p>Points = grade &times; weight. Add the eight points to get need.</p>
+<div class="wrap"><table>
+<thead><tr><th>Grade (weight)</th><th>East 138th</th><th>Jerome Ave</th><th>Bronx Zoo road</th></tr></thead>
+<tbody>
+<tr><td>Near heavy traffic (15%)</td><td>0.89 &rarr; 0.134</td><td>0.85 &rarr; 0.127</td><td>0.83 &rarr; 0.124</td></tr>
+<tr><td>Air monitor (10%)</td><td>0.94 &rarr; 0.094</td><td>0.95 &rarr; 0.095</td><td>blank, 0.5 &rarr; 0.050</td></tr>
+<tr><td>Beside a highway (8%)</td><td>1.00 &rarr; 0.080</td><td>0.50 &rarr; 0.040</td><td>0.88 &rarr; 0.070</td></tr>
+<tr><td>Asthma ER (20%)</td><td>0.98 &rarr; 0.196</td><td>0.97 &rarr; 0.193</td><td>0.94 &rarr; 0.188</td></tr>
+<tr><td>Low income (8%)</td><td>0.96 &rarr; 0.077</td><td>0.98 &rarr; 0.078</td><td>0.99 &rarr; 0.079</td></tr>
+<tr><td>Heat risk (5%)</td><td>0.98 &rarr; 0.049</td><td>1.00 &rarr; 0.050</td><td>1.00 &rarr; 0.050</td></tr>
+<tr><td>Few trees now (17%)</td><td>0.84 &rarr; 0.142</td><td>0.92 &rarr; 0.156</td><td>0.99 &rarr; 0.168</td></tr>
+<tr><td>Open street (17%)</td><td>0.60 &rarr; 0.101</td><td>0.78 &rarr; 0.133</td><td>1.00 &rarr; 0.170</td></tr>
+<tr><td><b>Need</b></td><td><b>0.872</b> (#3)</td><td><b>0.871</b> (#4)</td><td><b>0.900</b> (#1)</td></tr>
+<tr><td>People within 400 m</td><td>32,362 on 1.25 km</td><td>70,353 on 1.60 km</td><td>6,823 on 1.05 km</td></tr>
+<tr><td>People per km</td><td>25,910</td><td>43,861</td><td>6,492</td></tr>
+<tr><td><b>Pick</b> (need &times; people per km)</td><td><b>22,606 (#4)</b></td><td><b>38,201 (#1)</b></td><td><b>5,842 (#26)</b></td></tr>
+</tbody>
+</table></div>
+<p>How to read it: East 138th&rsquo;s asthma grade is 0.98. Times 20% gives 0.196 points. The zoo road has the most need, because it has no trees and no tall buildings. But few people live there, so it drops to #26. East 138th and Jerome are tied on need. Jerome has 70% more neighbors, so it tops the list.</p>
+
+<h3>Step 5. Does the answer depend on our weights?</h3>
+<p>We tried 10,000 random weight mixes, every mix equally likely. East 138th stayed in the top 5 in 92% of them; its middle rank was 4th. Jerome was #1 in 99%. So the pick is not an accident of the numbers we chose.</p>
+
+<h3>So why start on East 138th if Jerome is #1?</h3>
+<ul class="tight">
+<li>East 138th is where the rise was measured (+1.29 at the Deegan), and we studied every block there.</li>
+<li>Jerome looks easier on paper than it is. The 4 train runs on tracks above the street, so trees get less sun and less room to grow. Our street-shape grade only sees buildings.</li>
+<li>So East 138th is the pilot. Jerome Ave is the next street to study block by block.</li>
+</ul>
 
 <!-- 5 -->
 <p class="kicker" id="tests">5 &middot; Every test</p>
@@ -276,20 +468,16 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 </div>
 
 <div class="card">
-<h3>Test 6. Which street in the whole city needs help most? <span class="tag yes">East 138th is top 0.06%</span></h3>
+<h3>Test 6. Which street in the whole city needs help most? <span class="tag yes">East 138th: top 0.1%, #4 with people</span></h3>
 <dl>
-<dt>Question</dt><dd>Out of every street stretch in NYC, where do bad air, asthma, poverty, heat, few trees and highways pile up?</dd>
-<dt>Method</dt><dd>Cut all 99,357 street segments into 33,785 stretches of 0.8 to 2 km. Score each on 8 factors, then rank them. Run it three ways: equal weights, health-first weights, and build-first weights.</dd>
-<dt>People check</dt><dd>Score times the people who live within 400 m (2020 Census blocks). Done on the 25 top stretches plus East 138th.</dd>
-<dt>8 factors</dt><dd>Street canyon shape (H/W), trees per 100 m, closeness to highway ramps, a post-fee air monitor within 1.5 km, heat risk (HVI), money (NFH), asthma ER visits, and whether a sunken or raised highway is within 400 m.</dd>
-<dt>Result</dt><dd>Equal weights: 22nd of 33,785 (99.94th percentile), 3rd of 4,163 non-overlapping stretches. Health-first: 21st. Build-first: 82nd, 13th non-overlapping. People check: 5th of 26 (32,362 people). Jerome Ave is 1st (70,353).</dd>
-<dt>Meaning</dt><dd>East 138th stays near the top however you weigh things, people included. Jerome Ave helps the most people, so it is the next street to study. Southern Blvd ranks higher, but has no post-fee air monitor, so we could not check its air.</dd>
+<dt>Question</dt><dd>Out of every street stretch in NYC, where do bad air, asthma, poverty, heat, few trees and highways pile up, and where do the most people live with it?</dd>
+<dt>Method</dt><dd>Cut all 99,357 street segments into 33,785 stretches of 0.8 to 2 km. Grade each on 8 factors and rank them with equal weights. Take the 47 finalists (the top 25 under three weight sets, plus East 138th), re-score them with the new weights, and multiply by people per km. Full steps: <a href="#weights">How we pick a street</a>.</dd>
+<dt>Null</dt><dd>None. This is a ranking, not a yes or no test. The 10,000 random weight mixes are the check.</dd>
+<dt>Result</dt><dd>Full scan, equal weights: 22nd of 33,785 (99.94th percentile). Final pick, 35 finalist streets: East 138th is #3 on need and #4 with people. Jerome Ave is #1. The Bronx Zoo road, 1st on need, falls to #26. East 138th stays top 5 in 92% of random weight mixes.</dd>
+<dt>Meaning</dt><dd>East 138th stays near the top however you weigh it. Jerome Ave reaches the most people, so it is the next street to study.</dd>
 </dl>
-<details><summary>Why the weights look odd, and what the people check fixes</summary>
-<p>Equal weights are a choice, not a law, so we ran three sets. Each factor is a percentile, so few trees counts as much as asthma. Empty places score high on few trees and low buildings: a Bronx Zoo road came 1st and airport ramps made the build-first top 10. Counting people drops them to the bottom. A stretch with no air monitor is scored on the factors it has, so Southern Blvd is scored on 6 of 8.</p>
-</details>
-<details><summary>Why the asthma number reads 184.4 on one page and 193.5 on another</summary>
-<p>Asthma is reported by health neighborhood (UHF). The scan matched the East 138th stretch to &ldquo;High Bridge - Morrisania&rdquo; (184.4). The street page uses &ldquo;Hunts Point - Mott Haven&rdquo; (193.5), which is where the blocks actually sit. Both are far above the city&rsquo;s 66.4.</p>
+<details><summary>Why the asthma number reads 186.6 on one page and 193.5 on another</summary>
+<p>Asthma is reported by health neighborhood (UHF). The scan averaged the East 138th stretch, which leans into &ldquo;High Bridge - Morrisania&rdquo; (184.4), so it reads 186.6. The street page uses &ldquo;Hunts Point - Mott Haven&rdquo; (193.5), which is where the blocks actually sit. Both are far above the city&rsquo;s 66.4.</p>
 </details>
 </div>
 
@@ -368,7 +556,8 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 <li>The sensor rise is year vs year. Houston and the Van Wyck are rough controls, not a matched design.</li>
 <li>The truck night test has no &ldquo;before&rdquo; data, so it shows a pattern, not a change.</li>
 <li>Tree and greenway cleaning numbers are planning estimates, not measurements.</li>
-<li>The people check covers the top 26 stretches, not all 33,785. The FAR map and the income map are context, not tests.</li>
+<li>The new weights and the people count cover the 47 finalists (35 streets), not all 33,785. A very crowded street outside the old top 25 could beat Jerome. The full rerun needs our analysis computer, which was offline.</li>
+<li>The FAR map is context, not a test.</li>
 </ul>
 
 <footer>

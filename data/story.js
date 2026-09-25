@@ -145,14 +145,14 @@
       scores: {
         beat: "The problem",
         headline: "East 138th is one of the worst places in NYC to breathe.",
-        takeaway: "We scored {n_windows} stretches of street. East 138th ranked #{rank_all}, the top 0.1%. Count the people nearby too, and it is still top 5.",
+        takeaway: "We scored {n_windows} stretches of street, then counted who lives on them. East 138th is #3 on need and #4 once people count. Jerome Ave is #1.",
         blocks: [
           {
             sub: "Why it ranks",
             bullets: [
               "Adults here go to the ER for asthma at 193.5 per 10,000. NYC: 66.4.",
               "Median income is $15,510, second lowest of 55 areas. About 14,525 people live next to the site.",
-              "Southern Blvd scored higher (.931) but has no air monitor, so it goes next."
+              "Jerome Ave is just as sick and has far more neighbors: 43,861 people per km, against 25,910 here. It goes next."
             ]
           }
         ],
@@ -160,17 +160,20 @@
           summary: "Methods",
           bullets: [
             "About 99,357 street pieces joined into 33,785 stretches.",
-            "Eight factors, 1/8 each: traffic exposure, air monitor, asthma ER, income, heat, height to width, tree gap, Du Bois share.",
-            "East 138th stays near the top with health and income weighted up (rank 21).",
-            "People check: score times residents within 400 m (2020 Census). East 138th is 5th of the top 26. Jerome Ave reaches the most people (70,353). A Bronx Zoo road, 1st on score alone, drops to last.",
-            "The table's 184.4 comes from the next health district over. Mott Haven's own rate is 193.5.",
+            "Need: eight factors, grouped into three questions with a third each. Is the air bad? Are people already sick? Will trees work here? Asthma counts most (20%).",
+            "A blank factor counts as the city middle (0.5), not as the street's own average.",
+            "Pick: need times people per km within 400 m (2020 Census). Per km, so a street does not win just by being long.",
+            "10,000 random weight mixes: East 138th stays top 5 in 92%. Jerome Ave is #1 in 99%.",
+            "Re-scored: the 47 finalists from the full scan, one stretch per street. The full scan used 1/8 each.",
+            "The table's 186.6 mostly comes from the next health district over (184.4). Mott Haven's own rate is 193.5.",
             "Photos: East Coast Roads; Jim Henderson (public domain); Google Street View; Flickr imjustwalkin; DanTD (CC BY-SA 4.0)."
           ]
         },
         captions: [
-          "Household income by district. Darker is lower. Context only, not a score input."
+          "Top: how much each factor counts, old (gray) and new (color). Bottom: need across, people up. Start top right.",
+          "Every stretch in the city, old equal weights. Darker means more need. East 138th is outlined."
         ],
-        rankCaption: "Top streets. Higher score means more reason to plant. People: residents within 400 m.",
+        rankCaption: "Where to plant first. Need: 0 to 1, higher is worse. People per km: residents within 400 m.",
         plan: []
       },
       location: {

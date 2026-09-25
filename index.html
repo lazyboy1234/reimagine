@@ -575,18 +575,22 @@ h1,h2{
           <table class="sit-table">
             <caption data-caption="rank"></caption>
             <thead>
-              <tr><th>#</th><th>Street</th><th>Neighborhood</th><th>Score</th><th>People</th><th>Asthma ED</th><th>HVI</th><th>Monitor</th></tr>
+              <tr><th>#</th><th>Street</th><th>Neighborhood</th><th>Need</th><th>People per km</th><th>Asthma ED</th><th>Monitor</th></tr>
             </thead>
             <tbody id="rank-equal-body"></tbody>
           </table>
           <div class="street-row">
+            <figure>
+              <img src="story-art/slide-6/jerome-ave.jpg" alt="Jerome Avenue" width="1920" height="1440">
+              <figcaption>Jerome Ave, #1</figcaption>
+            </figure>
             <figure>
               <img src="story-art/slide-6/southern-blvd.jpg" alt="Southern Boulevard" width="800" height="600">
               <figcaption>Southern Blvd</figcaption>
             </figure>
             <figure>
               <img src="story-art/slide-6/e138.jpg" alt="East 138th Street" width="1920" height="1440">
-              <figcaption>East 138th</figcaption>
+              <figcaption>East 138th, #4</figcaption>
             </figure>
             <figure>
               <img src="story-art/slide-6/boone-ave.jpg" alt="Boone Avenue" width="1024" height="576">
@@ -608,21 +612,18 @@ h1,h2{
               <img src="story-art/slide-6/exterior-st.jpg" alt="Exterior Street" width="1024" height="768">
               <figcaption>Exterior St</figcaption>
             </figure>
-            <figure>
-              <img src="story-art/slide-6/jerome-ave.jpg" alt="Jerome Avenue" width="1920" height="1440">
-              <figcaption>Jerome Ave</figcaption>
-            </figure>
           </div>
           <div class="copy" data-copy="mid"></div>
           <div id="choices-list" class="dsets"></div>
           <div class="copy" data-copy="tail"></div>
         </div>
         <figure class="plate rank captioned">
-          <img src="story-art/household-income-nyc.jpg" alt="Household income choropleth across NYC districts. Bronx runs darker, lower income." width="1024" height="584">
+          <img src="story-art/fig-weights.svg" alt="Top: how much each of eight factors counts, old equal weights in gray and new weights in color. Bottom: need score against people per km for 35 finalist streets. Jerome Ave sits top right, East 138th near it, the Bronx Zoo road far right but low, a JFK cargo road bottom left." width="560" height="720">
           <figcaption data-cap="0"></figcaption>
         </figure>
-        <figure class="plate rank">
+        <figure class="plate rank captioned">
           <img src="story-art/map-citywide-heat.png" alt="Citywide heat map of corridor scores across four boroughs, with East 138th outlined." width="1200" height="1200">
+          <figcaption data-cap="1"></figcaption>
         </figure>
       </article>
 
@@ -982,13 +983,13 @@ h1,h2{
     const C = D.citywide;
     if(!C) return;
     const rb = document.getElementById('rank-equal-body');
-    if(rb && C.rankings && C.rankings.equal){
-      rb.innerHTML = C.rankings.equal.map(r => {
+    if(rb && C.pick){
+      rb.innerHTML = C.pick.rows.slice(0, 10).map(r => {
         const mon = r.monitor ? r.monitor : '-';
         const ash = r.asthma_adult == null ? '-' : Number(r.asthma_adult).toFixed(1);
-        const hvi = r.hvi == null ? '-' : Number(r.hvi).toFixed(0);
-        const uhf = (r.uhf || '').replace('Hunts Point - Mott Haven', 'Mott Haven').replace('High Bridge - Morrisania', 'High Bridge').replace('Crotona - Tremont', 'Crotona').replace('Fordham - Bronx Park', 'Fordham');
-        return '<tr><td>'+r.rank+'</td><td>'+r.street+'</td><td>'+uhf+'</td><td>'+Number(r.total).toFixed(3)+'</td><td>'+(r.people == null ? '-' : Number(r.people).toLocaleString('en-US'))+'</td><td>'+ash+'</td><td>'+hvi+'</td><td>'+mon+'</td></tr>';
+        const uhf = (r.uhf || '').replace('Hunts Point - Mott Haven', 'Mott Haven').replace('High Bridge - Morrisania', 'High Bridge').replace('Crotona - Tremont', 'Crotona').replace('Fordham - Bronx Park', 'Fordham').replace('Pelham - Throgs Neck', 'Pelham');
+        const street = r.e138_design ? '<strong>'+r.street+' (our site)</strong>' : r.street;
+        return '<tr><td>'+r.rank+'</td><td>'+street+'</td><td>'+uhf+'</td><td>'+Number(r.need).toFixed(2)+'</td><td>'+Number(r.people_per_km).toLocaleString('en-US')+'</td><td>'+ash+'</td><td>'+mon+'</td></tr>';
       }).join('');
     }
     const cl = document.getElementById('choices-list');
@@ -1154,9 +1155,9 @@ h1,h2{
     spine: c.id === 'mott_haven_grid' ? 1 : 0,
     say: c.name + ' (' + c.when + '). ' + c.why
   })));
-  const rankTopFC = fc(((CW.rankings && CW.rankings.equal) || []).slice(0, 8).map(r => pt(r.lon, r.lat, {
-    label: r.street,
-    say: r.street + ' in ' + (r.uhf || r.borough) + ', equal-weight score ' + Number(r.total).toFixed(3) + (r.monitor ? (', monitor ' + r.monitor) : ', no published post-fee monitor on the corridor') + '.'
+  const rankTopFC = fc(((CW.pick && CW.pick.rows) || []).slice(0, 8).map(r => pt(r.lon, r.lat, {
+    label: '#' + r.rank + ' ' + r.street,
+    say: '#' + r.rank + ' ' + r.street + ' in ' + (r.uhf || r.borough) + ': need ' + Number(r.need).toFixed(2) + ', ' + Number(r.people_per_km).toLocaleString('en-US') + ' people per km' + (r.monitor ? (', monitor ' + r.monitor) : ', no air monitor nearby') + '.'
   })));
 
   function pointKind(name){
