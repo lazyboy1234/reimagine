@@ -88,15 +88,18 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 <main>
 <p class="kicker">Outside the Line &middot; Datathon 2026</p>
 <h1>How we know: every dataset and every test, in plain words</h1>
-<p class="lede">This page backs up the story. It lists every dataset we used, every test we ran, what each test showed, and our answers to the datathon questions.</p>
+<p class="lede">This page backs up the six slides: every dataset, every test, and our answers to the datathon questions.</p>
 
 <!-- 1 -->
 <p class="kicker" id="answer">1 &middot; The answer in one line</p>
-<h2>The fee cleaned the air in Manhattan. It did not push traffic into the Bronx. East 138th was already the worst street, so we plant there now and cap the Deegan later.</h2>
+<h2>Question, test, check, problem, idea, and what it means for NYC.</h2>
 <div class="answer">
-  <p><b>Did the fee work?</b> Yes, inside the zone. PM2.5 fell about 22% there compared with a model of the same year with no toll (Fraser et al.).</p>
-  <p><b>Did it push cars into the Bronx?</b> We found no sign of it. Traffic on the Bronx bridges grew at the same rate as traffic on bridges far away.</p>
-  <p><b>Then why plant on East 138th?</b> It is one of the worst places in the city to breathe: the most asthma, the least money, few trees, and a highway in a trench. It ranked 22nd of 33,785 street stretches citywide.</p>
+  <p><b>The question.</b> Did congestion pricing push dirty air into the Bronx? The paid zone got about 22% cleaner. The Deegan sensor in the South Bronx went up 1.29.</p>
+  <p><b>The test.</b> Did cars dodge the fee through the Bronx? No. Bronx bridges grew no faster than far bridges.</p>
+  <p><b>The check.</b> Not the climate either. Houston has no fee and fell 0.93. Downtown fell. Only the Deegan edge jumped, about 6 times the +0.22 average. That is a local hit.</p>
+  <p><b>The problem.</b> East 138th is one of the worst places in NYC to breathe: 22nd of 33,785 street stretches, the most asthma, the least money.</p>
+  <p><b>The idea.</b> Plant trees on the six blocks with the fewest.</p>
+  <p><b>Reimagining NYC.</b> Trees now. A park on a lid over the Deegan later.</p>
 </div>
 
 <!-- 2 -->
@@ -113,11 +116,8 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 <tr><td>Tree availability</td><td>2015 Street Tree Census <code>uvpi-gqnh</code></td><td>81 living trees on the East 138th band, 5 per 100 m. The area has 18% green cover; the city has 23.4% and wants 30% by 2040.</td></tr>
 <tr><td>Space between buildings across the street</td><td>Building Footprints <code>5zhs-2jue</code></td><td>Facade to facade is about 40 m. Building height divided by street width (H/W) is 0.38 on a typical block. One block is 0.58, too narrow for trees.</td></tr>
 <tr><td>Population density</td><td>CDBG tract counts; FAR zoning map (as a picture)</td><td>We counted people on the street (14,525). We did not run a separate density test. The FAR map shows how much building the zoning allows.</td></tr>
-<tr><td>FAR zoning</td><td>NYC FAR Zoning Map 2020 (picture only)</td><td>FAR (floor area ratio) is how much floor space the zoning lets you build per square foot of lot. We used it as background, not as a test.</td></tr>
 <tr><td>Fee gates by borough</td><td>MTA Congestion Relief Zone entries <code>t6yz-b64h</code></td><td>12 gates in 7 regions. Brooklyn has 4, New Jersey 2, Queens 2, and the four 60th Street crossings 1 each. The Bronx has 0.</td></tr>
-<tr><td>Travel inside and outside the zone</td><td>Same MTA file</td><td>178.2 million zone entries in 2025, plus 23.5 million on the free roads at the edge (FDR Drive, West Side Highway).</td></tr>
 <tr><td>Traffic at travel points before and after</td><td>MTA Bridges &amp; Tunnels hourly crossings <code>ebfx-2m7v</code>; DOT traffic counts <code>7ym2-wayt</code></td><td>Bronx bridges stayed flat (+0.13% to +1.62%). Tunnels into the zone fell (&minus;1.34% and &minus;2.85%). Across all bridges and tunnels, traffic rose +0.17%.</td></tr>
-<tr><td>Funding</td><td>NYC Parks, DEP, CDBG, Klyde Warren Park (Dallas)</td><td>A street tree costs about $3,110. A highway cap runs about $20M to $90M+ per acre.</td></tr>
 </tbody>
 </table></div>
 
@@ -132,7 +132,6 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 <li>The 22% compares daily peak PM2.5 inside the zone with a model of the same year with no toll: &minus;3.05 on a 13.8 baseline (Fraser et al.).</li>
 <li>Across all five boroughs the drop was only &minus;1.07. Across the wider metro area it was &minus;0.70.</li>
 <li>A second study checked six spots. Only one change was significant: Queensboro, &minus;9.08%. Williamsburg went <i>up</i> 6.30%, the Cross Bronx up 3.74%, Broadway at W 35th up 2.46%. With six tries, there is about a 26% chance that at least one comes out &ldquo;significant&rdquo; by luck alone.</li>
-<li>Timing: 76% of zone entries happen during toll peak hours. Big trucks shift to night: 31.8% of multi-unit truck entries are overnight, compared with 19.7% for cars, because overnight tolls are 75% cheaper.</li>
 </ul>
 </div>
 
@@ -141,7 +140,6 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 <p class="short">Not by traffic that we can measure. The Bronx was vulnerable before the fee and still is.</p>
 <ul class="tight">
 <li>Four Bronx bridges were compared with three bridges far from the zone. Before and after, Bronx traffic grew 1.04 points <i>slower</i>, and the result could be anywhere from &minus;3.6 to +1.6. That range includes zero, so we found no push.</li>
-<li>A second version of the test gave the same answer: &minus;0.15%, with a shuffle test p of 0.77.</li>
 <li>The same method <i>did</i> find the drop at the tunnels into the zone (&minus;2.29 points). So the test can see a real change when there is one.</li>
 <li>Gap: we could not test the local streets (Deegan, Bruckner, Cross Bronx). The city never counted the same South Bronx street both just before and just after the toll started. There are 0 usable pairs.</li>
 </ul>
@@ -149,11 +147,11 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 
 <div class="q">
 <h3>Q3. What do the South Bronx &ldquo;Asthma Alley&rdquo; monitors show?</h3>
-<p class="short">A small rise, largest at the Deegan, which our traffic data does not explain.</p>
+<p class="short">A small rise on average, and a big one at the Deegan. That points to a local source.</p>
 <ul class="tight">
 <li>South Bronx Unite, with Columbia, Brown and CU Boulder: 12 to 14 of 19 sensors went up from 2024 to 2025. The average rise was +0.22 &micro;g/m&sup3;. The biggest was +1.29 at the Deegan and Third Avenue Bridge, the sensor closest to our street.</li>
 <li>The NYC Health Department found no significant change it could blame on the fee. It used the Van Wyck as a comparison road.</li>
-<li>Traffic makes up about 14% of PM2.5 and about 20% of NOx in NYC (DOHMH). Most of the dirt in the air comes from elsewhere, so weather and background pollution can move these numbers.</li>
+<li>Traffic makes up about 14% of PM2.5 and about 20% of NOx in NYC (DOHMH). The Deegan jump is about 6 times the average, so we read it as local. Big trucks at night (Test 4) are our best lead, not a proven cause.</li>
 <li>Health: this area already has 147 children&rsquo;s asthma ER visits per 100,000 tied to PM2.5, compared with 62 citywide (EHDP).</li>
 </ul>
 </div>
@@ -172,13 +170,13 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 
 <div class="q">
 <h3>The judge&rsquo;s question: is it the fee, or climate change? Use a control city.</h3>
-<p class="short">We cannot blame the fee for the Bronx rise. Air moves up and down every year even where there is no toll.</p>
+<p class="short">Not climate. Places with no fee got cleaner. Only the Deegan edge jumped.</p>
 <ul class="tight">
-<li><b>Control city:</b> Houston, Texas, which has no congestion fee. We picked the North Wayside monitor (site 48-201-0046) in Settegast, a low-income neighborhood near highways. Its PM2.5 went from 13.10 (2024) to 12.17 (2025), a change of &minus;0.93. That swing is bigger than the South Bronx average change of +0.22, with no toll at all. Houston&rsquo;s 2025 data is only 84% complete and not yet certified.</li>
-<li><b>Control bridges:</b> Verrazzano, Cross Bay and Marine Parkway are far from the zone. Bronx bridges changed the same as they did.</li>
-<li><b>Control road:</b> NYC Health used the Van Wyck and found no fee-sized change.</li>
-<li><b>Is +0.22 big enough to blame on the fee?</b> No. It is smaller than normal year-to-year swings, and the traffic that would have to cause it did not show up on the bridges.</li>
-<li><b>What we did not do:</b> we used one outside city, not a panel of poor neighborhoods across the US. That is the next step.</li>
+<li><b>Control city:</b> Houston, Texas, has no congestion fee. Its North Wayside monitor (EPA site 48-201-0046) sits by truck and rail yards. PM2.5 went from 13.10 (2024) to 12.17 (2025), down 0.93. If climate pushed air up, Houston would have gone up too. The 2025 file is 84% complete and not yet certified.</li>
+<li><b>Control road:</b> NYC Health used the Van Wyck and found no fee-sized change. Downtown fell 13% (Barber).</li>
+<li><b>Control bridges:</b> Verrazzano, Cross Bay and Marine Parkway. Bronx bridges changed the same as they did, so it was not the fee either.</li>
+<li><b>What is left:</b> a local hit. The Deegan rose 1.29, about 6 times the +0.22 South Bronx average.</li>
+<li><b>What we did not do:</b> one outside city, not a panel of US neighborhoods. That is next.</li>
 </ul>
 </div>
 
@@ -363,7 +361,7 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 <li>We never measured South Bronx street traffic before and after the toll. That data does not exist.</li>
 <li>The bridge test covers toll bridges only. It cannot see the Deegan, Bruckner or Cross Bronx.</li>
 <li>One control city (Houston), one monitor, with 2025 incomplete. A panel of poor US neighborhoods is future work.</li>
-<li>The sensor rise (+0.22) is year vs year, with no control group. It shows what the air did, not why.</li>
+<li>The sensor rise is year vs year. Houston and the Van Wyck are rough controls, not a matched design.</li>
 <li>The truck night test has no &ldquo;before&rdquo; data, so it shows a pattern, not a change.</li>
 <li>Tree and cap cleaning numbers are planning estimates, not measurements.</li>
 <li>We used population counts, the FAR map and the income map as context, not as tests.</li>

@@ -522,7 +522,7 @@ h1,h2{
 <div class="stage">
   <aside class="pane" id="pane">
     <div class="steps">
-      <article class="step is-on" data-step="0" data-story="thesis" aria-label="Introduction">
+      <article class="step is-on" data-step="0" data-story="thesis" aria-label="The question">
         <p class="beat"></p>
         <h1></h1>
         <div class="facts">
@@ -539,30 +539,27 @@ h1,h2{
           <img src="story-art/slide-6/e138.jpg" alt="Looking north along the Major Deegan from the East 138th Street overpass." width="1920" height="1440">
           <figcaption>This is the Deegan from the East 138th overpass. The dirtier air was right here.</figcaption>
         </figure>
-        <figure class="plate">
-          <img src="story-art/fig1-gates.svg" alt="Twelve fee gates by region. Bronx has zero, so any car spill had to show up on bridges, not gates." width="927" height="588">
-        </figure>
         <figure class="plate captioned">
           <img src="paper/refs/cornell-npj-fig1.png" alt="Fraser's paper, Figure 1. About 22 percent lower inside the paid zone." width="611" height="685">
           <figcaption data-cap="0"></figcaption>
         </figure>
-        <figure class="plate">
-          <img src="story-art/cornell/table-a8-summary.png" alt="Barber Table A.8. PM2.5 8.70 to 7.56, minus 13 percent. Not Fraser's 22 percent." width="1366" height="422">
-        </figure>
       </article>
 
-      <article class="step" data-step="1" data-story="spill" hidden aria-label="Spill test">
+      <article class="step" data-step="1" data-story="spill" hidden aria-label="The test">
         <p class="beat"></p>
         <h2></h2>
         <div class="facts">
           <div class="copy" data-copy="lead"></div>
         </div>
+        <figure class="plate">
+          <img src="story-art/fig1-gates.svg" alt="Twelve fee gates by region. Bronx has zero, so any car spill had to show up on bridges, not gates." width="927" height="588">
+        </figure>
         <figure class="plate">
           <img src="story-art/fig3-did.svg" alt="Bronx bridges stay about flat while tunnels into the paid zone drop." width="1152" height="683">
         </figure>
       </article>
 
-      <article class="step" data-step="2" data-story="controls" hidden aria-label="The controls">
+      <article class="step" data-step="2" data-story="controls" hidden aria-label="The check">
         <p class="beat"></p>
         <h2></h2>
         <div class="facts">
@@ -570,7 +567,7 @@ h1,h2{
         </div>
       </article>
 
-      <article class="step" data-step="3" data-story="scores" hidden aria-label="Who sits on the edge">
+      <article class="step" data-step="3" data-story="scores" hidden aria-label="The problem">
         <p class="beat"></p>
         <h2></h2>
         <div class="facts">
@@ -625,14 +622,11 @@ h1,h2{
           <figcaption data-cap="0"></figcaption>
         </figure>
         <figure class="plate rank">
-          <img src="story-art/fig-citywide-rank.svg" alt="Top corridor windows under equal weights, with East 138th highlighted." width="1100" height="640">
-        </figure>
-        <figure class="plate rank">
           <img src="story-art/map-citywide-heat.png" alt="Citywide heat map of corridor scores across four boroughs, with East 138th outlined." width="1200" height="1200">
         </figure>
       </article>
 
-      <article class="step" data-step="4" data-story="location" hidden aria-label="The street">
+      <article class="step" data-step="4" data-story="location" hidden aria-label="The idea">
         <p class="beat"></p>
         <h2></h2>
         <div class="facts">
@@ -655,7 +649,7 @@ h1,h2{
         </figure>
       </article>
 
-      <article class="step" data-step="5" data-story="close" hidden aria-label="Counters and conclusion">
+      <article class="step" data-step="5" data-story="close" hidden aria-label="Reimagining NYC">
         <p class="beat"></p>
         <h2></h2>
         <div class="facts">
@@ -680,12 +674,8 @@ h1,h2{
           <figcaption data-cap="1"></figcaption>
         </figure>
         <figure class="plate tall captioned">
-          <img src="story-art/deegan-ramp-wall.jpg" alt="Tall brick ramp wall along the local street next to the I-87 edge, white box truck for scale." width="1024" height="674">
-          <figcaption data-cap="2"></figcaption>
-        </figure>
-        <figure class="plate tall captioned">
           <img src="story-art/deegan-i87-motto.jpg" alt="I-87 traffic looking toward The Motto building and the Willis Ave / Third Ave Bridge signs." width="1024" height="418">
-          <figcaption data-cap="3"></figcaption>
+          <figcaption data-cap="2"></figcaption>
         </figure>
       </article>
     </div>
@@ -1004,7 +994,7 @@ h1,h2{
     const cl = document.getElementById('choices-list');
     if(cl && C.choices){
       cl.innerHTML = C.choices.map(c => {
-        return '<article class="dset"><h3>'+c.name+' <code>'+c.when+'</code></h3><p>'+c.why+' '+String(c.action).replace(/canyon block/g,'tall block')+' The streets were '+c.streets.join(', ')+'.</p></article>';
+        return '<article class="dset"><h3>'+c.name+' <code>'+c.when+'</code></h3><p>'+String(c.action).replace(/canyon block/g,'tall block')+'</p></article>';
       }).join('');
     }
   })();
@@ -1025,8 +1015,8 @@ h1,h2{
   const crzMid = crzRing.reduce((a,p)=>[a[0]+p[0], a[1]+p[1]], [0,0]).map(v => v/crzRing.length);
 
   function shortBT(name){
-    if(name.indexOf('Kennedy') >= 0 && name.indexOf('Bronx') >= 0) return 'RFK';
-    if(name.indexOf('Kennedy') >= 0) return 'RFK';
+    if(name.indexOf('Kennedy') >= 0 && name.indexOf('Bronx') >= 0) return 'RFK Bronx';
+    if(name.indexOf('Kennedy') >= 0) return 'RFK Manhattan';
     if(name.indexOf('Whitestone') >= 0) return 'Whitestone';
     if(name.indexOf('Throgs') >= 0) return 'Throgs Neck';
     if(name.indexOf('Henry Hudson') >= 0) return 'Henry Hudson';
@@ -1237,7 +1227,7 @@ h1,h2{
   const CAM = [
     {center:[-73.895, 40.772], zoom:10.55, pitch:0, bearing:0},
     {center:[-73.91, 40.82], zoom:10.6, pitch:0, bearing:0},
-    {center:[-73.96, 40.78], zoom:10.9, pitch:0, bearing:0},
+    {center:[-73.89, 40.78], zoom:10.6, pitch:0, bearing:0},
     {center:[-73.90, 40.84], zoom:11.2, pitch:0, bearing:0},
     {center:[-73.9242, 40.8092], zoom:14.6, pitch:0, bearing:0},
     {center:[-73.9265, 40.809], zoom:13.4, pitch:0, bearing:0}
@@ -1282,8 +1272,8 @@ h1,h2{
     goCam(cam);
     switch(i){
       case 0: show(['crz-fill','crz-line','air','air-label']); setStoryScroll(true, 'air'); break;
-      case 1: show(['crz-line','fac','fac-label']); setStoryScroll(false); break;
-      case 2: show(['crz-line','fac','fac-label','air','air-label']); setStoryScroll(true, 'air'); break;
+      case 1: show(['crz-line','fac','fac-label','gates','gates-label']); setStoryScroll(true, 'traffic'); break;
+      case 2: show(['crz-line','air','air-label']); setStoryScroll(true, 'air'); break;
       case 3: show(['ranktop','ranktop-label','choices','choices-label','sbu','sbu-label']); setStoryScroll(true, 'rank'); break;
       case 4: show(['place','place-label','site','site-label','sbu','sbu-label']); setStoryScroll(true, 'site'); break;
       case 5: show(['place','place-label','bld','seg','trees','cap','cap-label']); setStoryScroll(false); break;
