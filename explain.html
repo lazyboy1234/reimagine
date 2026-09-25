@@ -61,6 +61,7 @@ summary{cursor:pointer;font-size:13px;font-weight:700;color:var(--mute)}
 details p,details li{font-size:14px;color:var(--mute)}
 .plan{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .plan .card{margin:0}
+.kid{background:#fff8e6;border:1px solid #e8d9b0;padding:.5rem .8rem;margin:.6rem 0;font-size:15px}
 .talk{border-left:3px solid var(--ink);background:var(--soft);padding:.6rem 1rem;margin:1rem 0 1.4rem}
 .talk p{margin:.35rem 0}
 .talk b.c{color:var(--wine)}
@@ -98,17 +99,17 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 <p class="kicker">Outside the Line &middot; Datathon 2026</p>
 <h1>How we worked it out, from the headline to the plan</h1>
 
-<p class="lede">This page follows the order we actually thought in. Each step starts with the question Cody and Daniel asked each other, then shows the graphs and tests that answered it. The datathon questions sit where they came up: Q1 in step 1, Q2 in step 2, Q3 and the judge&rsquo;s question in step 3, Q4 in step 6. Every dataset is at the end.</p>
+<p class="lede">This is the whole thing start to finish, in the order we figured it out. Each step starts with Cody and Daniel talking it over, then a &ldquo;kid version&rdquo; in one line, then the charts and tests that prove it. The nerdy details are still there if you want them. The data list is at the very bottom.</p>
 
 
 <p class="kicker" id="answer">The whole story in six lines</p>
 <div class="answer">
-  <p><b>The question.</b> Did congestion pricing push dirty air into the Bronx? The paid zone got about 22% cleaner. The Deegan sensor in the South Bronx went up 1.29.</p>
-  <p><b>The test.</b> Did cars dodge the fee through the Bronx? No. Bronx bridges grew no faster than far bridges.</p>
-  <p><b>The check.</b> Not the climate either. Houston has no fee and fell 0.93. Downtown fell. Only the Deegan edge jumped, about 6 times the +0.22 average. That is a local hit.</p>
-  <p><b>The problem.</b> East 138th is one of the worst places in NYC to breathe: 22nd of 33,785 street stretches, and 4th once we count who lives there.</p>
-  <p><b>The idea.</b> Plant trees on the six blocks with the fewest.</p>
-  <p><b>Reimagining NYC.</b> Trees now. A Deegan Greenway later: a park over the highway, like Klyde Warren Park in Dallas.</p>
+  <p><b>What we asked.</b> The city started charging cars $9 to drive into lower Manhattan. The air there got about 22% cleaner. But did the dirty air just move to the Bronx? One air sensor by the Deegan highway went <i>up</i>.</p>
+  <p><b>First check.</b> Did drivers sneak around the fee through the Bronx? Nope. Bronx bridge traffic didn&rsquo;t grow any faster than bridges far away.</p>
+  <p><b>Second check.</b> Is it just the weather? Nope. Houston has no fee and its air got cleaner. Only the spot by the Deegan jumped, about 6 times more than the rest of the South Bronx. Something right there is the problem.</p>
+  <p><b>The problem.</b> East 138th Street is one of the worst streets in all of NYC to breathe on: 22nd out of 33,785 pieces of street, and 4th once you count how many people live there.</p>
+  <p><b>The fix.</b> Plant trees on the six blocks that have the fewest.</p>
+  <p><b>The big dream.</b> Trees now. Later, put a park right on top of the Deegan, like Dallas did with Klyde Warren Park.</p>
 </div>
 
 
@@ -117,10 +118,11 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 <p class="kicker" id="s1">Step 1 of 7 &middot; The headline</p>
 <h2>It started with a headline: &ldquo;22% cleaner.&rdquo; Cleaner where?</h2>
 <div class="talk">
-<p><b class="c">Cody:</b> The news said congestion pricing made the air 22% cleaner. We&rsquo;re from the Bronx. Is it cleaner for us?</p>
-<p><b class="d">Daniel:</b> Read the study first. The 22% is peak PM2.5 inside the paid zone. Across all five boroughs it&rsquo;s &minus;1.07, not 22%.</p>
-<p><b class="c">Cody:</b> So the good news is mostly south of 60th Street. What about everyone else?</p>
+<p><b class="c">Cody:</b> Yo, the news says the new car fee made the air 22% cleaner. We live in the Bronx though. Is <i>our</i> air cleaner?</p>
+<p><b class="d">Daniel:</b> Hold up, read the fine print. That 22% is only inside the fee zone, at the busiest hours. For the whole city it&rsquo;s way smaller.</p>
+<p><b class="c">Cody:</b> So Manhattan got the good stuff. What about us?</p>
 </div>
+<p class="kid"><b>Kid version:</b> The fee cleaned Manhattan&rsquo;s air. We wanted to know if the Bronx got the leftovers.</p>
 
 <div class="q">
 <h3>Q1. Did the 22% headline hide a mixed picture, day by day or at peak hours?</h3>
@@ -155,11 +157,12 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 <p class="kicker" id="s2">Step 2 of 7 &middot; The dodge</p>
 <h2>Did drivers dodge the fee by going through the Bronx?</h2>
 <div class="talk">
-<p><b class="c">Cody:</b> If it costs $9 to drive into Manhattan, wouldn&rsquo;t people go around it, through the Bronx?</p>
-<p><b class="d">Daniel:</b> We can test that. Compare Bronx bridges with bridges far away, before and after the toll. If the Bronx grew faster, that&rsquo;s the dodge.</p>
-<p><b class="c">Cody:</b> And if we find nothing, how do we know the test even works?</p>
-<p><b class="d">Daniel:</b> Run it where we know traffic fell: the tunnels into the zone. If it catches that, it could catch a dodge.</p>
+<p><b class="c">Cody:</b> If it costs $9 to drive into Manhattan, wouldn&rsquo;t people just drive around it, through the Bronx?</p>
+<p><b class="d">Daniel:</b> Easy to check. Count cars on Bronx bridges and on bridges far away, before and after. If the Bronx ones got way busier, that&rsquo;s the sneak-around.</p>
+<p><b class="c">Cody:</b> And if we find nothing? Maybe our test is just broken.</p>
+<p><b class="d">Daniel:</b> Then try it where we <i>know</i> cars dropped, the tunnels into the zone. If it catches that, it works.</p>
 </div>
+<p class="kid"><b>Kid version:</b> We checked if drivers went around the fee through the Bronx. They didn&rsquo;t.</p>
 
 <p>How to read a test: we start by assuming <b>nothing happened</b> (the &ldquo;null&rdquo;). The <b>p-value</b> is how often you would see a result this big by luck if nothing had happened. Small p (under 0.05) means &ldquo;probably real.&rdquo; A <b>95% range</b> (confidence interval) is where the true answer most likely sits. If the range crosses zero, we cannot rule out &ldquo;no change.&rdquo;</p>
 
@@ -193,6 +196,7 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 
 <div class="card">
 <h3>Test 1. Did Bronx bridge traffic jump after the toll? <span class="tag no">No change found</span></h3>
+<p class="kid"><b>Kid version:</b> We counted cars on Bronx bridges before and after the fee. Same as always.</p>
 <dl>
 <dt>Question</dt><dd>If drivers dodged the toll through the Bronx, Bronx bridges should grow faster than far-away bridges after January 2025.</dd>
 <dt>Method</dt><dd>Difference-in-differences: compare the change at Bronx bridges (RFK Bronx, Whitestone, Throgs Neck, Henry Hudson) with the change at far bridges (Verrazzano, Cross Bay, Marine Parkway), month by month, 2024 vs 2025.</dd>
@@ -207,6 +211,7 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 
 <div class="card">
 <h3>Test 2. Can this method see a real change? <span class="tag yes">Yes</span></h3>
+<p class="kid"><b>Kid version:</b> We tested our test on the tunnels, where cars really did drop. It caught it. So the test works.</p>
 <dl>
 <dt>Question</dt><dd>A test that never finds anything is useless. So we ran the same test on the tunnels that <i>enter</i> the zone, where traffic should fall.</dd>
 <dt>Method</dt><dd>Same as Test 1, with Queens Midtown and Hugh L. Carey tunnels vs the same far bridges.</dd>
@@ -221,6 +226,7 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 
 <div class="card">
 <h3>Test 3. Same question, checked three more ways <span class="tag no">Still no change</span></h3>
+<p class="kid"><b>Kid version:</b> We asked the same question three other ways. Still nothing.</p>
 <dl>
 <dt>Question</dt><dd>Does the Test 1 answer hold if we change the setup?</dd>
 <dt>Method</dt><dd>Daily data, 2024 vs 2025 (Jan 5 to Dec 31), four ways: (a) a simple before/after vs control comparison, (b) shuffle which bridges count as &ldquo;Bronx&rdquo; (permutation test), (c) resample whole weeks (block bootstrap), (d) drop one bridge at a time (jackknife).</dd>
@@ -232,6 +238,7 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 
 <div class="card">
 <h3>Test 5. Did South Bronx street traffic change? <span class="tag warn">Could not run</span></h3>
+<p class="kid"><b>Kid version:</b> We wanted to count cars on South Bronx streets, but the city data didn&rsquo;t have matching before and after counts. So we couldn&rsquo;t.</p>
 <dl>
 <dt>Question</dt><dd>Did traffic grow on the South Bronx streets themselves?</dd>
 <dt>Method</dt><dd>Planned: Wilcoxon signed-rank test on the same street counted before and after, which works well with few sites.</dd>
@@ -245,11 +252,12 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 <p class="kicker" id="s3">Step 3 of 7 &middot; The Deegan jump</p>
 <h2>No dodge. So why did the Deegan sensor go up?</h2>
 <div class="talk">
-<p><b class="c">Cody:</b> The bridges say no dodge. But 12 to 14 of 19 South Bronx sensors still went up, and the one at the Deegan went up 1.29. Why?</p>
-<p><b class="d">Daniel:</b> Could be the weather or climate. Maybe everywhere went up.</p>
-<p><b class="c">Cody:</b> Then a city with no fee should be up too. Houston went down 0.93. Downtown went down 13%.</p>
-<p><b class="d">Daniel:</b> And the Deegan rose about 6 times the South Bronx average. That&rsquo;s something local, not the sky. Big trucks at night are a lead we can check.</p>
+<p><b class="c">Cody:</b> OK, no sneaking. But the sensor by the Deegan still went up. What gives?</p>
+<p><b class="d">Daniel:</b> Maybe it&rsquo;s just the weather. Maybe the whole country&rsquo;s air got worse.</p>
+<p><b class="c">Cody:</b> Then Houston, with no fee, should be worse too. It got better. Downtown got better.</p>
+<p><b class="d">Daniel:</b> And the Deegan spot jumped about 6 times more than the rest of the South Bronx. So it&rsquo;s something right there. Big trucks at night, maybe.</p>
 </div>
+<p class="kid"><b>Kid version:</b> It&rsquo;s not the weather. Something right by the Deegan is making the air worse.</p>
 
 <div class="q">
 <h3>Q3. What do the South Bronx &ldquo;Asthma Alley&rdquo; monitors show?</h3>
@@ -276,6 +284,7 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 
 <div class="card">
 <h3>Test 4. Do big trucks come in at night more than cars? <span class="tag yes">Yes, 12 points more</span></h3>
+<p class="kid"><b>Kid version:</b> Big trucks show up at night way more than cars do. Trucks are dirtier, and the Deegan is a truck road.</p>
 <dl>
 <dt>Question</dt><dd>Overnight tolls are 75% cheaper. Do trucks use that?</dd>
 <dt>Method</dt><dd>Chi-square test and a two-proportion z-test on overnight vs daytime zone entries, 2025.</dd>
@@ -290,15 +299,17 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 <p class="kicker" id="s4">Step 4 of 7 &middot; Where to act</p>
 <h2>If the harm is local, which street should we fix first?</h2>
 <div class="talk">
-<p><b class="d">Daniel:</b> If the problem is at the street, the fix has to be at the street. But we can&rsquo;t just pick the one we like.</p>
-<p><b class="c">Cody:</b> Then grade every street in the city the same way: is the air bad, are people sick, would trees work. See where East 138th lands.</p>
-<p><b class="d">Daniel:</b> With equal weights, a Bronx Zoo road came first. Nobody lives there.</p>
-<p><b class="c">Cody:</b> So weigh what matters most, asthma, and count the people. A tree helps lungs, not asphalt.</p>
-<p><b class="d">Daniel:</b> And check how much of this is real. Some grades are one number for a whole neighborhood.</p>
+<p><b class="d">Daniel:</b> If the problem is right on the street, the fix has to be on the street too. But we can&rsquo;t just pick our favorite.</p>
+<p><b class="c">Cody:</b> So give every street in the city the same report card. Is the air bad, are people sick, would trees even work. Then see where East 138th lands.</p>
+<p><b class="d">Daniel:</b> First try, a road inside the Bronx Zoo came out #1. Nobody lives there!</p>
+<p><b class="c">Cody:</b> Right. Trees help lungs, not empty roads. So count the people, and make asthma count the most.</p>
+<p><b class="d">Daniel:</b> And be honest: some grades are for the whole neighborhood, not the street. Say that.</p>
 </div>
+<p class="kid"><b>Kid version:</b> We graded every street in NYC like a report card. East 138th is one of the worst, and lots of people live there.</p>
 
 <div class="card">
 <h3>Test 6. Which street in the whole city needs help most? <span class="tag yes">East 138th: top 0.1%, #4 with people</span></h3>
+<p class="kid"><b>Kid version:</b> Out of every street in NYC, East 138th is in the worst 0.1%, and 4th once you count people.</p>
 <dl>
 <dt>Question</dt><dd>Out of every street stretch in NYC, where do bad air, asthma, poverty, heat, few trees and highways pile up, and where do the most people live with it?</dd>
 <dt>Method</dt><dd>Cut all 99,357 street segments into 33,785 stretches of 0.8 to 2 km. Grade each on 8 factors and rank them with equal weights. Take the 47 finalists (the top 25 under three weight sets, plus East 138th), re-score them with the new weights, and multiply by people per km. Full steps: <a href="#weights">How we pick a street</a>.</dd>
@@ -346,6 +357,7 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 <div class="answer"><p><b>Short version.</b> First ask how sick a street is (need). Then ask how many people live on it. Multiply the two. The biggest number goes first.</p></div>
 
 <h3>Step 1. Give every street eight grades</h3>
+<p class="kid"><b>Kid version:</b> Every street gets 8 grades, like a report card.</p>
 <p>Each grade is a rank from 0 to 1 against every stretch in the city. A grade of 0.98 means worse than 98% of streets. Higher always means more reason to plant.</p>
 <div class="wrap"><table>
 <thead><tr><th>Question</th><th>Grade</th><th>Old</th><th>New</th><th>Why this weight</th></tr></thead>
@@ -363,6 +375,7 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 <p>Why a third each: a street needs a yes to all three. Bad air with healthy neighbors is less urgent. Sick neighbors on a street where trees would trap fumes is the wrong place for trees.</p>
 
 <h3>Step 2. Why the old weights looked wonky</h3>
+<p class="kid"><b>Kid version:</b> At first every grade counted the same. That made weird picks, so asthma now counts the most.</p>
 <ul class="tight">
 <li><b>Asthma counted as little as everything else.</b> The harm we want to cut had 1/8, the same as &ldquo;beside a highway.&rdquo;</li>
 <li><b>Some things counted twice.</b> &ldquo;Near traffic&rdquo; and &ldquo;beside a highway&rdquo; both mean near a highway. The heat score already has income and trees inside it.</li>
@@ -371,9 +384,11 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 </ul>
 
 <h3>Step 3. A blank counts as the middle</h3>
+<p class="kid"><b>Kid version:</b> If a street is missing a grade, we give it a C, not an A or an F.</p>
 <p>No monitor near a street? That grade counts as 0.5, the city middle. Think of a skipped test that gets a C, not your average grade. Missing data can no longer push a street up.</p>
 
 <h3>Step 4. Count the people</h3>
+<p class="kid"><b>Kid version:</b> Then we count how many people live within about 4 blocks. More people = more lungs helped.</p>
 <p>People means residents within 400 m, about a 5 minute walk, from 2020 Census blocks. We divide by the street&rsquo;s length, because a longer street costs more to plant. So people per km is people helped per dollar.</p>
 <p><b>Pick = need &times; people per km.</b></p>
 
@@ -399,9 +414,11 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 <p>How to read it: East 138th&rsquo;s asthma grade is 0.98. Times 20% gives 0.196 points. The zoo road has the most need, because it has no trees and no tall buildings. But few people live there, so it drops to #26. East 138th and Jerome are tied on need. Jerome has 70% more neighbors, so it tops the list.</p>
 
 <h3>Step 5. Does the answer depend on our weights?</h3>
+<p class="kid"><b>Kid version:</b> We shuffled the grade weights 10,000 random ways. East 138th stayed top 5 in 92 out of 100 tries.</p>
 <p>We tried 10,000 random weight mixes, every mix equally likely. East 138th stayed in the top 5 in 92% of them; its middle rank was 4th. Jerome was #1 in 99%. So the pick is not an accident of the numbers we chose.</p>
 
 <h3>So why start on East 138th if Jerome is #1?</h3>
+<p class="kid"><b>Kid version:</b> Jerome Ave is #1, but East 138th is where our story and our data are. It&rsquo;s still top 5.</p>
 <ul class="tight">
 <li>East 138th is where the rise was measured (+1.29 at the Deegan), and we studied every block there.</li>
 <li>Jerome looks easier on paper than it is. The 4 train runs on tracks above the street, so trees get less sun and less room to grow. Our street-shape grade only sees buildings.</li>
@@ -417,6 +434,7 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 <div class="answer"><p><b>Short version.</b> Every finalist is already sick and polluted, so need barely separates them. How many people live on the street does. People explain 96% of the gap in the final score.</p></div>
 
 <h3>The map: where people live</h3>
+<p class="kid"><b>Kid version:</b> Dark means lots of people packed in. Our top streets sit right in the crowded parts.</p>
 <figure class="fig"><img src="story-art/fig-math-map.png" alt="Left: NYC population density with finalist streets. Right: Bronx close-up with Census blocks near Jerome Ave, East 138th and the Bronx Zoo road colored by distance." loading="lazy" width="1361" height="818">
 <figcaption>Left: darker gray = more people per km&sup2; (2020 Census, 500 m squares). Dots are the finalist streets. Right: every dot is a Census block. Colored dots are within 400 m of a street; red is closest.</figcaption></figure>
 <ul class="tight">
@@ -426,6 +444,7 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 </ul>
 
 <h3>The math: turning people per km into crowding</h3>
+<p class="kid"><b>Kid version:</b> Jerome Ave has about 5 times more people packed around it than the average NYC spot.</p>
 <p>Take 1 km of street. Everyone within 400 m on either side lives in a strip 0.8 km wide, so 0.8 km&sup2;. Divide people per km by 0.8 to get people per km&sup2;. The NYC average is 8,804,190 people &divide; 778 km&sup2; = <b>11,300 per km&sup2;</b>.</p>
 <div class="wrap"><table>
 <thead><tr><th>Street</th><th>People per km</th><th>&divide; 0.8 = people per km&sup2;</th><th>vs NYC average</th></tr></thead>
@@ -436,6 +455,7 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 </tbody></table></div>
 
 <h3>Why people swing the pick and need does not</h3>
+<p class="kid"><b>Kid version:</b> The sick-and-dirty scores are pretty close for every street. What really changes the ranking is how many people live there.</p>
 <figure class="fig"><img src="story-art/fig-math-corr.png" alt="A: correlation grid of the eight grades, need and people. B: people per km in each 100 m ring for Jerome, East 138th and the zoo road. C: need against people per km with equal-pick curves." loading="lazy" width="1386" height="1119">
 <figcaption>A: which grades move together. B: how far from the street people live. C: need (up) against people (across). Each gray curve is one pick score; farther right = higher.</figcaption></figure>
 <ul class="tight">
@@ -446,6 +466,7 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 </ul>
 
 <h3>The correlations: what moves together</h3>
+<p class="kid"><b>Kid version:</b> Some things go together, like asthma and low income. When two things always go together, we try not to count them twice.</p>
 <p>A correlation (Spearman r) runs from &minus;1 to +1. +1 means when one grade is high, the other is high too. 0 means no link. Across the 35 finalist streets:</p>
 <div class="wrap"><table>
 <thead><tr><th>Pair</th><th>r</th><th>What it means</th><th>So we</th></tr></thead>
@@ -459,6 +480,7 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 </tbody></table></div>
 
 <h3>The spatial test: people nearest the street count most</h3>
+<p class="kid"><b>Kid version:</b> People who live right on the street breathe the worst air, so we tried counting them extra. The top 3 didn&rsquo;t change.</p>
 <p>Traffic fumes are worst at the curb and fade with distance. Panel B shows where each street&rsquo;s people live, per km of street. The zoo road has <b>nobody in the first 100 m</b>. East 138th has as many in that first ring as Jerome (about 5,000 per km).</p>
 <p>Test: count a person at full weight at the curb, half at 150 m, a quarter at 300 m. Then redo the pick.</p>
 <div class="wrap"><table>
@@ -474,6 +496,7 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 <p>The top three do not move and East 138th stays top 5. So the pick is not an accident of where we drew the 400 m line. The 150 m fade is our assumption for this test, not a measured curve.</p>
 
 <h3>How sure are we? Some grades are the street, some are the whole neighborhood</h3>
+<p class="kid"><b>Kid version:</b> About half our grades are about the actual street. The rest are an average for the whole neighborhood, so they&rsquo;re fuzzier.</p>
 <p>Not every grade is measured on the street itself. Some are one number for a whole neighborhood, copied onto every street inside it. That hides differences between streets (the &ldquo;ecological&rdquo; problem: an area average is not each street&rsquo;s truth).</p>
 <div class="wrap"><table>
 <thead><tr><th>Grade</th><th>Weight</th><th>Measured at</th><th>Bias risk</th></tr></thead>
@@ -505,10 +528,11 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 <p class="kicker" id="s5">Step 5 of 7 &middot; Block by block</p>
 <h2>East 138th is near the top. Which blocks get trees?</h2>
 <div class="talk">
-<p><b class="c">Cody:</b> OK, East 138th is top 5 in the city. But trees don&rsquo;t go on &ldquo;a street&rdquo;, they go on blocks.</p>
-<p><b class="d">Daniel:</b> Then check each block: how many trees it has, and how open it is. On a narrow block, trees trap the fumes instead of cleaning them.</p>
-<p><b class="c">Cody:</b> And make sure the narrow block isn&rsquo;t a fluke before we skip it.</p>
+<p><b class="c">Cody:</b> East 138th is top 5 in the whole city. But you don&rsquo;t plant trees on a &ldquo;street&rdquo;, you plant them block by block.</p>
+<p><b class="d">Daniel:</b> So check each block. How many trees it already has, and how wide open it is. On a super narrow block, trees can trap the fumes like a lid.</p>
+<p><b class="c">Cody:</b> And make sure that narrow block isn&rsquo;t just a fluke before we skip it.</p>
 </div>
+<p class="kid"><b>Kid version:</b> We looked at every block on East 138th to find where trees fit and where they&rsquo;re missing.</p>
 
 <div class="card">
 <h3>Slide 5. The zoning map (FAR)</h3>
@@ -539,6 +563,7 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 
 <div class="card">
 <h3>Test 7. Are trees spread evenly along the street? <span class="tag yes">No, very uneven</span></h3>
+<p class="kid"><b>Kid version:</b> Some blocks have lots of trees, some have almost none. That&rsquo;s where to plant.</p>
 <dl>
 <dt>Question</dt><dd>Do some blocks have many fewer trees than others?</dd>
 <dt>Method</dt><dd>Chi-square test on the 10 scored 120 m blocks, against a flat 7 trees per block.</dd>
@@ -550,6 +575,7 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 
 <div class="card">
 <h3>Test 8. Is the narrow block a fluke? <span class="tag no">No, it is real</span></h3>
+<p class="kid"><b>Kid version:</b> The one narrow block really is narrow. It&rsquo;s not a mistake in the data.</p>
 <dl>
 <dt>Question</dt><dd>One block has tall buildings on a narrow street (H/W 0.58). Is that a measuring error?</dd>
 <dt>Method</dt><dd>Grubbs outlier test on the 10 block H/W values.</dd>
@@ -561,6 +587,7 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 
 <div class="card">
 <h3>Test 9. Do blocks near the Deegan have fewer trees? <span class="tag no">No pattern</span></h3>
+<p class="kid"><b>Kid version:</b> Being closer to the Deegan doesn&rsquo;t mean fewer trees. The empty blocks are spread around.</p>
 <dl>
 <dt>Method</dt><dd>Spearman rank correlation between trees per block and distance to the Deegan.</dd>
 <dt>Result</dt><dd>&minus;0.07, p = 0.84.</dd>
@@ -573,13 +600,15 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 <p class="kicker" id="s6">Step 6 of 7 &middot; The plan</p>
 <h2>So what do we actually do?</h2>
 <div class="talk">
-<p><b class="d">Daniel:</b> What&rsquo;s the cheapest thing that helps the soonest?</p>
-<p><b class="c">Cody:</b> Trees on the six emptiest blocks, now. The big idea, a park over the Deegan like Dallas did, takes years of approvals, so it goes second.</p>
-<p><b class="d">Daniel:</b> And we say how much it really cleans. Trees won&rsquo;t fix the whole Bronx, but they clean the air where people walk and wait.</p>
+<p><b class="d">Daniel:</b> So what&rsquo;s the cheapest thing that helps the fastest?</p>
+<p><b class="c">Cody:</b> Trees on the six emptiest blocks, right now. The park over the Deegan is the big dream, but that takes years, so it goes second.</p>
+<p><b class="d">Daniel:</b> And we don&rsquo;t oversell it. Trees won&rsquo;t fix the whole Bronx. They clean the air right where people walk and wait for the bus.</p>
 </div>
+<p class="kid"><b>Kid version:</b> Plant trees on the six emptiest blocks now. Build a park over the highway later.</p>
 
 <div class="card">
 <h3>Model. How much would the plan clean? <span class="tag yes">Estimate</span></h3>
+<p class="kid"><b>Kid version:</b> Trees soak up a little dirty air. Not a miracle, but it&rsquo;s right where people breathe.</p>
 <dl>
 <dt>Method</dt><dd>i-Tree planning rates (Nowak 2013: 0.24 g of PM2.5 per m&sup2; of canopy per year in NYC).</dd>
 <dt>Result</dt><dd>180 trees + 40,000 ft&sup2; of green wall + 8 acres of green roof + 36 bioswales remove about 10.6 lb of PM2.5, 31 lb of NO&#8322; and 53.2 lb of ozone a year, and hold about 7.2 million gallons of stormwater. The greenway adds about 25 lb of PM2.5 a year.</dd>
@@ -651,8 +680,9 @@ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-si
 <h2>What would a skeptic say?</h2>
 <div class="talk">
 <p><b class="d">Daniel:</b> Where could we be wrong?</p>
-<p><b class="c">Cody:</b> Write every gap down, so nobody has to find it for us.</p>
+<p><b class="c">Cody:</b> Write every weak spot down ourselves, so nobody has to catch us.</p>
 </div>
+<p class="kid"><b>Kid version:</b> Here&rsquo;s everything we couldn&rsquo;t check, so you know how sure to be.</p>
 
 
 
