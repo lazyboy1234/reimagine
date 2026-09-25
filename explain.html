@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How We Know</title>
+<meta name="description" content="Every dataset and every test behind the Outside the Line project, in plain words, plus answers to the datathon questions.">
+<style>
+:root{
+  --ink:#111;
+  --mute:#5c574f;
+  --paper:#fff;
+  --soft:#f6f3ef;
+  --rule:#111;
+  --hair:#d9d3cb;
+  --wine:#a4122f;
+  --partner:#416f4e;
+  --ui:Arial, Helvetica, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 var(--ui)}
+a{color:var(--wine)}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.top{position:sticky;top:0;z-index:2;display:flex;gap:1rem;align-items:center;justify-content:space-between;
+  padding:.65rem 1rem;border-bottom:1px solid var(--rule);background:var(--paper)}
+.top a{color:var(--ink);text-decoration:none;font-weight:600;font-size:14px}
+.top a:hover{color:var(--wine)}
+.toc{display:flex;gap:.9rem;flex-wrap:wrap;font-size:13px}
+.toc a{font-weight:400;color:var(--mute)}
+main{max-width:860px;margin:0 auto;padding:1.5rem 16px 4rem}
+.kicker{font-size:11px;font-weight:700;text-transform:uppercase;color:var(--wine);margin:2.6rem 0 .3rem}
+h1{font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.15;margin:.3rem 0 .8rem}
+h2{font-size:clamp(1.2rem,2.6vw,1.55rem);line-height:1.2;margin:0 0 .8rem;padding-bottom:.4rem;border-bottom:2px solid var(--ink)}
+h3{font-size:1.05rem;margin:1.6rem 0 .4rem}
+p,li{max-width:70ch}
+.lede{font-size:1.15rem}
+.answer{border-left:4px solid var(--wine);background:var(--soft);padding:1rem 1.1rem;margin:1rem 0}
+.answer p{margin:.3rem 0}
+.q{margin:1.4rem 0;padding-bottom:1.2rem;border-bottom:1px solid var(--hair)}
+.q h3{margin-top:0}
+.short{font-weight:700}
+ul.tight{padding-left:1.1rem;margin:.4rem 0}
+ul.tight li{margin:.2rem 0}
+.wrap{overflow-x:auto;margin:.8rem 0}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{text-align:left;vertical-align:top;padding:.45rem .5rem;border-bottom:1px solid var(--hair)}
+th{border-bottom:1px solid var(--ink);font-weight:700}
+td.n{white-space:nowrap}
+.card{border:1px solid var(--hair);border-top:3px solid var(--ink);padding:.9rem 1rem;margin:1rem 0}
+.card h3{margin:0 0 .5rem}
+.card dl{display:grid;grid-template-columns:8.5rem 1fr;gap:.35rem .9rem;margin:0}
+.card dt{font-weight:700;font-size:13px;color:var(--mute)}
+.card dd{margin:0}
+.tag{display:inline-block;font-size:11px;font-weight:700;padding:.1rem .45rem;border:1px solid currentColor;margin-left:.4rem;vertical-align:2px}
+.tag.yes{color:var(--partner)}
+.tag.no{color:var(--mute)}
+.tag.warn{color:var(--wine)}
+details{margin:.6rem 0 0}
+summary{cursor:pointer;font-size:13px;font-weight:700;color:var(--mute)}
+details p,details li{font-size:14px;color:var(--mute)}
+.plan{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.plan .card{margin:0}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;background:var(--soft);padding:0 .25em}
+footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1rem;font-size:13px;color:var(--mute)}
+@media (max-width:640px){
+  .toc{display:none}
+  .card dl{grid-template-columns:1fr}
+  .card dt{margin-top:.4rem}
+  .plan{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <a href="./">&larr; Back to the story</a>
+  <nav class="toc" aria-label="On this page">
+    <a href="#answer">Answer</a>
+    <a href="#looked">What we looked at</a>
+    <a href="#questions">The questions</a>
+    <a href="#datasets">Datasets</a>
+    <a href="#tests">Tests</a>
+    <a href="#plan">Plan</a>
+    <a href="#limits">Limits</a>
+  </nav>
+</header>
+
+<main>
+<p class="kicker">Outside the Line &middot; Datathon 2026</p>
+<h1>How we know: every dataset and every test, in plain words</h1>
+<p class="lede">This page backs up the story. It lists every dataset we used, every test we ran, what each test showed, and our answers to the datathon questions.</p>
+
+<!-- 1 -->
+<p class="kicker" id="answer">1 &middot; The answer in one line</p>
+<h2>The fee cleaned the air in Manhattan. It did not push traffic into the Bronx. East 138th was already the worst street, so we plant there now and cap the Deegan later.</h2>
+<div class="answer">
+  <p><b>Did the fee work?</b> Yes, inside the zone. PM2.5 fell about 22% there compared with a model of the same year with no toll (Fraser et al.).</p>
+  <p><b>Did it push cars into the Bronx?</b> We found no sign of it. Traffic on the Bronx bridges grew at the same rate as traffic on bridges far away.</p>
+  <p><b>Then why plant on East 138th?</b> It is one of the worst places in the city to breathe: the most asthma, the least money, few trees, and a highway in a trench. It ranked 22nd of 33,785 street stretches citywide.</p>
+</div>
+
+<!-- 2 -->
+<p class="kicker" id="looked">2 &middot; What we looked at</p>
+<h2>Everything we studied, and where the numbers came from</h2>
+<div class="wrap"><table>
+<thead><tr><th>We looked at</th><th>Dataset</th><th>What we found</th></tr></thead>
+<tbody>
+<tr><td>Air quality</td><td>Fraser et al. 2025; South Bronx Unite sensors; NYC Health (DOHMH) report; NYCCAS monitor; EPA monitor in Houston</td><td>About 22% cleaner inside the zone. 12 to 14 of 19 South Bronx sensors went up, by +0.22 &micro;g/m&sup3; on average and +1.29 at the Deegan.</td></tr>
+<tr><td>Economic conditions and median income</td><td>Neighborhood Financial Health (NFH) <code>r3dx-pew9</code></td><td>Hunts Point, Longwood &amp; Melrose: median income $15,510, 2nd lowest of 55 areas (city average $31,238). Midtown: $65,905.</td></tr>
+<tr><td>Poverty and who lives there</td><td>NFH; CDBG eligibility <code>qmcw-ur37</code></td><td>29.3% poverty (city 20.3%). About 14,525 people in the 4 census tracts on the street, 94 to 100% low or moderate income.</td></tr>
+<tr><td>Asthma rates</td><td>NYC Environment &amp; Health Data Portal (EHDP)</td><td>Adult asthma ER visits: 193.5 per 10,000 vs 66.4 citywide. Children: 266.2 vs 143.7.</td></tr>
+<tr><td>Heat risk</td><td>Heat Vulnerability Index (HVI) <code>4mhf-duep</code></td><td>ZIP codes 10451, 10454, 10455 and 10459 all score 5 of 5, the worst score.</td></tr>
+<tr><td>Tree availability</td><td>2015 Street Tree Census <code>uvpi-gqnh</code></td><td>81 living trees on the East 138th band, 5 per 100 m. The area has 18% green cover; the city has 23.4% and wants 30% by 2040.</td></tr>
+<tr><td>Space between buildings across the street</td><td>Building Footprints <code>5zhs-2jue</code></td><td>Facade to facade is about 40 m. Building height divided by street width (H/W) is 0.38 on a typical block. One block is 0.58, too narrow for trees.</td></tr>
+<tr><td>Population density</td><td>CDBG tract counts; FAR zoning map (as a picture)</td><td>We counted people on the street (14,525). We did not run a separate density test. The FAR map shows how much building the zoning allows.</td></tr>
+<tr><td>FAR zoning</td><td>NYC FAR Zoning Map 2020 (picture only)</td><td>FAR (floor area ratio) is how much floor space the zoning lets you build per square foot of lot. We used it as background, not as a test.</td></tr>
+<tr><td>Fee gates by borough</td><td>MTA Congestion Relief Zone entries <code>t6yz-b64h</code></td><td>12 gates in 7 regions. Brooklyn has 4, New Jersey 2, Queens 2, and the four 60th Street crossings 1 each. The Bronx has 0.</td></tr>
+<tr><td>Travel inside and outside the zone</td><td>Same MTA file</td><td>178.2 million zone entries in 2025, plus 23.5 million on the free roads at the edge (FDR Drive, West Side Highway).</td></tr>
+<tr><td>Traffic at travel points before and after</td><td>MTA Bridges &amp; Tunnels hourly crossings <code>ebfx-2m7v</code>; DOT traffic counts <code>7ym2-wayt</code></td><td>Bronx bridges stayed flat (+0.13% to +1.62%). Tunnels into the zone fell (&minus;1.34% and &minus;2.85%). Across all bridges and tunnels, traffic rose +0.17%.</td></tr>
+<tr><td>Funding</td><td>NYC Parks, DEP, CDBG, Klyde Warren Park (Dallas)</td><td>A street tree costs about $3,110. A highway cap runs about $20M to $90M+ per acre.</td></tr>
+</tbody>
+</table></div>
+
+<!-- 3 -->
+<p class="kicker" id="questions">3 &middot; The datathon questions</p>
+<h2>Our answers to the four questions, plus the judge&rsquo;s question</h2>
+
+<div class="q">
+<h3>Q1. Did the 22% headline hide a mixed picture, day by day or at peak hours?</h3>
+<p class="short">Yes. The 22% is real, but it only covers the paid zone.</p>
+<ul class="tight">
+<li>The 22% compares daily peak PM2.5 inside the zone with a model of the same year with no toll: &minus;3.05 on a 13.8 baseline (Fraser et al.).</li>
+<li>Across all five boroughs the drop was only &minus;1.07. Across the wider metro area it was &minus;0.70.</li>
+<li>A second study checked six spots. Only one change was significant: Queensboro, &minus;9.08%. Williamsburg went <i>up</i> 6.30%, the Cross Bronx up 3.74%, Broadway at W 35th up 2.46%. With six tries, there is about a 26% chance that at least one comes out &ldquo;significant&rdquo; by luck alone.</li>
+<li>Timing: 76% of zone entries happen during toll peak hours. Big trucks shift to night: 31.8% of multi-unit truck entries are overnight, compared with 19.7% for cars, because overnight tolls are 75% cheaper.</li>
+</ul>
+</div>
+
+<div class="q">
+<h3>Q2. Is pollution being pushed into vulnerable areas?</h3>
+<p class="short">Not by traffic that we can measure. The Bronx was vulnerable before the fee and still is.</p>
+<ul class="tight">
+<li>Four Bronx bridges were compared with three bridges far from the zone. Before and after, Bronx traffic grew 1.04 points <i>slower</i>, and the result could be anywhere from &minus;3.6 to +1.6. That range includes zero, so we found no push.</li>
+<li>A second version of the test gave the same answer: &minus;0.15%, with a shuffle test p of 0.77.</li>
+<li>The same method <i>did</i> find the drop at the tunnels into the zone (&minus;2.29 points). So the test can see a real change when there is one.</li>
+<li>Gap: we could not test the local streets (Deegan, Bruckner, Cross Bronx). The city never counted the same South Bronx street both just before and just after the toll started. There are 0 usable pairs.</li>
+</ul>
+</div>
+
+<div class="q">
+<h3>Q3. What do the South Bronx &ldquo;Asthma Alley&rdquo; monitors show?</h3>
+<p class="short">A small rise, largest at the Deegan, which our traffic data does not explain.</p>
+<ul class="tight">
+<li>South Bronx Unite, with Columbia, Brown and CU Boulder: 12 to 14 of 19 sensors went up from 2024 to 2025. The average rise was +0.22 &micro;g/m&sup3;. The biggest was +1.29 at the Deegan and Third Avenue Bridge, the sensor closest to our street.</li>
+<li>The NYC Health Department found no significant change it could blame on the fee. It used the Van Wyck as a comparison road.</li>
+<li>Traffic makes up about 14% of PM2.5 and about 20% of NOx in NYC (DOHMH). Most of the dirt in the air comes from elsewhere, so weather and background pollution can move these numbers.</li>
+<li>Health: this area already has 147 children&rsquo;s asthma ER visits per 100,000 tied to PM2.5, compared with 62 citywide (EHDP).</li>
+</ul>
+</div>
+
+<div class="q">
+<h3>Q4. What if the BQE or the Deegan were removed or repurposed?</h3>
+<p class="short">We chose to cap the Deegan, not remove it: build a park on a lid over the trench.</p>
+<ul class="tight">
+<li>Size: a 48 m wide deck over the East 138th stretch, about 12.9 acres, measured from the city street centerline file (CSCL).</li>
+<li>Cost: about $250M to $1.2B, based on US highway lids at $20M to $90M+ per acre. Klyde Warren Park in Dallas cost about $110M for 5.2 acres.</li>
+<li>Air: trees on the cap would pull out about 25 lb of PM2.5 a year (i-Tree). Published studies put the street-level cut at 8% to 15%.</li>
+<li>Why not remove it? Traffic is only about 14% of PM2.5. Removing the road would send its trucks onto local streets. A cap keeps the traffic moving but covers it.</li>
+<li>Approvals: NYSDOT, the federal NEPA review, the city CEQR review, then ULURP (60 + 30 + 60 + 50 days).</li>
+</ul>
+</div>
+
+<div class="q">
+<h3>The judge&rsquo;s question: is it the fee, or climate change? Use a control city.</h3>
+<p class="short">We cannot blame the fee for the Bronx rise. Air moves up and down every year even where there is no toll.</p>
+<ul class="tight">
+<li><b>Control city:</b> Houston, Texas, which has no congestion fee. We picked the North Wayside monitor (site 48-201-0046) in Settegast, a low-income neighborhood near highways. Its PM2.5 went from 13.10 (2024) to 12.17 (2025), a change of &minus;0.93. That swing is bigger than the South Bronx average change of +0.22, with no toll at all. Houston&rsquo;s 2025 data is only 84% complete and not yet certified.</li>
+<li><b>Control bridges:</b> Verrazzano, Cross Bay and Marine Parkway are far from the zone. Bronx bridges changed the same as they did.</li>
+<li><b>Control road:</b> NYC Health used the Van Wyck and found no fee-sized change.</li>
+<li><b>Is +0.22 big enough to blame on the fee?</b> No. It is smaller than normal year-to-year swings, and the traffic that would have to cause it did not show up on the bridges.</li>
+<li><b>What we did not do:</b> we used one outside city, not a panel of poor neighborhoods across the US. That is the next step.</li>
+</ul>
+</div>
+
+<!-- 4 -->
+<p class="kicker" id="datasets">4 &middot; Every dataset</p>
+<h2>17 sources: what each one is, what we used it for, and its weak spot</h2>
+<p>Codes like <code>t6yz-b64h</code> are NYC Open Data IDs. You can look them up at data.cityofnewyork.us or data.ny.gov.</p>
+<div class="wrap"><table>
+<thead><tr><th>#</th><th>Dataset</th><th>What we used it for</th><th>Weak spot</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>MTA Congestion Relief Zone vehicle entries <code>t6yz-b64h</code></td><td>Gate counts by region, zone vs free-road traffic, hours of day by vehicle type, the truck night test</td><td>Starts on toll day one. It has no &ldquo;before&rdquo;, so it cannot show change.</td></tr>
+<tr><td>2</td><td>MTA Bridges &amp; Tunnels hourly crossings <code>ebfx-2m7v</code></td><td>The main before-and-after test (Bronx bridges vs far bridges)</td><td>Only covers toll bridges and tunnels. It cannot see the Deegan, Bruckner or Cross Bronx.</td></tr>
+<tr><td>3</td><td>Building Footprints <code>5zhs-2jue</code></td><td>Building heights and street width, block by block (H/W)</td><td>Roof heights, not the exact shape of each wall</td></tr>
+<tr><td>4</td><td>2015 Street Tree Census <code>uvpi-gqnh</code></td><td>Counting living trees on each block</td><td>Last full census was 2015</td></tr>
+<tr><td>5</td><td>Street centerlines (CSCL) <code>inkn-q76z</code></td><td>Laying out the Deegan cap; cutting the city into 33,785 street stretches</td><td>Lines only, no lane widths</td></tr>
+<tr><td>6</td><td>DOT automated traffic counts <code>7ym2-wayt</code></td><td>Tried a street-level before-and-after test</td><td>Counts move around each year. 0 usable Bronx pairs, so we could not run the test.</td></tr>
+<tr><td>7</td><td>Fraser et al., <i>npj Clean Air</i> 2025</td><td>The 22% headline and the citywide &minus;1.07</td><td>A model of the no-toll year, not a direct measurement</td></tr>
+<tr><td>8</td><td>Research Square preprint, Dec 2025</td><td>Six-site check: one significant drop, two rises</td><td>Not peer reviewed yet; six tests means extra false alarms</td></tr>
+<tr><td>9</td><td>South Bronx Unite + Columbia/Brown/CU Boulder sensors</td><td>+0.22 average, +1.29 at the Deegan</td><td>Low-cost sensors, year vs year, no control group</td></tr>
+<tr><td>10</td><td>NYC Health (DOHMH) congestion pricing air report</td><td>No significant fee effect; traffic share of PM2.5 and NOx</td><td>Citywide monitors, few in the South Bronx</td></tr>
+<tr><td>11</td><td>NYC Environment &amp; Health Data Portal (EHDP)</td><td>Asthma ER visits, PM2.5-linked asthma, green cover</td><td>Reported by neighborhood (UHF), not by street</td></tr>
+<tr><td>12</td><td>MTA first-anniversary release</td><td>&minus;11% traffic in the zone, about 27 million fewer vehicles</td><td>Agency press release</td></tr>
+<tr><td>13</td><td>i-Tree / Nowak et al. 2013</td><td>How much pollution trees remove (0.24 g per m&sup2; per year in NYC)</td><td>Planning-level estimate, not a street measurement</td></tr>
+<tr><td>14</td><td>Cornell Urban Heat Island work (Barber)</td><td>Salt-tolerant species: honeylocust, Kentucky coffeetree, zelkova</td><td>General guidance, not our blocks</td></tr>
+<tr><td>15</td><td>Neighborhood Financial Health <code>r3dx-pew9</code></td><td>Median income, poverty, financial health rank</td><td>2020 data, by large area (PUMA)</td></tr>
+<tr><td>16</td><td>Heat Vulnerability Index <code>4mhf-duep</code></td><td>Heat risk by ZIP code</td><td>1 to 5 score only</td></tr>
+<tr><td>17</td><td>CDBG eligibility by tract <code>qmcw-ur37</code></td><td>People count and low-income share; funding eligibility</td><td>Census-based, a few years old</td></tr>
+<tr><td>+</td><td>EPA AirData, Houston North Wayside 48-201-0046</td><td>Control city with no fee</td><td>2025 is 84% complete, not certified</td></tr>
+<tr><td>+</td><td>NYCCAS monitor 36005NY11534 (E 135th)</td><td>Nearest city air monitor, about 330 m south of the street</td><td>One point</td></tr>
+<tr><td>+</td><td>NYC FAR Zoning Map 2020; household income map</td><td>Background pictures on the story pages</td><td>Pictures only, not tested</td></tr>
+</tbody>
+</table></div>
+
+<!-- 5 -->
+<p class="kicker" id="tests">5 &middot; Every test</p>
+<h2>What each test asked, what it found, and what it means</h2>
+<p>How to read a test: we start by assuming <b>nothing happened</b> (the &ldquo;null&rdquo;). The <b>p-value</b> is how often you would see a result this big by luck if nothing had happened. Small p (under 0.05) means &ldquo;probably real.&rdquo; A <b>95% range</b> (confidence interval) is where the true answer most likely sits. If the range crosses zero, we cannot rule out &ldquo;no change.&rdquo;</p>
+
+<div class="card">
+<h3>Test 1. Did Bronx bridge traffic jump after the toll? <span class="tag no">No change found</span></h3>
+<dl>
+<dt>Question</dt><dd>If drivers dodged the toll through the Bronx, Bronx bridges should grow faster than far-away bridges after January 2025.</dd>
+<dt>Method</dt><dd>Difference-in-differences: compare the change at Bronx bridges (RFK Bronx, Whitestone, Throgs Neck, Henry Hudson) with the change at far bridges (Verrazzano, Cross Bay, Marine Parkway), month by month, 2024 vs 2025.</dd>
+<dt>Null</dt><dd>Bronx bridges grow at the same rate as the far bridges.</dd>
+<dt>Result</dt><dd>&minus;1.04 points, 95% range &minus;3.6 to +1.6, p = 0.49.</dd>
+<dt>Meaning</dt><dd>Bronx bridges grew no faster. We cannot rule out &ldquo;no change&rdquo;. No sign of toll dodging through the Bronx.</dd>
+</dl>
+<details><summary>Method details</summary>
+<p>Outcome: year-over-year change in log monthly vehicles. Model: facility fixed effects + month fixed effects + treated &times; month, with December 2024 as the base month. Window January 2024 to December 2025, 168 observations, 7 facilities. Standard errors are clustered by facility (CR1). The p-value is from an exact wild cluster bootstrap (128 draws). With 7 clusters, the smallest p it can ever return is 0.016.</p>
+</details>
+</div>
+
+<div class="card">
+<h3>Test 2. Can this method see a real change? <span class="tag yes">Yes</span></h3>
+<dl>
+<dt>Question</dt><dd>A test that never finds anything is useless. So we ran the same test on the tunnels that <i>enter</i> the zone, where traffic should fall.</dd>
+<dt>Method</dt><dd>Same as Test 1, with Queens Midtown and Hugh L. Carey tunnels vs the same far bridges.</dd>
+<dt>Null</dt><dd>The tunnels grow at the same rate as the far bridges.</dd>
+<dt>Result</dt><dd>&minus;2.29 points, 95% range &minus;3.39 to &minus;1.18. In January 2025 alone: &minus;9.18%.</dd>
+<dt>Meaning</dt><dd>The method catches the drop where we know it happened. So the Bronx &ldquo;no change&rdquo; is not because the test is blind.</dd>
+</dl>
+<details><summary>Why is p about 0.06 if the range misses zero?</summary>
+<p>With only 5 facilities, the wild bootstrap has just 32 ways to reshuffle, so its smallest possible p-value is 1/16 = 0.0625. The p-value hit that floor. The range and the t-statistic (&minus;4.03) both say the drop is real. The p-value simply cannot go lower with 5 groups.</p>
+</details>
+</div>
+
+<div class="card">
+<h3>Test 3. Same question, checked three more ways <span class="tag no">Still no change</span></h3>
+<dl>
+<dt>Question</dt><dd>Does the Test 1 answer hold if we change the setup?</dd>
+<dt>Method</dt><dd>Daily data, 2024 vs 2025 (Jan 5 to Dec 31), four ways: (a) a simple before/after vs control comparison, (b) shuffle which bridges count as &ldquo;Bronx&rdquo; (permutation test), (c) resample whole weeks (block bootstrap), (d) drop one bridge at a time (jackknife).</dd>
+<dt>Null</dt><dd>No difference between Bronx and far bridges.</dd>
+<dt>Result</dt><dd>&minus;0.15%. Shuffle p = 0.77 (35 ways) and 0.89 (3,003 ways). Week range &minus;1.10% to +0.80%. Dropping any one bridge moves it only between &minus;0.44% and +0.23%.</dd>
+<dt>Meaning</dt><dd>No single bridge drives the answer. The null result is stable.</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>Test 4. Do big trucks come in at night more than cars? <span class="tag yes">Yes, 12 points more</span></h3>
+<dl>
+<dt>Question</dt><dd>Overnight tolls are 75% cheaper. Do trucks use that?</dd>
+<dt>Method</dt><dd>Chi-square test and a two-proportion z-test on overnight vs daytime zone entries, 2025.</dd>
+<dt>Null</dt><dd>Multi-unit trucks and cars enter overnight at the same rate.</dd>
+<dt>Result</dt><dd>31.8% of multi-unit truck entries are overnight vs 19.7% for cars, a gap of 12.1 points. Chi-square 57,241, z = 239, p near 0. Effect size (Cram&eacute;r&rsquo;s V) 0.0185.</dd>
+<dt>Meaning</dt><dd>Trucks lean toward nighttime. With tens of millions of trips, any gap gives p near 0, so the 12-point gap is the real finding. Big trucks at night is one possible reason air near the Deegan got worse, which the bridge data cannot see. This file has no &ldquo;before&rdquo;, so it cannot prove trucks <i>moved</i> to night because of the toll.</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>Test 5. Did South Bronx street traffic change? <span class="tag warn">Could not run</span></h3>
+<dl>
+<dt>Question</dt><dd>Did traffic grow on the South Bronx streets themselves?</dd>
+<dt>Method</dt><dd>Planned: Wilcoxon signed-rank test on the same street counted before and after, which works well with few sites.</dd>
+<dt>Result</dt><dd>0 usable pairs. Citywide there are 28 pairs, 13 of which span the toll start. None are in the Bronx. The only two Bronx pairs are on Waters Place, 12 years apart.</dd>
+<dt>Meaning</dt><dd>The city&rsquo;s street counts cannot answer this either way. That gap is a finding in itself: nobody measured it.</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>Test 6. Which street in the whole city needs help most? <span class="tag yes">East 138th is top 0.06%</span></h3>
+<dl>
+<dt>Question</dt><dd>Out of every street stretch in NYC, where do bad air, asthma, poverty, heat, few trees and highways pile up?</dd>
+<dt>Method</dt><dd>Cut all 99,357 street segments into 33,785 stretches of 0.8 to 2 km. Score each on 8 factors, then rank them. Run it three ways: equal weights, health-first weights, and build-first weights.</dd>
+<dt>8 factors</dt><dd>Street canyon shape (H/W), trees per 100 m, closeness to highway ramps, a post-fee air monitor within 1.5 km, heat risk (HVI), money (NFH), asthma ER visits, and whether a sunken or raised highway is within 400 m.</dd>
+<dt>Result</dt><dd>Equal weights: 22nd of 33,785 (99.94th percentile), 3rd of 4,163 non-overlapping stretches. Health-first: 21st. Build-first: 82nd, 13th non-overlapping.</dd>
+<dt>Meaning</dt><dd>East 138th stays near the top however you weigh things. Southern Blvd ranks higher, but has no post-fee air monitor, so we could not check its air.</dd>
+</dl>
+<details><summary>Why the asthma number reads 184.4 on one page and 193.5 on another</summary>
+<p>Asthma is reported by health neighborhood (UHF). The scan matched the East 138th stretch to &ldquo;High Bridge - Morrisania&rdquo; (184.4). The street page uses &ldquo;Hunts Point - Mott Haven&rdquo; (193.5), which is where the blocks actually sit. Both are far above the city&rsquo;s 66.4.</p>
+</details>
+</div>
+
+<div class="card">
+<h3>Test 7. Are trees spread evenly along the street? <span class="tag yes">No, very uneven</span></h3>
+<dl>
+<dt>Question</dt><dd>Do some blocks have many fewer trees than others?</dd>
+<dt>Method</dt><dd>Chi-square test on the 10 scored 120 m blocks, against a flat 7 trees per block.</dd>
+<dt>Null</dt><dd>Every block has about the same number of trees.</dd>
+<dt>Result</dt><dd>Chi-square 58.86, p = 0.000000002.</dd>
+<dt>Meaning</dt><dd>Very uneven: block 8 has 21 trees, block 4 has none. The blocks under 7 are where new trees go first: 4, 3, 9, 5, 12 and 11.</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>Test 8. Is the narrow block a fluke? <span class="tag no">No, it is real</span></h3>
+<dl>
+<dt>Question</dt><dd>One block has tall buildings on a narrow street (H/W 0.58). Is that a measuring error?</dd>
+<dt>Method</dt><dd>Grubbs outlier test on the 10 block H/W values.</dd>
+<dt>Null</dt><dd>0.58 belongs with the other blocks.</dd>
+<dt>Result</dt><dd>G = 1.75, below the 2.29 cutoff.</dd>
+<dt>Meaning</dt><dd>It is a real narrow block, not an error. A street can hold a full row of open tree crowns only when H/W is under 0.5. In a tighter canyon a closed canopy can hold exhaust near the ground, so that block gets green walls instead.</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>Test 9. Do blocks near the Deegan have fewer trees? <span class="tag no">No pattern</span></h3>
+<dl>
+<dt>Method</dt><dd>Spearman rank correlation between trees per block and distance to the Deegan.</dd>
+<dt>Result</dt><dd>&minus;0.07, p = 0.84.</dd>
+<dt>Meaning</dt><dd>Distance does not explain the missing trees. So we scored each block on both: 65% tree gap, 35% closeness to the Deegan.</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>Model. How much would the plan clean? <span class="tag yes">Estimate</span></h3>
+<dl>
+<dt>Method</dt><dd>i-Tree planning rates (Nowak 2013: 0.24 g of PM2.5 per m&sup2; of canopy per year in NYC).</dd>
+<dt>Result</dt><dd>180 trees + 40,000 ft&sup2; of green wall + 8 acres of green roof + 36 bioswales remove about 10.6 lb of PM2.5, 31 lb of NO&#8322; and 53.2 lb of ozone a year, and hold about 7.2 million gallons of stormwater. The cap adds about 25 lb of PM2.5 a year.</dd>
+<dt>Meaning</dt><dd>Trees will not clean the whole Bronx. They clean the air right where people walk, breathe and wait: 8% to 15% at street level in published studies.</dd>
+</dl>
+</div>
+
+<!-- 6 -->
+<p class="kicker" id="plan">6 &middot; The plan</p>
+<h2>Trees now, a cap park later</h2>
+<div class="plan">
+  <div class="card">
+    <h3>Short term: plant trees</h3>
+    <ul class="tight">
+      <li>About 180 open-crown, salt-tolerant street trees (honeylocust, Kentucky coffeetree, zelkova), starting on the six emptiest blocks: 4, 3, 9, 5, 12, 11.</li>
+      <li>Green walls on the one narrow block, where trees would trap exhaust.</li>
+      <li>Rain gardens (bioswales) to catch stormwater.</li>
+      <li>Cost: about $3,110 per tree (NYC Parks, FY25), so about $560,000 for 180 trees. Rain gardens run $40,000 to $50,000 each.</li>
+      <li>Funding: CDBG (the tracts are 94 to 100% low and moderate income), the city&rsquo;s $3.5B DEP green infrastructure program, and the Bronx Tree Fund rate of $2,800 per tree.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Long term: cap the Deegan</h3>
+    <ul class="tight">
+      <li>A 48 m wide park deck over the sunken highway, about 12.9 acres.</li>
+      <li>Cost: $250M to $1.2B. Klyde Warren Park (Dallas) cost about $110M for 5.2 acres.</li>
+      <li>Klyde Warren was paid for by a mix: $20M city bonds, $20M state DOT, $16.7M federal, and private donors for the rest.</li>
+      <li>Approvals: NYSDOT, NEPA, CEQR and ULURP. That takes years, which is why the trees go first.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 7 -->
+<p class="kicker" id="limits">7 &middot; What we did not do</p>
+<h2>Limits, stated plainly</h2>
+<ul class="tight">
+<li>We never measured South Bronx street traffic before and after the toll. That data does not exist.</li>
+<li>The bridge test covers toll bridges only. It cannot see the Deegan, Bruckner or Cross Bronx.</li>
+<li>One control city (Houston), one monitor, with 2025 incomplete. A panel of poor US neighborhoods is future work.</li>
+<li>The sensor rise (+0.22) is year vs year, with no control group. It shows what the air did, not why.</li>
+<li>The truck night test has no &ldquo;before&rdquo; data, so it shows a pattern, not a change.</li>
+<li>Tree and cap cleaning numbers are planning estimates, not measurements.</li>
+<li>We used population counts, the FAR map and the income map as context, not as tests.</li>
+</ul>
+
+<footer>
+  <p>Full source list with URLs: <a href="data/SOURCES.md">data/SOURCES.md</a> &middot; <a href="./">Back to the story</a></p>
+</footer>
+</main>
+</body>
+</html>
