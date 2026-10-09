@@ -1,47 +1,52 @@
 {
- "grade": "planning-grade, i-Tree Eco style multipliers; not a field survey",
- "program": {
-  "open_crown_trees": 180,
-  "green_wall_ft2": 40000,
-  "green_roof_acres": 8,
-  "bioswales": 36,
-  "species_tall_segments": "green walls + honeylocust (Gleditsia triacanthos inermis), open crown, no canopy closure",
-  "species_shallow_segments": "honeylocust, Kentucky coffeetree, zelkova; no London plane or dense-crown species in H/W>0.5 segments",
-  "salt_tolerance": "honeylocust, coffeetree, zelkova rated salt-tolerant (Cornell Urban Horticulture Institute)"
- },
- "canopy_m2": {
-  "trees": 6927,
-  "green_wall": 3716,
-  "green_roof": 32375
- },
- "removed_lb_per_yr": {
-  "pm25": 10.6,
-  "no2": 31.0,
-  "o3": 53.2
- },
- "stormwater_gal_per_yr": 7195826,
- "street_level_pm25_reduction_pct_range": [
-  8,
-  15
- ],
- "deegan_cap": {
-  "acres": 12.9,
-  "extra_pm25_lb_per_yr": 25.0,
-  "note": "The cap also removes the source at grade; the removal figure understates its effect."
- },
- "honesty": "About 11 lb/yr of PM2.5 removed across the corridor does not offset a +1.29 ug/m3 ambient rise at the Deegan sensor. Vegetation is a breathing-height intervention; the source is the highway.",
- "multipliers": {
-  "pm25_g_m2_yr": 0.24,
-  "no2_g_m2_yr": 0.7,
-  "o3_g_m2_yr": 1.2,
-  "wall_eff": 0.5,
-  "roof_eff": 0.35,
-  "rain_m_yr": 1.27
- },
- "hw_context": {
-  "median": 0.38,
-  "tall": 0.43,
-  "segments_over_0_5": 1,
-  "segments_total": 10
- }
+  "grade": "Illustrative multiplier scenario, not a field i-Tree Eco run, planting-capacity estimate or dispersion model.",
+  "program": {
+    "open_crown_trees": 180,
+    "green_wall_ft2": 40000,
+    "green_roof_acres": 8,
+    "bioswales": 36,
+    "species_tall_segments": "green walls + honeylocust (Gleditsia triacanthos inermis), open crown, no canopy closure",
+    "species_shallow_segments": "honeylocust, Kentucky coffeetree, zelkova; no London plane or dense-crown species in H/W>0.5 segments",
+    "salt_tolerance": "honeylocust, coffeetree, zelkova rated salt-tolerant (Cornell Urban Horticulture Institute)"
+  },
+  "canopy_m2": {
+    "trees": 6927,
+    "green_wall": 3716,
+    "green_roof": 32375
+  },
+  "removed_lb_per_yr": {
+    "pm25": 10.6,
+    "no2": 31.0,
+    "o3": 53.2
+  },
+  "stormwater_gal_per_yr": 7195826,
+  "street_level_pm25_reduction_pct_range": null,
+  "deegan_cap": {
+    "acres": 12.9,
+    "extra_pm25_lb_per_yr": 25.0,
+    "note": "Archived unsurveyed 12.9-acre scenario. The 25 lb/year illustration does not apply to the 2.02-acre model. A lid moves exhaust to portals and does not remove the source."
+  },
+  "honesty": "A modeled mass-removal total of 10.6 lb/year cannot predict concentration change in \u00b5g/m\u00b3. The maximum +1.29 \u00b5g/m\u00b3 monitor is unlocated in the public abstract. The earlier 8\u201315% concentration-reduction claim is withdrawn.",
+  "multipliers": {
+    "pm25_g_m2_yr": 0.24,
+    "no2_g_m2_yr": 0.7,
+    "o3_g_m2_yr": 1.2,
+    "wall_eff": 0.5,
+    "roof_eff": 0.35,
+    "rain_m_yr": 1.27
+  },
+  "hw_context": {
+    "median": 0.38,
+    "tall": 0.43,
+    "segments_over_0_5": 1,
+    "segments_total": 10
+  },
+  "validation_notes": {
+    "pm25_rate_source": "Historical NYC value 0.24 g/m\u00b2/year, Nowak et al. (2013); USDA reproduction Table 1.",
+    "capacity": "180 trees is an assumed program, not calculated capacity in six bays.",
+    "maturity": "7 m crown diameter per tree assumes maturity; not a planting-day benefit.",
+    "wall_roof_weights": "0.5 and 0.35 are unvalidated project assumptions.",
+    "other_pollutants": "NO2 is a US-average proxy. O3 rate is untraced. Neither supports a claim of underestimation.",
+    "stormwater": "7.2 million US gallons/year is an unvalidated complete-program illustration."
+  }
 }

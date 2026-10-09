@@ -1,0 +1,29 @@
+{
+  "status": "Illustrative architectural concept; not surveyed or structurally validated",
+  "units": "meters",
+  "deck_length_m": 240.0,
+  "deck_width_m": 34.0,
+  "deck_area_m2": 8160.0,
+  "deck_area_acres": 2.02,
+  "roadway_width_m": 30.0,
+  "lanes_each_direction": 3,
+  "lane_width_m": 3.5,
+  "girder_underside_m": 6.6,
+  "park_surface_m": 9.6,
+  "supports": "Side abutments outside roadway; no supports in vehicle lanes",
+  "cutaway": "One deck quadrant omitted for visibility; not a construction proposal",
+  "limitations": [
+    "Road grades, ramps, utilities, clearance and right of way are not surveyed.",
+    "Loads, foundations, fire safety, tunnel ventilation, drainage and access require engineering.",
+    "No modeled PM2.5 improvement or construction cost is claimed."
+  ],
+  "mesh_objects": 3062,
+  "deliverables": [
+    "deegan-garden-deck.blend",
+    "exports/deegan-garden-deck.glb",
+    "exports/deegan-garden-deck-cutaway.glb",
+    "renders/park-overview.png",
+    "renders/deck-cutaway.png",
+    "renders/cross-section.png"
+  ]
+}

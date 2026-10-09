@@ -21,7 +21,7 @@ Primary pulls are fetched by `analysis/fetch_data.py` into `data/raw/` and reduc
 | **Grain** | 10-minute block × detection group × detection region × vehicle class × time period |
 | **Derived output** | `data/derived/crz.json`, `data/derived/one_day.json` |
 
-**What we used it for.** Total CRZ and excluded-roadway entries for calendar 2025; the complete gate and region inventory that establishes there is no Bronx detection region; monthly totals; hour-of-day profiles by vehicle class; the peak versus overnight share comparison that produces the truck-retiming finding; and one full ten-minute day (Tuesday, 2025-03-11) animated on the map.
+**What we used it for.** Total CRZ and excluded-roadway entries for calendar 2025; the complete gate and region inventory that establishes there is no Bronx detection region; monthly totals; hour-of-day profiles by vehicle class; the descriptive peak versus overnight share comparison, which cannot identify retiming without a pre-period; and one full ten-minute day (Tuesday, 2025-03-11) animated on the map.
 
 **Limitations.** This is the single most important caveat in the project: **the file begins on the first tolled day and contains no pre-toll observations.** No before/after test is possible on it, and any such statistic computed from it is an artifact. We use it descriptively only. It also covers cordon entry points exclusively, so it observes nothing on any Bronx roadway. Class totals in `crz.json` span the full file rather than calendar 2025; the 2025 headline totals come from a separately scoped query.
 
@@ -40,7 +40,7 @@ Primary pulls are fetched by `analysis/fetch_data.py` into `data/raw/` and reduc
 | **Grain** | Hour × facility × direction, aggregated by us to day, month, and year |
 | **Derived output** | `data/derived/bt.json` |
 
-**What we used it for.** All causal work. Calendar 2024-to-2025 facility changes; a monthly facility panel; and the two difference-in-differences event studies (Bronx-adjacent crossings versus far controls, and cordon-crossing tunnels versus the same controls as a positive control), with CR1 cluster-robust standard errors and exact wild cluster bootstrap p-values.
+**What we used it for.** The bridge traffic comparisons. Calendar 2024-to-2025 facility changes; a monthly facility panel; and the two difference-in-differences event studies (Bronx-adjacent crossings versus far controls, and zone-serving tunnels versus the same comparison bridges as a separate check), with CR1 cluster-robust standard errors and wild cluster bootstrap p-values.
 
 **Limitations.** Covers MTA Bridges and Tunnels facilities only. It does not observe Port Authority crossings, free East River bridges, or any expressway or surface street, which means it cannot see traffic on the Major Deegan, Bruckner, or Cross Bronx. Facility counts are total crossings and do not break out vehicle class in our aggregation. With only ten facilities, the cluster count is small and constrains achievable p-values (floor of 1/2^(G−1): 0.016 at G = 7, 0.062 at G = 5).
 
@@ -153,22 +153,25 @@ None of these were recomputed by us. Each is reported as published, with its cit
 | **URL** | https://doi.org/10.21203/rs.3.rs-8158429/v1 |
 | **Coverage** | Six real-time NYCCAS monitoring sites, 2025 |
 
-**What we used.** PM2.5 coefficients at four reported sites: Queensboro Bridge −9.08 percent (the only significant decrease), Williamsburg Bridge +6.30 percent, Cross Bronx Expressway +3.74 percent, Broadway at West 35th Street +2.46 percent; NO2 down 23 percent in Manhattan with increases up to 33 percent in the eastern boroughs.
+**What we used.** PM2.5 concentration coefficients at four reported sites: Queensboro Bridge −9.08 µg/m³ (the only significant decrease), Williamsburg Bridge +6.30 µg/m³, Cross Bronx Expressway +3.74 µg/m³, Broadway at West 35th Street +2.46 µg/m³; NO2 down 23 percent in Manhattan with increases up to 33 percent in the eastern boroughs.
 
-**Limitations.** Preprint status means no peer review. Six sites were tested at α = 0.05, giving a family-wise error rate near 26 percent, so the single significant decrease may not survive a Benjamini-Hochberg correction. Site coverage is sparse relative to the geography being described.
+**Limitations.** Preprint status means no peer review. Six sites were tested separately, so multiple comparisons should be considered. No adjusted p-values were recomputed by this project. The published p < 0.001 results should not be described as failing a multiple-testing correction without a calculation. Site coverage is sparse. The daily-average model compares July 2024–June 2025 with July 2023–June 2024, splitting each season on January 5. Positive coefficients are higher than a seasonal counterfactual; all sites' raw January–June averages fell. These are µg/m³ coefficients, not percentages. The original source was checked directly on October 9, 2026; the earlier unit transcription was corrected.
 
-### 8. South Bronx Unite with Columbia, Brown, and CU Boulder: community sensors
+### 8. South Bronx Unite: community-managed air sensor network
 
 | | |
 |---|---|
-| **Type** | Transcribed published result |
-| **Citation** | South Bronx Unite with Columbia University, Brown University, and CU Boulder (2026) |
-| **URL** | https://www.southbronxunite.org/press-and-media/slight-increase-in-air-pollution-post-congestion-pricing |
-| **Coverage** | 19 community PM2.5 sensors, calendar 2024 versus 2025 |
+| **Type** | Transcribed primary public abstract; no raw monitor readings obtained |
+| **Study** | *Impacts of New York City's Congestion Pricing Policy on PM2.5 in the South Bronx: Evidence from a Community-Managed Air Sensor Network*, Alexander G. De Jesus and colleagues (2026) |
+| **URL** | https://www.southbronxunite.org/s/DeJesus-Congestion-Pricing-Abstract.pdf |
+| **Coverage** | Hourly PM2.5, 19 monitors, January 2024–December 2025; selected from a 65-monitor network |
+| **Model** | Generalized additive mixed models; seasonality, temperature, humidity, wind speed and residential heating; monitor random effects and AR1 autocorrelation |
 
-**What we used.** Increases at 12 to 14 of 19 sensors; mean change +0.22 µg/m³; peak +1.29 µg/m³ at the Major Deegan and Third Avenue Bridge, which is the sensor nearest our design site.
+**Results transcribed.** Estimated policy-period step increase +0.22 µg/m³ across the network (95% interval +0.12 to +0.32). Four highway-adjacent monitors had statistically significant increases; the maximum was +1.29 µg/m³ (interval +0.85 to +1.70). Two monitors had significant decreases, including −0.69 µg/m³ at a community garden (interval −1.10 to −0.28). Thirteen did not show a clear change. These are adjusted hourly estimates, not unadjusted annual averages.
 
-**Limitations.** Low-cost community sensors require humidity correction and co-location calibration; the comparison is a year-over-year difference rather than a controlled design, so it does not isolate a congestion-pricing effect from weather, regional background, or local activity. We cite it as a measurement of what the air did, not as evidence of a diversion mechanism.
+**Why +1.29 matters.** It is 5.9 times the +0.22 estimated network change, and its interval is entirely above zero under this model. That compares changes, not pollution concentrations. The abstract supplies no matched reference concentration, so a supported percentage change cannot be calculated. Fraser's 13.8 µg/m³ is a different study's denominator and must not be reused here.
+
+**Location and interpretation.** The primary abstract does not identify the maximum monitor's address. The old Deegan / East 138th attribution is withdrawn; legacy coordinates in the browser bundle are approximate regional context, explicitly marked unverified. The campaign describes the study as undergoing peer review. The model adjusts for several potential confounders but does not establish drivers' routes or prove a traffic-diversion mechanism. Raw observations were not obtained or recomputed by this project.
 
 ### 9. NYC DOHMH: congestion pricing air quality report
 
@@ -219,11 +222,9 @@ None of these were recomputed by us. Each is reported as published, with its cit
 | **URL** | https://doi.org/10.1016/j.envpol.2013.03.050 |
 | **Applied in** | `data/derived/itree.json` |
 
-**What we used.** Annual removal multipliers per square meter of effective canopy: PM2.5 0.24 g/m²/yr, NO2 0.70 g/m²/yr, O3 1.20 g/m²/yr, with green wall weighted at 0.5 effectiveness and green roof at 0.35, and 1.27 m of annual rainfall for the stormwater estimate. Applied to a program of 180 open-crown trees, 40,000 ft² of green wall, 8 acres of green roof, and 36 bioswales, this yields about 10.6 lb/yr PM2.5, 31.0 lb/yr NO2, 53.2 lb/yr O3, and about 7.2 million gallons per year of stormwater interception, plus 25 lb/yr of additional PM2.5 removal from the 12.9-acre Deegan cap concept.
+**Illustrative PM2.5 calculation.** The earlier complete program assumes 180 trees with 7 m mature crown diameter (6,927 m²), 40,000 ft² wall (3,716 m² weighted at 0.5) and 8 acres roof (32,375 m² weighted at 0.35). Effective area is about 20,116 m²; multiplying by the historical NYC PM2.5 rate of 0.24 g/m²/year gives 4,828 g/year = 10.6 lb/year. Trees alone give 3.7 lb/year. The rate is reproduced in Table 1 of the [US Forest Service paper](https://www.fs.usda.gov/nrs/pubs/jrnl/2014/nrs_2014_nowak_002.pdf). Capacity, mature crowns, wall/roof weights and local transferability are unvalidated. The 7.2 million US gallons/year stormwater total is a complete-program illustration, not a measured outcome.
 
-**Where each multiplier comes from.** PM2.5 at 0.24 g/m²/yr is the New York City value in Nowak, Hirabayashi, Bodine and Hoehn (2013), cited above. NO2 at 0.70 g/m²/yr is the conterminous-US urban-area average in Nowak, Hirabayashi, Bodine and Greenfield, "Tree and forest effects on air quality and human health in the United States," *Environmental Pollution* 193:119-129 (2014), Table 5; it is a published figure, but not a New York one. O3 at 1.20 g/m²/yr cannot be traced to a published source: the same 2014 table gives 5.40 g/m²/yr for urban areas, and Nowak, Crane and Stevens (2006) gives 3.7 g/m²/yr for New York. Both the NO2 and O3 rates therefore fall below the published values, so the NO2 and O3 removal figures above understate removal.
-
-**Limitations.** This is a planning-grade calculation, not an i-Tree Eco field run and not a dispersion model. It assumes a 7 m crown diameter at maturity and applies flat literature rates rather than species-specific, leaf-area-indexed, local-meteorology-driven deposition. The 8-to-15 percent street-level PM2.5 reduction range is a literature range, not our own estimate. Treat every figure here as an order-of-magnitude planning number, which is exactly how the submission uses it.
+**Withdrawn claims.** Mass removal cannot establish an 8–15% concentration reduction. The 180 trees were assumed, not calculated from bay capacity. The public abstract does not locate the +1.29 µg/m³ maximum at a Deegan sensor. NO2 uses a US-average proxy and O3 uses an untraced rate; comparison with higher published rates does not establish that our scenario understates removal. The archived 12.9-acre deck and 25 lb/year illustration do not apply to the compact 2.02-acre model; a lid moves exhaust to portals instead of removing it.
 
 ### 13. Cornell Urban Horticulture Institute: species salt tolerance
 
@@ -284,3 +285,7 @@ None of these were recomputed by us. Each is reported as published, with its cit
 **What we used it for.** A short derived fact that selected Mott Haven / Melrose tracts near the design site are CD Eligible with high low-moderate income share (`lomod_pct`). Support only; not a headline figure on the map.
 
 **Limitations.** Tract boundaries are not the East 138th corridor. We report only sampled CD Eligible tracts we can place near the site; we do not invent eligibility.
+
+## Additional official highway check, added October 9, 2026
+
+[NYC Health’s Detailed Traffic Analysis Methodology appendix](https://a816-dohbesp.nyc.gov/IndicatorPublic/data-features/congestion-pricing-report/embeds/CRZ_Report_Appendix.pdf), attached to the August 14, 2026 report, Tables A-1 and A-2: Major Deegan annual-average daily traffic 129,955 → 128,727 vehicles/day (−0.94%); trucks 10,326 → 10,296/day (−0.29%), 2024–2025. These are seasonally adjusted estimates from periodic weekday short counts, using regional continuous-counter factors. Site C / NYSDOT 010021 (01S000001) covers Willis Avenue overpass to East 138th access. This source was checked separately and was not added to the saved MTA model. It does not identify the cause of changes at community sensors. NYC Health’s separate integrated-monitor air model finds no significant pricing-related PM2.5 change at the evaluated EJ sites; this differs from the community hourly-sensor result.

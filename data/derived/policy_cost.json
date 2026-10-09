@@ -1,6 +1,6 @@
 {
-  "as_of": "2026-09-18",
-  "note": "Facts only from the cited public URLs. No I-87 lid cost estimate exists. The 12.9-acre Deegan span is this project's measured land, not a NYSDOT acreage.",
+  "as_of": "2026-10-09",
+  "note": "Archived policy references with corrected scenario labels. The deck has no verified site-specific cost or committed funding; original acreage is unsurveyed.",
   "cbdtp": {
     "name": "Central Business District Tolling Program",
     "also_called": "Congestion Relief Zone",
@@ -23,12 +23,12 @@
     "overnight_rule": "75 percent less than the matching peak rate. No crossing credits overnight.",
     "phase1_ezpass_usd": {
       "years": "2025-2027",
-      "car_peak": 9.00,
+      "car_peak": 9.0,
       "car_overnight": 2.25,
-      "small_truck_peak": 14.40,
-      "small_truck_overnight": 3.60,
-      "large_truck_peak": 21.60,
-      "large_truck_overnight": 5.40
+      "small_truck_peak": 14.4,
+      "small_truck_overnight": 3.6,
+      "large_truck_peak": 21.6,
+      "large_truck_overnight": 5.4
     },
     "urls": [
       "https://www.nysenate.gov/legislation/laws/VAT/1704",
@@ -58,12 +58,13 @@
       "https://forestforall.nyc/costs-city-plant-tree-why/",
       "https://www.nycgovparks.org/pagefiles/212/Tree-Fund-Application-FY26-Costs__693c9303421dc.pdf",
       "https://www.nycgovparks.org/services/forestry/faq"
-    ]
+    ],
+    "validation_note": "FY25 $3,110 citywide planting average attributed to Commissioner Susan Donoghue at the March 20, 2025 Council hearing, 0:46:17. 180 \u00d7 $3,110 = $559,800 is an illustrative planting component, not a full program quote."
   },
   "green_infrastructure": {
     "program": "NYC DEP Green Infrastructure Program",
     "citywide_commitment_usd": 3500000000,
-    "still_accurate": true,
+    "still_accurate": null,
     "encumber_by": "2040-12",
     "expend_by": "2045-12",
     "cso_cut_target_mgy_by_2040": 1670,
@@ -100,21 +101,34 @@
       "https://www.nyc.gov/assets/dep/downloads/pdf/water/stormwater/green-infrastructure/gi-annual-report-2025.pdf",
       "https://www.nyc.gov/assets/dep/downloads/pdf/water/stormwater/green-infrastructure/gi-annual-report-presentation.pdf",
       "https://comptroller.nyc.gov/reports/audit-report-on-the-department-of-design-and-constructions-oversight-of-maintenance-of-rain-gardens-during-the-guarantee-periods/"
-    ]
+    ],
+    "validation_note": "Historical citywide program references are not committed funding or eligibility for this site. Specific contract/program details were not all reverified in this repair."
   },
   "highway_lid": {
     "klyde_warren": {
       "place": "Dallas, over Woodall Rodgers Freeway",
-      "acres_reported": [5.2, 5.4],
-      "cost_usd_reported": [110000000, 112000000],
+      "acres_reported": [
+        5.2,
+        5.4
+      ],
+      "cost_usd_reported": [
+        110000000,
+        112000000
+      ],
       "about_per_acre_usd": 21000000,
       "opened": "2012-10",
       "covers": "Phase I park deck + park amenities over recessed Woodall Rodgers Freeway. Public-private: City of Dallas $20M bonds, TxDOT $20M, federal stimulus $16.7M, private balance.",
       "not_this_number": "A ~$2B to $2.5B figure is not the park deck build cost. Public cites for ~$2B (and later higher) are economic-development / growth claims around the park, not construction. Separate Dallas highway rebuilds (e.g. I-30 Canyon ~$888M) and convention-center programs (up to multi-billion) are also not Klyde Warren's sticker.",
       "phase2_expansion": {
-        "acres_reported_about": [1.5, 1.7],
-        "cost_usd_reported_about": [100000000, 125000000],
-        "note": "Separate later deck expansion west of St. Paul / toward Akard. NCTCOG funding tables show construction totals near $111M to $125M as design matured; not part of the original $110M–$112M Phase I.",
+        "acres_reported_about": [
+          1.5,
+          1.7
+        ],
+        "cost_usd_reported_about": [
+          100000000,
+          125000000
+        ],
+        "note": "Separate later deck expansion west of St. Paul / toward Akard. NCTCOG funding tables show construction totals near $111M to $125M as design matured; not part of the original $110M\u2013$112M Phase I.",
         "urls": [
           "https://nctcog.org/getContentAsset/77676aec-1ba7-45cc-8283-b2d5bbd351ca/dfc3d011-8f63-43f6-9ed8-4b444333a1d0/presentationsrtc11132025.pdf",
           "https://www.dallasnews.com/news/politics/2021/06/23/klyde-warren-park-expansion-moves-forward-with-financial-approval-from-dallas-city-council/"
@@ -163,11 +177,11 @@
       }
     ],
     "project_span_acres": 12.9,
-    "project_span_note": "This project's measured I-87 / Major Deegan span, about East 138th to East 149th. Not a published NYSDOT acreage.",
+    "project_span_note": "Archived 12.9-acre illustrative corridor footprint, not surveyed land or the area of the compact 240 m \u00d7 34 m (2.02 acre) model.",
     "implied_at_20m_per_acre_usd": 258000000,
     "implied_at_90m_per_acre_usd": 1161000000,
-    "band_note": "The $20M to $90M+ per acre band is an order-of-magnitude reading of those public comps. 12.9 x $20M = $258M. 12.9 x $90M = $1.161B. No engineer has priced I-87.",
-    "owner": "I-87 here is NYSDOT. A federally funded lid needs FHWA NEPA. City actions also need CEQR. Land-use or park-map changes need ULURP.",
+    "band_note": "Archived assumed $20M\u2013$90M/acre band: 12.9 \u00d7 $20M = $258M; 12.9 \u00d7 $90M = $1.161B. Klyde Warren supports a historical low-end precedent only; the high end was not independently validated in this repair. This is not a price for the compact model.",
+    "owner": "Coordinate with roadway and land owners. Applicable structural, environmental and land-use approvals depend on the project; no legal approval pathway or construction schedule is established here.",
     "no_public_i87_lid_clock": true
   },
   "process_days": {

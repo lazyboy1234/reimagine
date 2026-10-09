@@ -2345,7 +2345,7 @@
    "n_obs": 168,
    "n_clusters": 7,
    "spec": "year-over-year change in log(monthly vehicles) ~ facility FE + month FE + treated x month-relative-to-Jan-2025 (Dec 2024 omitted); window 2024-01..2025-12",
-   "outcome_note": "YoY log change removes each facility's own seasonal pattern; coefficients read as percentage-point differences in year-over-year growth, treated minus control.",
+   "outcome_note": "Outcome is year-over-year log growth. The pct fields are 100 * (exp(coef) - 1): relative changes in growth factors, not exact percentage-point differences between growth rates.",
    "se": "CR1 cluster-robust by facility. Exact wild cluster bootstrap (Rademacher, 2^G draws) gives the pooled p-value; with G=7 its floor is 0.016.",
    "event_study": [
     {
@@ -2594,7 +2594,7 @@
    "n_obs": 120,
    "n_clusters": 5,
    "spec": "year-over-year change in log(monthly vehicles) ~ facility FE + month FE + treated x month-relative-to-Jan-2025 (Dec 2024 omitted); window 2024-01..2025-12",
-   "outcome_note": "YoY log change removes each facility's own seasonal pattern; coefficients read as percentage-point differences in year-over-year growth, treated minus control.",
+   "outcome_note": "Outcome is year-over-year log growth. The pct fields are 100 * (exp(coef) - 1): relative changes in growth factors, not exact percentage-point differences between growth rates.",
    "se": "CR1 cluster-robust by facility. Exact wild cluster bootstrap (Rademacher, 2^G draws) gives the pooled p-value; with G=5 its floor is 0.062.",
    "event_study": [
     {

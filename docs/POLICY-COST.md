@@ -1,17 +1,15 @@
-# Policy and cost facts
+# Planning costs and assumptions — reviewed October 9, 2026
 
-Congestion pricing is a 2019 New York State law. The MTA runs it. Tolls started on January 5, 2025.
+The FY25 citywide average planting cost of $3,110 per tree was stated by Parks Commissioner Susan Donoghue at the March 20, 2025 Council hearing (0:46:17). [Hearing transcript](https://citymeetings.nyc/meetings/new-york-city-council/2025-03-20-0100-pm-committee-on-parks-and-recreation/chapter/discussion-on-street-tree-planting-costs-and-allocation/).
 
-Cars pay to enter Manhattan at 60th Street and below. Trucks pay each time they enter. Night tolls are 75% cheaper than day tolls.
+The earlier scenario **assumed** 180 trees; no current survey proves capacity in the six candidate bays. 180 × $3,110 = **$559,800** is the illustrative planting component. It is not a full program quote, current bid, or committed site funding. Walls, roofs, drainage, utilities, maintenance and a highway deck require separate estimates.
 
-The FDR Drive and the West Side Highway are free if you stay on them.
+The complete greenery illustration gives about **10.6 lb/year PM2.5 removal**, including trees, walls and roofs. Trees alone give about 3.7 lb/year. Effective mature area of 20,116 m² × a historical NYC rate of 0.24 g/m²/year ÷ 453.592 g/lb = 10.6 lb/year. Wall and roof weights (0.5 and 0.35), capacity and maturity are assumptions. Pounds/year cannot predict a concentration reduction in µg/m³. The earlier 8–15% concentration benefit is withdrawn.
 
-A city street tree cost about $3,110 to plant in fiscal year 2025.
+Klyde Warren’s original Dallas park opened in 2012: **5.2 acres, about $110 million**, or approximately $21.2 million/acre in historical dollars. [LAF case study](https://www.landscapeperformance.org/case-study-briefs/klyde-warren-park), [FHWA project profile](https://www.fhwa.dot.gov/ipd/project_profiles/tx_klyde_warren_park.aspx). Its original funding arrangement does not supply money for a Bronx project. Cooling and modeled annual carbon sequestration are separate from PM2.5 benefits.
 
-DEP's rain-garden program is still $3.5 billion citywide. One neighborhood job can cost a few million dollars. The citywide job is billions.
+The archived 12.9-acre corridor was an unsurveyed planning footprint. Assuming $20M–$90M/acre produced $258M–$1.161B, rounded on the earlier site to $250M–$1.2B. Only the Dallas low-end precedent was verified in this repair; the high end remains an unvalidated scenario assumption. Neither this acreage nor its cost band prices the **240 m × 34 m / 2.02-acre compact 3D model**.
 
-A highway park lid is much bigger money. Dallas built Klyde Warren Park for about $110 million to $112 million on about 5.2 to 5.4 acres (Phase I park deck, opened 2012). That is the build cost for the park itself. A ~$2 billion to $2.5 billion figure is not that sticker; public cites at that scale are economic-impact / growth claims, or they belong to other Dallas highway and convention programs. A later Klyde Warren Phase 2 deck expansion is a separate roughly $100 million to $125 million job. Southern Gateway / Halperin Park over I-35E is another Dallas deck in the same family (~$172 million park; some reports near $300 million with highway work). Other U.S. lids cost about $20 million to $90 million or more per acre. Our 12.9-acre Deegan span would be about $258 million to $1.16 billion (about $250 million to $1.2 billion on the site). At Dallas's own ~$21 million per acre, the same acreage sits near the low end of that band. That is not a Parks tree contract.
+Roadway/land ownership, survey, utilities, structural loads, clearance, fire access, ventilation, drainage, soil and portal emissions must be established before a real design or budget. Applicable environmental and land-use approvals depend on the defined project. We have no approved schedule, committed funding, or verified nearby crash-project allocation available to reuse.
 
-I-87 is a state road. A lid needs NYSDOT and federal NEPA review, plus city CEQR. If land use changes, ULURP runs 60 days at the Community Board, 30 days at the Borough President, 60 days at City Planning, and 50 days at the City Council.
-
-Sources and exact numbers live in `data/derived/policy_cost.json`.
+Historical policy/program references remain in `data/derived/policy_cost.json`, labeled as archived context. Their existence is not site eligibility.

@@ -1,608 +1,615 @@
 {
- "street": "East 138th Street, Mott Haven",
- "method": {
-  "what": "Score each 120 m East 138th segment for new open-crown street trees. Open-top if H/W < 0.5. Flag the canyon. Weight the leftover canopy gap by how close the block sits to the SBU Deegan peak.",
-  "not_a_pvalue_for_canyon": "H/W 0.5 is a street-canyon typology cutoff. Grubbs on these 10 ratios does not call 0.58 an outlier at \u03b1=0.05.",
-  "real_test": "\u03c7\u00b2 of living street-tree counts versus a flat rate on the 10 scored segments. That test says the trees are clustered, so the empty open blocks are the plant region.",
-  "fraser_22pct": "Fraser et al. daily-max PM2.5 inside the CRZ versus a modeled no-toll counterfactual. Not a tree number. Not recomputed. Dataset: timothyfraser/nyc_congestion_rep. We used monitor coordinates only.",
-  "hw_threshold": 0.5,
-  "weights": {
-   "gap": 0.65,
-   "proximity_to_sbu_peak": 0.35,
-   "canyon_plant_weight": 0.15
+  "street": "East 138th Street, Mott Haven",
+  "method": {
+    "what": "Legacy proximity-based score retained for provenance; withdrawn from visible decisions. Use archived count and H/W to identify survey candidates only.",
+    "not_a_pvalue_for_canyon": "H/W 0.5 is a street-canyon typology cutoff. Grubbs on these 10 ratios does not call 0.58 an outlier at \u03b1=0.05.",
+    "real_test": "\u03c7\u00b2 of living street-tree counts versus a flat rate on the 10 scored segments. That test says the trees are clustered, so the empty open blocks are the plant region.",
+    "fraser_22pct": "Fraser et al. daily-max PM2.5 inside the CRZ versus a modeled no-toll counterfactual. Not a tree number. Not recomputed. Dataset: timothyfraser/nyc_congestion_rep. We used monitor coordinates only.",
+    "hw_threshold": 0.5,
+    "weights": {
+      "gap": 0.65,
+      "proximity_to_sbu_peak": 0.35,
+      "canyon_plant_weight": 0.15
+    },
+    "target_trees_per_100m": 5.83,
+    "target_source": "mean count on the 10 scored 120 m bins (\u03c7\u00b2 expected rate)"
   },
-  "target_trees_per_100m": 5.83,
-  "target_source": "mean count on the 10 scored 120 m bins (\u03c7\u00b2 expected rate)"
- },
- "fraser_22pct": {
-  "cite": "Fraser et al., npj Clean Air 1:39 (2025). https://www.nature.com/articles/s44407-025-00037-2",
-  "dataset": "https://github.com/timothyfraser/nyc_congestion_rep",
-  "crz_pct": -22,
-  "crz_ugm3": -3.05,
-  "crz_baseline_ugm3": 13.8,
-  "five_boroughs_ugm3": -1.07,
-  "metro_ugm3": -0.7,
-  "recomputed": false,
-  "why_not": "Their ATT needs the monitor-day panel, meteorology, ACS 1 km buffers, and 1000-draw Monte Carlo. We do not have a local rebuild of that model. Taking -22% as a tree siting input would be the wrong use of the paper.",
-  "nearest_official_monitor": {
-   "name": "Mott Haven",
-   "site_id": "36005NY11534",
-   "lon": -73.922487,
-   "lat": 40.806486,
-   "address": "North side of E 135th St between Brown Pl and Willis Ave",
-   "dist_km_from_e138_mid": 0.331,
-   "in_crz_six": false
+  "fraser_22pct": {
+    "cite": "Fraser et al., npj Clean Air 1:39 (2025). https://www.nature.com/articles/s44407-025-00037-2",
+    "dataset": "https://github.com/timothyfraser/nyc_congestion_rep",
+    "crz_pct": -22,
+    "crz_ugm3": -3.05,
+    "crz_baseline_ugm3": 13.8,
+    "five_boroughs_ugm3": -1.07,
+    "metro_ugm3": -0.7,
+    "recomputed": false,
+    "why_not": "Their ATT needs the monitor-day panel, meteorology, ACS 1 km buffers, and 1000-draw Monte Carlo. We do not have a local rebuild of that model. Taking -22% as a tree siting input would be the wrong use of the paper.",
+    "nearest_official_monitor": {
+      "name": "Mott Haven",
+      "site_id": "36005NY11534",
+      "lon": -73.922487,
+      "lat": 40.806486,
+      "address": "North side of E 135th St between Brown Pl and Willis Ave",
+      "dist_km_from_e138_mid": 0.331,
+      "in_crz_six": false
+    },
+    "nearest_crz_monitor": {
+      "name": "Queensboro Bridge",
+      "site_id": "36061NY10130",
+      "dist_km_from_e138_mid": 6.364
+    }
   },
-  "nearest_crz_monitor": {
-   "name": "Queensboro Bridge",
-   "site_id": "36061NY10130",
-   "dist_km_from_e138_mid": 6.364
-  }
- },
- "community": {
-  "grain": "Neighborhood / PUMA, not block. Hunts Point, Longwood & Melrose (PUMA 3710) plus HVI ZCTAs 10451/10454/10455/10459 and the Hunts Point\u2013Mott Haven asthma report. The same number sits on every East 138th segment.",
-  "poverty_rate": 0.293,
-  "poverty_city": 0.2032,
-  "poverty_vs_city": 1.442,
-  "nfh_rank": 51,
-  "nfh_score_rank": "Bottom",
-  "hvi": 5,
-  "hvi_scale_max": 5,
-  "hvi_frac": 1.0,
-  "asthma_adult_ed_per10k": 193.5,
-  "asthma_adult_ed_city": 66.4,
-  "asthma_vs_city": 2.914,
-  "veg_cover_2017_pct": 18,
-  "nyc_canopy_2021_pct": 23.4,
-  "canopy_gap_pp": 5.4,
-  "does_not_rank_blocks": true
- },
- "benefit": {
-  "sbu_peak_site": "Major Deegan / Third Ave Bridge",
-  "sbu_peak_change_ugm3": 1.29,
-  "sbu_peak_lon": -73.931,
-  "sbu_peak_lat": 40.8072,
-  "itree_street_level_pm25_reduction_pct_range": [
-   8,
-   15
+  "community": {
+    "grain": "Neighborhood / PUMA, not block. Hunts Point, Longwood & Melrose (PUMA 3710) plus HVI ZCTAs 10451/10454/10455/10459 and the Hunts Point\u2013Mott Haven asthma report. The same number sits on every East 138th segment.",
+    "poverty_rate": 0.293,
+    "poverty_city": 0.2032,
+    "poverty_vs_city": 1.442,
+    "nfh_rank": 51,
+    "nfh_score_rank": "Bottom",
+    "hvi": 5,
+    "hvi_scale_max": 5,
+    "hvi_frac": 1.0,
+    "asthma_adult_ed_per10k": 193.5,
+    "asthma_adult_ed_city": 66.4,
+    "asthma_vs_city": 2.914,
+    "veg_cover_2017_pct": 18,
+    "nyc_canopy_2021_pct": 23.4,
+    "canopy_gap_pp": 5.4,
+    "does_not_rank_blocks": true
+  },
+  "benefit": {
+    "sbu_peak_site": "Major Deegan / Third Ave Bridge",
+    "sbu_peak_change_ugm3": 1.29,
+    "sbu_peak_lon": -73.931,
+    "sbu_peak_lat": 40.8072,
+    "itree_street_level_pm25_reduction_pct_range": [
+      8,
+      15
+    ],
+    "itree_range_is_literature": true,
+    "itree_honesty": "About 11 lb/yr of PM2.5 removed across the corridor does not offset a +1.29 ug/m3 ambient rise at the Deegan sensor. Vegetation is a breathing-height intervention; the source is the highway.",
+    "note": "Unlocated +1.29 \u00b5g/m\u00b3 maximum adjusted South Bronx estimate. Do not identify a Deegan monitor or claim site-specific mitigation from this value.",
+    "sbu_peak_location_verified": false
+  },
+  "tests": {
+    "tree_clustering_chisquare": {
+      "n_segments": 10,
+      "trees_in_scored_segments": 70,
+      "expected_per_segment": 7.0,
+      "chi2": 58.857,
+      "p": 2.2247983161994177e-09,
+      "standardized_residuals": [
+        3.02,
+        -1.13,
+        -2.65,
+        -1.13,
+        1.89,
+        5.29,
+        -1.89,
+        -1.89,
+        -0.38,
+        -1.13
+      ],
+      "note": "Goodness-of-fit versus a flat 120 m rate. All expected cells are 7.0 (\u22655), so the \u03c7\u00b2 approximation holds. This is a clustering test, not a congestion-pricing effect."
+    },
+    "hw_grubbs": {
+      "n": 10,
+      "mean": 0.327,
+      "sd": 0.145,
+      "max": 0.58,
+      "G": 1.748,
+      "G_crit_two_sided_0.05": 2.29,
+      "significant_at_0.05": false,
+      "modified_z_at_max": 1.897,
+      "modified_z_outlier_cutoff": 3.5,
+      "note": "Grubbs two-sided \u03b1=0.05 on n=10 H/W values. G below critical means the 0.58 block is not a statistical outlier. The canyon flag is the 0.5 typology threshold, not this test."
+    },
+    "spearman_tph_vs_dist_sbu": {
+      "rho": -0.074,
+      "p": 0.8393207610060258,
+      "n": 10,
+      "note": "Two-sided Spearman of trees/100 m versus km to the SBU peak. n=10. Do not treat a large p as proof of no gradient."
+    }
+  },
+  "region": {
+    "definition": "Open-top (H/W < 0.5) segments whose living-tree count sits below the uniform expected count from the \u03c7\u00b2 test.",
+    "significance": "Clustering is the \u03c7\u00b2 result. The canyon flag is typology. Community burden is a neighborhood overlay, not a block test.",
+    "segment_ids": [
+      4,
+      3,
+      9,
+      5,
+      12,
+      11
+    ],
+    "n": 6
+  },
+  "corridor": {
+    "length_m": 1618.0,
+    "trees_on_band": 81,
+    "trees_per_100m_street": 5.0,
+    "hw_median": 0.38,
+    "hw_threshold": 0.5,
+    "segments_scored": 10,
+    "segments_open": 9,
+    "segments_canyon": 1,
+    "trees_in_dropped_bins": 11
+  },
+  "stations": [
+    {
+      "name": "Manhattan Bridge",
+      "site_id": "36061NY08454",
+      "lon": -73.997004,
+      "lat": 40.71651,
+      "zone": "crz",
+      "dist_km_e138_mid": 12.061
+    },
+    {
+      "name": "Hunts Point",
+      "site_id": "36005NY11790",
+      "lon": -73.885659,
+      "lat": 40.819092,
+      "zone": "bronx",
+      "dist_km_e138_mid": 3.331
+    },
+    {
+      "name": "Glendale",
+      "site_id": "36081NY08198",
+      "lon": -73.8734,
+      "lat": 40.707113,
+      "zone": "outer",
+      "dist_km_e138_mid": 12.123
+    },
+    {
+      "name": "Queens College",
+      "site_id": "36081NY09285",
+      "lon": -73.821556,
+      "lat": 40.737107,
+      "zone": "outer",
+      "dist_km_e138_mid": 11.739
+    },
+    {
+      "name": "Broadway/35th St",
+      "site_id": "36061NY09734",
+      "lon": -73.98783,
+      "lat": 40.75069,
+      "zone": "crz",
+      "dist_km_e138_mid": 8.505
+    },
+    {
+      "name": "FDR",
+      "site_id": "36061NY08653",
+      "lon": -73.974651,
+      "lat": 40.722288,
+      "zone": "crz",
+      "dist_km_e138_mid": 10.617
+    },
+    {
+      "name": "Mott Haven",
+      "site_id": "36005NY11534",
+      "lon": -73.922487,
+      "lat": 40.806486,
+      "zone": "bronx",
+      "dist_km_e138_mid": 0.331
+    },
+    {
+      "name": "Cross Bronx Expy",
+      "site_id": "36005NY12387",
+      "lon": -73.906143,
+      "lat": 40.845167,
+      "zone": "bronx",
+      "dist_km_e138_mid": 4.223
+    },
+    {
+      "name": "Van Wyck",
+      "site_id": "36081NY07615",
+      "lon": -73.80908,
+      "lat": 40.690155,
+      "zone": "outer",
+      "dist_km_e138_mid": 16.376
+    },
+    {
+      "name": "BQE",
+      "site_id": "36047NY07974",
+      "lon": -73.960824,
+      "lat": 40.702798,
+      "zone": "outer",
+      "dist_km_e138_mid": 12.274
+    },
+    {
+      "name": "Williamsburg",
+      "site_id": "36047NY08274",
+      "lon": -73.95938,
+      "lat": 40.710614,
+      "zone": "outer",
+      "dist_km_e138_mid": 11.404
+    },
+    {
+      "name": "Queensboro Bridge",
+      "site_id": "36061NY10130",
+      "lon": -73.963886,
+      "lat": 40.761234,
+      "zone": "crz",
+      "dist_km_e138_mid": 6.364
+    },
+    {
+      "name": "Williamsburg Bridge",
+      "site_id": "36061NY08552",
+      "lon": -73.986059,
+      "lat": 40.718073,
+      "zone": "crz",
+      "dist_km_e138_mid": 11.458
+    },
+    {
+      "name": "Hamilton Bridge",
+      "site_id": "36061NY12380",
+      "lon": -73.933023,
+      "lat": 40.846544,
+      "zone": "outer",
+      "dist_km_e138_mid": 4.211
+    },
+    {
+      "name": "Midtown-DOT",
+      "site_id": "36061NY09929",
+      "lon": -73.990415,
+      "lat": 40.755082,
+      "zone": "crz",
+      "dist_km_e138_mid": 8.284
+    },
+    {
+      "name": "Port Richmond",
+      "site_id": "36085NY04805",
+      "lon": -74.145883,
+      "lat": 40.627925,
+      "zone": "outer",
+      "dist_km_e138_mid": 27.564
+    },
+    {
+      "name": "SI Expwy",
+      "site_id": "36085NY03820",
+      "lon": -74.151182,
+      "lat": 40.609209,
+      "zone": "outer",
+      "dist_km_e138_mid": 29.414
+    }
   ],
-  "itree_range_is_literature": true,
-  "itree_honesty": "About 11 lb/yr of PM2.5 removed across the corridor does not offset a +1.29 ug/m3 ambient rise at the Deegan sensor. Vegetation is a breathing-height intervention; the source is the highway.",
-  "note": "Trees are a breathing-height kit on open tops. They do not reproduce the Fraser 22 percent, and about 11 lb/yr of PM2.5 does not cancel +1.29 \u00b5g/m\u00b3 at the Deegan sensor."
- },
- "tests": {
-  "tree_clustering_chisquare": {
-   "n_segments": 10,
-   "trees_in_scored_segments": 70,
-   "expected_per_segment": 7.0,
-   "chi2": 58.857,
-   "p": 2.2247983161994177e-09,
-   "standardized_residuals": [
-    3.02,
-    -1.13,
-    -2.65,
-    -1.13,
-    1.89,
-    5.29,
-    -1.89,
-    -1.89,
-    -0.38,
-    -1.13
-   ],
-   "note": "Goodness-of-fit versus a flat 120 m rate. All expected cells are 7.0 (\u22655), so the \u03c7\u00b2 approximation holds. This is a clustering test, not a congestion-pricing effect."
-  },
-  "hw_grubbs": {
-   "n": 10,
-   "mean": 0.327,
-   "sd": 0.145,
-   "max": 0.58,
-   "G": 1.748,
-   "G_crit_two_sided_0.05": 2.29,
-   "significant_at_0.05": false,
-   "modified_z_at_max": 1.897,
-   "modified_z_outlier_cutoff": 3.5,
-   "note": "Grubbs two-sided \u03b1=0.05 on n=10 H/W values. G below critical means the 0.58 block is not a statistical outlier. The canyon flag is the 0.5 typology threshold, not this test."
-  },
-  "spearman_tph_vs_dist_sbu": {
-   "rho": -0.074,
-   "p": 0.8393207610060258,
-   "n": 10,
-   "note": "Two-sided Spearman of trees/100 m versus km to the SBU peak. n=10. Do not treat a large p as proof of no gradient."
-  }
- },
- "region": {
-  "definition": "Open-top (H/W < 0.5) segments whose living-tree count sits below the uniform expected count from the \u03c7\u00b2 test.",
-  "significance": "Clustering is the \u03c7\u00b2 result. The canyon flag is typology. Community burden is a neighborhood overlay, not a block test.",
-  "segment_ids": [
-   4,
-   3,
-   9,
-   5,
-   12,
-   11
+  "segments": [
+    {
+      "i": 4,
+      "from": [
+        -73.926418,
+        40.811004
+      ],
+      "to": [
+        -73.925214,
+        40.810428
+      ],
+      "mid": [
+        -73.925816,
+        40.810716
+      ],
+      "hw": 0.37,
+      "width_m": 40.7,
+      "h_median_ft": 49.0,
+      "canyon": false,
+      "open_top": true,
+      "n_trees": 0,
+      "trees_per_100m": 0.0,
+      "dist_km_sbu_peak": 0.586,
+      "dist_km_nyccas_mott_haven": 0.547,
+      "gap": 1.0,
+      "prox_norm": 0.957,
+      "hw_weight": 1.0,
+      "below_uniform_expected": true,
+      "plant_score": 0.985,
+      "action": "plant",
+      "call": "open-top trees",
+      "rank": 1
+    },
+    {
+      "i": 3,
+      "from": [
+        -73.927622,
+        40.811581
+      ],
+      "to": [
+        -73.926418,
+        40.811004
+      ],
+      "mid": [
+        -73.92702,
+        40.811292
+      ],
+      "hw": 0.3,
+      "width_m": 41.7,
+      "h_median_ft": 41.4,
+      "canyon": false,
+      "open_top": true,
+      "n_trees": 4,
+      "trees_per_100m": 3.33,
+      "dist_km_sbu_peak": 0.565,
+      "dist_km_nyccas_mott_haven": 0.657,
+      "gap": 0.429,
+      "prox_norm": 1.0,
+      "hw_weight": 1.0,
+      "below_uniform_expected": true,
+      "plant_score": 0.629,
+      "action": "plant",
+      "call": "open-top trees",
+      "rank": 2
+    },
+    {
+      "i": 9,
+      "from": [
+        -73.9204,
+        40.808122
+      ],
+      "to": [
+        -73.919197,
+        40.807546
+      ],
+      "mid": [
+        -73.919798,
+        40.807834
+      ],
+      "hw": 0.46,
+      "width_m": 32.4,
+      "h_median_ft": 48.8,
+      "canyon": false,
+      "open_top": true,
+      "n_trees": 2,
+      "trees_per_100m": 1.67,
+      "dist_km_sbu_peak": 0.945,
+      "dist_km_nyccas_mott_haven": 0.271,
+      "gap": 0.714,
+      "prox_norm": 0.36,
+      "hw_weight": 1.0,
+      "below_uniform_expected": true,
+      "plant_score": 0.59,
+      "action": "plant",
+      "call": "open-top trees",
+      "rank": 3
+    },
+    {
+      "i": 5,
+      "from": [
+        -73.925214,
+        40.810428
+      ],
+      "to": [
+        -73.924011,
+        40.809851
+      ],
+      "mid": [
+        -73.924612,
+        40.81014
+      ],
+      "hw": 0.36,
+      "width_m": 46.0,
+      "h_median_ft": 53.8,
+      "canyon": false,
+      "open_top": true,
+      "n_trees": 4,
+      "trees_per_100m": 3.33,
+      "dist_km_sbu_peak": 0.629,
+      "dist_km_nyccas_mott_haven": 0.444,
+      "gap": 0.429,
+      "prox_norm": 0.871,
+      "hw_weight": 1.0,
+      "below_uniform_expected": true,
+      "plant_score": 0.584,
+      "action": "plant",
+      "call": "open-top trees",
+      "rank": 4
+    },
+    {
+      "i": 2,
+      "from": [
+        -73.928825,
+        40.812157
+      ],
+      "to": [
+        -73.927622,
+        40.811581
+      ],
+      "mid": [
+        -73.928224,
+        40.811869
+      ],
+      "hw": 0.15,
+      "width_m": 40.4,
+      "h_median_ft": 19.3,
+      "canyon": false,
+      "open_top": true,
+      "n_trees": 15,
+      "trees_per_100m": 12.5,
+      "dist_km_sbu_peak": 0.569,
+      "dist_km_nyccas_mott_haven": 0.769,
+      "gap": 0.0,
+      "prox_norm": 0.992,
+      "hw_weight": 1.0,
+      "below_uniform_expected": false,
+      "plant_score": 0.347,
+      "action": "stocked",
+      "call": "already thick",
+      "rank": 5
+    },
+    {
+      "i": 12,
+      "from": [
+        -73.91679,
+        40.806393
+      ],
+      "to": [
+        -73.915586,
+        40.805817
+      ],
+      "mid": [
+        -73.916188,
+        40.806105
+      ],
+      "hw": 0.08,
+      "width_m": 40.0,
+      "h_median_ft": 10.8,
+      "canyon": false,
+      "open_top": true,
+      "n_trees": 4,
+      "trees_per_100m": 3.33,
+      "dist_km_sbu_peak": 1.253,
+      "dist_km_nyccas_mott_haven": 0.532,
+      "gap": 0.429,
+      "prox_norm": 0.0,
+      "hw_weight": 1.0,
+      "below_uniform_expected": true,
+      "plant_score": 0.279,
+      "action": "plant",
+      "call": "open-top trees",
+      "rank": 6
+    },
+    {
+      "i": 7,
+      "from": [
+        -73.922807,
+        40.809275
+      ],
+      "to": [
+        -73.921604,
+        40.808699
+      ],
+      "mid": [
+        -73.922206,
+        40.808987
+      ],
+      "hw": 0.35,
+      "width_m": 48.6,
+      "h_median_ft": 55.1,
+      "canyon": false,
+      "open_top": true,
+      "n_trees": 12,
+      "trees_per_100m": 10.0,
+      "dist_km_sbu_peak": 0.766,
+      "dist_km_nyccas_mott_haven": 0.279,
+      "gap": 0.0,
+      "prox_norm": 0.627,
+      "hw_weight": 1.0,
+      "below_uniform_expected": false,
+      "plant_score": 0.22,
+      "action": "stocked",
+      "call": "already thick",
+      "rank": 7
+    },
+    {
+      "i": 8,
+      "from": [
+        -73.921604,
+        40.808699
+      ],
+      "to": [
+        -73.9204,
+        40.808122
+      ],
+      "mid": [
+        -73.921002,
+        40.80841
+      ],
+      "hw": 0.38,
+      "width_m": 34.4,
+      "h_median_ft": 42.8,
+      "canyon": false,
+      "open_top": true,
+      "n_trees": 21,
+      "trees_per_100m": 17.5,
+      "dist_km_sbu_peak": 0.852,
+      "dist_km_nyccas_mott_haven": 0.248,
+      "gap": 0.0,
+      "prox_norm": 0.493,
+      "hw_weight": 1.0,
+      "below_uniform_expected": false,
+      "plant_score": 0.172,
+      "action": "stocked",
+      "call": "already thick",
+      "rank": 8
+    },
+    {
+      "i": 11,
+      "from": [
+        -73.917993,
+        40.806969
+      ],
+      "to": [
+        -73.91679,
+        40.806393
+      ],
+      "mid": [
+        -73.917392,
+        40.806681
+      ],
+      "hw": 0.24,
+      "width_m": 33.3,
+      "h_median_ft": 26.6,
+      "canyon": false,
+      "open_top": true,
+      "n_trees": 6,
+      "trees_per_100m": 5.0,
+      "dist_km_sbu_peak": 1.147,
+      "dist_km_nyccas_mott_haven": 0.429,
+      "gap": 0.143,
+      "prox_norm": 0.112,
+      "hw_weight": 1.0,
+      "below_uniform_expected": true,
+      "plant_score": 0.132,
+      "action": "plant",
+      "call": "open-top trees",
+      "rank": 9
+    },
+    {
+      "i": 10,
+      "from": [
+        -73.919197,
+        40.807546
+      ],
+      "to": [
+        -73.917993,
+        40.806969
+      ],
+      "mid": [
+        -73.918595,
+        40.807258
+      ],
+      "hw": 0.58,
+      "width_m": 30.6,
+      "h_median_ft": 58.7,
+      "canyon": true,
+      "open_top": false,
+      "n_trees": 2,
+      "trees_per_100m": 1.67,
+      "dist_km_sbu_peak": 1.044,
+      "dist_km_nyccas_mott_haven": 0.339,
+      "gap": 0.714,
+      "prox_norm": 0.233,
+      "hw_weight": 0.15,
+      "below_uniform_expected": true,
+      "plant_score": 0.082,
+      "action": "canyon_walls",
+      "call": "walls + spaced trees",
+      "rank": 10
+    }
   ],
-  "n": 6
- },
- "corridor": {
-  "length_m": 1618.0,
-  "trees_on_band": 81,
-  "trees_per_100m_street": 5.0,
-  "hw_median": 0.38,
-  "hw_threshold": 0.5,
-  "segments_scored": 10,
-  "segments_open": 9,
-  "segments_canyon": 1,
-  "trees_in_dropped_bins": 11
- },
- "stations": [
-  {
-   "name": "Manhattan Bridge",
-   "site_id": "36061NY08454",
-   "lon": -73.997004,
-   "lat": 40.71651,
-   "zone": "crz",
-   "dist_km_e138_mid": 12.061
-  },
-  {
-   "name": "Hunts Point",
-   "site_id": "36005NY11790",
-   "lon": -73.885659,
-   "lat": 40.819092,
-   "zone": "bronx",
-   "dist_km_e138_mid": 3.331
-  },
-  {
-   "name": "Glendale",
-   "site_id": "36081NY08198",
-   "lon": -73.8734,
-   "lat": 40.707113,
-   "zone": "outer",
-   "dist_km_e138_mid": 12.123
-  },
-  {
-   "name": "Queens College",
-   "site_id": "36081NY09285",
-   "lon": -73.821556,
-   "lat": 40.737107,
-   "zone": "outer",
-   "dist_km_e138_mid": 11.739
-  },
-  {
-   "name": "Broadway/35th St",
-   "site_id": "36061NY09734",
-   "lon": -73.98783,
-   "lat": 40.75069,
-   "zone": "crz",
-   "dist_km_e138_mid": 8.505
-  },
-  {
-   "name": "FDR",
-   "site_id": "36061NY08653",
-   "lon": -73.974651,
-   "lat": 40.722288,
-   "zone": "crz",
-   "dist_km_e138_mid": 10.617
-  },
-  {
-   "name": "Mott Haven",
-   "site_id": "36005NY11534",
-   "lon": -73.922487,
-   "lat": 40.806486,
-   "zone": "bronx",
-   "dist_km_e138_mid": 0.331
-  },
-  {
-   "name": "Cross Bronx Expy",
-   "site_id": "36005NY12387",
-   "lon": -73.906143,
-   "lat": 40.845167,
-   "zone": "bronx",
-   "dist_km_e138_mid": 4.223
-  },
-  {
-   "name": "Van Wyck",
-   "site_id": "36081NY07615",
-   "lon": -73.80908,
-   "lat": 40.690155,
-   "zone": "outer",
-   "dist_km_e138_mid": 16.376
-  },
-  {
-   "name": "BQE",
-   "site_id": "36047NY07974",
-   "lon": -73.960824,
-   "lat": 40.702798,
-   "zone": "outer",
-   "dist_km_e138_mid": 12.274
-  },
-  {
-   "name": "Williamsburg",
-   "site_id": "36047NY08274",
-   "lon": -73.95938,
-   "lat": 40.710614,
-   "zone": "outer",
-   "dist_km_e138_mid": 11.404
-  },
-  {
-   "name": "Queensboro Bridge",
-   "site_id": "36061NY10130",
-   "lon": -73.963886,
-   "lat": 40.761234,
-   "zone": "crz",
-   "dist_km_e138_mid": 6.364
-  },
-  {
-   "name": "Williamsburg Bridge",
-   "site_id": "36061NY08552",
-   "lon": -73.986059,
-   "lat": 40.718073,
-   "zone": "crz",
-   "dist_km_e138_mid": 11.458
-  },
-  {
-   "name": "Hamilton Bridge",
-   "site_id": "36061NY12380",
-   "lon": -73.933023,
-   "lat": 40.846544,
-   "zone": "outer",
-   "dist_km_e138_mid": 4.211
-  },
-  {
-   "name": "Midtown-DOT",
-   "site_id": "36061NY09929",
-   "lon": -73.990415,
-   "lat": 40.755082,
-   "zone": "crz",
-   "dist_km_e138_mid": 8.284
-  },
-  {
-   "name": "Port Richmond",
-   "site_id": "36085NY04805",
-   "lon": -74.145883,
-   "lat": 40.627925,
-   "zone": "outer",
-   "dist_km_e138_mid": 27.564
-  },
-  {
-   "name": "SI Expwy",
-   "site_id": "36085NY03820",
-   "lon": -74.151182,
-   "lat": 40.609209,
-   "zone": "outer",
-   "dist_km_e138_mid": 29.414
+  "sources": [
+    "OTI Building Footprints 5zhs-2jue (height_roof)",
+    "2015 Street Tree Census uvpi-gqnh",
+    "Fraser et al., npj Clean Air 1:39 (2025). https://www.nature.com/articles/s44407-025-00037-2",
+    "South Bronx Unite with Columbia / Brown / CU Boulder (2026). https://www.southbronxunite.org/press-and-media/slight-increase-in-air-pollution-post-congestion-pricing",
+    "NYC Environment & Health Data Portal, Hunts Point\u2013Mott Haven. https://a816-dohbesp.nyc.gov/IndicatorPublic/neighborhood-reports/hunts_point_mott_haven/asthma_and_the_environment/",
+    "NYC Neighborhood Financial Health Digital Mapping and Data Tool (r3dx-pew9), year_published 2020. https://data.cityofnewyork.us/Business/Neighborhood-Financial-Health-Digital-Mapping-and-/r3dx-pew9",
+    "NYC Heat Vulnerability Index by ZCTA (4mhf-duep). https://data.cityofnewyork.us/Health/Heat-Vulnerability-Index-HVI-/4mhf-duep",
+    "https://github.com/timothyfraser/nyc_congestion_rep",
+    "https://github.com/nychealth/nyccas-data/blob/main/portal/station-new.csv"
+  ],
+  "validation_notes": {
+    "reviewed": "2026-10-09",
+    "status": "archived screening only; legacy score withdrawn",
+    "reason": "The public South Bronx abstract does not identify the maximum monitor location. Proximity-based planting scores, ranks and correlations are unvalidated and are not presented as planting priorities.",
+    "visible_rule": "n_trees < 7 and hw < 0.5 identifies six survey candidates; bay 10 requires airflow review. Counts are from 2015; no current planting capacity or safe spacing has been verified."
   }
- ],
- "segments": [
-  {
-   "i": 4,
-   "from": [
-    -73.926418,
-    40.811004
-   ],
-   "to": [
-    -73.925214,
-    40.810428
-   ],
-   "mid": [
-    -73.925816,
-    40.810716
-   ],
-   "hw": 0.37,
-   "width_m": 40.7,
-   "h_median_ft": 49.0,
-   "canyon": false,
-   "open_top": true,
-   "n_trees": 0,
-   "trees_per_100m": 0.0,
-   "dist_km_sbu_peak": 0.586,
-   "dist_km_nyccas_mott_haven": 0.547,
-   "gap": 1.0,
-   "prox_norm": 0.957,
-   "hw_weight": 1.0,
-   "below_uniform_expected": true,
-   "plant_score": 0.985,
-   "action": "plant",
-   "call": "open-top trees",
-   "rank": 1
-  },
-  {
-   "i": 3,
-   "from": [
-    -73.927622,
-    40.811581
-   ],
-   "to": [
-    -73.926418,
-    40.811004
-   ],
-   "mid": [
-    -73.92702,
-    40.811292
-   ],
-   "hw": 0.3,
-   "width_m": 41.7,
-   "h_median_ft": 41.4,
-   "canyon": false,
-   "open_top": true,
-   "n_trees": 4,
-   "trees_per_100m": 3.33,
-   "dist_km_sbu_peak": 0.565,
-   "dist_km_nyccas_mott_haven": 0.657,
-   "gap": 0.429,
-   "prox_norm": 1.0,
-   "hw_weight": 1.0,
-   "below_uniform_expected": true,
-   "plant_score": 0.629,
-   "action": "plant",
-   "call": "open-top trees",
-   "rank": 2
-  },
-  {
-   "i": 9,
-   "from": [
-    -73.9204,
-    40.808122
-   ],
-   "to": [
-    -73.919197,
-    40.807546
-   ],
-   "mid": [
-    -73.919798,
-    40.807834
-   ],
-   "hw": 0.46,
-   "width_m": 32.4,
-   "h_median_ft": 48.8,
-   "canyon": false,
-   "open_top": true,
-   "n_trees": 2,
-   "trees_per_100m": 1.67,
-   "dist_km_sbu_peak": 0.945,
-   "dist_km_nyccas_mott_haven": 0.271,
-   "gap": 0.714,
-   "prox_norm": 0.36,
-   "hw_weight": 1.0,
-   "below_uniform_expected": true,
-   "plant_score": 0.59,
-   "action": "plant",
-   "call": "open-top trees",
-   "rank": 3
-  },
-  {
-   "i": 5,
-   "from": [
-    -73.925214,
-    40.810428
-   ],
-   "to": [
-    -73.924011,
-    40.809851
-   ],
-   "mid": [
-    -73.924612,
-    40.81014
-   ],
-   "hw": 0.36,
-   "width_m": 46.0,
-   "h_median_ft": 53.8,
-   "canyon": false,
-   "open_top": true,
-   "n_trees": 4,
-   "trees_per_100m": 3.33,
-   "dist_km_sbu_peak": 0.629,
-   "dist_km_nyccas_mott_haven": 0.444,
-   "gap": 0.429,
-   "prox_norm": 0.871,
-   "hw_weight": 1.0,
-   "below_uniform_expected": true,
-   "plant_score": 0.584,
-   "action": "plant",
-   "call": "open-top trees",
-   "rank": 4
-  },
-  {
-   "i": 2,
-   "from": [
-    -73.928825,
-    40.812157
-   ],
-   "to": [
-    -73.927622,
-    40.811581
-   ],
-   "mid": [
-    -73.928224,
-    40.811869
-   ],
-   "hw": 0.15,
-   "width_m": 40.4,
-   "h_median_ft": 19.3,
-   "canyon": false,
-   "open_top": true,
-   "n_trees": 15,
-   "trees_per_100m": 12.5,
-   "dist_km_sbu_peak": 0.569,
-   "dist_km_nyccas_mott_haven": 0.769,
-   "gap": 0.0,
-   "prox_norm": 0.992,
-   "hw_weight": 1.0,
-   "below_uniform_expected": false,
-   "plant_score": 0.347,
-   "action": "stocked",
-   "call": "already thick",
-   "rank": 5
-  },
-  {
-   "i": 12,
-   "from": [
-    -73.91679,
-    40.806393
-   ],
-   "to": [
-    -73.915586,
-    40.805817
-   ],
-   "mid": [
-    -73.916188,
-    40.806105
-   ],
-   "hw": 0.08,
-   "width_m": 40.0,
-   "h_median_ft": 10.8,
-   "canyon": false,
-   "open_top": true,
-   "n_trees": 4,
-   "trees_per_100m": 3.33,
-   "dist_km_sbu_peak": 1.253,
-   "dist_km_nyccas_mott_haven": 0.532,
-   "gap": 0.429,
-   "prox_norm": 0.0,
-   "hw_weight": 1.0,
-   "below_uniform_expected": true,
-   "plant_score": 0.279,
-   "action": "plant",
-   "call": "open-top trees",
-   "rank": 6
-  },
-  {
-   "i": 7,
-   "from": [
-    -73.922807,
-    40.809275
-   ],
-   "to": [
-    -73.921604,
-    40.808699
-   ],
-   "mid": [
-    -73.922206,
-    40.808987
-   ],
-   "hw": 0.35,
-   "width_m": 48.6,
-   "h_median_ft": 55.1,
-   "canyon": false,
-   "open_top": true,
-   "n_trees": 12,
-   "trees_per_100m": 10.0,
-   "dist_km_sbu_peak": 0.766,
-   "dist_km_nyccas_mott_haven": 0.279,
-   "gap": 0.0,
-   "prox_norm": 0.627,
-   "hw_weight": 1.0,
-   "below_uniform_expected": false,
-   "plant_score": 0.22,
-   "action": "stocked",
-   "call": "already thick",
-   "rank": 7
-  },
-  {
-   "i": 8,
-   "from": [
-    -73.921604,
-    40.808699
-   ],
-   "to": [
-    -73.9204,
-    40.808122
-   ],
-   "mid": [
-    -73.921002,
-    40.80841
-   ],
-   "hw": 0.38,
-   "width_m": 34.4,
-   "h_median_ft": 42.8,
-   "canyon": false,
-   "open_top": true,
-   "n_trees": 21,
-   "trees_per_100m": 17.5,
-   "dist_km_sbu_peak": 0.852,
-   "dist_km_nyccas_mott_haven": 0.248,
-   "gap": 0.0,
-   "prox_norm": 0.493,
-   "hw_weight": 1.0,
-   "below_uniform_expected": false,
-   "plant_score": 0.172,
-   "action": "stocked",
-   "call": "already thick",
-   "rank": 8
-  },
-  {
-   "i": 11,
-   "from": [
-    -73.917993,
-    40.806969
-   ],
-   "to": [
-    -73.91679,
-    40.806393
-   ],
-   "mid": [
-    -73.917392,
-    40.806681
-   ],
-   "hw": 0.24,
-   "width_m": 33.3,
-   "h_median_ft": 26.6,
-   "canyon": false,
-   "open_top": true,
-   "n_trees": 6,
-   "trees_per_100m": 5.0,
-   "dist_km_sbu_peak": 1.147,
-   "dist_km_nyccas_mott_haven": 0.429,
-   "gap": 0.143,
-   "prox_norm": 0.112,
-   "hw_weight": 1.0,
-   "below_uniform_expected": true,
-   "plant_score": 0.132,
-   "action": "plant",
-   "call": "open-top trees",
-   "rank": 9
-  },
-  {
-   "i": 10,
-   "from": [
-    -73.919197,
-    40.807546
-   ],
-   "to": [
-    -73.917993,
-    40.806969
-   ],
-   "mid": [
-    -73.918595,
-    40.807258
-   ],
-   "hw": 0.58,
-   "width_m": 30.6,
-   "h_median_ft": 58.7,
-   "canyon": true,
-   "open_top": false,
-   "n_trees": 2,
-   "trees_per_100m": 1.67,
-   "dist_km_sbu_peak": 1.044,
-   "dist_km_nyccas_mott_haven": 0.339,
-   "gap": 0.714,
-   "prox_norm": 0.233,
-   "hw_weight": 0.15,
-   "below_uniform_expected": true,
-   "plant_score": 0.082,
-   "action": "canyon_walls",
-   "call": "walls + spaced trees",
-   "rank": 10
-  }
- ],
- "sources": [
-  "OTI Building Footprints 5zhs-2jue (height_roof)",
-  "2015 Street Tree Census uvpi-gqnh",
-  "Fraser et al., npj Clean Air 1:39 (2025). https://www.nature.com/articles/s44407-025-00037-2",
-  "South Bronx Unite with Columbia / Brown / CU Boulder (2026). https://www.southbronxunite.org/press-and-media/slight-increase-in-air-pollution-post-congestion-pricing",
-  "NYC Environment & Health Data Portal, Hunts Point\u2013Mott Haven. https://a816-dohbesp.nyc.gov/IndicatorPublic/neighborhood-reports/hunts_point_mott_haven/asthma_and_the_environment/",
-  "NYC Neighborhood Financial Health Digital Mapping and Data Tool (r3dx-pew9), year_published 2020. https://data.cityofnewyork.us/Business/Neighborhood-Financial-Health-Digital-Mapping-and-/r3dx-pew9",
-  "NYC Heat Vulnerability Index by ZCTA (4mhf-duep). https://data.cityofnewyork.us/Health/Heat-Vulnerability-Index-HVI-/4mhf-duep",
-  "https://github.com/timothyfraser/nyc_congestion_rep",
-  "https://github.com/nychealth/nyccas-data/blob/main/portal/station-new.csv"
- ]
 }

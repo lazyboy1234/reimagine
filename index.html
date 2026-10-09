@@ -229,6 +229,11 @@ h1,h2{
   padding:.45rem .55rem;
   border:1px solid #ddd;
 }
+.source-links{display:flex;flex-direction:column;gap:.35rem;margin:.8rem 0;font-size:13px;line-height:1.4}
+.source-links a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+.plate.explained{height:auto;min-height:0;overflow:visible}
+.plate.explained img{height:auto;max-height:none;width:100%;object-fit:contain}
+.plate.explained figcaption{position:static;height:auto;padding:.6rem .7rem;line-height:1.45}
 .counter-block .claim{
   margin:0 0 .25rem;
   font-weight:700;
@@ -241,6 +246,21 @@ h1,h2{
   color:var(--mute);
 }
 .dsets{margin:0}
+.deck-showcase{margin:.9rem 0 1.2rem;border:1px solid #d4d1c9;background:#f7f6f2}
+.deck-showcase img{display:block;width:100%;height:auto;aspect-ratio:16/11;object-fit:contain}
+.deck-showcase figcaption{padding:.65rem .8rem;font-size:13px;color:var(--mute)}
+.deck-showcase h3{margin:0 0 .25rem;color:var(--ink);font-size:16px}
+.deck-link{display:inline-block;margin-top:.5rem;padding:.5rem .75rem;background:var(--ink);color:white;font-weight:700}
+.deck-link:hover{color:white;background:var(--partner)}
+.design-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem;margin:1rem 0}
+.design-gallery figure{margin:0;min-width:0}
+.design-gallery img{display:block;width:100%;height:auto;aspect-ratio:2/3;object-fit:cover}
+.design-gallery h3{font-size:14px;margin:.4rem 0 .15rem}
+.design-gallery p{font-size:13px;color:var(--mute);margin:0}
+.deck-sources{font-size:13px;margin:.75rem 0}
+.deck-sources a{text-decoration:underline;display:block;margin-bottom:.3rem}
+.design-note{font-size:13px;color:var(--mute)}
+@media(max-width:700px){.design-gallery{grid-template-columns:1fr}.design-gallery img{max-height:38rem;object-fit:contain;background:#f7f6f2}}
 .dset{
   margin:0 0 .7rem;
   padding:0 0 .65rem;
@@ -318,6 +338,9 @@ h1,h2{
   margin:.35rem 0 .7rem;
 }
 .street-row figure{margin:0}
+.street-evidence{grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.street-evidence img{height:auto;min-height:0;object-fit:contain}
+.street-evidence figcaption{font-size:14px;line-height:1.5}
 .street-row img{
   width:100%;
   height:16vh;
@@ -503,6 +526,12 @@ h1,h2{
   .street-row{grid-template-columns:repeat(2,1fr)}
   .street-row img{height:22vh}
 }
+
+/* Figures with source captions flow at their natural ratio. */
+.step .plate.explained{height:auto;min-height:0;overflow:visible}
+.step .plate.explained img{height:auto;max-height:none}
+.step .plate.explained figcaption{position:static;height:auto}
+@media(max-width:600px){.street-row.street-evidence{grid-template-columns:1fr}.street-row.street-evidence img{height:auto}.sit-table{font-size:11px}.sit-table th,.sit-table td{padding:.35rem .25rem}}
 </style>
 </head>
 <body>
@@ -535,14 +564,15 @@ h1,h2{
             <tbody data-table="air"></tbody>
           </table>
         </div>
-        <figure class="plate captioned">
+        <figure class="plate captioned explained">
           <img src="story-art/slide-6/e138.jpg" alt="Looking north along the Major Deegan from the East 138th Street overpass." width="1920" height="1440">
-          <figcaption>The Major Deegan from the East 138th Street overpass. Trucks, cars and apartment windows share the same block.</figcaption>
+          <figcaption>Location context: the Major Deegan from East 138th Street, showing traffic close to homes. This photo supplies no pollution reading and does not locate the study's maximum monitor.</figcaption>
         </figure>
-        <figure class="plate captioned">
-          <img src="paper/refs/cornell-npj-fig1.png" alt="Fraser's paper, Figure 1. About 22 percent lower inside the paid zone." width="611" height="685">
+        <figure class="plate captioned explained">
+          <img src="paper/refs/cornell-npj-fig1.png" alt="Fraser et al., Figure 1: modeled pollution effects for metro, city and zone; the paid-zone daily maximum estimate was −3.05 micrograms per cubic meter, about 22 percent below its no-fee prediction." width="611" height="685">
           <figcaption data-cap="0"></figcaption>
         </figure>
+        <div class="source-links" data-story-sources></div>
       </article>
 
       <article class="step" data-step="1" data-story="spill" hidden aria-label="The test">
@@ -551,12 +581,15 @@ h1,h2{
         <div class="facts">
           <div class="copy" data-copy="lead"></div>
         </div>
-        <figure class="plate">
-          <img src="story-art/fig1-gates.svg" alt="Twelve fee gates by region. Bronx has zero, so any car spill had to show up on bridges, not gates." width="927" height="588">
+        <figure class="plate captioned explained">
+          <img src="story-art/fig1-gates.svg" alt="Count of 12 named congestion-zone entry-detection groups. No Bronx region is listed; this chart counts detection groups, not vehicles or physical toll gantries." width="927" height="588">
+          <figcaption data-cap="0"></figcaption>
         </figure>
-        <figure class="plate">
-          <img src="story-art/fig3-did.svg" alt="Bronx bridges stay about flat while tunnels into the paid zone drop." width="1152" height="683">
+        <figure class="plate captioned explained">
+          <img src="story-art/fig3-bridge-comparison.svg" alt="All of 2025 combined: four Bronx crossings had an adjusted relative growth difference of −1.04 percent, with a 95 percent interval from −3.63 to +1.61 that crosses zero. Two zone-serving MTA tunnels had −2.29 percent, interval −3.39 to −1.18; inference is limited by few crossings." width="920" height="500">
+          <figcaption data-cap="1"></figcaption>
         </figure>
+        <div class="source-links" data-story-sources></div>
       </article>
 
       <article class="step" data-step="2" data-story="controls" hidden aria-label="The check">
@@ -565,69 +598,40 @@ h1,h2{
         <div class="facts">
           <div class="copy" data-copy="lead"></div>
         </div>
-        <figure class="plate tall">
-          <img src="story-art/fig-change.svg" alt="Two charts. A: yearly PM2.5 change before vs after the fee. Downtown Manhattan down 1.14, Houston down 0.93, South Bronx sensors up 0.22 on average, the Deegan sensor up 1.29. B: official city roadside monitors. Queensboro Bridge down 9.1 percent, Broadway at W 35th up 2.5, Cross Bronx Expressway up 3.7, Williamsburg Bridge up 6.3." width="1218" height="1732">
+        <figure class="plate tall captioned explained">
+          <img src="story-art/fig-change.svg" alt="Two charts with different methods. A: downtown before/after means and Houston annual means alongside adjusted hourly South Bronx estimates of +0.22 network-wide and +1.29 at the largest highway-adjacent monitor, whose address is not published. B: a six-site preprint on official city roadside monitors. Model coefficients in micrograms per cubic meter: Queensboro −9.08, Broadway / W 35th +2.46, Cross Bronx +3.74, Williamsburg +6.30. These are not percentages." width="1218" height="1732">
+        <figcaption data-cap="0"></figcaption>
         </figure>
+        <div class="source-links" data-story-sources></div>
       </article>
 
-      <article class="step" data-step="3" data-story="scores" hidden aria-label="The problem">
-        <p class="beat"></p>
-        <h2></h2>
+      <article class="step" data-step="3" data-story="scores" hidden aria-label="Where to act">
+        <p class="beat"></p><h2></h2>
         <div class="facts">
           <div class="copy" data-copy="lead"></div>
+          <figure class="plate rank captioned explained">
+            <img src="story-art/fig-weights.svg" alt="Weights first, then the score: eight factor weights sum to 100 percent. Below, 35 finalist streets by dimensionless need and thousands of residents per kilometer. Legacy scores retain an unverified air-location proxy." width="560" height="720">
+            <figcaption data-cap="0"></figcaption>
+          </figure>
+          <div class="copy" data-copy="mid"></div>
           <table class="sit-table">
             <caption data-caption="rank"></caption>
-            <thead>
-              <tr><th>#</th><th>Street</th><th>Neighborhood</th><th>Need</th><th>People per km</th><th>Asthma ED</th><th>Monitor</th></tr>
-            </thead>
+            <thead><tr><th>Priority rank</th><th>Street</th><th>Health area</th><th>Need (0–1)</th><th>Residents/km</th><th>Adult asthma ED /10,000</th><th>Living trees /100 m</th></tr></thead>
             <tbody id="rank-equal-body"></tbody>
           </table>
-          <div class="street-row">
-            <figure>
-              <img src="story-art/slide-6/jerome-ave.jpg" alt="Jerome Avenue" width="1920" height="1440">
-              <figcaption>Jerome Ave, #1</figcaption>
-            </figure>
-            <figure>
-              <img src="story-art/slide-6/southern-blvd.jpg" alt="Southern Boulevard" width="800" height="600">
-              <figcaption>Southern Blvd</figcaption>
-            </figure>
-            <figure>
-              <img src="story-art/slide-6/e138.jpg" alt="East 138th Street" width="1920" height="1440">
-              <figcaption>East 138th, #4</figcaption>
-            </figure>
-            <figure>
-              <img src="story-art/slide-6/boone-ave.jpg" alt="Boone Avenue" width="1024" height="576">
-              <figcaption>Boone Ave</figcaption>
-            </figure>
-            <figure>
-              <img src="story-art/slide-6/e141.jpg" alt="East 141st Street" width="1024" height="576">
-              <figcaption>East 141st</figcaption>
-            </figure>
-            <figure>
-              <img src="story-art/slide-6/park-ave.jpg" alt="Park Avenue in Crotona" width="1024" height="576">
-              <figcaption>Park Ave</figcaption>
-            </figure>
-            <figure>
-              <img src="story-art/slide-6/e132.jpg" alt="East 132nd Street" width="1024" height="576">
-              <figcaption>East 132nd</figcaption>
-            </figure>
-            <figure>
-              <img src="story-art/slide-6/exterior-st.jpg" alt="Exterior Street" width="1024" height="768">
-              <figcaption>Exterior St</figcaption>
-            </figure>
+          <figure class="plate rank captioned explained">
+            <img src="story-art/fig-economics-map.svg" alt="Median income in US dollars and poverty percentage by historical NYC PUMA. Hunts Point, Longwood and Melrose, PUMA 3710, is outlined. Source: Neighborhood Financial Health, published 2020." width="1100" height="720">
+            <figcaption data-cap="1"></figcaption>
+          </figure>
+          <h3>Street context: what these archived views show</h3>
+          <div class="street-row street-evidence">
+            <figure><img src="story-art/slide-6/e132.jpg" alt="Archived East 132nd Street view: industrial frontage, parked vehicles and few visible sidewalk trees." width="1024" height="576"><figcaption><strong>East 132nd Street, near 620 E 132nd.</strong> Industrial frontage and few visible sidewalk trees. Google Street View archive; this image is context, not a current tree census.</figcaption></figure>
+            <figure><img src="story-art/slide-6/exterior-st.jpg" alt="Exterior Street under the elevated Major Deegan: overhead highway structure and few visible planting spaces." width="1024" height="768"><figcaption><strong>Exterior Street, beneath the Major Deegan.</strong> The overhead road shows why building-only street geometry can miss shade and planting constraints. Photo: imjustwalkin, Flickr, archived 2013.</figcaption></figure>
           </div>
-          <div class="copy" data-copy="mid"></div>
-          <div id="choices-list" class="dsets"></div>
+          <figure class="plate captioned explained"><img src="story-art/fig-tree-gaps.svg" alt="2015 census counts of living trees in ten 120-meter East 138th analysis bays. Bay 4 has zero; bay 8 has 21. These are archived counts, requiring a current field survey." width="1100" height="570"><figcaption data-cap="2"></figcaption></figure>
           <div class="copy" data-copy="tail"></div>
+          <div class="source-links" data-story-sources></div>
         </div>
-        <figure class="plate rank captioned">
-          <img src="story-art/fig-weights.svg" alt="Top: how much each of eight factors counts, old equal weights in gray and new weights in color. Bottom: need score against people per km for 35 finalist streets. Jerome Ave sits top right, East 138th near it, the Bronx Zoo road far right but low, a JFK cargo road bottom left." width="560" height="720">
-          <figcaption data-cap="0"></figcaption>
-        </figure>
-        <figure class="plate rank captioned">
-          <img src="story-art/map-citywide-heat.png" alt="Citywide heat map of corridor scores across four boroughs, with East 138th outlined." width="1200" height="1200">
-          <figcaption data-cap="1"></figcaption>
-        </figure>
       </article>
 
       <article class="step" data-step="4" data-story="location" hidden aria-label="The idea">
@@ -635,10 +639,11 @@ h1,h2{
         <h2></h2>
         <div class="facts">
           <div class="copy" data-copy="lead"></div>
+          <figure class="plate captioned explained"><img src="story-art/fig-tree-availability.svg" alt="East 138th archived tree-location map. Dots show 2015 living trees. Bay IDs match the table; green denotes survey candidates, gold airflow review and gray counts at or above the local mean." width="1100" height="740"><figcaption>Read the locations first, then the counts below. The straight analysis axis approximates a bending street; four unscored bins are shown dashed. This is an archived screening map, not surveyed planting space.</figcaption></figure>
           <table class="sit-table" id="tree-pick-table">
             <caption data-caption="blocks"></caption>
             <thead>
-              <tr><th>Block</th><th>H/W</th><th>Living trees</th><th>Gap vs 7</th><th>Score</th><th>Pick</th></tr>
+              <tr><th>Bay ID</th><th>H/W (ratio)</th><th>2015 trees (count)</th><th>Gap (trees)</th><th>Survey call</th></tr>
             </thead>
             <tbody id="tree-pick-body"></tbody>
           </table>
@@ -649,13 +654,14 @@ h1,h2{
           <figcaption data-cap="0"></figcaption>
         </figure>
         <figure class="plate">
-          <img src="story-art/fig4-canyon.svg" alt="East 138th Street: nine blocks can take trees, one tall-narrow block needs walls." width="1367" height="521">
+          <img src="story-art/fig4-canyon.svg" alt="Modeled H/W ratios for ten East 138th analysis bays. One exceeds the 0.5 screening threshold; field measurements and airflow assessment are needed." width="1367" height="521">
         </figure>
       </article>
 
       <article class="step" data-step="5" data-story="close" hidden aria-label="Reimagining NYC">
         <p class="beat"></p>
         <h2></h2>
+        <div data-deck-showcase></div>
         <div class="facts">
           <div class="copy" data-copy="lead"></div>
           <table class="sit-table">
@@ -666,11 +672,12 @@ h1,h2{
             <tbody data-table="options"></tbody>
           </table>
         </div>
-        <figure class="plate">
-          <img src="story-art/fig-solutions.svg" alt="Three options: trees, rain gardens, and a Deegan Greenway park over the road." width="1100" height="560">
-        </figure>
+        <div class="design-gallery" data-deck-designs aria-label="Three garden deck designs"></div>
+        <p class="design-note">AI-generated design illustrations. Buildings, road grades and planting layouts are conceptual.</p>
+        <div class="deck-sources" data-deck-sources></div>
+
         <figure class="plate captioned">
-          <img src="story-art/refs/deegan-corridor-room.png" alt="Sunken Major Deegan corridor with trucks and towers. The road sits below grade, so a greenway park can be built over it." width="1280" height="720">
+          <img src="story-art/refs/deegan-corridor-room.png" alt="Major Deegan traffic beside buildings. The photograph does not establish deck feasibility or roadway clearance." width="1280" height="720">
           <figcaption data-cap="0"></figcaption>
         </figure>
         <figure class="plate tall captioned">
@@ -693,18 +700,18 @@ h1,h2{
     <div id="maplegend" class="map-legend" hidden>
       <p><i style="background:#2a8a4a"></i> Tunnels</p>
       <p><i style="background:#9f2f2d"></i> Bridges</p>
-      <p><i style="background:#111111"></i> Fee gates</p>
+      <p><i style="background:#111111"></i> Zone-entry detection groups</p>
     </div>
     <div id="airlegend" class="map-legend" hidden>
-      <p><i style="background:#2a8a4a"></i> Air went down</p>
-      <p><i style="background:#9f2f2d"></i> Air went up</p>
-      <p><i style="background:#5c574f"></i> No change to call</p>
-      <p><i style="background:#111111"></i> Official monitor near our street</p>
+      <p><i style="background:#2a8a4a"></i> Zone model: lower than no-fee prediction</p>
+            <p><i style="background:#5c574f"></i> Van Wyck comparison location</p>
+      <p>South Bronx maximum location is unpublished.</p>
     </div>
     <div id="sitelegend" class="map-legend" hidden>
-      <p><i style="background:#2a8a4a"></i> Plant</p>
-      <p><i style="background:#9f2f2d"></i> Walls + spaced trees</p>
-      <p><i style="background:#5c574f"></i> Already full</p>
+      <p><i style="background:#174636;border-radius:50%"></i> Tree recorded alive in 2015</p>
+      <p><i style="background:#2a8a4a"></i> Survey candidate (2015 gap)</p>
+      <p><i style="background:#bd7f1f"></i> Airflow review</p>
+      <p><i style="background:#5c574f"></i> At/above archived mean</p>
     </div>
     <div id="ranklegend" class="map-legend" hidden>
       <p><i style="background:#9f2f2d"></i> Our choices</p>
@@ -818,6 +825,62 @@ h1,h2{
       container.appendChild(wrap);
     });
   }
+  function renderDeck(article, section){
+    const holder = article.querySelector('[data-deck-showcase]');
+    if(!holder || !section.model) return;
+    holder.replaceChildren();
+    const figure = document.createElement('figure');
+    figure.className = 'deck-showcase';
+    const img = document.createElement('img');
+    img.src = 'model/deegan-garden-deck/renders/deck-cutaway.png';
+    img.alt = '3D cutaway of a narrow park deck above six highway lanes, supported at the sides.';
+    img.width = 1600;
+    img.height = 1100;
+    img.loading = 'lazy';
+    const cap = document.createElement('figcaption');
+    const title = document.createElement('h3');
+    title.textContent = section.model.title;
+    const text = document.createElement('div');
+    text.textContent = section.model.caption;
+    const link = document.createElement('a');
+    link.href = 'model/deegan-garden-deck/';
+    link.className = 'deck-link';
+    link.textContent = section.model.link;
+    cap.append(title, text, link);
+    figure.append(img, cap);
+    holder.appendChild(figure);
+    const gallery = article.querySelector('[data-deck-designs]');
+    gallery.replaceChildren();
+    (section.designs || []).forEach(design => {
+      const card = document.createElement('figure');
+      const a = document.createElement('a');
+      a.href = 'story-art/deegan-designs/' + design.file;
+      a.setAttribute('aria-label', 'Open ' + design.title + ' design image');
+      const image = document.createElement('img');
+      image.src = a.href;
+      image.alt = design.title + ': ' + design.caption;
+      image.width = 1024;
+      image.height = 1536;
+      image.loading = 'lazy';
+      a.appendChild(image);
+      const caption = document.createElement('figcaption');
+      const h = document.createElement('h3');
+      h.textContent = design.title;
+      const p = document.createElement('p');
+      p.textContent = design.caption;
+      caption.append(h,p);
+      card.append(a,caption);
+      gallery.appendChild(card);
+    });
+    const sources = article.querySelector('[data-deck-sources]');
+    sources.replaceChildren();
+    (section.sources || []).forEach(source => {
+      const a = document.createElement('a');
+      a.href = source.url;
+      a.textContent = source.title;
+      sources.appendChild(a);
+    });
+  }
   function renderStory(){
     const S = window.STORY;
     if(!S){
@@ -841,6 +904,17 @@ h1,h2{
       }
       const head = article.querySelector('h1, h2');
       if(head && section.headline) head.textContent = section.headline;
+      renderDeck(article, section);
+      const sourceLinks = article.querySelector('[data-story-sources]');
+      if(sourceLinks){
+        sourceLinks.replaceChildren();
+        (section.sources || []).forEach(source => {
+          const link = document.createElement('a');
+          link.href = source.url;
+          link.textContent = source.title;
+          sourceLinks.appendChild(link);
+        });
+      }
       const slots = {};
       article.querySelectorAll('[data-copy]').forEach(el => { slots[el.dataset.copy] = el; });
       Object.keys(slots).forEach(name => slots[name].replaceChildren());
@@ -866,6 +940,11 @@ h1,h2{
           h.textContent = 'Four objections';
           h.style.margin = '.85rem 0 .4rem';
           lead.appendChild(h);
+          if(S.sections.counters.purpose){
+            const purpose = document.createElement('p');
+            purpose.textContent = S.sections.counters.purpose;
+            lead.appendChild(purpose);
+          }
           renderCounters(lead, S.sections.counters.items, ctx);
         }
         if(section.cite && !(section.methods_expandable && section.methods_expandable.bullets)){
@@ -959,13 +1038,13 @@ h1,h2{
     }).join('');
   })();
   function pickWord(action){
-    if(action === 'plant') return 'plant';
-    if(action === 'canyon_walls') return 'walls + spaced';
-    return 'already full';
+    if(action === 'plant') return 'planting candidate';
+    if(action === 'canyon_walls') return 'airflow review';
+    return 'at/above local mean';
   }
   function pickColor(action){
     if(action === 'plant') return '#2a8a4a';
-    if(action === 'canyon_walls') return '#9f2f2d';
+    if(action === 'canyon_walls') return '#bd7f1f';
     return '#5c574f';
   }
   (function fillTreePick(){
@@ -973,32 +1052,40 @@ h1,h2{
     const tb = document.getElementById('tree-pick-body');
     if(!T || !tb || !T.segments) return;
     const exp = (T.tests && T.tests.tree_clustering_chisquare && T.tests.tree_clustering_chisquare.expected_per_segment) || 7;
-    const rows = T.segments.slice().sort((a,b) => a.rank - b.rank);
+    const rows = T.segments.slice().sort((a,b) => a.i - b.i);
     tb.innerHTML = rows.map(s => {
       const cls = s.canyon ? ' class="is-canyon"' : '';
       const gap = s.n_trees - exp;
       const gapTxt = (gap > 0 ? '+' : '') + Math.round(gap);
-      return '<tr'+cls+'><td>'+s.i+'</td><td>'+Number(s.hw).toFixed(2)+'</td><td>'+s.n_trees+'</td><td>'+gapTxt+'</td><td>'+Number(s.plant_score).toFixed(2)+'</td><td>'+pickWord(s.action)+'</td></tr>';
+      return '<tr'+cls+'><td>'+s.i+'</td><td>'+Number(s.hw).toFixed(2)+'</td><td>'+s.n_trees+'</td><td>'+gapTxt+'</td><td>'+pickWord(s.action)+'</td></tr>';
     }).join('');
   })();
 
+  const choiceNotes = {
+    mott_haven_grid: {when:'survey first', text:'Inspect archived gaps on East 138th and nearby streets. Current trees, utilities, access and airflow determine whether planting is possible; the community maximum is not located here.'},
+    southern_blvd: {when:'alternative survey', text:'Compare current canopy, resident counts and health-area matches before selecting a corridor. The saved planning score is provisional.'},
+    cross_bronx_frontage: {when:'alternative survey', text:'Check frontage space, local emissions and health geography. The old monitor proxy does not establish a pricing-caused pollution increase here.'},
+    bruckner_westchester: {when:'alternative survey', text:'Assess freight traffic, planting space, road ownership and median access. No construction layout or site funding has been verified.'},
+    deegan_lid: {when:'long horizon', text:'Explore the assumed 240 × 34 m garden-deck concept. Surveys, structural assessment, ventilation and portal-exposure modeling must establish feasibility; no construction date is set.'}
+  };
   (function fillCitywide(){
     const C = D.citywide;
     if(!C) return;
     const rb = document.getElementById('rank-equal-body');
     if(rb && C.pick){
       rb.innerHTML = C.pick.rows.slice(0, 10).map(r => {
-        const mon = r.monitor ? r.monitor : '-';
+        const trees = r.trees_per_100m == null ? 'Missing' : Number(r.trees_per_100m).toFixed(1);
         const ash = r.asthma_adult == null ? '-' : Number(r.asthma_adult).toFixed(1);
         const uhf = (r.uhf || '').replace('Hunts Point - Mott Haven', 'Mott Haven').replace('High Bridge - Morrisania', 'High Bridge').replace('Crotona - Tremont', 'Crotona').replace('Fordham - Bronx Park', 'Fordham').replace('Pelham - Throgs Neck', 'Pelham');
         const street = r.e138_design ? '<strong>'+r.street+' (our site)</strong>' : r.street;
-        return '<tr><td>'+r.rank+'</td><td>'+street+'</td><td>'+uhf+'</td><td>'+Number(r.need).toFixed(2)+'</td><td>'+Number(r.people_per_km).toLocaleString('en-US')+'</td><td>'+ash+'</td><td>'+mon+'</td></tr>';
+        return '<tr><td>'+r.rank+'</td><td>'+street+'</td><td>'+uhf+'</td><td>'+Number(r.need).toFixed(2)+'</td><td>'+Number(r.people_per_km).toLocaleString('en-US')+'</td><td>'+ash+'</td><td>'+trees+'</td></tr>';
       }).join('');
     }
     const cl = document.getElementById('choices-list');
     if(cl && C.choices){
       cl.innerHTML = C.choices.map(c => {
-        return '<article class="dset"><h3>'+c.name+' <code>'+c.when+'</code></h3><p>'+String(c.action).replace(/canyon block/g,'tall block')+'</p></article>';
+        const note = choiceNotes[c.id];
+        return '<article class="dset"><h3>'+c.name+' <code>'+(note ? note.when : 'needs review')+'</code></h3><p>'+(note ? note.text : 'Site data and feasibility need verification.')+'</p></article>';
       }).join('');
     }
   })();
@@ -1033,22 +1120,9 @@ h1,h2{
   }
 
   function sayBT(f){
-    const name = f.facility;
-    if(f.group === 'cordon'){
-      if(name.indexOf('Carey') >= 0) return 'The Carey Tunnel went into the paid zone, and traffic here dropped.';
-      return 'The Queens Midtown Tunnel went into the paid zone, and traffic here dropped.';
-    }
-    if(name.indexOf('Whitestone') >= 0) return "The Whitestone Bridge didn't show a big rise.";
-    if(name.indexOf('Throgs') >= 0) return 'The Throgs Neck Bridge stayed about flat.';
-    if(name.indexOf('Henry Hudson') >= 0) return 'The Henry Hudson Bridge stayed about flat.';
-    if(name.indexOf('Kennedy') >= 0 && name.indexOf('Manhattan') >= 0){
-      return 'The Manhattan side of the RFK Bridge sat north of the paid line.';
-    }
-    if(name.indexOf('Kennedy') >= 0) return "The Bronx side of the RFK Bridge didn't jump after the fee.";
-    if(name.indexOf('Verrazzano') >= 0) return "The Verrazzano was a far check, and it didn't jump.";
-    if(name.indexOf('Cross Bay') >= 0) return 'Cross Bay was a far check we used to compare.';
-    if(name.indexOf('Marine') >= 0) return 'Marine Parkway was a far check we used to compare.';
-    return 'This was an MTA bridge or tunnel.';
+    const group = {bronx:'Bronx-route comparison group', cordon:'tunnel serving the paid zone', control:'comparison bridge outside the paid zone', uptown:'RFK Manhattan arm, north of the paid zone'}[f.group] || 'MTA crossing';
+    const pct = (f.pct > 0 ? '+' : '') + f.pct.toFixed(2) + '%';
+    return f.facility + ': ' + Number(f.y2024).toLocaleString('en-US') + ' vehicle crossings in calendar 2024 → ' + Number(f.y2025).toLocaleString('en-US') + ' in 2025 (' + pct + '). Group: ' + group + '. Source: MTA Bridges and Tunnels Hourly Crossings: Beginning 2019 (ebfx-2m7v). These are crossing events, not unique drivers or destinations; the bottom graph reports a separate modeled comparison.';
   }
 
   function sayGate(g){
@@ -1056,8 +1130,8 @@ h1,h2{
     if(name === 'East 60th St' || name === 'West 60th St'){
       return name + ' sat on the north line of the paid zone.';
     }
-    if(name.indexOf('FDR') >= 0) return 'This gate sat where the FDR met the north line.';
-    if(name.indexOf('West Side') >= 0) return 'This gate sat where the West Side Highway met the north line.';
+    if(name.indexOf('FDR') >= 0) return 'This entry group records detections where the FDR meets the zone\'s northern boundary.';
+    if(name.indexOf('West Side') >= 0) return 'This entry group records detections where the West Side Highway meets the zone\'s northern boundary.';
     if(name.indexOf('Lincoln') >= 0 || name.indexOf('Holland') >= 0){
       return name + ' charged cars that came in from New Jersey.';
     }
@@ -1067,7 +1141,7 @@ h1,h2{
     if(name.indexOf('Williamsburg') >= 0 || name.indexOf('Manhattan Bridge') >= 0 || name.indexOf('Brooklyn') >= 0 || name.indexOf('Carey') >= 0){
       return name + ' charged cars that came in from Brooklyn.';
     }
-    return name + ' was one of the twelve fee gates. None of them sat in the Bronx.';
+    return name + ' is one of twelve named entry-detection groups in the retrieved MTA file. These groups are not a count of physical gantries. There is no Bronx detection region because the paid boundary surrounds lower Manhattan; Bronx drivers pay when they enter that zone.';
   }
 
   const crzFC = fc([{type:'Feature', geometry:{type:'Polygon', coordinates:[crzRing]}, properties:{}}]);
@@ -1090,32 +1164,29 @@ h1,h2{
   const airPts = [];
   airPts.push(pt(crzMid[0], crzMid[1], {
     label:'Fraser: about 22% lower inside', dir:'down',
-    say:"Fraser's paper: six official monitors inside the paid zone, about 22 percent less daily-max PM2.5 than a no-fee model, about 3.05 µg/m³. This was the 22 percent, and it was only inside the zone."
+    say:"Fraser et al. (2025): inside the paid zone, daily-maximum PM2.5 was estimated 3.05 µg/m³ lower than the no-fee prediction of 13.8 µg/m³, about 22%. The study also included city and metro monitors; this percentage applies to the zone."
   }));
-  if(PUB.sbu){
+  if(PUB.sbu && PUB.sbu.peak_location_verified){
     airPts.push(pt(PUB.sbu.peak_lon, PUB.sbu.peak_lat, {
-      label:'+1.29 Deegan (community sensor)', dir:'up',
-      say:'South Bronx Unite with Columbia, Brown, and CU Boulder (2026): 19 community sensors, 2024 vs 2025. Network mean +0.22 µg/m³. This Deegan site jumped +1.29 µg/m³, so the rise stuck out above the local sensor average.'
+      label:'South Bronx study area (approx.)', dir:'ref',
+      say:'Regional context marker, not a verified sensor location. De Jesus et al. (2026) analyzed hourly PM2.5 from 19 South Bronx monitors during January 2024–December 2025. Adjusted step estimates: +0.22 µg/m³ across the network; maximum +1.29 µg/m³ near an expressway (95% interval +0.85 to +1.70). The primary abstract does not identify that monitor’s address or its reference concentration.'
     }));
   }
   if(PUB.dohmh){
     airPts.push(pt(PUB.dohmh.control_lon, PUB.dohmh.control_lat, {
       label:'Van Wyck, city control', dir:'flat',
-      say:'NYC DOHMH used the Van Wyck Expressway as the within-city control the fee should not have touched. No other-city air control in our stack. Over one year they found no fee-sized change they could call.'
+      say:'NYC Health’s August 2026 report used the Van Wyck Expressway in Queens as a comparison highway, adjusting for weather and time trends. No statistically clear pricing-related PM2.5 change was found at the evaluated environmental-justice sites. This is not a measured zero or a Houston comparison.'
     }));
   }
   const nearMon = D.tree_siting && D.tree_siting.fraser_22pct && D.tree_siting.fraser_22pct.nearest_official_monitor;
-  if(nearMon){
+  if(nearMon && nearMon.location_verified === true){
     airPts.push(pt(nearMon.lon, nearMon.lat, {
       label:'NYCCAS Mott Haven, E 135th', dir:'ref', anchor:'right',
       say:'The nearest official monitor to East 138th sat on East 135th, about 330 meters south. It was not one of Fraser\'s six zone monitors, so the 22 percent was never measured here.'
     }));
   }
   const airFC = fc(airPts);
-  const sbuFC = fc([pt(D.published.sbu.peak_lon, D.published.sbu.peak_lat, {
-    label:'+1.29 at the Deegan',
-    name:D.published.sbu.peak_site
-  })]);
+  const sbuFC = fc(PUB.sbu && PUB.sbu.peak_location_verified ? [pt(PUB.sbu.peak_lon, PUB.sbu.peak_lat, {label:PUB.sbu.peak_site})] : []);
   const placeFC = fc([
     pt(MH[0], MH[1], {label:'Mott Haven', kind:'mh'})
   ]);
@@ -1123,7 +1194,7 @@ h1,h2{
     pt(MH[0], MH[1], {label:'$15,510 · 29.3%', kind:'site'})
   ]);
   const commFC = fc([
-    pt(MH[0], MH[1], {label:'193.5 vs 66.4 · heat 5/5', kind:'asthma'})
+    pt(MH[0], MH[1], {label:'Adult asthma ER visits: 193.5 vs 66.4 per 10,000 · heat vulnerability index 5/5', kind:'asthma'})
   ]);
   // Real street geometry from OSM, so the blocks sit on East 138th instead of cutting through buildings.
   const E138 = (D.e138 && D.e138.segments) || {};
@@ -1134,15 +1205,12 @@ h1,h2{
     geometry:{type:'LineString', coordinates:segPath(s)},
     properties:{hw:s.hw, trap:s.trap_risk?1:0}
   })));
-  const treeFC = fc((D.canyon.tree_points||[]).map(t => pt(t.lon, t.lat, {trap:t.in_trap?1:0})));
+  const treeFC = fc((D.canyon.tree_points||[]).map(t => pt(t.lon, t.lat, {trap:t.in_trap?1:0, say:'Living street tree recorded in the 2015 census. Current presence requires verification.'})));
   const siteSegs = (D.tree_siting && D.tree_siting.segments) || [];
   function saySite(s){
     const gap = s.n_trees - 7;
-    const gapTxt = gap === 0 ? 'right at the street mean' : (gap < 0 ? Math.abs(gap) + ' under the street mean' : gap + ' over the street mean');
-    const treeTxt = s.n_trees + ' living tree' + (s.n_trees === 1 ? '' : 's');
-    if(s.action === 'plant') return 'Block ' + s.i + ': ' + treeTxt + ', ' + gapTxt + '. Open top. Plant.';
-    if(s.action === 'canyon_walls') return 'Block ' + s.i + ': H/W ' + s.hw + ', ' + treeTxt + '. Walls plus spaced trees, not a closed roof.';
-    return 'Block ' + s.i + ': ' + treeTxt + ', ' + gapTxt + '. Already full.';
+    const gapTxt = (gap > 0 ? '+' : '') + gap + ' trees versus mean of 7';
+    return 'Analysis bay ' + s.i + ' (about 120 m): ' + s.n_trees + ' living trees recorded in 2015; ' + gapTxt + '; modeled H/W ' + Number(s.hw).toFixed(2) + '. ' + pickWord(s.action) + '. Current tree count, space and airflow need a site survey.';
   }
   const siteFC = fc(siteSegs.map(s => ({
     type:'Feature',
@@ -1156,11 +1224,11 @@ h1,h2{
     label: c.name,
     when: c.when,
     spine: c.id === 'mott_haven_grid' ? 1 : 0,
-    say: c.name + ' (' + c.when + '). ' + c.why
+    say: c.name + ': ' + (choiceNotes[c.id] ? choiceNotes[c.id].text : 'Site data and feasibility need verification.')
   })));
   const rankTopFC = fc(((CW.pick && CW.pick.rows) || []).slice(0, 8).map(r => pt(r.lon, r.lat, {
     label: '#' + r.rank + ' ' + r.street,
-    say: '#' + r.rank + ' ' + r.street + ' in ' + (r.uhf || r.borough) + ': need ' + Number(r.need).toFixed(2) + ', ' + Number(r.people_per_km).toLocaleString('en-US') + ' people per km' + (r.monitor ? (', monitor ' + r.monitor) : ', no air monitor nearby') + '.'
+    say: 'Provisional priority #' + r.rank + ' among 35 finalists: ' + r.street + ' in ' + (r.uhf || r.borough) + '. Legacy need index ' + Number(r.need).toFixed(2) + ' (0–1, dimensionless); ' + Number(r.people_per_km).toLocaleString('en-US') + ' residents/km within a 400 m buffer, 2020 Census. ' + (r.monitor ? ('Saved air-proxy label: ' + r.monitor + '; location and interpretation need verification. ') : 'No usable published air signal in the saved scoring input; this does not establish that no monitor exists. ') + 'The air proxy needs correction before these ranks guide investment.'
   })));
 
   function pointKind(name){
@@ -1279,7 +1347,7 @@ h1,h2{
       case 1: show(['crz-line','fac','fac-label','gates','gates-label']); setStoryScroll(true, 'traffic'); break;
       case 2: show(['crz-line','air','air-label']); setStoryScroll(true, 'air'); break;
       case 3: show(['ranktop','ranktop-label','choices','choices-label','sbu','sbu-label']); setStoryScroll(true, 'rank'); break;
-      case 4: show(['place','place-label','site','site-label','sbu','sbu-label']); setStoryScroll(true, 'site'); break;
+      case 4: show(['place','place-label','bld','trees','site','site-label']); setStoryScroll(true, 'site'); break;
       case 5: show(['place','place-label','bld','seg','trees','cap','cap-label']); setStoryScroll(false); break;
       default: show(['crz-line']); setStoryScroll(false); break;
     }
@@ -1418,7 +1486,7 @@ h1,h2{
 
     map.addSource('trees', {type:'geojson', data:treeFC});
     map.addLayer({id:'trees', type:'circle', source:'trees', paint:{
-      'circle-radius':4, 'circle-color':TEAL, 'circle-stroke-color':PAPER, 'circle-stroke-width':1
+      'circle-radius':4, 'circle-color':'#174636', 'circle-stroke-color':PAPER, 'circle-stroke-width':1
     }, layout:{visibility:'none'}});
 
     map.addSource('cap', {type:'geojson', data:capFC});
@@ -1430,7 +1498,7 @@ h1,h2{
     map.addSource('cap-pt', {type:'geojson', data:fc([pt(D.geo.deegan_cap[0][0], D.geo.deegan_cap[0][1], {})])});
     map.addLayer({id:'cap-label', type:'symbol', source:'cap-pt', layout:{
       visibility:'none',
-      'text-field':'greenway later · 12.9 acres',
+      'text-field':'earlier corridor concept · 12.9 acres',
       'text-size':12,
       'text-font':['Noto Sans Bold']
     }, paint:{'text-color':PAPER, 'text-halo-color':TEAL, 'text-halo-width':1.6}});
@@ -1471,6 +1539,7 @@ h1,h2{
     bindClicks('gates');
     bindClicks('traffic');
     bindClicks('site');
+    bindClicks('trees');
     bindClicks('air');
     bindClicks('choices');
     bindClicks('ranktop');
@@ -1478,7 +1547,8 @@ h1,h2{
 
     ready = true;
     map.resize();
-    const start = current < 0 ? 0 : current;
+    const requestedStep = Number(location.hash.slice(1));
+    const start = requestedStep >= 1 && requestedStep <= 6 ? requestedStep - 1 : (current < 0 ? 0 : current);
     current = -1;
     applyStep(start, true);
   });

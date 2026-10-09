@@ -10,8 +10,8 @@
   "traffic_pct": -11
  },
  "goldberg_did": {
-  "cite": "Variable Short-Term Air Quality Impacts of NYC Congestion Pricing. Research Square preprint (Dec 2025). https://doi.org/10.21203/rs.3.rs-8158429/v1",
-  "what": "Difference-in-differences, 6 NYCCAS real-time sites; PM2.5 coefficient (%), * = p<0.05",
+  "cite": "Goldberg et al., Variable Short-Term Air Quality Impacts of New York City's Congestion Pricing Policy. Research Square preprint (2025). https://doi.org/10.21203/rs.3.rs-8158429/v1",
+  "what": "Difference-in-differences on daily-averaged PM2.5 at six real-time NYCCAS sites; coefficients in µg/m³, not percent.",
   "sites_tested": 6,
   "sites_significant_decrease": 1,
   "sites": [
@@ -19,45 +19,61 @@
     "name": "Queensboro Bridge",
     "lon": -73.956,
     "lat": 40.756,
-    "pm_pct": -9.08,
-    "sig": true
+    "sig": true,
+    "pm_change_ugm3": -9.08
    },
    {
     "name": "Williamsburg Bridge",
     "lon": -73.976,
     "lat": 40.713,
-    "pm_pct": 6.3,
-    "sig": true
+    "sig": true,
+    "pm_change_ugm3": 6.3
    },
    {
     "name": "Cross Bronx Expwy",
     "lon": -73.91,
     "lat": 40.843,
-    "pm_pct": 3.74,
-    "sig": true
+    "sig": true,
+    "pm_change_ugm3": 3.74
    },
    {
     "name": "Broadway / W 35th",
     "lon": -73.988,
     "lat": 40.75,
-    "pm_pct": 2.46,
-    "sig": true
+    "sig": true,
+    "pm_change_ugm3": 2.46
    }
   ],
   "no2_manhattan_pct": -23,
-  "no2_eastern_boroughs_max_pct": 33
+  "no2_eastern_boroughs_max_pct": 33,
+  "periods": "July 2023–June 2024 control season vs July 2024–June 2025 experimental season; seasonal boundary January 5.",
+  "method": "Each site: change from July 1–January 4 to January 5–June 30 in 2024–25 minus the corresponding change in 2023–24. Hourly sensor readings calibrated using temperature and relative humidity, then averaged by day."
  },
  "sbu": {
-  "cite": "South Bronx Unite with Columbia / Brown / CU Boulder (2026). https://www.southbronxunite.org/press-and-media/slight-increase-in-air-pollution-post-congestion-pricing",
-  "what": "19 community PM2.5 sensors, 2024 vs 2025",
+  "cite": "De Jesus et al. (2026), Impacts of New York City's Congestion Pricing Policy on PM2.5 in the South Bronx: Evidence from a Community-Managed Air Sensor Network. https://www.southbronxunite.org/s/DeJesus-Congestion-Pricing-Abstract.pdf",
+  "what": "Adjusted step estimates in hourly PM2.5; 19 monitors, January 2024–December 2025",
   "sensors": 19,
-  "sensors_up_low": 12,
-  "sensors_up_high": 14,
+  "sensors_significant_increase": 4,
+  "sensors_significant_decrease": 2,
+  "sensors_no_clear_change": 13,
   "mean_change_ugm3": 0.22,
+  "mean_ci95_ugm3": [
+   0.12,
+   0.32
+  ],
   "peak_change_ugm3": 1.29,
-  "peak_site": "Major Deegan / Third Ave Bridge",
+  "peak_ci95_ugm3": [
+   0.85,
+   1.7
+  ],
+  "peak_site": "Highway-adjacent South Bronx monitor; address not identified in public abstract",
+  "peak_location_verified": false,
+  "reference_concentration_ugm3": null,
   "peak_lon": -73.931,
-  "peak_lat": 40.8072
+  "peak_lat": 40.8072,
+  "coordinate_note": "Legacy map coordinates retained as approximate regional context, not a verified peak-monitor location.",
+  "method": "Generalized additive mixed models adjusting for seasonality, temperature, humidity, wind speed and residential heating; monitor random effects and AR1 autocorrelation.",
+  "status": "Public abstract; campaign describes study as undergoing peer review. Raw monitor observations were not obtained or recomputed by this project."
  },
  "dohmh": {
   "cite": "NYC DOHMH Congestion Pricing Air Quality Report. https://a816-dohbesp.nyc.gov/IndicatorPublic/data-features/congestion-pricing-report/",
@@ -70,7 +86,7 @@
   "control_lat": 40.72
  },
  "asthma": {
-  "cite": "NYC Environment & Health Data Portal, Hunts Point\u2013Mott Haven. https://a816-dohbesp.nyc.gov/IndicatorPublic/neighborhood-reports/hunts_point_mott_haven/asthma_and_the_environment/",
+  "cite": "NYC Environment & Health Data Portal, Hunts Point–Mott Haven. https://a816-dohbesp.nyc.gov/IndicatorPublic/neighborhood-reports/hunts_point_mott_haven/asthma_and_the_environment/",
   "adult_ed_per10k": 193.5,
   "adult_ed_city": 66.4,
   "child_ed_per10k": 266.2,

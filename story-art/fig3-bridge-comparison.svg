@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="500" viewBox="0 0 920 500" role="img" aria-labelledby="title desc">
+<title id="title">Did crossing growth shift toward Bronx routes?</title>
+<desc id="desc">Adjusted relative growth differences across all of 2025. The Bronx estimate is minus 1.04 percent with a 95 percent interval crossing zero. Two MTA zone-serving tunnels have a lower estimate, with limited inference from five crossing clusters.</desc>
+<rect width="920" height="500" fill="#fff"/>
+<g font-family="Arial, sans-serif" fill="#221d1a">
+<text x="30" y="42" font-size="25" font-weight="700">Did crossing growth shift toward Bronx routes?</text>
+<text x="30" y="75" font-size="17" fill="#5b5145">All of 2025 combined · relative to three comparison bridges</text>
+<path d="M30 95H890" stroke="#bd7f1f" stroke-width="2"/>
+<text x="415" y="130" font-size="17">Relative growth difference (%)</text>
+<text x="685" y="158" font-size="14" fill="#5b5145">0 = no relative difference</text>
+<path d="M690 170V345" stroke="#5b5145" stroke-dasharray="5 5"/>
+
+<text x="30" y="201" font-size="20" font-weight="700">Bronx routes (4 crossings)</text>
+<text x="30" y="228" font-size="16" fill="#5b5145">No clear increase</text>
+<path d="M490.35 210H778.55M490.35 203V217M778.55 203V217" stroke="#416f4e" stroke-width="3"/>
+<circle cx="632.80" cy="210" r="7" fill="#416f4e"/>
+<text x="415" y="246" font-size="17" fill="#416f4e">−1.04% · 95% interval −3.63% to +1.61%</text>
+
+<text x="30" y="311" font-size="20" font-weight="700">Zone-serving MTA tunnels (2)</text>
+<text x="30" y="338" font-size="16" fill="#5b5145">Lower estimate; limited certainty</text>
+<path d="M503.55 320H625.10M503.55 313V327M625.10 313V327" stroke="#a4122f" stroke-width="3"/>
+<circle cx="564.05" cy="320" r="7" fill="#a4122f"/>
+<text x="415" y="356" font-size="17" fill="#a4122f">−2.29% · 95% interval −3.39% to −1.18%</text>
+
+<path d="M415 375H855" stroke="#221d1a"/>
+<path d="M415 375V382" stroke="#221d1a"/><text x="415" y="403" font-size="15" text-anchor="middle">−5%</text>
+<path d="M470 375V382" stroke="#221d1a"/><text x="470" y="403" font-size="15" text-anchor="middle">−4%</text>
+<path d="M525 375V382" stroke="#221d1a"/><text x="525" y="403" font-size="15" text-anchor="middle">−3%</text>
+<path d="M580 375V382" stroke="#221d1a"/><text x="580" y="403" font-size="15" text-anchor="middle">−2%</text>
+<path d="M635 375V382" stroke="#221d1a"/><text x="635" y="403" font-size="15" text-anchor="middle">−1%</text>
+<path d="M690 375V382" stroke="#221d1a"/><text x="690" y="403" font-size="15" text-anchor="middle">+0%</text>
+<path d="M745 375V382" stroke="#221d1a"/><text x="745" y="403" font-size="15" text-anchor="middle">+1%</text>
+<path d="M800 375V382" stroke="#221d1a"/><text x="800" y="403" font-size="15" text-anchor="middle">+2%</text>
+<path d="M855 375V382" stroke="#221d1a"/><text x="855" y="403" font-size="15" text-anchor="middle">+3%</text>
+<text x="30" y="440" font-size="16">Dot = estimate · line = 95% interval · Bronx line crosses zero</text>
+<text x="30" y="467" font-size="14" fill="#5b5145">Comparison bridges: Cross Bay, Marine Parkway, Verrazzano–Narrows. Source: MTA hourly crossings.</text>
+<text x="30" y="489" font-size="13" fill="#5b5145">Monthly model: 2024 growth vs 2023; 2025 growth vs 2024. This does not track drivers' routes.</text>
+</g></svg>

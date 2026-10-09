@@ -10,7 +10,6 @@ from collections import defaultdict
 from pathlib import Path
 
 import matplotlib.pyplot as plt
-import seaborn as sns
 from matplotlib.lines import Line2D
 from matplotlib.patches import FancyBboxPatch
 from matplotlib.ticker import MaxNLocator
@@ -49,7 +48,7 @@ def load(name: str) -> dict:
 
 
 def style() -> None:
-    sns.set_theme(style="white", font="Arial")
+    plt.style.use("default")
     plt.rcParams.update(
         {
             "svg.fonttype": "none",
@@ -166,7 +165,7 @@ def save(fig, name: str) -> None:
 
 def fig1_gates(crz: dict) -> None:
     fig = new_fig(5.2, 3.6)
-    caption_block(fig, "Figure 1. Twelve fee gates")
+    caption_block(fig, "Figure 1. Twelve named entry-detection groups")
     gs = fig.add_gridspec(1, 1, left=0.28, right=0.96, top=0.88, bottom=0.12)
     ax_bar = fig.add_subplot(gs[0, 0])
     ax_bar.set_facecolor(BOARD)
@@ -191,7 +190,7 @@ def fig1_gates(crz: dict) -> None:
     ax_bar.barh(y, vals, color=colors, edgecolor=INK, linewidth=0.35, height=0.68, zorder=2)
     ax_bar.set_yticks(y)
     ax_bar.set_yticklabels(order)
-    ax_bar.set_xlabel("Gates")
+    ax_bar.set_xlabel("Entry-detection groups (count)")
     ax_bar.set_xlim(0, 5)
     ax_bar.xaxis.set_major_locator(MaxNLocator(integer=True))
     ax_bar.axvline(0, color=INK, lw=0.6)
@@ -264,7 +263,7 @@ def fig2_trucks(crz: dict) -> None:
 
 def fig3_did(bt: dict) -> None:
     fig = new_fig(7.2, 4.4)
-    caption_block(fig, "Figure 3. Bronx bridges flat; tunnels into the fee drop")
+    caption_block(fig, "Figure 3. Crossing growth: no clear Bronx increase")
     gs = fig.add_gridspec(1, 2, left=0.08, right=0.98, top=0.88, bottom=0.12, wspace=0.28, width_ratios=[1.7, 1])
     ax_es = fig.add_subplot(gs[0, 0])
     ax_pool = fig.add_subplot(gs[0, 1])
@@ -299,13 +298,13 @@ def fig3_did(bt: dict) -> None:
     ax_es.axvspan(-0.5, 11.6, color="#ececec", alpha=1, zorder=0)
     ax_es.axhline(0, color=INK, lw=0.6, zorder=1)
     ax_es.axvline(-0.5, color=CRIMSON, lw=0.9, ls="--", zorder=1)
-    draw_series(ax_es, bronx, TEAL, "o-", "Bronx vs far controls")
-    draw_series(ax_es, cordon, CRIMSON, "s-", "Cordon tunnels vs far controls")
+    draw_series(ax_es, bronx, TEAL, "o-", "Bronx routes vs comparison bridges")
+    draw_series(ax_es, cordon, CRIMSON, "s-", "Zone tunnels vs comparison bridges")
     ax_es.text(0.2, 8.6, "toll starts\nJan 2025", color=CRIMSON, fontsize=6.4, fontweight="semibold")
     ax_es.set_xlim(-12.6, 11.8)
     ax_es.set_ylim(-13.5, 10.5)
     ax_es.set_xlabel("Month relative to January 2025")
-    ax_es.set_ylabel("Treated − control YoY growth (pp)")
+    ax_es.set_ylabel("Relative change in YoY growth factor (%)")
     ax_es.set_title("A. Event study (95% CI)", loc="left", fontsize=8.4, pad=6)
     ax_es.legend(loc="lower right", handlelength=1.6)
     ax_es.spines[["top", "right"]].set_visible(False)
@@ -317,7 +316,7 @@ def fig3_did(bt: dict) -> None:
         color=GRAY,
     )
 
-    names = ["Bronx\nadjacent", "Cordon\ntunnels"]
+    names = ["Bronx\nroutes", "Zone\ntunnels"]
     pcts = [bx_p["pct"], cd_p["pct"]]
     lo = [bx_p["pct"] - bx_p["lo95_pct"], cd_p["pct"] - cd_p["lo95_pct"]]
     hi = [bx_p["hi95_pct"] - bx_p["pct"], cd_p["hi95_pct"] - cd_p["pct"]]
@@ -344,8 +343,8 @@ def fig3_did(bt: dict) -> None:
     )
     ax_pool.set_xticks(xs)
     ax_pool.set_xticklabels(names)
-    ax_pool.set_ylabel("Pooled DiD (pp)")
-    ax_pool.set_title("B. Pooled post window", loc="left", fontsize=8.4, pad=6)
+    ax_pool.set_ylabel("Relative growth-factor change (%)")
+    ax_pool.set_title("B. All 2025 combined", loc="left", fontsize=8.4, pad=6)
     # Keep 3-line stats clear of whisker caps (was colliding at y=1.55 vs hi CI ~1.6).
     annot_gap = 0.48
     ax_pool.set_ylim(
@@ -380,7 +379,7 @@ def fig3_did(bt: dict) -> None:
 
 def fig4_canyon(canyon: dict) -> None:
     fig = new_fig(7.0, 3.8)
-    caption_block(fig, "Figure 4. East 138th: nine blocks open, one canyon")
+    caption_block(fig, "Figure 4. East 138th: modeled street geometry")
     ax = fig.add_axes([0.09, 0.16, 0.88, 0.68])
     ax.set_facecolor(BOARD)
 
@@ -420,15 +419,15 @@ def fig4_canyon(canyon: dict) -> None:
         )
     ax.set_xticks(xs)
     ax.set_xticklabels([str(s["i"]) for s in segs])
-    ax.set_xlabel("Segment index along East 138th Street (west → east)")
-    ax.set_ylabel("Height / width")
+    ax.set_xlabel("Analysis bay ID (west → east; about 120 m)")
+    ax.set_ylabel("Height / width (dimensionless)")
     ax.set_ylim(0, 0.72)
     ax.spines[["top", "right"]].set_visible(False)
     n_over = canyon["segments_over_threshold"]
     n_tot = canyon["segments_total"]
     ax.legend(
         handles=[
-            Line2D([0], [0], color=TEAL, lw=6, label=f"Open-top trees  ({n_tot - n_over})"),
+            Line2D([0], [0], color=TEAL, lw=6, label=f"H/W < 0.5  ({n_tot - n_over})"),
             Line2D([0], [0], color=CRIMSON, lw=6, label=f"H/W > 0.5  ({n_over})"),
             Line2D([0], [0], color=GOLD, lw=1.2, ls="--", label="0.5 cutoff"),
         ],
@@ -439,7 +438,7 @@ def fig4_canyon(canyon: dict) -> None:
     )
     trap = next(s for s in segs if s["trap_risk"])
     ax.annotate(
-        f"seg. {trap['i']}: H/W = {trap['hw']:.2f}\nwalls + spaced trees",
+        f"seg. {trap['i']}: H/W = {trap['hw']:.2f}\nairflow review",
         xy=(xs[segs.index(trap)], trap["hw"]),
         xytext=(xs[segs.index(trap)] - 2.35, 0.64),
         fontsize=7,

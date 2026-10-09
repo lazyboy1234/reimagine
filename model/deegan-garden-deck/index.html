@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore a narrow, illustrative garden deck over six highway lanes. Deegan concept model and three garden design directions.">
+  <title>Deegan garden deck · 3D concept</title>
+  <script type="module" src="vendor/model-viewer-4.4.0.min.js"></script>
+  <style>
+    :root{color-scheme:light;--ink:#24382c;--green:#38644d;--paper:#f7f5ee;--line:#d9dfd3}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,sans-serif}
+    a{color:var(--green);text-underline-offset:4px}a:focus-visible,button:focus-visible,model-viewer:focus-visible{outline:3px solid #bc642d;outline-offset:4px}
+    header,main,footer{max-width:1320px;margin:auto;padding:28px 36px}header{display:flex;justify-content:space-between;gap:24px;align-items:center}
+    .wordmark{font-weight:650;text-decoration:none}.tag{font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+    h1{font:500 clamp(36px,5vw,68px)/1.05 Georgia,serif;max-width:850px;margin:18px 0}h2{font:500 30px/1.2 Georgia,serif}
+    .intro{max-width:760px;font-size:19px;margin-bottom:28px}.hero{background:#e7ebe3;border:1px solid var(--line);border-radius:20px;overflow:hidden;position:relative}
+    model-viewer{display:block;width:100%;height:min(67vh,700px);min-height:420px;background:linear-gradient(#e5ebe3,#f0f0e9);--poster-color:transparent}.poster{width:100%;height:100%;object-fit:contain}
+    .toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:16px 20px;background:#fffefa;border-top:1px solid var(--line)}
+    button{font:inherit;cursor:pointer;border:1px solid #637b66;border-radius:30px;color:var(--ink);background:transparent;padding:9px 18px;min-height:44px}
+    button[aria-pressed="true"]{background:var(--green);color:white;border-color:var(--green)}button:hover{border-color:#bc642d}
+    #status{margin:0 0 0 auto;font-size:13px;max-width:410px;color:#526557}.caption{font-size:14px;margin:12px 2px 30px;color:#526557}
+    .numbers{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid var(--line);margin:32px 0}
+    .number{padding:22px 15px;border-right:1px solid var(--line)}.number:last-child{border-right:0}.number strong{display:block;font:500 34px/1.15 Georgia,serif}.number span{font-size:14px}
+    .details{display:grid;grid-template-columns:1.3fr 1fr;gap:44px;margin:42px 0}.details p{max-width:760px}.downloads{display:flex;flex-wrap:wrap;gap:10px 22px}
+    .designs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:24px 0 36px}figure{margin:0}.designs img{display:block;width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:12px}
+    figcaption{margin-top:12px}figcaption strong{display:block;font-size:18px}.section-image{width:100%;border-radius:14px;background:#e7ebe3}
+    footer{border-top:1px solid var(--line);font-size:13px;color:#526557}footer p{max-width:950px}
+    @media(max-width:700px){header,main,footer{padding:20px}.tag{font-size:10px}header{align-items:flex-start}.intro{font-size:17px}.hero{border-radius:12px}model-viewer{height:480px;min-height:360px}.toolbar{padding:14px}#status{margin:0;width:100%;max-width:none}.numbers{grid-template-columns:repeat(2,1fr)}.number:nth-child(2){border-right:0}.number:nth-child(-n+2){border-bottom:1px solid var(--line)}.details{grid-template-columns:1fr;gap:16px}.designs{grid-template-columns:1fr}.designs img{aspect-ratio:2/3}h2{font-size:27px}}
+  </style>
+</head>
+<body>
+  <header><a class="wordmark" href="../../index.html#6">Reimagine / The Bronx</a><span class="tag">Illustrative concept · October 2026</span></header>
+  <main>
+    <span class="tag">Deegan garden deck</span>
+    <h1>A narrow garden above the road.</h1>
+    <p class="intro">Space is tight along the Deegan. This model puts a slender park over the highway, with three lanes in each direction below and supports outside the vehicle lanes.</p>
+    <div class="hero">
+      <model-viewer id="deck" src="exports/deegan-garden-deck.glb" poster="renders/park-overview.png" alt="Illustrative narrow garden deck with trees, lawns, seating and six highway lanes underneath" camera-controls touch-action="pan-y" camera-orbit="35deg 48deg 380m" camera-target="0m 5m 0m" min-camera-orbit="auto 10deg 35m" max-camera-orbit="auto 88deg 850m" shadow-intensity="0.7" exposure="1" interaction-prompt="auto" loading="eager"><img id="poster" class="poster" slot="poster" src="renders/park-overview.png" alt="Rendered overview of the garden deck above six highway lanes"></model-viewer>
+      <div class="toolbar" aria-label="Model views">
+        <button type="button" data-model="full" aria-pressed="true">Full park</button>
+        <button type="button" data-model="cutaway" aria-pressed="false">Cutaway</button>
+        <button type="button" id="reset">Reset view</button>
+        <p id="status" role="status" aria-live="polite">Loading 3D model. The rendered preview is visible while it loads.</p>
+      </div>
+    </div>
+    <p class="caption">Drag to rotate; scroll or pinch to zoom. The cutaway hides one quarter of the deck so you can see the highway. It isn't a proposed opening in the park.</p>
+    <div class="numbers" aria-label="Assumed model dimensions">
+      <div class="number"><strong>240 × 34 m</strong><span>Assumed deck footprint</span></div>
+      <div class="number"><strong>2.02 acres</strong><span>8,160 m² of deck area</span></div>
+      <div class="number"><strong>6 lanes</strong><span>Three in each direction</span></div>
+      <div class="number"><strong>6.6 m</strong><span>Assumed girder clearance</span></div>
+    </div>
+    <section class="details">
+      <div>
+        <h2>The space above the traffic</h2>
+        <p>The model combines a central lawn with two walking paths, engineered planting strips, benches, a small play area and a seating pavilion. Side abutments carry the deck in this illustration.</p>
+        <p>These dimensions are design assumptions. A survey must establish the Deegan's grades, ramps, clearance, utilities and available land. The model's surrounding buildings are simplified context.</p>
+      </div>
+      <div>
+        <h2>The editable model</h2>
+        <p>The Blender file contains separate highway, structure, landscape, furniture and context collections. The GLB files open in common 3D viewers.</p>
+        <div class="downloads"><a href="deegan-garden-deck.blend" download>Blender source</a><a href="exports/deegan-garden-deck.glb" download>Full park GLB</a><a href="exports/deegan-garden-deck-cutaway.glb" download>Cutaway GLB</a><a href="manifest.json">Dimensions</a></div>
+      </div>
+    </section>
+    <section>
+      <h2>Three ways the garden could feel</h2>
+      <p>AI-generated design explorations use the same narrow-deck brief. They illustrate atmosphere and planting choices; the images aren't exact renders of the editable model.</p>
+      <div class="designs">
+        <figure><a href="../../story-art/deegan-designs/community-garden.png"><img src="../../story-art/deegan-designs/community-garden.png" alt="Community garden concept with a slender lawn, tree-lined paths and seating pavilion" loading="lazy" width="1024" height="1536"></a><figcaption><strong>Community garden</strong>A shared lawn, shade and places to sit.</figcaption></figure>
+        <figure><a href="../../story-art/deegan-designs/meadow-garden.png"><img src="../../story-art/deegan-designs/meadow-garden.png" alt="Meadow garden concept with planting beds and a winding path above the highway" loading="lazy" width="1024" height="1536"></a><figcaption><strong>Meadow garden</strong>Planting beds, paths and small terraces.</figcaption></figure>
+        <figure><a href="../../story-art/deegan-designs/play-garden.png"><img src="../../story-art/deegan-designs/play-garden.png" alt="Play garden concept with a compact playground and café terrace above the highway" loading="lazy" width="1024" height="1536"></a><figcaption><strong>Play garden</strong>A compact playground and café terrace.</figcaption></figure>
+      </div>
+    </section>
+    <section>
+      <h2>How the road sits underneath</h2>
+      <figure><img class="section-image" src="renders/deck-cutaway.png" alt="Architectural cutaway showing continuous highway lanes below the narrow park deck" loading="lazy" width="1600" height="1100"><figcaption>The cutaway reveals the road, deck and planting above. No air-quality improvement or construction cost has been calculated for this model.</figcaption></figure>
+    </section>
+  </main>
+  <footer>
+    <p>Klyde Warren Park in Dallas is a precedent for using space above a highway. Its <a href="https://www.landscapeperformance.org/case-study-briefs/klyde-warren-park">landscape study</a> estimates cooling and carbon benefits; the <a href="https://www.asla.org/awards-events-main-landing/honors-awards/pro-student-awards/2017-professional-awards/327692">ASLA design account</a> describes reduced air pollution without a measured PM2.5 percentage. The Deegan would need its own ventilation and air-quality study.</p>
+    <p><a href="README.md">Model notes and assumptions</a> · <a href="../../story-art/deegan-designs/prompts.json">Image generation prompts</a> · <a href="../../index.html#6">Back to the story</a></p>
+  </footer>
+  <script>
+    const viewer = document.getElementById('deck');
+    const status = document.getElementById('status');
+    const buttons = [...document.querySelectorAll('[data-model]')];
+    let active = 'full';
+    const reset = () => { viewer.cameraOrbit = '35deg 48deg 380m'; viewer.cameraTarget = '0m 5m 0m'; viewer.fieldOfView = '30deg'; };
+    buttons.forEach(button => button.addEventListener('click', () => {
+      if (active === button.dataset.model) return;
+      active = button.dataset.model;
+      buttons.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+      status.textContent = 'Loading ' + (active === 'full' ? 'full park' : 'cutaway') + '…';
+      viewer.poster = 'renders/' + (active === 'full' ? 'park-overview' : 'deck-cutaway') + '.png';
+      document.getElementById('poster').src = viewer.poster;
+      viewer.src = 'exports/deegan-garden-deck' + (active === 'cutaway' ? '-cutaway' : '') + '.glb';
+      reset();
+    }));
+    document.getElementById('reset').addEventListener('click', reset);
+    viewer.addEventListener('load', () => { status.textContent = (active === 'full' ? 'Full park' : 'Cutaway') + ' ready. Drag to rotate; scroll or pinch to zoom.'; });
+    viewer.addEventListener('error', () => { status.textContent = 'The 3D viewer could not load. Use the rendered views or download the model below.'; });
+    window.addEventListener('load', () => {
+      if (!customElements.get('model-viewer')) status.textContent = 'The 3D library could not load. Use the rendered preview or download the model below.';
+    });
+  </script>
+</body>
+</html>

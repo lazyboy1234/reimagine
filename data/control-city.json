@@ -1,0 +1,20 @@
+{
+  "outside_check": true,
+  "city": "Houston, Texas",
+  "neighborhood": "Settegast, North Wayside",
+  "monitor_id": "48-201-0046",
+  "site_name": "Houston North Wayside",
+  "address": "7330 1/2 North Wayside",
+  "latitude": 29.828516,
+  "longitude": -95.283956,
+  "years_compared": "calendar 2025 minus calendar 2024",
+  "pm25_2024": 13.102121,
+  "pm25_2025": 12.170033,
+  "pm25_change": -0.932088,
+  "unit": "µg/m³",
+  "dataset_name": "EPA Air Quality System, annual concentration by monitor. Files annual_conc_by_monitor_2024.zip and annual_conc_by_monitor_2025.zip. Inside CSVs dated 2026-06-26. Parameter 88101, PM2.5 local conditions, 24-hour block average, POC 1, PM25 Annual 2024 standard, metric Quarterly Means of Daily Means, event type No Events.",
+  "url": "https://aqs.epa.gov/aqsweb/airdata/download_files.html",
+  "comparison_to_deegan": "Houston North Wayside annual PM2.5 fell from 13.102121 µg/m³ in 2024 to 12.170033 µg/m³ in 2025: −0.932088 µg/m³ (−7.114%). This is outside-city context, not a matched control for the South Bronx adjusted hourly estimates.",
+  "honest_limit": "One regulatory monitor, different weather, emissions and measurement design. 2024: 330 valid days of 366, 90% complete, certified. 2025: 307 valid days of 365, 84% complete, not certified. No statistical test. A fall here cannot rule out global warming, wildfire smoke or New York weather. The South Bronx public abstract reports adjusted hourly policy-step estimates of +0.22 µg/m³ network-wide and up to +1.29 µg/m³, without identifying the maximum monitor’s address or reference concentration. The Van Wyck Expressway in Queens is the separate within-NYC comparison used by NYC Health.",
+  "bridge": "Could global warming and changing weather affect PM2.5? Yes. As outside-city context, we checked EPA Air Quality System annual records for Houston North Wayside, site 48-201-0046. Its yearly PM2.5 fell from 13.10 µg/m³ in 2024 to 12.17 µg/m³ in 2025, down 0.93 µg/m³ or 7.1%. That shows this monitor did not follow the South Bronx increase, but it cannot establish why New York changed. The Houston 2025 record is 84% complete and not certified."
+}

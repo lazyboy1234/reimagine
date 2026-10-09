@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="438.48pt" height="624.257531pt" viewBox="0 0 438.48 624.257531" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="438.48pt" height="624.100734pt" viewBox="0 0 438.48 624.100734" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-09-25T11:14:20.093199</dc:date>
+    <dc:date>2026-10-09T19:22:53.174349</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -21,292 +21,292 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 624.257531 
-L 438.48 624.257531 
-L 438.48 0 
-L 0 0 
+   <path d="M 0 624.100734
+L 438.48 624.100734
+L 438.48 0
+L 0 0
 z
 " style="fill: #ffffff"/>
   </g>
   <g id="axes_1">
    <g id="text_1">
-    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #221d1a" x="7.2" y="93.095762" transform="rotate(-0 7.2 93.095762)">Downtown Manhattan</text>
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #221d1a" x="7.2" y="92.741387" transform="rotate(-0 7.2 92.741387)">Downtown Manhattan</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="7.2" y="108.405012" transform="rotate(-0 7.2 108.405012)">inside the fee zone, 8.70 to 7.56</text>
+    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="7.2" y="108.052629" transform="rotate(-0 7.2 108.052629)">reported pre/post means, 8.70 to 7.56 µg/m³</text>
    </g>
    <g id="text_3">
-    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #221d1a" x="7.2" y="139.665362" transform="rotate(-0 7.2 139.665362)">Houston, Texas</text>
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #221d1a" x="7.2" y="139.310987" transform="rotate(-0 7.2 139.310987)">Houston, Texas</text>
    </g>
    <g id="text_4">
-    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="7.2" y="154.974612" transform="rotate(-0 7.2 154.974612)">no fee at all, 13.10 to 12.17</text>
+    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="7.2" y="154.622229" transform="rotate(-0 7.2 154.622229)">annual mean, 13.10 to 12.17 µg/m³</text>
    </g>
    <g id="text_5">
-    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #221d1a" x="7.2" y="186.234962" transform="rotate(-0 7.2 186.234962)">South Bronx, 19 sensors</text>
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #221d1a" x="7.2" y="185.880587" transform="rotate(-0 7.2 185.880587)">South Bronx network</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="7.2" y="201.494407" transform="rotate(-0 7.2 201.494407)">the average one</text>
+    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="7.2" y="201.140032" transform="rotate(-0 7.2 201.140032)">adjusted hourly step estimate</text>
    </g>
    <g id="text_7">
-    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #221d1a" x="7.2" y="232.735656" transform="rotate(-0 7.2 232.735656)">Deegan at the Third Ave Bridge</text>
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #221d1a" x="7.2" y="232.445265" transform="rotate(-0 7.2 232.445265)">South Bronx highway maximum</text>
    </g>
    <g id="text_8">
-    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="7.2" y="248.076624" transform="rotate(-0 7.2 248.076624)">the one by East 138th</text>
+    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="7.2" y="247.709632" transform="rotate(-0 7.2 247.709632)">address not given in abstract</text>
    </g>
    <g id="text_9">
-    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #221d1a" x="7.2" y="48.369414" transform="rotate(-0 7.2 48.369414)">A. The region got cleaner. The Deegan sensor didn't</text>
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #221d1a" x="7.2" y="48.015039" transform="rotate(-0 7.2 48.015039)">A. Separate air studies give different estimates</text>
    </g>
    <g id="text_10">
-    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="7.2" y="64.368789" transform="rotate(-0 7.2 64.368789)">Yearly fine soot (PM2.5), before vs after the fee, micrograms per cubic meter</text>
+    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="7.2" y="64.014414" transform="rotate(-0 7.2 64.014414)">PM2.5 change, µg/m³. Annual, pre/post and adjusted hourly estimates differ.</text>
    </g>
   </g>
   <g id="axes_2">
    <g id="patch_2">
-    <path d="M 170.307692 258.024525 
-L 431.28 258.024525 
-L 431.28 71.746125 
-L 170.307692 71.746125 
+    <path d="M 170.307692 257.67015
+L 431.28 257.67015
+L 431.28 71.39175
+L 170.307692 71.39175
 z
 " style="fill: #ffffff"/>
    </g>
    <g id="patch_3">
-    <path d="M 292.094769 81.991437 
-L 212.759188 81.991437 
-L 212.759188 108.070413 
-L 292.094769 108.070413 
+    <path d="M 292.094769 81.637062
+L 212.759188 81.637062
+L 212.759188 107.716038
+L 292.094769 107.716038
 z
-" clip-path="url(#pca0a748f3f)" style="fill: #416f4e"/>
+" clip-path="url(#p5296fd2ce3)" style="fill: #416f4e"/>
    </g>
    <g id="patch_4">
-    <path d="M 292.094769 128.561037 
-L 227.373637 128.561037 
-L 227.373637 154.640013 
-L 292.094769 154.640013 
+    <path d="M 292.094769 128.206662
+L 227.373637 128.206662
+L 227.373637 154.285638
+L 292.094769 154.285638
 z
-" clip-path="url(#pca0a748f3f)" style="fill: #416f4e"/>
+" clip-path="url(#p5296fd2ce3)" style="fill: #416f4e"/>
    </g>
    <g id="patch_5">
-    <path d="M 292.094769 175.130637 
-L 307.405145 175.130637 
-L 307.405145 201.209613 
-L 292.094769 201.209613 
+    <path d="M 292.094769 174.776262
+L 307.405145 174.776262
+L 307.405145 200.855238
+L 292.094769 200.855238
 z
-" clip-path="url(#pca0a748f3f)" style="fill: #8a857c"/>
+" clip-path="url(#p5296fd2ce3)" style="fill: #8a857c"/>
    </g>
    <g id="patch_6">
-    <path d="M 292.094769 221.700237 
-L 381.869243 221.700237 
-L 381.869243 247.779213 
-L 292.094769 247.779213 
+    <path d="M 292.094769 221.345862
+L 381.869243 221.345862
+L 381.869243 247.424838
+L 292.094769 247.424838
 z
-" clip-path="url(#pca0a748f3f)" style="fill: #a4122f"/>
+" clip-path="url(#p5296fd2ce3)" style="fill: #a4122f"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
       <defs>
-       <path id="mcb8f98c89c" d="M 0 0 
-L 0 3.5 
+       <path id="maca04f5b9d" d="M 0 0
+L 0 3.5
 " style="stroke: #221d1a; stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#mcb8f98c89c" x="222.502154" y="258.024525" style="fill: #221d1a; stroke: #221d1a; stroke-width: 0.8"/>
+       <use xlink:href="#maca04f5b9d" x="222.502154" y="257.67015" style="fill: #221d1a; stroke: #221d1a; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_11">
-      <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #221d1a" x="222.502154" y="271.466556" transform="rotate(-0 222.502154 271.466556)">−1 cleaner</text>
+      <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #221d1a" x="222.502154" y="271.112181" transform="rotate(-0 222.502154 271.112181)">−1 cleaner</text>
      </g>
     </g>
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use xlink:href="#mcb8f98c89c" x="292.094769" y="258.024525" style="fill: #221d1a; stroke: #221d1a; stroke-width: 0.8"/>
+       <use xlink:href="#maca04f5b9d" x="292.094769" y="257.67015" style="fill: #221d1a; stroke: #221d1a; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_12">
-      <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #221d1a" x="292.094769" y="271.466556" transform="rotate(-0 292.094769 271.466556)">0</text>
+      <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #221d1a" x="292.094769" y="271.112181" transform="rotate(-0 292.094769 271.112181)">0</text>
      </g>
     </g>
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use xlink:href="#mcb8f98c89c" x="361.687385" y="258.024525" style="fill: #221d1a; stroke: #221d1a; stroke-width: 0.8"/>
+       <use xlink:href="#maca04f5b9d" x="361.687385" y="257.67015" style="fill: #221d1a; stroke: #221d1a; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_13">
-      <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #221d1a" x="361.687385" y="271.466556" transform="rotate(-0 361.687385 271.466556)">+1 dirtier</text>
+      <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #221d1a" x="361.687385" y="271.112181" transform="rotate(-0 361.687385 271.112181)">+1 dirtier</text>
      </g>
     </g>
    </g>
    <g id="matplotlib.axis_2"/>
    <g id="line2d_4">
-    <path d="M 292.094769 258.024525 
-L 292.094769 71.746125 
-" clip-path="url(#pca0a748f3f)" style="fill: none; stroke: #221d1a; stroke-linecap: square"/>
+    <path d="M 292.094769 257.67015
+L 292.094769 71.39175
+" clip-path="url(#p5296fd2ce3)" style="fill: none; stroke: #221d1a; stroke-linecap: square"/>
    </g>
    <g id="patch_7">
-    <path d="M 170.307692 258.024525 
-L 431.28 258.024525 
+    <path d="M 170.307692 257.67015
+L 431.28 257.67015
 " style="fill: none; stroke: #221d1a; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="text_14">
-    <text style="font-weight: 700; font-size: 11px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #416f4e" x="209.279557" y="97.882331" transform="rotate(-0 209.279557 97.882331)">−1.14</text>
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #416f4e" x="209.279557" y="97.527956" transform="rotate(-0 209.279557 97.527956)">−1.14</text>
    </g>
    <g id="text_15">
-    <text style="font-weight: 700; font-size: 11px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #416f4e" x="223.894006" y="144.451931" transform="rotate(-0 223.894006 144.451931)">−0.93</text>
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #416f4e" x="223.894006" y="144.097556" transform="rotate(-0 223.894006 144.097556)">−0.93</text>
    </g>
    <g id="text_16">
-    <text style="font-weight: 700; font-size: 11px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="310.884775" y="191.021531" transform="rotate(-0 310.884775 191.021531)">+0.22</text>
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="310.884775" y="190.667156" transform="rotate(-0 310.884775 190.667156)">+0.22</text>
    </g>
    <g id="text_17">
-    <text style="font-weight: 700; font-size: 11px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #a4122f" x="385.348874" y="237.591131" transform="rotate(-0 385.348874 237.591131)">+1.29</text>
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #a4122f" x="385.348874" y="237.236756" transform="rotate(-0 385.348874 237.236756)">+1.29</text>
    </g>
   </g>
   <g id="axes_3">
    <g id="text_18">
-    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #221d1a" x="7.2" y="372.50844" transform="rotate(-0 7.2 372.50844)">Queensboro Bridge</text>
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #221d1a" x="7.2" y="372.154065" transform="rotate(-0 7.2 372.154065)">Queensboro Bridge</text>
    </g>
    <g id="text_19">
-    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="7.2" y="387.822612" transform="rotate(-0 7.2 387.822612)">Manhattan side</text>
+    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="7.2" y="387.468237" transform="rotate(-0 7.2 387.468237)">Manhattan side</text>
    </g>
    <g id="text_20">
-    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #221d1a" x="7.2" y="419.029642" transform="rotate(-0 7.2 419.029642)">Broadway at W 35th</text>
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #221d1a" x="7.2" y="418.675267" transform="rotate(-0 7.2 418.675267)">Broadway at W 35th</text>
    </g>
    <g id="text_21">
-    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="7.2" y="434.392212" transform="rotate(-0 7.2 434.392212)">Midtown street</text>
+    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="7.2" y="434.037837" transform="rotate(-0 7.2 434.037837)">Midtown street</text>
    </g>
    <g id="text_22">
-    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #221d1a" x="7.2" y="465.64764" transform="rotate(-0 7.2 465.64764)">Cross Bronx Expressway</text>
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #221d1a" x="7.2" y="465.293265" transform="rotate(-0 7.2 465.293265)">Cross Bronx Expressway</text>
    </g>
    <g id="text_23">
-    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="7.2" y="480.912007" transform="rotate(-0 7.2 480.912007)">Bronx highway</text>
+    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="7.2" y="480.557632" transform="rotate(-0 7.2 480.557632)">Bronx highway</text>
    </g>
    <g id="text_24">
-    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #221d1a" x="7.2" y="512.153256" transform="rotate(-0 7.2 512.153256)">Williamsburg Bridge</text>
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #221d1a" x="7.2" y="511.798881" transform="rotate(-0 7.2 511.798881)">Williamsburg Bridge</text>
    </g>
    <g id="text_25">
-    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="7.2" y="527.531412" transform="rotate(-0 7.2 527.531412)">Manhattan side</text>
+    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="7.2" y="527.177037" transform="rotate(-0 7.2 527.177037)">Manhattan side</text>
    </g>
    <g id="text_26">
-    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #221d1a" x="7.2" y="327.787014" transform="rotate(-0 7.2 327.787014)">B. Right beside busy roads, it often didn't</text>
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #221d1a" x="7.2" y="327.432639" transform="rotate(-0 7.2 327.432639)">B. Six-site preprint: four reported changes</text>
    </g>
    <g id="text_27">
-    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="7.2" y="343.786389" transform="rotate(-0 7.2 343.786389)">Official city roadside monitors, % change in PM2.5 after the fee</text>
+    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="7.2" y="343.432014" transform="rotate(-0 7.2 343.432014)">Daily-average PM2.5 model estimates, µg/m³; positive means above the counterfactual.</text>
    </g>
   </g>
   <g id="axes_4">
    <g id="patch_8">
-    <path d="M 170.307692 537.442125 
-L 431.28 537.442125 
-L 431.28 351.163725 
-L 170.307692 351.163725 
+    <path d="M 170.307692 537.08775
+L 431.28 537.08775
+L 431.28 350.80935
+L 170.307692 350.80935
 z
 " style="fill: #ffffff"/>
    </g>
    <g id="patch_9">
-    <path d="M 317.813779 361.409037 
-L 214.786451 361.409037 
-L 214.786451 387.488013 
-L 317.813779 387.488013 
+    <path d="M 317.813779 361.054662
+L 214.786451 361.054662
+L 214.786451 387.133638
+L 317.813779 387.133638
 z
-" clip-path="url(#p6b27dd83a8)" style="fill: #416f4e"/>
+" clip-path="url(#p7c1c5c0d16)" style="fill: #416f4e"/>
    </g>
    <g id="patch_10">
-    <path d="M 317.813779 407.978637 
-L 345.72647 407.978637 
-L 345.72647 434.057613 
-L 317.813779 434.057613 
+    <path d="M 317.813779 407.624262
+L 345.72647 407.624262
+L 345.72647 433.703238
+L 317.813779 433.703238
 z
-" clip-path="url(#p6b27dd83a8)" style="fill: #8a857c"/>
+" clip-path="url(#p7c1c5c0d16)" style="fill: #8a857c"/>
    </g>
    <g id="patch_11">
-    <path d="M 317.813779 454.548237 
-L 360.250146 454.548237 
-L 360.250146 480.627213 
-L 317.813779 480.627213 
+    <path d="M 317.813779 454.193862
+L 360.250146 454.193862
+L 360.250146 480.272838
+L 317.813779 480.272838
 z
-" clip-path="url(#p6b27dd83a8)" style="fill: #a4122f"/>
+" clip-path="url(#p7c1c5c0d16)" style="fill: #a4122f"/>
    </g>
    <g id="patch_12">
-    <path d="M 317.813779 501.117837 
-L 389.297498 501.117837 
-L 389.297498 527.196813 
-L 317.813779 527.196813 
+    <path d="M 317.813779 500.763462
+L 389.297498 500.763462
+L 389.297498 526.842438
+L 317.813779 526.842438
 z
-" clip-path="url(#p6b27dd83a8)" style="fill: #a4122f"/>
+" clip-path="url(#p7c1c5c0d16)" style="fill: #a4122f"/>
    </g>
    <g id="matplotlib.axis_3">
     <g id="xtick_4">
      <g id="line2d_5">
       <g>
-       <use xlink:href="#mcb8f98c89c" x="204.347559" y="537.442125" style="fill: #221d1a; stroke: #221d1a; stroke-width: 0.8"/>
+       <use xlink:href="#maca04f5b9d" x="204.347559" y="537.08775" style="fill: #221d1a; stroke: #221d1a; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_28">
-      <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #221d1a" x="204.347559" y="550.884156" transform="rotate(-0 204.347559 550.884156)">−10% cleaner</text>
+      <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #221d1a" x="204.347559" y="550.529781" transform="rotate(-0 204.347559 550.529781)">−10</text>
      </g>
     </g>
     <g id="xtick_5">
      <g id="line2d_6">
       <g>
-       <use xlink:href="#mcb8f98c89c" x="317.813779" y="537.442125" style="fill: #221d1a; stroke: #221d1a; stroke-width: 0.8"/>
+       <use xlink:href="#maca04f5b9d" x="317.813779" y="537.08775" style="fill: #221d1a; stroke: #221d1a; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_29">
-      <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #221d1a" x="317.813779" y="550.884156" transform="rotate(-0 317.813779 550.884156)">0</text>
+      <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #221d1a" x="317.813779" y="550.529781" transform="rotate(-0 317.813779 550.529781)">0</text>
      </g>
     </g>
     <g id="xtick_6">
      <g id="line2d_7">
       <g>
-       <use xlink:href="#mcb8f98c89c" x="374.54689" y="537.442125" style="fill: #221d1a; stroke: #221d1a; stroke-width: 0.8"/>
+       <use xlink:href="#maca04f5b9d" x="374.54689" y="537.08775" style="fill: #221d1a; stroke: #221d1a; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_30">
-      <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #221d1a" x="374.54689" y="550.884156" transform="rotate(-0 374.54689 550.884156)">+5% dirtier</text>
+      <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #221d1a" x="374.54689" y="550.529781" transform="rotate(-0 374.54689 550.529781)">+5</text>
      </g>
     </g>
    </g>
    <g id="matplotlib.axis_4"/>
    <g id="line2d_8">
-    <path d="M 317.813779 537.442125 
-L 317.813779 351.163725 
-" clip-path="url(#p6b27dd83a8)" style="fill: none; stroke: #221d1a; stroke-linecap: square"/>
+    <path d="M 317.813779 537.08775
+L 317.813779 350.80935
+" clip-path="url(#p7c1c5c0d16)" style="fill: none; stroke: #221d1a; stroke-linecap: square"/>
    </g>
    <g id="patch_13">
-    <path d="M 170.307692 537.442125 
-L 431.28 537.442125 
+    <path d="M 170.307692 537.08775
+L 431.28 537.08775
 " style="fill: none; stroke: #221d1a; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="text_31">
-    <text style="font-weight: 700; font-size: 11px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #416f4e" x="211.382464" y="377.299931" transform="rotate(-0 211.382464 377.299931)">−9.1%</text>
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #416f4e" x="211.382464" y="376.945556" transform="rotate(-0 211.382464 376.945556)">−9.08</text>
    </g>
    <g id="text_32">
-    <text style="font-weight: 700; font-size: 11px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="349.130456" y="423.869531" transform="rotate(-0 349.130456 423.869531)">+2.5%</text>
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="349.130456" y="423.515156" transform="rotate(-0 349.130456 423.515156)">+2.46</text>
    </g>
    <g id="text_33">
-    <text style="font-weight: 700; font-size: 11px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #a4122f" x="363.654132" y="470.439131" transform="rotate(-0 363.654132 470.439131)">+3.7%</text>
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #a4122f" x="363.654132" y="470.084756" transform="rotate(-0 363.654132 470.084756)">+3.74</text>
    </g>
    <g id="text_34">
-    <text style="font-weight: 700; font-size: 11px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #a4122f" x="392.701485" y="517.008731" transform="rotate(-0 392.701485 517.008731)">+6.3%</text>
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #a4122f" x="392.701485" y="516.654356" transform="rotate(-0 392.701485 516.654356)">+6.30</text>
    </g>
   </g>
   <g id="text_35">
-   <text style="font-weight: 700; font-size: 14px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #221d1a" x="7.2" y="17.391562" transform="rotate(-0 7.2 17.391562)">The sky didn't get dirtier. Several busy roadsides did.</text>
+   <text style="font-weight: 700; font-size: 14px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #221d1a" x="7.2" y="17.220938" transform="rotate(-0 7.2 17.220938)">Local variation deserves a closer look.</text>
   </g>
   <g id="text_36">
-   <text style="font-size: 7.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #8a857c" transform="translate(7.2 591.285891)">Sources: A) Barber thesis (downtown), EPA site 48-201-0046 (Houston), South Bronx Unite sensors.</text>
-   <text style="font-size: 7.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #8a857c" transform="translate(7.2 599.416125)">B) Goldberg et al. 2025, Research Square preprint, not yet peer reviewed. Difference-in-differences on 6 city</text>
-   <text style="font-size: 7.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #8a857c" transform="translate(7.2 607.546359)">real-time monitors; all four shown are statistically significant. 2 of 6 showed no clear change and are not shown.</text>
-   <text style="font-size: 7.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #8a857c" transform="translate(7.2 615.566906)">Different monitors and units, so read the direction, not the exact size.</text>
+   <text style="font-size: 7.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #8a857c" transform="translate(7.2 590.931516)">Sources: A) Barber thesis; EPA site 48-201-0046; De Jesus et al., South Bronx Unite public abstract (2026).</text>
+   <text style="font-size: 7.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #8a857c" transform="translate(7.2 599.06175)">B) Goldberg et al. 2025, Research Square preprint, not yet peer reviewed. Difference-in-differences on 6 city</text>
+   <text style="font-size: 7.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #8a857c" transform="translate(7.2 607.191984)">real-time monitors; all four shown are statistically significant. 2 of 6 showed no clear change and are not shown.</text>
+   <text style="font-size: 7.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #8a857c" transform="translate(7.2 615.322219)">Different metrics and methods. Houston alone cannot rule out global warming or New York weather.</text>
   </g>
  </g>
  <defs>
-  <clipPath id="pca0a748f3f">
-   <rect x="170.307692" y="71.746125" width="260.972308" height="186.2784"/>
+  <clipPath id="p5296fd2ce3">
+   <rect x="170.307692" y="71.39175" width="260.972308" height="186.2784"/>
   </clipPath>
-  <clipPath id="p6b27dd83a8">
-   <rect x="170.307692" y="351.163725" width="260.972308" height="186.2784"/>
+  <clipPath id="p7c1c5c0d16">
+   <rect x="170.307692" y="350.80935" width="260.972308" height="186.2784"/>
   </clipPath>
  </defs>
 </svg>
