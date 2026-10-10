@@ -1,4 +1,4 @@
-# Outside the Line — speaker script
+# Outside the Line: speaker script
 
 Reviewed 9 October 2026. Story order: question → named source and dates → calculation → result → unresolved evidence → next step. This script accompanies the six website slides.
 
@@ -22,7 +22,7 @@ We use published results from South Bronx Unite's community-managed air sensor n
 
 **Why does +1.29 matter?**
 
-It is about 5.9 times the network's estimated +0.22 µg/m³ increase. Its reported 95% uncertainty interval, +0.85 to +1.70 µg/m³, stays above zero, so the authors describe it as statistically significant. That makes it a local warning worth investigating, without establishing diverted traffic as the cause. It is not a 1.29% increase. The abstract doesn't publish that monitor's reference concentration, so we cannot calculate a supported percentage or directly compare it with the 22% result: the studies use different time periods, metrics and models.
++1.29 means 1.29 more micrograms of particles in every cubic meter of air, not a 1.29% rise. It is about 5.9 times the network's estimated +0.22 µg/m³ increase, and its 95% uncertainty interval, +0.85 to +1.70 µg/m³, stays above zero, so the authors call it statistically significant. To compare it with the 22% drop, we turned it into a percentage, which needs a starting level. The study does not publish that sensor's own starting level, so we use the closest official one: NYC Health's Community Air Survey put the 2024 yearly average for Hunts Point–Mott Haven at 6.89 µg/m³. Against that, +1.29 is about a 19% increase (1.29 ÷ 6.89 × 100), and the network's +0.22 is about 3%. The sensor sits beside a highway, where the air usually starts dirtier than the neighborhood average, so its true percentage is probably below 19%. For scale, +1.29 is also about 14% of 9.0 µg/m³, the yearly limit the EPA set in 2024. The 22% and the 19% come from different studies and models, so they compare size, not an exact match. That makes +1.29 a local warning worth investigating, not proof that diverted traffic caused it.
 
 **What we set out to answer**
 
@@ -35,7 +35,7 @@ Calculation and limits:
 - Fraser et al. (2025), npj Clean Air 1:39, doi 10.1038/s44407-025-00037-2. Daily-maximum PM2.5, modeled no-fee comparison, first six months of 2025. The 22% applies to six monitors inside the zone; the full study includes 42 monitors across the metro area.
 - De Jesus et al. (2026), public abstract hosted by South Bronx Unite. Generalized additive mixed models of hourly PM2.5, January 2024–December 2025; 19 of a 65-monitor network analyzed. Overall step estimate +0.22 µg/m³, 95% interval +0.12 to +0.32; maximum +1.29, interval +0.85 to +1.70. Four monitors had significant increases, two significant decreases, and 13 intervals crossed zero.
 - These are transcribed published estimates. We did not obtain or recompute the community's hourly sensor dataset. The abstract and press release do not identify the maximum monitor's address or supply its reference concentration. We do not pin that value to East 138th Street.
-- A percentage needs a stated denominator: concentration change ÷ the relevant reference concentration × 100. The 13.8 µg/m³ no-fee prediction belongs to Fraser's zone analysis and cannot be used as the South Bronx denominator.
+- A percentage needs a stated denominator: concentration change ÷ the relevant reference concentration × 100. The 13.8 µg/m³ no-fee prediction belongs to Fraser's zone analysis and cannot be used as the South Bronx denominator. Instead we use the New York City Community Air Survey (NYCCAS) 2024 annual mean for Hunts Point–Mott Haven (UHF 107), 6.89 µg/m³, from NYC Health's Environment & Health Data Portal; its 2025 value is 6.80 µg/m³. A highway-side sensor likely starts higher, so 19% is an upper-end estimate. The EPA's 2024 annual PM2.5 standard is 9.0 µg/m³.
 
 Sources: [Fraser et al.: full paper (2025)](https://www.nature.com/articles/s44407-025-00037-2); [De Jesus et al.: South Bronx study abstract (2026)](https://www.southbronxunite.org/s/DeJesus-Congestion-Pricing-Abstract.pdf); [South Bronx Unite: primary findings and study status](https://www.southbronxunite.org/congestion-pricing); [EPA: what PM2.5 means](https://www.epa.gov/pm-pollution/particulate-matter-pm-basics).
 
@@ -89,11 +89,15 @@ Sources: [MTA hourly crossings: source of the bridge map and test](https://data.
 
 We do not yet know the cause of the community sensors' increases. Our bridge test found no clear relative increase at four Bronx-adjacent crossings; NYC Health's separate Deegan count estimate also fell slightly. Total vehicle counts do not measure all emissions, and the air studies do not agree on a single South Bronx effect.
 
+**Short answer: why could the air get worse if traffic did not?**
+
+First, it did not get worse everywhere. In the community study, 4 of 19 sensors showed a clear rise, and all four sit near expressways; 2 showed a clear drop and 13 showed no clear change. The city's own monitor study found no clear change tied to the fee at the environmental-justice sites it checked, and NYC Health's yearly air survey even puts the Hunts Point–Mott Haven average slightly lower in 2025 (6.80 µg/m³) than in 2024 (6.89 µg/m³). Second, a traffic count tells you how many vehicles passed, not how much exhaust they made. The same count can pollute more if more of the vehicles are diesel trucks, if traffic crawls or idles, or if trips move to night hours, when air stays low and mixes less. We have not tested that timing idea; it needs hourly counts. Third, other sources add particles too, such as construction, building heat, cooking and wildfire smoke. So nobody has proven the cause yet. The rest of this page shows what we checked.
+
 **The traffic finding and the air finding measure different things**
 
 The community-managed study estimated an adjusted +0.22 µg/m³ network change across 19 monitors, with increases at four highway-adjacent sites. Our MTA test measured vehicle crossings, not emissions near those monitors. NYC Health's separate highway appendix reports Deegan traffic down 0.94% and trucks down 0.29% between 2024 and 2025. Neither establishes why the community network's estimate rose, especially because the maximum monitor's address is unpublished.
 
-**What could explain the difference—and what we have not established**
+**What could explain the difference, and what we have not established**
 
 The same number of vehicles can produce different emissions if vehicle types, idling, speeds or routes change. Pollution concentration can also change with regional smoke, local heating, cooking, construction and how air moves around buildings. These are possible explanations, not findings from this project. The community model adjusted for seasonality, temperature, humidity, wind speed and residential heating; adjustment reduces selected confounding but does not identify the source of the remaining increase.
 
@@ -107,7 +111,7 @@ Global warming can affect air pollution through wildfire smoke and changing weat
 
 **Why use the Van Wyck in Queens?**
 
-First, the Van Wyck Expressway is a Queens highway, used as the comparison site in NYC Health's Air Quality Impacts of Congestion Relief Zone Tolling report (August 2026). The city used its before-and-after readings, plus weather and time trends, to predict air quality without pricing elsewhere. It found no clear pricing-related PM2.5 change at the evaluated environmental-justice sites. This is a different study from the Queensboro chart.
+The Van Wyck Expressway in Queens was the comparison site in NYC Health's August 2026 report, Air Quality Impacts of Congestion Relief Zone Tolling. A comparison site is a place the fee should barely affect, so its readings show what weather and citywide trends did on their own. The city used the Van Wyck readings, plus weather and time trends, to predict what each other site would have measured without the fee. The gap between that prediction and the real reading is the part that could come from pricing. At the environmental-justice sites it evaluated, the city found no clear pricing-related PM2.5 change. This is a different study from the Queensboro chart.
 
 **How the bottom graph was calculated**
 
@@ -165,7 +169,6 @@ Calculation and limits:
 - Original full scan: equal weights 12.5% per factor; missing factors omitted and remaining weights renormalized. Revised 35-street finalist calculation: policy weights shown above; missing grades fixed at 0.5.
 - Asthma table values are length-weighted neighborhood rates, not measured street-level disease. East 138th’s corridor average is 186.6 adult asthma ED visits per 10,000, while Hunts Point–Mott Haven alone is 193.5 per 10,000. Geography joins need checking; neither value is an individual risk.
 - The old citywide red map shows the original equal-weight planning index. It is not a measured PM2.5 map or a map of the revised finalist score.
-- Archived photographs show street context only. They are not current tree surveys and some views differ from the ranked corridor window.
 
 Sources: [NYC Street Centerline: corridor geometry](https://data.cityofnewyork.us/d/inkn-q76z); [DCWP Neighborhood Financial Health: income and poverty](https://data.cityofnewyork.us/d/r3dx-pew9); [NYC Health: asthma data](https://a816-dohbesp.nyc.gov/IndicatorPublic/); [2015 Street Tree Census](https://data.cityofnewyork.us/d/uvpi-gqnh); [2020 Census blocks: population input](https://www2.census.gov/geo/tiger/TIGER2020/TABBLOCK20/); [NYC Heat Vulnerability Index](https://data.cityofnewyork.us/d/4mhf-duep).
 
@@ -221,7 +224,7 @@ PM2.5 is fine airborne particulate matter. Here, pounds/year measures modeled pa
 
 - Start with a compact deck above the highway footprint, keeping three lanes in each direction below. Put trees in engineered planting strips and use smaller lawns and gathering spaces.
 - Dallas did this. Klyde Warren Park cost about $110M for about 5.2 acres and joined Uptown and Downtown again.
-- A lid moves where exhaust exits rather than removing it. Concentrated portal emissions could worsen nearby exposure; ventilation, emergency access and nearby homes need a site-specific study before any pollution benefit can be claimed.
+- A deck moves where exhaust comes out rather than removing it. Exhaust that collects under the deck pours out at its two ends and could make the air worse for homes there, so ventilation, emergency access and nearby homes need a site-specific study before any pollution benefit can be claimed.
 - A site survey, road-owner coordination, structural and exhaust-dispersion assessments, environmental review and funding must come before construction. We have no approved schedule.
 
 **Klyde Warren: what changed**
@@ -231,9 +234,16 @@ PM2.5 is fine airborne particulate matter. Here, pounds/year measures modeled pa
 - A 2013 landscape study estimated 18,500 lb of CO₂ sequestered by its trees each year. That is a carbon benefit, not a measurement of soot removal.
 - During one week of summer observations, park temperatures were 1–9°F below the average for its ZIP code. The strongest quantified lesson here is cooling and shade.
 
+**What the deck could do, and how we would check it**
+
+- What it could do: people in the park and on the sidewalks beside it would no longer stand next to open traffic. The deck puts a roof between them and the exhaust and noise, adds shade, and makes it easier to walk across the highway.
+- Before building: put calibrated low-cost PM2.5 sensors, like the ones in the South Bronx community network, at both ends of the planned deck, on the nearby sidewalks and along an uncovered stretch of the Deegan for comparison. Run them for at least a full year, and place one beside an official monitor to check its accuracy.
+- After opening: compare the change at the deck sites with the change on the uncovered stretch over the same dates. This is the same before-and-after comparison behind the Queensboro chart. Take traffic for the same days from NYSDOT count station 010021 on the Deegan.
+- Success means lower PM2.5 on the park and the nearby sidewalks with no rise at the deck's ends. We would log temperature and noise too, because cooling was the clearest measured benefit in Dallas.
+
 **What the acreage and price range mean**
 
-The earlier East 138th-to-East 149th scenario used 12.9 acres—not 129 acres—and that area was not surveyed as usable deck space. Its archived $20M–$90M per acre assumption produces 12.9 × $20M = $258M and 12.9 × $90M = $1.161B, rounded to about $250M–$1.2B. Dallas's 2012 $110M ÷ 5.2 acres is about $21.2M per acre, which helps explain the low-end precedent. It does not validate the high end or transfer Dallas costs to New York. Our new compact model is 240 m × 34 m = 8,160 m², or 2.02 acres, and has not been priced.
+The earlier East 138th-to-East 149th scenario used 12.9 acres (not 129 acres), and that area was not surveyed as usable deck space. Its archived $20M–$90M per acre assumption produces 12.9 × $20M = $258M and 12.9 × $90M = $1.161B, rounded to about $250M–$1.2B. Dallas's 2012 $110M ÷ 5.2 acres is about $21.2M per acre, which helps explain the low-end precedent. It does not validate the high end or transfer Dallas costs to New York. Our new compact model is 240 m × 34 m = 8,160 m², or 2.02 acres, and has not been priced.
 
 Calculation and limits:
 

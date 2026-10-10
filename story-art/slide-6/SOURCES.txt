@@ -1,12 +1,4 @@
-Slide 6 photos — scores page, equal-weight ranking table (story.js "scores").
-Eight streets in that table. Site was not published. story.js was not edited.
-
-southern-blvd.jpg
-  What: Southern Boulevard looking north, just north of East Fordham Road, where it becomes the divided Dr. Theodore Kazimiroff Boulevard toward Bronx Park. June 2014. This is the Fordham / Bronx Park end that scored about .931, not the Hunts Point end.
-  Google Images query: Southern Boulevard Bronx street
-  Source page: https://www.eastcoastroads.com/states/ny/nyc/southern/photogal/north
-  Image file: https://www.eastcoastroads.com/states/ny/nyc/southern/fullsize/sbn00005.jpg
-  How: downloaded the photo bytes from that result page. 800x600.
+Photo used on the site (index.html).
 
 e138.jpg
   What: Looking north along the Major Deegan Expressway from the East 138th Street overpass. This is the named Deegan air-hit spot (rank 2, about .912).
@@ -14,49 +6,3 @@ e138.jpg
   Source page: https://commons.wikimedia.org/wiki/File:Major_Deegan_Expressway_from_138th_Street_overpass_jeh.jpg
   Image file: https://commons.wikimedia.org/wiki/Special:FilePath/Major_Deegan_Expressway_from_138th_Street_overpass_jeh.jpg?width=1600
   How: downloaded from the Commons file Google Images listed. Public domain, Jim Henderson. 1920x1440.
-
-boone-ave.jpg
-  What: Boone Avenue at about 1661 Boone Ave, Crotona Park East / West Farms (rank 3, about .904). Warehouse street, parked cars, graffiti. Ranking point about 40.8344, -73.8843.
-  Google Images query: Boone Avenue Bronx
-  Google result pages were mural close-ups (Boone Avenue Walls), not a clear shot of the street.
-  Fallback: Google Street View of that exact point.
-  Source page: https://www.google.com/maps/@40.8344155,-73.8842849,3a,80y,10h,95t/data=!3m7!1e1!3m5!1si0Axbe9KIAykkFgf4KIz3g!2e0!7i16384!8i8192
-  How: Street View capture. 1024x576.
-
-e141.jpg
-  What: East 141st Street at about 851 E 141st St, Mott Haven / Port Morris, looking along the block toward the green overpass (rank 4, about .896, asthma ED 193.5). Ranking point about 40.8058, -73.9089.
-  Google Images query: East 141st Street Bronx street Mott Haven
-  Google result pages were listings and renderings (including a jail rendering), not a photo of the street.
-  Fallback: Google Street View of that exact point, yaw 280.
-  Source page: https://www.google.com/maps/@40.8054009,-73.9080008,3a,75y,280h,90t/data=!3m7!1e1!3m5!1sCG8bOwYPDj8HXCl2I-4ung!2e0!7i16384!8i8192
-  How: Street View capture. 1024x576.
-
-park-ave.jpg
-  What: Park Avenue in Crotona at about 4174 Park Ave, beside the open rail cut (rank 5, about .892, Cross Bronx monitor). Ranking point about 40.8462, -73.9001.
-  Google Images query: Park Avenue Bronx railroad viaduct Crotona
-  Google Images returned the Manhattan Park Avenue viaduct and East Harlem La Marqueta, not this Bronx block.
-  Fallback: Google Street View of the ranking point.
-  Source page: https://www.google.com/maps/@40.8465437,-73.8997271,3a,75y,26h,90t/data=!3m7!1e1!3m5!1sooi5aPIyLXpc1VwkjeBCbg!2e0!7i16384!8i8192
-  How: Street View capture. 1024x576.
-
-e132.jpg
-  What: East 132nd Street at about 620 E 132nd St, Mott Haven industrial block, with a bridge down the street (rank 6, about .878, asthma ED 193.5). Ranking point about 40.8022, -73.9185.
-  Google Images query: East 132nd Street Bronx street photo Mott Haven
-  Google result pages were listings and building renderings, not a photo of the street.
-  Fallback: Google Street View of that exact point.
-  Source page: https://www.google.com/maps/@40.8022135,-73.9185539,3a,80y,80h,95t/data=!3m7!1e1!3m5!1seO4fm69Ftgn33mKZSO1N9g!2e0!7i16384!8i8192
-  How: Street View capture. 1024x576.
-
-exterior-st.jpg
-  What: Exterior Street in the Bronx under the elevated Major Deegan (rank 7, about .871). Cars passing under the steel structure.
-  Google Images query: Exterior Street Bronx Major Deegan photo
-  Source page: https://www.flickr.com/photos/imjustwalkin/8602740958
-  Image file: https://live.staticflickr.com/8520/8602740958_29eac654f6_b.jpg
-  How: downloaded from the Flickr page Google Images opened. 1024x768.
-
-jerome-ave.jpg
-  What: Jerome Avenue at 167th Street, looking toward the elevated 4 train (rank 8, about .866). The scored window sits farther north, near the Cross Bronx (about 40.848, -73.912). This is still Jerome Avenue, not that exact block.
-  Google Images query: Jerome Avenue Bronx
-  Source page: https://en.wikipedia.org/wiki/Jerome_Avenue
-  Image file: https://commons.wikimedia.org/wiki/File:167th_Street_IRT_Jerome_from_Jerome_Avenue.jpg
-  How: downloaded the lead photo from the Wikipedia page Google Images listed. CC BY-SA 4.0, DanTD. 1920x1440.
