@@ -245,7 +245,7 @@ L -3.5 0
       </g>
      </g>
      <g id="text_7">
-      <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #221d1a" x="120.742031" y="51.671598" transform="rotate(-0 120.742031 51.671598)">Legacy air proxy (unverified)</text>
+      <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #221d1a" x="120.742031" y="51.671598" transform="rotate(-0 120.742031 51.671598)">Monitor signal (unverified)</text>
      </g>
     </g>
     <g id="ytick_3">
@@ -358,7 +358,7 @@ L 540.662031 182.573969
     <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #221d1a" x="427.109031" y="169.322105" transform="rotate(-0 427.109031 169.322105)">17%</text>
    </g>
    <g id="text_25">
-    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #8a857c" transform="translate(449.354706 28.876332)">gray = old, 12.5% each</text>
+    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #8a857c" transform="translate(449.354706 28.876332)">gray = equal, 12.5% each</text>
     <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #8a857c" transform="translate(492.830878 37.966285)">color = new</text>
    </g>
    <g id="text_26">
@@ -608,8 +608,8 @@ z
   <g id="text_44">
    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #8a857c" transform="translate(103.766031 520.132828)">A: percentages are weight shares, not pollution changes. Need = sum(weight × grade).</text>
    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #8a857c" transform="translate(103.766031 529.253063)">B: residents are 2020 block populations selected by center point within 400 m.</text>
-   <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #8a857c" transform="translate(103.766031 538.467328)">Missing finalist grades = 0.5 (assumption). A legacy unlocated monitor proxy remains</text>
-   <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #8a857c" transform="translate(103.766031 547.681594)">in these saved scores; correct the input and rerun all candidates before site selection.</text>
+   <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #8a857c" transform="translate(103.766031 538.467328)">Missing finalist grades = 0.5 (assumption). The air factor uses an unverified monitor</text>
+   <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #8a857c" transform="translate(103.766031 547.681594)">location; confirm it and rerun all candidates before choosing a site.</text>
   </g>
  </g>
  <defs>

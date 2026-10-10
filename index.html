@@ -224,27 +224,11 @@ h1,h2{
   margin:0;
   padding:0 0 0 1.1rem;
 }
-.counter-block{
-  margin:0 0 .65rem;
-  padding:.45rem .55rem;
-  border:1px solid #ddd;
-}
 .source-links{display:flex;flex-direction:column;gap:.35rem;margin:.8rem 0;font-size:13px;line-height:1.4}
 .source-links a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
 .plate.explained{height:auto;min-height:0;overflow:visible}
 .plate.explained img{height:auto;max-height:none;width:100%;object-fit:contain}
 .plate.explained figcaption{position:static;height:auto;padding:.6rem .7rem;line-height:1.45}
-.counter-block .claim{
-  margin:0 0 .25rem;
-  font-weight:700;
-  font-size:var(--fs-body);
-}
-.counter-block .refute{
-  margin:0;
-  font-size:var(--fs-body);
-  line-height:1.45;
-  color:var(--mute);
-}
 .dsets{margin:0}
 .deck-showcase{margin:.9rem 0 1.2rem;border:1px solid #d4d1c9;background:#f7f6f2}
 .deck-showcase img{display:block;width:100%;height:auto;aspect-ratio:16/11;object-fit:contain}
@@ -581,7 +565,7 @@ h1,h2{
         <div class="facts">
           <div class="copy" data-copy="lead"></div>
           <figure class="plate rank captioned explained">
-            <img src="story-art/fig-weights.svg?v=20261009" alt="Weights first, then the score: eight factor weights sum to 100 percent. Below, 35 finalist streets by dimensionless need and thousands of residents per kilometer. Legacy scores retain an unverified air-location proxy." width="560" height="720">
+            <img src="story-art/fig-weights.svg?v=20261009b" alt="Weights first, then the score: eight factor weights sum to 100 percent. Below, 35 finalist streets by dimensionless need and thousands of residents per kilometer. The air factor uses an unverified monitor location." width="560" height="720">
             <figcaption data-cap="0"></figcaption>
           </figure>
           <div class="copy" data-copy="mid"></div>
@@ -594,18 +578,18 @@ h1,h2{
             <img src="story-art/fig-economics-map.svg" alt="Median income in US dollars and poverty percentage by historical NYC PUMA. Hunts Point, Longwood and Melrose, PUMA 3710, is outlined. Source: Neighborhood Financial Health, published 2020." width="1100" height="720">
             <figcaption data-cap="1"></figcaption>
           </figure>
-          <figure class="plate captioned explained"><img src="story-art/fig-tree-gaps.svg" alt="2015 census counts of living trees in ten 120-meter East 138th analysis bays. Bay 4 has zero; bay 8 has 21. These are archived counts, requiring a current field survey." width="1100" height="570"><figcaption data-cap="2"></figcaption></figure>
+          <figure class="plate captioned explained"><img src="story-art/fig-tree-gaps.svg?v=20261009b" alt="2015 census counts of living trees in ten 120-meter East 138th analysis bays. Bay 4 has zero; bay 8 has 21. These are 2015 counts; a current field survey is needed." width="1100" height="570"><figcaption data-cap="2"></figcaption></figure>
           <div class="copy" data-copy="tail"></div>
           <div class="source-links" data-story-sources></div>
         </div>
       </article>
 
-      <article class="step" data-step="4" data-story="location" hidden aria-label="The idea">
+      <article class="step" data-step="4" data-story="location" hidden aria-label="From the map to the sidewalk">
         <p class="beat"></p>
         <h2></h2>
         <div class="facts">
           <div class="copy" data-copy="lead"></div>
-          <figure class="plate captioned explained"><img src="story-art/fig-tree-availability.svg" alt="East 138th archived tree-location map. Dots show 2015 living trees. Bay IDs match the table; green denotes survey candidates, gold airflow review and gray counts at or above the local mean." width="1100" height="740"><figcaption>Read the locations first, then the counts below. The straight analysis axis approximates a bending street; four unscored bins are shown dashed. This is an archived screening map, not surveyed planting space.</figcaption></figure>
+          <figure class="plate captioned explained"><img src="story-art/fig-tree-availability.svg?v=20261009b" alt="East 138th tree-location map from the 2015 census. Dots show 2015 living trees. Bay IDs match the table; green denotes survey candidates, gold airflow review and gray counts at or above the local mean." width="1100" height="740"><figcaption>Read the locations first, then the counts below. The straight analysis axis approximates a bending street; four unscored bins are shown dashed. This is a screening map from 2015 data, not surveyed planting space.</figcaption></figure>
           <table class="sit-table" id="tree-pick-table">
             <caption data-caption="blocks"></caption>
             <thead>
@@ -639,7 +623,7 @@ h1,h2{
           </table>
         </div>
         <div class="design-gallery" data-deck-designs aria-label="Three garden deck designs"></div>
-        <p class="design-note">AI-generated design illustrations. Buildings, road grades and planting layouts are conceptual.</p>
+        <p class="design-note">Design illustrations. Buildings, road grades and planting layouts are conceptual.</p>
         <div class="deck-sources" data-deck-sources></div>
 
         <figure class="plate captioned">
@@ -677,7 +661,7 @@ h1,h2{
       <p><i style="background:#174636;border-radius:50%"></i> Tree recorded alive in 2015</p>
       <p><i style="background:#2a8a4a"></i> Survey candidate (2015 gap)</p>
       <p><i style="background:#bd7f1f"></i> Airflow review</p>
-      <p><i style="background:#5c574f"></i> At/above archived mean</p>
+      <p><i style="background:#5c574f"></i> At or above the local mean</p>
     </div>
     <div id="ranklegend" class="map-legend" hidden>
       <p><i style="background:#9f2f2d"></i> Our choices</p>
@@ -687,8 +671,8 @@ h1,h2{
 </div>
 
 <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
-<script src="data/story.js?v=20261009"></script>
-<script src="data/bundle.js?v=20261009"></script>
+<script src="data/story.js?v=20261009b"></script>
+<script src="data/bundle.js?v=20261009b"></script>
 <script>
 (function(){
   const D = window.OTL;
@@ -776,20 +760,6 @@ h1,h2{
     }
     details.appendChild(body);
     container.appendChild(details);
-  }
-  function renderCounters(container, items, ctx){
-    (items || []).forEach(item => {
-      const wrap = document.createElement('div');
-      wrap.className = 'counter-block';
-      const claim = document.createElement('p');
-      claim.className = 'claim';
-      appendFilled(claim, item.claim, ctx);
-      const refute = document.createElement('p');
-      refute.className = 'refute';
-      appendFilled(refute, item.refute, ctx);
-      wrap.append(claim, refute);
-      container.appendChild(wrap);
-    });
   }
   function renderDeck(article, section){
     const holder = article.querySelector('[data-deck-showcase]');
@@ -901,18 +871,6 @@ h1,h2{
         }
         renderBlocks(lead, section.blocks, ctx);
         renderMethods(lead, section.methods_expandable, ctx);
-        if(key === 'close' && S.sections.counters){
-          const h = document.createElement('h3');
-          h.textContent = 'Four objections';
-          h.style.margin = '.85rem 0 .4rem';
-          lead.appendChild(h);
-          if(S.sections.counters.purpose){
-            const purpose = document.createElement('p');
-            purpose.textContent = S.sections.counters.purpose;
-            lead.appendChild(purpose);
-          }
-          renderCounters(lead, S.sections.counters.items, ctx);
-        }
         if(section.cite && !(section.methods_expandable && section.methods_expandable.bullets)){
           const c = document.createElement('p');
           c.className = 'lookat';
@@ -1028,9 +986,9 @@ h1,h2{
   })();
 
   const choiceNotes = {
-    mott_haven_grid: {when:'survey first', text:'Inspect archived gaps on East 138th and nearby streets. Current trees, utilities, access and airflow determine whether planting is possible; the community maximum is not located here.'},
-    southern_blvd: {when:'alternative survey', text:'Compare current canopy, resident counts and health-area matches before selecting a corridor. The saved planning score is provisional.'},
-    cross_bronx_frontage: {when:'alternative survey', text:'Check frontage space, local emissions and health geography. The old monitor proxy does not establish a pricing-caused pollution increase here.'},
+    mott_haven_grid: {when:'survey first', text:'Inspect the 2015 tree gaps on East 138th and nearby streets. Current trees, utilities, access and airflow determine whether planting is possible; the community maximum is not located here.'},
+    southern_blvd: {when:'alternative survey', text:'Compare current canopy, resident counts and health-area matches before selecting a corridor. The planning score is provisional.'},
+    cross_bronx_frontage: {when:'alternative survey', text:'Check frontage space, local emissions and health geography. The air factor does not establish a pricing-caused pollution increase here.'},
     bruckner_westchester: {when:'alternative survey', text:'Assess freight traffic, planting space, road ownership and median access. No construction layout or site funding has been verified.'},
     deegan_lid: {when:'long horizon', text:'Explore the assumed 240 × 34 m garden-deck concept. Surveys, structural assessment, ventilation and portal-exposure modeling must establish feasibility; no construction date is set.'}
   };
@@ -1194,7 +1152,7 @@ h1,h2{
   })));
   const rankTopFC = fc(((CW.pick && CW.pick.rows) || []).slice(0, 8).map(r => pt(r.lon, r.lat, {
     label: '#' + r.rank + ' ' + r.street,
-    say: 'Provisional priority #' + r.rank + ' among 35 finalists: ' + r.street + ' in ' + (r.uhf || r.borough) + '. Legacy need index ' + Number(r.need).toFixed(2) + ' (0–1, dimensionless); ' + Number(r.people_per_km).toLocaleString('en-US') + ' residents/km within a 400 m buffer, 2020 Census. ' + (r.monitor ? ('Saved air-proxy label: ' + r.monitor + '; location and interpretation need verification. ') : 'No usable published air signal in the saved scoring input; this does not establish that no monitor exists. ') + 'The air proxy needs correction before these ranks guide investment.'
+    say: 'Provisional priority #' + r.rank + ' among 35 finalists: ' + r.street + ' in ' + (r.uhf || r.borough) + '. Need index ' + Number(r.need).toFixed(2) + ' (0–1, dimensionless); ' + Number(r.people_per_km).toLocaleString('en-US') + ' residents/km within a 400 m buffer, 2020 Census. ' + (r.monitor ? ('Air-monitor label: ' + r.monitor + '; location and interpretation need verification. ') : 'No usable published air signal in the scoring input; this does not establish that no monitor exists. ') + 'Confirm the monitor location before these ranks guide investment.'
   })));
 
   function pointKind(name){
@@ -1464,7 +1422,7 @@ h1,h2{
     map.addSource('cap-pt', {type:'geojson', data:fc([pt(D.geo.deegan_cap[0][0], D.geo.deegan_cap[0][1], {})])});
     map.addLayer({id:'cap-label', type:'symbol', source:'cap-pt', layout:{
       visibility:'none',
-      'text-field':'earlier corridor concept · 12.9 acres',
+      'text-field':'longer deck option · 12.9 acres',
       'text-size':12,
       'text-font':['Noto Sans Bold']
     }, paint:{'text-color':PAPER, 'text-halo-color':TEAL, 'text-halo-width':1.6}});
