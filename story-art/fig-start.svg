@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="532.8pt" height="280.8pt" viewBox="0 0 532.8 280.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 280.8 
+L 532.8 280.8 
+L 532.8 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 143.856 224.64 
+L 516.816 224.64 
+L 516.816 56.16 
+L 143.856 56.16 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 342.768 63.818182 
+L 247.974 63.818182 
+L 247.974 96.853476 
+L 342.768 96.853476 
+z
+" clip-path="url(#pbbfa4aa352)" style="fill: #416f4e"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 342.768 123.882353 
+L 349.6056 123.882353 
+L 349.6056 156.917647 
+L 342.768 156.917647 
+z
+" clip-path="url(#pbbfa4aa352)" style="fill: #8a857c"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 342.768 183.946524 
+L 382.8612 183.946524 
+L 382.8612 216.981818 
+L 342.768 216.981818 
+z
+" clip-path="url(#pbbfa4aa352)" style="fill: #a4122f"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="mb4515ee7e1" d="M 0 0 
+L 0 3.5 
+" style="stroke: #221d1a; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mb4515ee7e1" x="156.288" y="224.64" style="fill: #221d1a; stroke: #221d1a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #221d1a" x="156.288" y="238.797813" transform="rotate(-0 156.288 238.797813)">−6</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#mb4515ee7e1" x="218.448" y="224.64" style="fill: #221d1a; stroke: #221d1a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #221d1a" x="218.448" y="238.797813" transform="rotate(-0 218.448 238.797813)">−4</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#mb4515ee7e1" x="280.608" y="224.64" style="fill: #221d1a; stroke: #221d1a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #221d1a" x="280.608" y="238.797813" transform="rotate(-0 280.608 238.797813)">−2</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#mb4515ee7e1" x="342.768" y="224.64" style="fill: #221d1a; stroke: #221d1a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #221d1a" x="342.768" y="238.797813" transform="rotate(-0 342.768 238.797813)">0</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#mb4515ee7e1" x="404.928" y="224.64" style="fill: #221d1a; stroke: #221d1a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #221d1a" x="404.928" y="238.797813" transform="rotate(-0 404.928 238.797813)">+2</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#mb4515ee7e1" x="467.088" y="224.64" style="fill: #221d1a; stroke: #221d1a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #221d1a" x="467.088" y="238.797813" transform="rotate(-0 467.088 238.797813)">+4</text>
+     </g>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 10px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="330.336" y="252.065" transform="rotate(-0 330.336 252.065)">Estimated change in PM2.5 after the fee began (µg/m³)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_7"/>
+     <g id="text_8">
+      <text style="font-size: 9.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #221d1a" transform="translate(47.937328 79.377665)">Paid zone, Manhattan</text>
+      <text style="font-size: 9.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #221d1a" transform="translate(47.955141 89.45954)">6 monitors, daily peak</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_8"/>
+     <g id="text_9">
+      <text style="font-size: 9.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #221d1a" transform="translate(52.175219 139.441836)">South Bronx network</text>
+      <text style="font-size: 9.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #221d1a" transform="translate(62.738031 149.523711)">19 sensors, hourly</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_9"/>
+     <g id="text_10">
+      <text style="font-size: 9.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #221d1a" transform="translate(35.798109 199.520109)">South Bronx, one sensor</text>
+      <text style="font-size: 9.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #221d1a" transform="translate(66.949203 209.56814)">beside a highway</text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_10">
+    <path d="M 342.768 224.64 
+L 342.768 56.16 
+" clip-path="url(#pbbfa4aa352)" style="fill: none; stroke: #221d1a; stroke-width: 0.9; stroke-linecap: square"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 143.856 224.64 
+L 516.816 224.64 
+" style="fill: none; stroke: #221d1a; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #416f4e" transform="translate(198.479869 73.370743)">−3.05 µg/m³</text>
+    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #416f4e" transform="translate(145.32565 82.585009)">22% below the 13.8 µg/m³</text>
+    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #416f4e" transform="translate(180.931353 91.799274)">no-fee prediction</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #8a857c" transform="translate(353.3352 133.49707)">+0.22 µg/m³</text>
+    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #8a857c" transform="translate(353.3352 142.587023)">about 3% above the 2024</text>
+    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #8a857c" transform="translate(353.3352 151.70168)">average, 6.89 µg/m³</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #a4122f" transform="translate(386.5908 193.561241)">+1.29 µg/m³</text>
+    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #a4122f" transform="translate(386.5908 202.651195)">about 19% above the 2024</text>
+    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #a4122f" transform="translate(386.5908 211.765851)">average, 6.89 µg/m³</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #416f4e" x="338.106" y="43.096043" transform="rotate(-0 338.106 43.096043)">← cleaner air</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #a4122f" x="347.43" y="43.096043" transform="rotate(-0 347.43 43.096043)">dirtier air →</text>
+   </g>
+  </g>
+  <g id="text_16">
+   <text style="font-weight: 700; font-size: 13px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #221d1a" x="10.656" y="11.303906" transform="rotate(-0 10.656 11.303906)">Cleaner air downtown, dirtier air at a South Bronx highway</text>
+  </g>
+  <g id="text_17">
+   <text style="font-size: 8.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #8a857c" x="10.656" y="29.099016" transform="rotate(-0 10.656 29.099016)">Two published studies with different monitors, dates and models: compare direction and rough size only.</text>
+  </g>
+  <g id="text_18">
+   <text style="font-size: 7.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #8a857c" transform="translate(10.656 262.66725)">Sources: Fraser et al., npj Clean Air (2025); De Jesus et al., South Bronx Unite public abstract (2026);</text>
+   <text style="font-size: 7.5px; font-family: 'Arial', 'DejaVu Sans', sans-serif; fill: #8a857c" transform="translate(10.656 270.797484)">NYC Health NYCCAS 2024 yearly average for Hunts Point–Mott Haven.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pbbfa4aa352">
+   <rect x="143.856" y="56.16" width="372.96" height="168.48"/>
+  </clipPath>
+ </defs>
+</svg>

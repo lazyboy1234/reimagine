@@ -12,7 +12,6 @@ This is an editable architectural concept, built October 9, 2026 in Blender 5.2.
 - `vendor/`: model-viewer 4.4.0 from the official npm package, its Apache 2.0 license and tarball integrity provenance. The documented Google CDN URL returned 404 during verification, so the viewer serves the saved library locally.
 - `manifest.json`: dimensions, units and limitations.
 - `scripts/build_deck.py`: deterministic geometry builder, exports and camera renders.
-- `../../story-art/deegan-designs/`: three built-in ImageGen explorations and the exact prompt set. These are atmosphere concepts, not renders of the mesh.
 
 ## Assumed dimensions
 

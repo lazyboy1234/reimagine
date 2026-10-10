@@ -236,15 +236,9 @@ h1,h2{
 .deck-showcase h3{margin:0 0 .25rem;color:var(--ink);font-size:16px}
 .deck-link{display:inline-block;margin-top:.5rem;padding:.5rem .75rem;background:var(--ink);color:white;font-weight:700}
 .deck-link:hover{color:white;background:var(--partner)}
-.design-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem;margin:1rem 0}
-.design-gallery figure{margin:0;min-width:0}
-.design-gallery img{display:block;width:100%;height:auto;aspect-ratio:2/3;object-fit:cover}
-.design-gallery h3{font-size:14px;margin:.4rem 0 .15rem}
-.design-gallery p{font-size:13px;color:var(--mute);margin:0}
 .deck-sources{font-size:13px;margin:.75rem 0}
 .deck-sources a{text-decoration:underline;display:block;margin-bottom:.3rem}
-.design-note{font-size:13px;color:var(--mute)}
-@media(max-width:700px){.design-gallery{grid-template-columns:1fr}.design-gallery img{max-height:38rem;object-fit:contain;background:#f7f6f2}}
+.fig-stats{display:block;margin-top:.35rem;font-size:12px}
 .dset{
   margin:0 0 .7rem;
   padding:0 0 .65rem;
@@ -483,8 +477,8 @@ h1,h2{
 }
 
 /* Figures with source captions flow at their natural ratio. */
-.step .plate.explained{height:auto;min-height:0;overflow:visible}
-.step .plate.explained img{height:auto;max-height:none}
+.step .plate.explained,.step[data-step="3"] .plate.explained{height:auto;min-height:0;overflow:visible}
+.step .plate.explained img,.step[data-step="3"] .plate.explained img{position:static;height:auto;max-height:none}
 .step .plate.explained figcaption{position:static;height:auto}
 @media(max-width:600px){.sit-table{font-size:11px}.sit-table th,.sit-table td{padding:.35rem .25rem}}
 </style>
@@ -521,10 +515,10 @@ h1,h2{
         </div>
         <figure class="plate captioned explained">
           <img src="story-art/slide-6/e138.jpg" alt="Looking north along the Major Deegan from the East 138th Street overpass." width="1920" height="1440">
-          <figcaption>Location context: the Major Deegan from East 138th Street, showing traffic close to homes. This photo supplies no pollution reading and does not locate the study's maximum monitor.</figcaption>
+          <figcaption>The Major Deegan from the East 138th Street bridge: highway traffic runs right next to homes. The photo shows the place, not a pollution reading.</figcaption>
         </figure>
         <figure class="plate captioned explained">
-          <img src="paper/refs/cornell-npj-fig1.png" alt="Fraser et al., Figure 1: modeled pollution effects for metro, city and zone; the paid-zone daily maximum estimate was −3.05 micrograms per cubic meter, about 22 percent below its no-fee prediction." width="611" height="685">
+          <img src="story-art/fig-start.svg?v=20261010" alt="Bar chart of three published PM2.5 changes after the fee began: paid zone in Manhattan −3.05 micrograms per cubic meter, about 22 percent below the no-fee prediction; South Bronx network +0.22, about 3 percent; one South Bronx highway-side sensor +1.29, about 19 percent." width="740" height="390">
           <figcaption data-cap="0"></figcaption>
         </figure>
         <div class="source-links" data-story-sources></div>
@@ -544,6 +538,7 @@ h1,h2{
           <img src="story-art/fig3-bridge-comparison.svg" alt="All of 2025 combined: four Bronx crossings had an adjusted relative growth difference of −1.04 percent, with a 95 percent interval from −3.63 to +1.61 that crosses zero. Two zone-serving MTA tunnels had −2.29 percent, interval −3.39 to −1.18; inference is limited by few crossings." width="920" height="500">
           <figcaption data-cap="1"></figcaption>
         </figure>
+        <figure class="plate captioned explained"><img src="story-art/fig-trend.svg?v=20261010" alt="Yearly MTA vehicle crossings 2019 to 2025, indexed to 2022 = 100: Bronx routes rose every year after 2020 and kept rising in 2025; comparison bridges flat; zone tunnels dipped in 2025." width="740" height="410"><figcaption data-cap="2"></figcaption></figure>
         <div class="source-links" data-story-sources></div>
       </article>
 
@@ -564,6 +559,10 @@ h1,h2{
         <p class="beat"></p><h2></h2>
         <div class="facts">
           <div class="copy" data-copy="lead"></div>
+          <figure class="plate captioned explained">
+            <img src="story-art/map-citywide-scores.jpg?v=20261010" alt="Map of New York City's five boroughs with every 0.8 to 2.0 km street window colored by its first-pass score, equal weights; the darkest, highest-need streets cluster in the Bronx and Upper Manhattan. East 138th in Mott Haven is labeled." width="1836" height="1632" loading="lazy">
+            <figcaption>Step one: every street window in the city, 0.8 to 2.0 km long, colored by its first-pass need score, where all 8 factors count the same (12.5% of the score each). Darker red means higher need (scale 0 to 1, no units). The darkest streets cluster in the Bronx and Upper Manhattan; East 138th is labeled. The weights in the next chart were applied only to the 47 top windows, not to this whole map.<span class="fig-stats">How we did it: 99,357 street segments from the city's street centerline file, grouped into 33,785 overlapping windows 0.8 to 2.0 km long. Each window's 8 factors were graded 0 to 1 (higher = more need); a missing factor was left out and the other weights scaled up to 100%.</span></figcaption>
+          </figure>
           <figure class="plate rank captioned explained">
             <img src="story-art/fig-weights.svg?v=20261009b" alt="Weights first, then the score: eight factor weights sum to 100 percent. Below, 35 finalist streets by dimensionless need and thousands of residents per kilometer. The air factor uses an unverified monitor location." width="560" height="720">
             <figcaption data-cap="0"></figcaption>
@@ -589,7 +588,7 @@ h1,h2{
         <h2></h2>
         <div class="facts">
           <div class="copy" data-copy="lead"></div>
-          <figure class="plate captioned explained"><img src="story-art/fig-tree-availability.svg?v=20261009b" alt="East 138th tree-location map from the 2015 census. Dots show 2015 living trees. Bay IDs match the table; green denotes survey candidates, gold airflow review and gray counts at or above the local mean." width="1100" height="740"><figcaption>Read the locations first, then the counts below. The straight analysis axis approximates a bending street; four unscored bins are shown dashed. This is a screening map from 2015 data, not surveyed planting space.</figcaption></figure>
+          <figure class="plate captioned explained"><img src="story-art/fig-tree-availability.svg?v=20261009b" alt="East 138th tree-location map from the 2015 census. Dots show 2015 living trees. Bay IDs match the table; green denotes survey candidates, gold airflow review and gray counts at or above the local mean." width="1100" height="740"><figcaption>Read the locations first, then the counts below. The straight analysis axis approximates a bending street; four unscored bins are shown dashed. This is a screening map from 2015 data, not surveyed planting space.<span class="fig-stats">How we did it: 2015 Street Tree Census points on the same 10 bays (70 living trees). A bay is a survey candidate when it has fewer than 7 trees (the mean) and its H/W is below 0.5.</span></figcaption></figure>
           <table class="sit-table" id="tree-pick-table">
             <caption data-caption="blocks"></caption>
             <thead>
@@ -603,8 +602,9 @@ h1,h2{
           <img src="story-art/far-zoning-nyc-2020.jpg" alt="FAR Zoning Map NYC 2020. Max floor area ratio across the five boroughs, red low to blue high." width="1015" height="1024">
           <figcaption data-cap="0"></figcaption>
         </figure>
-        <figure class="plate">
+        <figure class="plate captioned explained">
           <img src="story-art/fig4-canyon.svg?v=20261009" alt="Modeled H/W ratios for ten East 138th analysis bays. One exceeds the 0.5 screening threshold; field measurements and airflow assessment are needed." width="1367" height="521">
+          <figcaption>Building height ÷ street width (H/W, no units) for 10 bays on East 138th. Below 0.5 counts as open enough for street trees; above 0.5 needs an airflow check.<span class="fig-stats">How we did it: H = median roof height of the buildings along each bay, from NYC Building Footprints (dataset 5zhs-2jue), converted from feet to meters. W = facade-to-facade street width in meters, estimated from the footprint outlines, not measured on site. 0.5 is our screening line, not a city standard.</span></figcaption>
         </figure>
       </article>
 
@@ -622,8 +622,7 @@ h1,h2{
             <tbody data-table="options"></tbody>
           </table>
         </div>
-        <div class="design-gallery" data-deck-designs aria-label="Three garden deck designs"></div>
-        <p class="design-note">Design illustrations. Buildings, road grades and planting layouts are conceptual.</p>
+        <figure class="plate captioned explained"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Dallas_-_Klyde_Warren_Park_23.jpg/1280px-Dallas_-_Klyde_Warren_Park_23.jpg" alt="Klyde Warren Park in Dallas: lawn and trees on a park deck built over the Woodall Rodgers Freeway, with downtown towers behind." width="1280" height="850" loading="lazy"><figcaption>Klyde Warren Park, Dallas: a 5.2-acre park that opened in 2012 on a deck built over the Woodall Rodgers Freeway, which still runs underneath. Photo: <a href="https://commons.wikimedia.org/wiki/File:Dallas_-_Klyde_Warren_Park_23.jpg">Joe Mabel</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons.</figcaption></figure>
         <div class="deck-sources" data-deck-sources></div>
 
         <figure class="plate captioned">
@@ -648,8 +647,9 @@ h1,h2{
   <div class="rule" aria-hidden="true"></div>
   <div id="map" role="img" aria-label="OpenStreetMap of New York with project data on top">
     <div id="maplegend" class="map-legend" hidden>
-      <p><i style="background:#2a8a4a"></i> Tunnels</p>
-      <p><i style="background:#9f2f2d"></i> Bridges</p>
+      <p><i style="background:#9f2f2d"></i> Bronx routes: Whitestone, Henry Hudson, Throgs Neck, RFK Bronx</p>
+      <p><i style="background:#5c574f"></i> Comparison bridges: Cross Bay, Marine Parkway, Verrazzano–Narrows</p>
+      <p><i style="background:#2f6f5e"></i> Zone-serving tunnels: Carey, Queens Midtown</p>
       <p><i style="background:#111111"></i> Zone-entry detection groups</p>
     </div>
     <div id="airlegend" class="map-legend" hidden>
@@ -671,7 +671,7 @@ h1,h2{
 </div>
 
 <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
-<script src="data/story.js?v=20261009b"></script>
+<script src="data/story.js?v=20261010"></script>
 <script src="data/bundle.js?v=20261009b"></script>
 <script>
 (function(){
@@ -785,29 +785,6 @@ h1,h2{
     cap.append(title, text, link);
     figure.append(img, cap);
     holder.appendChild(figure);
-    const gallery = article.querySelector('[data-deck-designs]');
-    gallery.replaceChildren();
-    (section.designs || []).forEach(design => {
-      const card = document.createElement('figure');
-      const a = document.createElement('a');
-      a.href = 'story-art/deegan-designs/' + design.file;
-      a.setAttribute('aria-label', 'Open ' + design.title + ' design image');
-      const image = document.createElement('img');
-      image.src = a.href;
-      image.alt = design.title + ': ' + design.caption;
-      image.width = 1024;
-      image.height = 1536;
-      image.loading = 'lazy';
-      a.appendChild(image);
-      const caption = document.createElement('figcaption');
-      const h = document.createElement('h3');
-      h.textContent = design.title;
-      const p = document.createElement('p');
-      p.textContent = design.caption;
-      caption.append(h,p);
-      card.append(a,caption);
-      gallery.appendChild(card);
-    });
     const sources = article.querySelector('[data-deck-sources]');
     sources.replaceChildren();
     (section.sources || []).forEach(source => {
@@ -904,6 +881,11 @@ h1,h2{
       const caps = article.querySelectorAll('figcaption[data-cap]');
       (section.captions || []).forEach((text, i) => {
         if(caps[i]) caps[i].textContent = text;
+      });
+      (section.stats || []).forEach((text, i) => {
+        if(!caps[i] || !text) return;
+        const s = document.createElement('span'); s.className = 'fig-stats';
+        s.textContent = 'How we did it: ' + text; caps[i].appendChild(s);
       });
     });
     const air = S.thesis.table;
@@ -1075,7 +1057,7 @@ h1,h2{
     label:g.name.replace(' at 60th St','').replace('Hugh L. Carey','Carey'),
     say:sayGate(g)
   })));
-  const facFC = fc(D.bt.facilities.map(f => pt(f.lon, f.lat, {
+  const facFC = fc(D.bt.facilities.filter(f => f.group !== 'uptown').map(f => pt(f.lon, f.lat, {
     name:f.facility,
     group:f.group,
     label:shortBT(f.facility),
@@ -1222,7 +1204,7 @@ h1,h2{
 
   const CAM = [
     {center:[-73.895, 40.772], zoom:10.55, pitch:0, bearing:0},
-    {center:[-73.91, 40.82], zoom:10.6, pitch:0, bearing:0},
+    {bounds:[[-74.06,40.565],[-73.78,40.885]]},
     {center:[-73.89, 40.78], zoom:10.6, pitch:0, bearing:0},
     {center:[-73.90, 40.84], zoom:11.2, pitch:0, bearing:0},
     {center:[-73.9242, 40.8092], zoom:14.6, pitch:0, bearing:0},
@@ -1241,7 +1223,8 @@ h1,h2{
   }
 
   function goCam(cam){
-    if(REDUCED) map.jumpTo(cam);
+    if(cam.bounds) map.fitBounds(cam.bounds, {padding:40, duration:REDUCED ? 0 : 1400, essential:true});
+    else if(REDUCED) map.jumpTo(cam);
     else map.flyTo({...cam, duration:1400, essential:true});
   }
 
@@ -1304,7 +1287,7 @@ h1,h2{
 
     map.addSource('gates', {type:'geojson', data:gatesFC});
     map.addLayer({id:'gates', type:'circle', source:'gates', paint:{
-      'circle-radius':6, 'circle-color':CRIMSON, 'circle-stroke-color':PAPER, 'circle-stroke-width':1.6
+      'circle-radius':6, 'circle-color':INK, 'circle-stroke-color':PAPER, 'circle-stroke-width':1.6
     }, layout:{visibility:'none'}});
     map.addLayer({id:'gates-label', type:'symbol', source:'gates', layout:{
       visibility:'none', 'text-field':['get','label'], 'text-size':11, 'text-font':['Noto Sans Bold'],

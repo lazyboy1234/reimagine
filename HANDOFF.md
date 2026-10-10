@@ -8,7 +8,7 @@ Canonical source: `/Volumes/Spiral/projects/datathon-outside-the-line`. Deployme
 - `explain.html`: source-backed explainer; `data/face-copy.md`: complete speaker script.
 - `paper.html`, `data/SOURCES.md`, `docs/TRAFFIC-STORY-AUDIT.md`, `docs/TREE-SITING.md`, `docs/POLICY-COST.md`: aligned source definitions, methods and caveats.
 - `story-art/fig-change.svg`: different air-study metrics, all µg/m³; `fig-economics-map.svg`: historical income/poverty geography; `fig-tree-availability.svg`: archived trees and matching bay IDs; `fig-weights.svg`: provisional score components and people/km.
-- `model/deegan-garden-deck/`: editable Blender scene, full and cutaway GLB, rendered section, interactive viewer and dimension manifest. Three ImageGen atmosphere concepts are in `story-art/deegan-designs/`, with exact prompts.
+- `model/deegan-garden-deck/`: editable Blender scene, full and cutaway GLB, rendered section, interactive viewer and dimension manifest.
 
 ## Central answer
 

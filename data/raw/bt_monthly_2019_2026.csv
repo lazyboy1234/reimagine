@@ -1,0 +1,931 @@
+facility,year,month,crossings
+Bronx - Whitestone Bridge,2019,1,3750305
+Bronx - Whitestone Bridge,2019,2,3463948
+Bronx - Whitestone Bridge,2019,3,4070466
+Bronx - Whitestone Bridge,2019,4,4139333
+Bronx - Whitestone Bridge,2019,5,4396425
+Bronx - Whitestone Bridge,2019,6,4339215
+Bronx - Whitestone Bridge,2019,7,4432485
+Bronx - Whitestone Bridge,2019,8,4555042
+Bronx - Whitestone Bridge,2019,9,4201320
+Bronx - Whitestone Bridge,2019,10,4263850
+Bronx - Whitestone Bridge,2019,11,4071170
+Bronx - Whitestone Bridge,2019,12,4080817
+Bronx - Whitestone Bridge,2020,1,3927797
+Bronx - Whitestone Bridge,2020,2,3737979
+Bronx - Whitestone Bridge,2020,3,2937163
+Bronx - Whitestone Bridge,2020,4,1519370
+Bronx - Whitestone Bridge,2020,5,2286833
+Bronx - Whitestone Bridge,2020,6,2968122
+Bronx - Whitestone Bridge,2020,7,3558180
+Bronx - Whitestone Bridge,2020,8,3867242
+Bronx - Whitestone Bridge,2020,9,3745056
+Bronx - Whitestone Bridge,2020,10,3815954
+Bronx - Whitestone Bridge,2020,11,3415333
+Bronx - Whitestone Bridge,2020,12,3358585
+Bronx - Whitestone Bridge,2021,1,3262307
+Bronx - Whitestone Bridge,2021,2,2836667
+Bronx - Whitestone Bridge,2021,3,3775805
+Bronx - Whitestone Bridge,2021,4,3897238
+Bronx - Whitestone Bridge,2021,5,4307558
+Bronx - Whitestone Bridge,2021,6,4447662
+Bronx - Whitestone Bridge,2021,7,4544405
+Bronx - Whitestone Bridge,2021,8,4570344
+Bronx - Whitestone Bridge,2021,9,4312650
+Bronx - Whitestone Bridge,2021,10,4396305
+Bronx - Whitestone Bridge,2021,11,4258204
+Bronx - Whitestone Bridge,2021,12,4065189
+Bronx - Whitestone Bridge,2022,1,3434181
+Bronx - Whitestone Bridge,2022,2,3559152
+Bronx - Whitestone Bridge,2022,3,4282508
+Bronx - Whitestone Bridge,2022,4,4397939
+Bronx - Whitestone Bridge,2022,5,4580012
+Bronx - Whitestone Bridge,2022,6,4521434
+Bronx - Whitestone Bridge,2022,7,4624703
+Bronx - Whitestone Bridge,2022,8,4690942
+Bronx - Whitestone Bridge,2022,9,4392013
+Bronx - Whitestone Bridge,2022,10,4329941
+Bronx - Whitestone Bridge,2022,11,4169260
+Bronx - Whitestone Bridge,2022,12,4146034
+Bronx - Whitestone Bridge,2023,1,3955925
+Bronx - Whitestone Bridge,2023,2,3628837
+Bronx - Whitestone Bridge,2023,3,4194372
+Bronx - Whitestone Bridge,2023,4,4136656
+Bronx - Whitestone Bridge,2023,5,4384006
+Bronx - Whitestone Bridge,2023,6,4337982
+Bronx - Whitestone Bridge,2023,7,4470059
+Bronx - Whitestone Bridge,2023,8,4532557
+Bronx - Whitestone Bridge,2023,9,4194281
+Bronx - Whitestone Bridge,2023,10,4299767
+Bronx - Whitestone Bridge,2023,11,4129600
+Bronx - Whitestone Bridge,2023,12,4090654
+Bronx - Whitestone Bridge,2024,1,3747875
+Bronx - Whitestone Bridge,2024,2,3687034
+Bronx - Whitestone Bridge,2024,3,4151120
+Bronx - Whitestone Bridge,2024,4,4109154
+Bronx - Whitestone Bridge,2024,5,4296677
+Bronx - Whitestone Bridge,2024,6,4316456
+Bronx - Whitestone Bridge,2024,7,4412543
+Bronx - Whitestone Bridge,2024,8,4487206
+Bronx - Whitestone Bridge,2024,9,4210276
+Bronx - Whitestone Bridge,2024,10,4378281
+Bronx - Whitestone Bridge,2024,11,4034621
+Bronx - Whitestone Bridge,2024,12,4062424
+Bronx - Whitestone Bridge,2025,1,3787360
+Bronx - Whitestone Bridge,2025,2,3487317
+Bronx - Whitestone Bridge,2025,3,4121798
+Bronx - Whitestone Bridge,2025,4,4172965
+Bronx - Whitestone Bridge,2025,5,4460628
+Bronx - Whitestone Bridge,2025,6,4477520
+Bronx - Whitestone Bridge,2025,7,4615850
+Bronx - Whitestone Bridge,2025,8,4697980
+Bronx - Whitestone Bridge,2025,9,4289356
+Bronx - Whitestone Bridge,2025,10,4320684
+Bronx - Whitestone Bridge,2025,11,4191544
+Bronx - Whitestone Bridge,2025,12,4077606
+Bronx - Whitestone Bridge,2026,1,3675046
+Bronx - Whitestone Bridge,2026,2,3352474
+Bronx - Whitestone Bridge,2026,3,4156329
+Bronx - Whitestone Bridge,2026,4,4208504
+Bronx - Whitestone Bridge,2026,5,4458411
+Bronx - Whitestone Bridge,2026,6,4436391
+Bronx - Whitestone Bridge,2026,7,4435691
+Bronx - Whitestone Bridge,2026,8,4480169
+Bronx - Whitestone Bridge,2026,9,3098291
+Cross Bay Bridge,2019,1,658050
+Cross Bay Bridge,2019,2,591044
+Cross Bay Bridge,2019,3,688849
+Cross Bay Bridge,2019,4,688483
+Cross Bay Bridge,2019,5,786718
+Cross Bay Bridge,2019,6,805075
+Cross Bay Bridge,2019,7,882509
+Cross Bay Bridge,2019,8,814061
+Cross Bay Bridge,2019,9,724824
+Cross Bay Bridge,2019,10,695866
+Cross Bay Bridge,2019,11,656254
+Cross Bay Bridge,2019,12,659787
+Cross Bay Bridge,2020,1,652744
+Cross Bay Bridge,2020,2,604611
+Cross Bay Bridge,2020,3,539043
+Cross Bay Bridge,2020,4,368040
+Cross Bay Bridge,2020,5,531864
+Cross Bay Bridge,2020,6,678815
+Cross Bay Bridge,2020,7,815619
+Cross Bay Bridge,2020,8,759962
+Cross Bay Bridge,2020,9,678384
+Cross Bay Bridge,2020,10,642646
+Cross Bay Bridge,2020,11,586332
+Cross Bay Bridge,2020,12,566750
+Cross Bay Bridge,2021,1,555253
+Cross Bay Bridge,2021,2,480351
+Cross Bay Bridge,2021,3,649194
+Cross Bay Bridge,2021,4,660087
+Cross Bay Bridge,2021,5,716611
+Cross Bay Bridge,2021,6,793070
+Cross Bay Bridge,2021,7,794435
+Cross Bay Bridge,2021,8,742071
+Cross Bay Bridge,2021,9,706410
+Cross Bay Bridge,2021,10,692210
+Cross Bay Bridge,2021,11,641875
+Cross Bay Bridge,2021,12,624687
+Cross Bay Bridge,2022,1,552318
+Cross Bay Bridge,2022,2,548773
+Cross Bay Bridge,2022,3,653314
+Cross Bay Bridge,2022,4,629557
+Cross Bay Bridge,2022,5,733617
+Cross Bay Bridge,2022,6,745854
+Cross Bay Bridge,2022,7,779014
+Cross Bay Bridge,2022,8,745031
+Cross Bay Bridge,2022,9,683188
+Cross Bay Bridge,2022,10,653419
+Cross Bay Bridge,2022,11,613170
+Cross Bay Bridge,2022,12,605358
+Cross Bay Bridge,2023,1,595627
+Cross Bay Bridge,2023,2,536608
+Cross Bay Bridge,2023,3,644800
+Cross Bay Bridge,2023,4,607087
+Cross Bay Bridge,2023,5,710488
+Cross Bay Bridge,2023,6,705167
+Cross Bay Bridge,2023,7,775153
+Cross Bay Bridge,2023,8,709856
+Cross Bay Bridge,2023,9,650736
+Cross Bay Bridge,2023,10,647766
+Cross Bay Bridge,2023,11,600012
+Cross Bay Bridge,2023,12,600793
+Cross Bay Bridge,2024,1,575388
+Cross Bay Bridge,2024,2,551703
+Cross Bay Bridge,2024,3,622716
+Cross Bay Bridge,2024,4,604362
+Cross Bay Bridge,2024,5,696526
+Cross Bay Bridge,2024,6,755004
+Cross Bay Bridge,2024,7,749086
+Cross Bay Bridge,2024,8,706653
+Cross Bay Bridge,2024,9,656911
+Cross Bay Bridge,2024,10,657062
+Cross Bay Bridge,2024,11,596084
+Cross Bay Bridge,2024,12,602580
+Cross Bay Bridge,2025,1,598599
+Cross Bay Bridge,2025,2,556894
+Cross Bay Bridge,2025,3,658989
+Cross Bay Bridge,2025,4,647469
+Cross Bay Bridge,2025,5,691988
+Cross Bay Bridge,2025,6,736191
+Cross Bay Bridge,2025,7,764258
+Cross Bay Bridge,2025,8,723501
+Cross Bay Bridge,2025,9,641985
+Cross Bay Bridge,2025,10,634359
+Cross Bay Bridge,2025,11,579737
+Cross Bay Bridge,2025,12,589371
+Cross Bay Bridge,2026,1,539751
+Cross Bay Bridge,2026,2,483274
+Cross Bay Bridge,2026,3,614676
+Cross Bay Bridge,2026,4,604514
+Cross Bay Bridge,2026,5,662226
+Cross Bay Bridge,2026,6,722655
+Cross Bay Bridge,2026,7,734909
+Cross Bay Bridge,2026,8,705663
+Cross Bay Bridge,2026,9,464377
+Henry Hudson Bridge,2019,1,1932843
+Henry Hudson Bridge,2019,2,1851950
+Henry Hudson Bridge,2019,3,2178609
+Henry Hudson Bridge,2019,4,2234875
+Henry Hudson Bridge,2019,5,2376526
+Henry Hudson Bridge,2019,6,2298546
+Henry Hudson Bridge,2019,7,2186374
+Henry Hudson Bridge,2019,8,2283107
+Henry Hudson Bridge,2019,9,2196873
+Henry Hudson Bridge,2019,10,2297650
+Henry Hudson Bridge,2019,11,2216865
+Henry Hudson Bridge,2019,12,2126912
+Henry Hudson Bridge,2020,1,1990689
+Henry Hudson Bridge,2020,2,1946101
+Henry Hudson Bridge,2020,3,1287044
+Henry Hudson Bridge,2020,4,455438
+Henry Hudson Bridge,2020,5,799181
+Henry Hudson Bridge,2020,6,1218370
+Henry Hudson Bridge,2020,7,1585955
+Henry Hudson Bridge,2020,8,1748530
+Henry Hudson Bridge,2020,9,1812285
+Henry Hudson Bridge,2020,10,1871220
+Henry Hudson Bridge,2020,11,1610885
+Henry Hudson Bridge,2020,12,1509874
+Henry Hudson Bridge,2021,1,1450519
+Henry Hudson Bridge,2021,2,1305817
+Henry Hudson Bridge,2021,3,1845952
+Henry Hudson Bridge,2021,4,1995953
+Henry Hudson Bridge,2021,5,2153572
+Henry Hudson Bridge,2021,6,2217223
+Henry Hudson Bridge,2021,7,2093791
+Henry Hudson Bridge,2021,8,2201206
+Henry Hudson Bridge,2021,9,2200798
+Henry Hudson Bridge,2021,10,2317320
+Henry Hudson Bridge,2021,11,2203727
+Henry Hudson Bridge,2021,12,1988786
+Henry Hudson Bridge,2022,1,1562656
+Henry Hudson Bridge,2022,2,1786060
+Henry Hudson Bridge,2022,3,2104821
+Henry Hudson Bridge,2022,4,2160397
+Henry Hudson Bridge,2022,5,2279057
+Henry Hudson Bridge,2022,6,2253542
+Henry Hudson Bridge,2022,7,2116705
+Henry Hudson Bridge,2022,8,2171863
+Henry Hudson Bridge,2022,9,2171321
+Henry Hudson Bridge,2022,10,2249331
+Henry Hudson Bridge,2022,11,2111721
+Henry Hudson Bridge,2022,12,2031328
+Henry Hudson Bridge,2023,1,1898517
+Henry Hudson Bridge,2023,2,1784254
+Henry Hudson Bridge,2023,3,2122012
+Henry Hudson Bridge,2023,4,2112619
+Henry Hudson Bridge,2023,5,2338503
+Henry Hudson Bridge,2023,6,2251566
+Henry Hudson Bridge,2023,7,2106143
+Henry Hudson Bridge,2023,8,2161092
+Henry Hudson Bridge,2023,9,2062885
+Henry Hudson Bridge,2023,10,2242503
+Henry Hudson Bridge,2023,11,2144535
+Henry Hudson Bridge,2023,12,2057460
+Henry Hudson Bridge,2024,1,1774240
+Henry Hudson Bridge,2024,2,1856979
+Henry Hudson Bridge,2024,3,2109414
+Henry Hudson Bridge,2024,4,2156252
+Henry Hudson Bridge,2024,5,2299429
+Henry Hudson Bridge,2024,6,2205171
+Henry Hudson Bridge,2024,7,2087241
+Henry Hudson Bridge,2024,8,2115307
+Henry Hudson Bridge,2024,9,2176852
+Henry Hudson Bridge,2024,10,2288404
+Henry Hudson Bridge,2024,11,2099641
+Henry Hudson Bridge,2024,12,2074249
+Henry Hudson Bridge,2025,1,1803527
+Henry Hudson Bridge,2025,2,1696486
+Henry Hudson Bridge,2025,3,2075498
+Henry Hudson Bridge,2025,4,2139110
+Henry Hudson Bridge,2025,5,2319572
+Henry Hudson Bridge,2025,6,2220859
+Henry Hudson Bridge,2025,7,2167775
+Henry Hudson Bridge,2025,8,2213881
+Henry Hudson Bridge,2025,9,2215710
+Henry Hudson Bridge,2025,10,2270620
+Henry Hudson Bridge,2025,11,2130930
+Henry Hudson Bridge,2025,12,2059411
+Henry Hudson Bridge,2026,1,1765406
+Henry Hudson Bridge,2026,2,1622810
+Henry Hudson Bridge,2026,3,2069434
+Henry Hudson Bridge,2026,4,2118769
+Henry Hudson Bridge,2026,5,2295146
+Henry Hudson Bridge,2026,6,2263156
+Henry Hudson Bridge,2026,7,2138714
+Henry Hudson Bridge,2026,8,2148999
+Henry Hudson Bridge,2026,9,1578697
+Hugh L. Carey Tunnel,2019,1,1541971
+Hugh L. Carey Tunnel,2019,2,1471709
+Hugh L. Carey Tunnel,2019,3,1674067
+Hugh L. Carey Tunnel,2019,4,1654280
+Hugh L. Carey Tunnel,2019,5,1732443
+Hugh L. Carey Tunnel,2019,6,1675483
+Hugh L. Carey Tunnel,2019,7,1610700
+Hugh L. Carey Tunnel,2019,8,1639424
+Hugh L. Carey Tunnel,2019,9,1655715
+Hugh L. Carey Tunnel,2019,10,1700721
+Hugh L. Carey Tunnel,2019,11,1632227
+Hugh L. Carey Tunnel,2019,12,1641658
+Hugh L. Carey Tunnel,2020,1,1515174
+Hugh L. Carey Tunnel,2020,2,1518661
+Hugh L. Carey Tunnel,2020,3,1079117
+Hugh L. Carey Tunnel,2020,4,416336
+Hugh L. Carey Tunnel,2020,5,718447
+Hugh L. Carey Tunnel,2020,6,1133466
+Hugh L. Carey Tunnel,2020,7,1360839
+Hugh L. Carey Tunnel,2020,8,1455438
+Hugh L. Carey Tunnel,2020,9,1490885
+Hugh L. Carey Tunnel,2020,10,1558947
+Hugh L. Carey Tunnel,2020,11,1358209
+Hugh L. Carey Tunnel,2020,12,1348935
+Hugh L. Carey Tunnel,2021,1,1252658
+Hugh L. Carey Tunnel,2021,2,1117022
+Hugh L. Carey Tunnel,2021,3,1527820
+Hugh L. Carey Tunnel,2021,4,1578001
+Hugh L. Carey Tunnel,2021,5,1627310
+Hugh L. Carey Tunnel,2021,6,1710797
+Hugh L. Carey Tunnel,2021,7,1658652
+Hugh L. Carey Tunnel,2021,8,1710446
+Hugh L. Carey Tunnel,2021,9,1751944
+Hugh L. Carey Tunnel,2021,10,1932680
+Hugh L. Carey Tunnel,2021,11,1825994
+Hugh L. Carey Tunnel,2021,12,1776456
+Hugh L. Carey Tunnel,2022,1,1505002
+Hugh L. Carey Tunnel,2022,2,1663874
+Hugh L. Carey Tunnel,2022,3,1934564
+Hugh L. Carey Tunnel,2022,4,1855499
+Hugh L. Carey Tunnel,2022,5,1915280
+Hugh L. Carey Tunnel,2022,6,1931671
+Hugh L. Carey Tunnel,2022,7,1831057
+Hugh L. Carey Tunnel,2022,8,1916434
+Hugh L. Carey Tunnel,2022,9,1882340
+Hugh L. Carey Tunnel,2022,10,1929847
+Hugh L. Carey Tunnel,2022,11,1827739
+Hugh L. Carey Tunnel,2022,12,1864780
+Hugh L. Carey Tunnel,2023,1,1758078
+Hugh L. Carey Tunnel,2023,2,1675622
+Hugh L. Carey Tunnel,2023,3,1955677
+Hugh L. Carey Tunnel,2023,4,1846586
+Hugh L. Carey Tunnel,2023,5,1986983
+Hugh L. Carey Tunnel,2023,6,1959924
+Hugh L. Carey Tunnel,2023,7,1859815
+Hugh L. Carey Tunnel,2023,8,1964228
+Hugh L. Carey Tunnel,2023,9,1905058
+Hugh L. Carey Tunnel,2023,10,2040849
+Hugh L. Carey Tunnel,2023,11,1904831
+Hugh L. Carey Tunnel,2023,12,1915685
+Hugh L. Carey Tunnel,2024,1,1751681
+Hugh L. Carey Tunnel,2024,2,1734099
+Hugh L. Carey Tunnel,2024,3,1954194
+Hugh L. Carey Tunnel,2024,4,1851839
+Hugh L. Carey Tunnel,2024,5,2025715
+Hugh L. Carey Tunnel,2024,6,1906169
+Hugh L. Carey Tunnel,2024,7,1849057
+Hugh L. Carey Tunnel,2024,8,1872457
+Hugh L. Carey Tunnel,2024,9,1909338
+Hugh L. Carey Tunnel,2024,10,1977099
+Hugh L. Carey Tunnel,2024,11,1859379
+Hugh L. Carey Tunnel,2024,12,1935051
+Hugh L. Carey Tunnel,2025,1,1632891
+Hugh L. Carey Tunnel,2025,2,1580357
+Hugh L. Carey Tunnel,2025,3,1854318
+Hugh L. Carey Tunnel,2025,4,1801103
+Hugh L. Carey Tunnel,2025,5,1932344
+Hugh L. Carey Tunnel,2025,6,1848370
+Hugh L. Carey Tunnel,2025,7,1859513
+Hugh L. Carey Tunnel,2025,8,1900452
+Hugh L. Carey Tunnel,2025,9,1883471
+Hugh L. Carey Tunnel,2025,10,1944875
+Hugh L. Carey Tunnel,2025,11,1875752
+Hugh L. Carey Tunnel,2025,12,1867874
+Hugh L. Carey Tunnel,2026,1,1607442
+Hugh L. Carey Tunnel,2026,2,1489700
+Hugh L. Carey Tunnel,2026,3,1858949
+Hugh L. Carey Tunnel,2026,4,1795268
+Hugh L. Carey Tunnel,2026,5,1877188
+Hugh L. Carey Tunnel,2026,6,1856727
+Hugh L. Carey Tunnel,2026,7,1794786
+Hugh L. Carey Tunnel,2026,8,1717039
+Hugh L. Carey Tunnel,2026,9,1314941
+Marine Parkway Bridge,2019,1,589067
+Marine Parkway Bridge,2019,2,525053
+Marine Parkway Bridge,2019,3,630407
+Marine Parkway Bridge,2019,4,618043
+Marine Parkway Bridge,2019,5,747271
+Marine Parkway Bridge,2019,6,800948
+Marine Parkway Bridge,2019,7,904969
+Marine Parkway Bridge,2019,8,845320
+Marine Parkway Bridge,2019,9,718105
+Marine Parkway Bridge,2019,10,664492
+Marine Parkway Bridge,2019,11,632763
+Marine Parkway Bridge,2019,12,638094
+Marine Parkway Bridge,2020,1,607815
+Marine Parkway Bridge,2020,2,558603
+Marine Parkway Bridge,2020,3,474279
+Marine Parkway Bridge,2020,4,306412
+Marine Parkway Bridge,2020,5,475655
+Marine Parkway Bridge,2020,6,648002
+Marine Parkway Bridge,2020,7,831792
+Marine Parkway Bridge,2020,8,790923
+Marine Parkway Bridge,2020,9,680473
+Marine Parkway Bridge,2020,10,585555
+Marine Parkway Bridge,2020,11,535365
+Marine Parkway Bridge,2020,12,512434
+Marine Parkway Bridge,2021,1,491022
+Marine Parkway Bridge,2021,2,411249
+Marine Parkway Bridge,2021,3,561813
+Marine Parkway Bridge,2021,4,582009
+Marine Parkway Bridge,2021,5,683176
+Marine Parkway Bridge,2021,6,796680
+Marine Parkway Bridge,2021,7,801570
+Marine Parkway Bridge,2021,8,763293
+Marine Parkway Bridge,2021,9,694596
+Marine Parkway Bridge,2021,10,677195
+Marine Parkway Bridge,2021,11,633473
+Marine Parkway Bridge,2021,12,602968
+Marine Parkway Bridge,2022,1,514265
+Marine Parkway Bridge,2022,2,526076
+Marine Parkway Bridge,2022,3,631864
+Marine Parkway Bridge,2022,4,607824
+Marine Parkway Bridge,2022,5,738315
+Marine Parkway Bridge,2022,6,774577
+Marine Parkway Bridge,2022,7,839061
+Marine Parkway Bridge,2022,8,790668
+Marine Parkway Bridge,2022,9,697254
+Marine Parkway Bridge,2022,10,630146
+Marine Parkway Bridge,2022,11,603966
+Marine Parkway Bridge,2022,12,600698
+Marine Parkway Bridge,2023,1,575297
+Marine Parkway Bridge,2023,2,518594
+Marine Parkway Bridge,2023,3,627136
+Marine Parkway Bridge,2023,4,587376
+Marine Parkway Bridge,2023,5,724055
+Marine Parkway Bridge,2023,6,741208
+Marine Parkway Bridge,2023,7,834529
+Marine Parkway Bridge,2023,8,787601
+Marine Parkway Bridge,2023,9,674036
+Marine Parkway Bridge,2023,10,653695
+Marine Parkway Bridge,2023,11,612373
+Marine Parkway Bridge,2023,12,612292
+Marine Parkway Bridge,2024,1,562688
+Marine Parkway Bridge,2024,2,525048
+Marine Parkway Bridge,2024,3,618887
+Marine Parkway Bridge,2024,4,598519
+Marine Parkway Bridge,2024,5,717510
+Marine Parkway Bridge,2024,6,794380
+Marine Parkway Bridge,2024,7,816515
+Marine Parkway Bridge,2024,8,774494
+Marine Parkway Bridge,2024,9,690873
+Marine Parkway Bridge,2024,10,661508
+Marine Parkway Bridge,2024,11,617191
+Marine Parkway Bridge,2024,12,616502
+Marine Parkway Bridge,2025,1,575896
+Marine Parkway Bridge,2025,2,520994
+Marine Parkway Bridge,2025,3,629796
+Marine Parkway Bridge,2025,4,631505
+Marine Parkway Bridge,2025,5,721256
+Marine Parkway Bridge,2025,6,783572
+Marine Parkway Bridge,2025,7,858381
+Marine Parkway Bridge,2025,8,824307
+Marine Parkway Bridge,2025,9,679697
+Marine Parkway Bridge,2025,10,650010
+Marine Parkway Bridge,2025,11,619364
+Marine Parkway Bridge,2025,12,618955
+Marine Parkway Bridge,2026,1,546565
+Marine Parkway Bridge,2026,2,488849
+Marine Parkway Bridge,2026,3,630490
+Marine Parkway Bridge,2026,4,612169
+Marine Parkway Bridge,2026,5,694073
+Marine Parkway Bridge,2026,6,800924
+Marine Parkway Bridge,2026,7,816207
+Marine Parkway Bridge,2026,8,799495
+Marine Parkway Bridge,2026,9,523751
+Queens Midtown Tunnel,2019,1,2329976
+Queens Midtown Tunnel,2019,2,2231530
+Queens Midtown Tunnel,2019,3,2576575
+Queens Midtown Tunnel,2019,4,2552017
+Queens Midtown Tunnel,2019,5,2720140
+Queens Midtown Tunnel,2019,6,2625512
+Queens Midtown Tunnel,2019,7,2569820
+Queens Midtown Tunnel,2019,8,2692281
+Queens Midtown Tunnel,2019,9,2561557
+Queens Midtown Tunnel,2019,10,2694216
+Queens Midtown Tunnel,2019,11,2497516
+Queens Midtown Tunnel,2019,12,2474916
+Queens Midtown Tunnel,2020,1,2347887
+Queens Midtown Tunnel,2020,2,2333667
+Queens Midtown Tunnel,2020,3,1588043
+Queens Midtown Tunnel,2020,4,586179
+Queens Midtown Tunnel,2020,5,907978
+Queens Midtown Tunnel,2020,6,1376278
+Queens Midtown Tunnel,2020,7,1673640
+Queens Midtown Tunnel,2020,8,1845020
+Queens Midtown Tunnel,2020,9,1896730
+Queens Midtown Tunnel,2020,10,2002726
+Queens Midtown Tunnel,2020,11,1744332
+Queens Midtown Tunnel,2020,12,1714593
+Queens Midtown Tunnel,2021,1,1651895
+Queens Midtown Tunnel,2021,2,1495583
+Queens Midtown Tunnel,2021,3,2067717
+Queens Midtown Tunnel,2021,4,1990782
+Queens Midtown Tunnel,2021,5,2209823
+Queens Midtown Tunnel,2021,6,2355604
+Queens Midtown Tunnel,2021,7,2377447
+Queens Midtown Tunnel,2021,8,2388724
+Queens Midtown Tunnel,2021,9,2412039
+Queens Midtown Tunnel,2021,10,2497266
+Queens Midtown Tunnel,2021,11,2412539
+Queens Midtown Tunnel,2021,12,2316022
+Queens Midtown Tunnel,2022,1,1923823
+Queens Midtown Tunnel,2022,2,2154134
+Queens Midtown Tunnel,2022,3,2573505
+Queens Midtown Tunnel,2022,4,2554400
+Queens Midtown Tunnel,2022,5,2654180
+Queens Midtown Tunnel,2022,6,2648418
+Queens Midtown Tunnel,2022,7,2569893
+Queens Midtown Tunnel,2022,8,2654849
+Queens Midtown Tunnel,2022,9,2616253
+Queens Midtown Tunnel,2022,10,2704065
+Queens Midtown Tunnel,2022,11,2498299
+Queens Midtown Tunnel,2022,12,2469218
+Queens Midtown Tunnel,2023,1,2348528
+Queens Midtown Tunnel,2023,2,2230356
+Queens Midtown Tunnel,2023,3,2591236
+Queens Midtown Tunnel,2023,4,2511063
+Queens Midtown Tunnel,2023,5,2667287
+Queens Midtown Tunnel,2023,6,2619406
+Queens Midtown Tunnel,2023,7,2568026
+Queens Midtown Tunnel,2023,8,2636298
+Queens Midtown Tunnel,2023,9,2568045
+Queens Midtown Tunnel,2023,10,2736702
+Queens Midtown Tunnel,2023,11,2534048
+Queens Midtown Tunnel,2023,12,2492856
+Queens Midtown Tunnel,2024,1,2331876
+Queens Midtown Tunnel,2024,2,2324496
+Queens Midtown Tunnel,2024,3,2578278
+Queens Midtown Tunnel,2024,4,2518541
+Queens Midtown Tunnel,2024,5,2703144
+Queens Midtown Tunnel,2024,6,2614085
+Queens Midtown Tunnel,2024,7,2539793
+Queens Midtown Tunnel,2024,8,2559922
+Queens Midtown Tunnel,2024,9,2545459
+Queens Midtown Tunnel,2024,10,2706598
+Queens Midtown Tunnel,2024,11,2494419
+Queens Midtown Tunnel,2024,12,2516451
+Queens Midtown Tunnel,2025,1,2182384
+Queens Midtown Tunnel,2025,2,2104183
+Queens Midtown Tunnel,2025,3,2443446
+Queens Midtown Tunnel,2025,4,2494689
+Queens Midtown Tunnel,2025,5,2700885
+Queens Midtown Tunnel,2025,6,2593525
+Queens Midtown Tunnel,2025,7,2591892
+Queens Midtown Tunnel,2025,8,2639504
+Queens Midtown Tunnel,2025,9,2630605
+Queens Midtown Tunnel,2025,10,2692753
+Queens Midtown Tunnel,2025,11,2506434
+Queens Midtown Tunnel,2025,12,2444081
+Queens Midtown Tunnel,2026,1,2208339
+Queens Midtown Tunnel,2026,2,2016940
+Queens Midtown Tunnel,2026,3,2475590
+Queens Midtown Tunnel,2026,4,2400735
+Queens Midtown Tunnel,2026,5,2564621
+Queens Midtown Tunnel,2026,6,2499234
+Queens Midtown Tunnel,2026,7,2518073
+Queens Midtown Tunnel,2026,8,2488818
+Queens Midtown Tunnel,2026,9,1844677
+Robert F. Kennedy Bridge Bronx,2019,1,3906496
+Robert F. Kennedy Bridge Bronx,2019,2,3743278
+Robert F. Kennedy Bridge Bronx,2019,3,4358303
+Robert F. Kennedy Bridge Bronx,2019,4,4331835
+Robert F. Kennedy Bridge Bronx,2019,5,4633042
+Robert F. Kennedy Bridge Bronx,2019,6,4503284
+Robert F. Kennedy Bridge Bronx,2019,7,4516403
+Robert F. Kennedy Bridge Bronx,2019,8,4614018
+Robert F. Kennedy Bridge Bronx,2019,9,4428820
+Robert F. Kennedy Bridge Bronx,2019,10,4415982
+Robert F. Kennedy Bridge Bronx,2019,11,4259159
+Robert F. Kennedy Bridge Bronx,2019,12,4250623
+Robert F. Kennedy Bridge Bronx,2020,1,3990555
+Robert F. Kennedy Bridge Bronx,2020,2,3858336
+Robert F. Kennedy Bridge Bronx,2020,3,2991475
+Robert F. Kennedy Bridge Bronx,2020,4,1507664
+Robert F. Kennedy Bridge Bronx,2020,5,2362877
+Robert F. Kennedy Bridge Bronx,2020,6,3217032
+Robert F. Kennedy Bridge Bronx,2020,7,3633570
+Robert F. Kennedy Bridge Bronx,2020,8,3746810
+Robert F. Kennedy Bridge Bronx,2020,9,3761314
+Robert F. Kennedy Bridge Bronx,2020,10,3876572
+Robert F. Kennedy Bridge Bronx,2020,11,3489182
+Robert F. Kennedy Bridge Bronx,2020,12,3395552
+Robert F. Kennedy Bridge Bronx,2021,1,3349458
+Robert F. Kennedy Bridge Bronx,2021,2,2906564
+Robert F. Kennedy Bridge Bronx,2021,3,3844191
+Robert F. Kennedy Bridge Bronx,2021,4,3931634
+Robert F. Kennedy Bridge Bronx,2021,5,4205118
+Robert F. Kennedy Bridge Bronx,2021,6,4325703
+Robert F. Kennedy Bridge Bronx,2021,7,4333836
+Robert F. Kennedy Bridge Bronx,2021,8,4346560
+Robert F. Kennedy Bridge Bronx,2021,9,4183320
+Robert F. Kennedy Bridge Bronx,2021,10,4316437
+Robert F. Kennedy Bridge Bronx,2021,11,4083564
+Robert F. Kennedy Bridge Bronx,2021,12,3964705
+Robert F. Kennedy Bridge Bronx,2022,1,3378180
+Robert F. Kennedy Bridge Bronx,2022,2,3578626
+Robert F. Kennedy Bridge Bronx,2022,3,4232104
+Robert F. Kennedy Bridge Bronx,2022,4,4244853
+Robert F. Kennedy Bridge Bronx,2022,5,4427228
+Robert F. Kennedy Bridge Bronx,2022,6,4371068
+Robert F. Kennedy Bridge Bronx,2022,7,4322330
+Robert F. Kennedy Bridge Bronx,2022,8,4478975
+Robert F. Kennedy Bridge Bronx,2022,9,4314992
+Robert F. Kennedy Bridge Bronx,2022,10,4328520
+Robert F. Kennedy Bridge Bronx,2022,11,4105571
+Robert F. Kennedy Bridge Bronx,2022,12,4133259
+Robert F. Kennedy Bridge Bronx,2023,1,3937363
+Robert F. Kennedy Bridge Bronx,2023,2,3661539
+Robert F. Kennedy Bridge Bronx,2023,3,4309881
+Robert F. Kennedy Bridge Bronx,2023,4,4233680
+Robert F. Kennedy Bridge Bronx,2023,5,4637602
+Robert F. Kennedy Bridge Bronx,2023,6,4509783
+Robert F. Kennedy Bridge Bronx,2023,7,4475763
+Robert F. Kennedy Bridge Bronx,2023,8,4587243
+Robert F. Kennedy Bridge Bronx,2023,9,4302540
+Robert F. Kennedy Bridge Bronx,2023,10,4488718
+Robert F. Kennedy Bridge Bronx,2023,11,4318478
+Robert F. Kennedy Bridge Bronx,2023,12,4291216
+Robert F. Kennedy Bridge Bronx,2024,1,4005767
+Robert F. Kennedy Bridge Bronx,2024,2,3918674
+Robert F. Kennedy Bridge Bronx,2024,3,4351102
+Robert F. Kennedy Bridge Bronx,2024,4,4306212
+Robert F. Kennedy Bridge Bronx,2024,5,4609422
+Robert F. Kennedy Bridge Bronx,2024,6,4560809
+Robert F. Kennedy Bridge Bronx,2024,7,4511733
+Robert F. Kennedy Bridge Bronx,2024,8,4590742
+Robert F. Kennedy Bridge Bronx,2024,9,4432469
+Robert F. Kennedy Bridge Bronx,2024,10,4557003
+Robert F. Kennedy Bridge Bronx,2024,11,4293586
+Robert F. Kennedy Bridge Bronx,2024,12,4368824
+Robert F. Kennedy Bridge Bronx,2025,1,4055799
+Robert F. Kennedy Bridge Bronx,2025,2,3731359
+Robert F. Kennedy Bridge Bronx,2025,3,4425019
+Robert F. Kennedy Bridge Bronx,2025,4,4409773
+Robert F. Kennedy Bridge Bronx,2025,5,4631776
+Robert F. Kennedy Bridge Bronx,2025,6,4497216
+Robert F. Kennedy Bridge Bronx,2025,7,4588104
+Robert F. Kennedy Bridge Bronx,2025,8,4681506
+Robert F. Kennedy Bridge Bronx,2025,9,4447663
+Robert F. Kennedy Bridge Bronx,2025,10,4516796
+Robert F. Kennedy Bridge Bronx,2025,11,4310246
+Robert F. Kennedy Bridge Bronx,2025,12,4279494
+Robert F. Kennedy Bridge Bronx,2026,1,3865070
+Robert F. Kennedy Bridge Bronx,2026,2,3572562
+Robert F. Kennedy Bridge Bronx,2026,3,4415372
+Robert F. Kennedy Bridge Bronx,2026,4,4291718
+Robert F. Kennedy Bridge Bronx,2026,5,4527705
+Robert F. Kennedy Bridge Bronx,2026,6,4538451
+Robert F. Kennedy Bridge Bronx,2026,7,4592223
+Robert F. Kennedy Bridge Bronx,2026,8,4598597
+Robert F. Kennedy Bridge Bronx,2026,9,3220829
+Robert F. Kennedy Bridge Manhattan,2019,1,1145753
+Robert F. Kennedy Bridge Manhattan,2019,2,1096742
+Robert F. Kennedy Bridge Manhattan,2019,3,1307925
+Robert F. Kennedy Bridge Manhattan,2019,4,1341526
+Robert F. Kennedy Bridge Manhattan,2019,5,1418639
+Robert F. Kennedy Bridge Manhattan,2019,6,1370101
+Robert F. Kennedy Bridge Manhattan,2019,7,1306853
+Robert F. Kennedy Bridge Manhattan,2019,8,1328723
+Robert F. Kennedy Bridge Manhattan,2019,9,1275558
+Robert F. Kennedy Bridge Manhattan,2019,10,1289815
+Robert F. Kennedy Bridge Manhattan,2019,11,1246326
+Robert F. Kennedy Bridge Manhattan,2019,12,1256682
+Robert F. Kennedy Bridge Manhattan,2020,1,1119275
+Robert F. Kennedy Bridge Manhattan,2020,2,1114145
+Robert F. Kennedy Bridge Manhattan,2020,3,830345
+Robert F. Kennedy Bridge Manhattan,2020,4,382943
+Robert F. Kennedy Bridge Manhattan,2020,5,626065
+Robert F. Kennedy Bridge Manhattan,2020,6,871294
+Robert F. Kennedy Bridge Manhattan,2020,7,1003671
+Robert F. Kennedy Bridge Manhattan,2020,8,1046201
+Robert F. Kennedy Bridge Manhattan,2020,9,1020644
+Robert F. Kennedy Bridge Manhattan,2020,10,1058124
+Robert F. Kennedy Bridge Manhattan,2020,11,961414
+Robert F. Kennedy Bridge Manhattan,2020,12,940035
+Robert F. Kennedy Bridge Manhattan,2021,1,916764
+Robert F. Kennedy Bridge Manhattan,2021,2,812726
+Robert F. Kennedy Bridge Manhattan,2021,3,1101259
+Robert F. Kennedy Bridge Manhattan,2021,4,1125612
+Robert F. Kennedy Bridge Manhattan,2021,5,1201648
+Robert F. Kennedy Bridge Manhattan,2021,6,1269316
+Robert F. Kennedy Bridge Manhattan,2021,7,1282849
+Robert F. Kennedy Bridge Manhattan,2021,8,1274579
+Robert F. Kennedy Bridge Manhattan,2021,9,1252648
+Robert F. Kennedy Bridge Manhattan,2021,10,1211506
+Robert F. Kennedy Bridge Manhattan,2021,11,1210852
+Robert F. Kennedy Bridge Manhattan,2021,12,1153452
+Robert F. Kennedy Bridge Manhattan,2022,1,980513
+Robert F. Kennedy Bridge Manhattan,2022,2,1089413
+Robert F. Kennedy Bridge Manhattan,2022,3,1305762
+Robert F. Kennedy Bridge Manhattan,2022,4,1331005
+Robert F. Kennedy Bridge Manhattan,2022,5,1405587
+Robert F. Kennedy Bridge Manhattan,2022,6,1401410
+Robert F. Kennedy Bridge Manhattan,2022,7,1373189
+Robert F. Kennedy Bridge Manhattan,2022,8,1413560
+Robert F. Kennedy Bridge Manhattan,2022,9,1381543
+Robert F. Kennedy Bridge Manhattan,2022,10,1417434
+Robert F. Kennedy Bridge Manhattan,2022,11,1345438
+Robert F. Kennedy Bridge Manhattan,2022,12,1339972
+Robert F. Kennedy Bridge Manhattan,2023,1,1246155
+Robert F. Kennedy Bridge Manhattan,2023,2,1174526
+Robert F. Kennedy Bridge Manhattan,2023,3,1378706
+Robert F. Kennedy Bridge Manhattan,2023,4,1359078
+Robert F. Kennedy Bridge Manhattan,2023,5,1498580
+Robert F. Kennedy Bridge Manhattan,2023,6,1459432
+Robert F. Kennedy Bridge Manhattan,2023,7,1421771
+Robert F. Kennedy Bridge Manhattan,2023,8,1455701
+Robert F. Kennedy Bridge Manhattan,2023,9,1378516
+Robert F. Kennedy Bridge Manhattan,2023,10,1463723
+Robert F. Kennedy Bridge Manhattan,2023,11,1383250
+Robert F. Kennedy Bridge Manhattan,2023,12,1382524
+Robert F. Kennedy Bridge Manhattan,2024,1,1244913
+Robert F. Kennedy Bridge Manhattan,2024,2,1264896
+Robert F. Kennedy Bridge Manhattan,2024,3,1440542
+Robert F. Kennedy Bridge Manhattan,2024,4,1424384
+Robert F. Kennedy Bridge Manhattan,2024,5,1543249
+Robert F. Kennedy Bridge Manhattan,2024,6,1496392
+Robert F. Kennedy Bridge Manhattan,2024,7,1494969
+Robert F. Kennedy Bridge Manhattan,2024,8,1495139
+Robert F. Kennedy Bridge Manhattan,2024,9,1436616
+Robert F. Kennedy Bridge Manhattan,2024,10,1486143
+Robert F. Kennedy Bridge Manhattan,2024,11,1377775
+Robert F. Kennedy Bridge Manhattan,2024,12,1413936
+Robert F. Kennedy Bridge Manhattan,2025,1,1314523
+Robert F. Kennedy Bridge Manhattan,2025,2,1246553
+Robert F. Kennedy Bridge Manhattan,2025,3,1496642
+Robert F. Kennedy Bridge Manhattan,2025,4,1479245
+Robert F. Kennedy Bridge Manhattan,2025,5,1578966
+Robert F. Kennedy Bridge Manhattan,2025,6,1521073
+Robert F. Kennedy Bridge Manhattan,2025,7,1507286
+Robert F. Kennedy Bridge Manhattan,2025,8,1484507
+Robert F. Kennedy Bridge Manhattan,2025,9,1468508
+Robert F. Kennedy Bridge Manhattan,2025,10,1502462
+Robert F. Kennedy Bridge Manhattan,2025,11,1403104
+Robert F. Kennedy Bridge Manhattan,2025,12,1412488
+Robert F. Kennedy Bridge Manhattan,2026,1,1258344
+Robert F. Kennedy Bridge Manhattan,2026,2,1154193
+Robert F. Kennedy Bridge Manhattan,2026,3,1416453
+Robert F. Kennedy Bridge Manhattan,2026,4,1424516
+Robert F. Kennedy Bridge Manhattan,2026,5,1540563
+Robert F. Kennedy Bridge Manhattan,2026,6,1511415
+Robert F. Kennedy Bridge Manhattan,2026,7,1520307
+Robert F. Kennedy Bridge Manhattan,2026,8,1533026
+Robert F. Kennedy Bridge Manhattan,2026,9,1105833
+Throgs Neck Bridge,2019,1,3372799
+Throgs Neck Bridge,2019,2,3189756
+Throgs Neck Bridge,2019,3,3683345
+Throgs Neck Bridge,2019,4,3685669
+Throgs Neck Bridge,2019,5,3956159
+Throgs Neck Bridge,2019,6,3891656
+Throgs Neck Bridge,2019,7,3919882
+Throgs Neck Bridge,2019,8,4029146
+Throgs Neck Bridge,2019,9,3772350
+Throgs Neck Bridge,2019,10,3779622
+Throgs Neck Bridge,2019,11,3612239
+Throgs Neck Bridge,2019,12,3557970
+Throgs Neck Bridge,2020,1,3307461
+Throgs Neck Bridge,2020,2,3225391
+Throgs Neck Bridge,2020,3,2583752
+Throgs Neck Bridge,2020,4,1505084
+Throgs Neck Bridge,2020,5,2304552
+Throgs Neck Bridge,2020,6,2916554
+Throgs Neck Bridge,2020,7,3266595
+Throgs Neck Bridge,2020,8,3319635
+Throgs Neck Bridge,2020,9,3193633
+Throgs Neck Bridge,2020,10,3215532
+Throgs Neck Bridge,2020,11,2902926
+Throgs Neck Bridge,2020,12,2748664
+Throgs Neck Bridge,2021,1,2740985
+Throgs Neck Bridge,2021,2,2289583
+Throgs Neck Bridge,2021,3,3056834
+Throgs Neck Bridge,2021,4,3106532
+Throgs Neck Bridge,2021,5,3273167
+Throgs Neck Bridge,2021,6,3295813
+Throgs Neck Bridge,2021,7,3452879
+Throgs Neck Bridge,2021,8,3414994
+Throgs Neck Bridge,2021,9,3260776
+Throgs Neck Bridge,2021,10,3421191
+Throgs Neck Bridge,2021,11,3278025
+Throgs Neck Bridge,2021,12,3220015
+Throgs Neck Bridge,2022,1,2742270
+Throgs Neck Bridge,2022,2,2951285
+Throgs Neck Bridge,2022,3,3225152
+Throgs Neck Bridge,2022,4,3222862
+Throgs Neck Bridge,2022,5,3437490
+Throgs Neck Bridge,2022,6,3496712
+Throgs Neck Bridge,2022,7,3544285
+Throgs Neck Bridge,2022,8,3552415
+Throgs Neck Bridge,2022,9,3482704
+Throgs Neck Bridge,2022,10,3539454
+Throgs Neck Bridge,2022,11,3357042
+Throgs Neck Bridge,2022,12,3339477
+Throgs Neck Bridge,2023,1,3243062
+Throgs Neck Bridge,2023,2,3034267
+Throgs Neck Bridge,2023,3,3497554
+Throgs Neck Bridge,2023,4,3571205
+Throgs Neck Bridge,2023,5,3885833
+Throgs Neck Bridge,2023,6,3866881
+Throgs Neck Bridge,2023,7,3948153
+Throgs Neck Bridge,2023,8,3939932
+Throgs Neck Bridge,2023,9,3624057
+Throgs Neck Bridge,2023,10,3746539
+Throgs Neck Bridge,2023,11,3622701
+Throgs Neck Bridge,2023,12,3596538
+Throgs Neck Bridge,2024,1,3325608
+Throgs Neck Bridge,2024,2,3275419
+Throgs Neck Bridge,2024,3,3696593
+Throgs Neck Bridge,2024,4,3632726
+Throgs Neck Bridge,2024,5,3941416
+Throgs Neck Bridge,2024,6,3954789
+Throgs Neck Bridge,2024,7,4025461
+Throgs Neck Bridge,2024,8,4039734
+Throgs Neck Bridge,2024,9,3835097
+Throgs Neck Bridge,2024,10,3932608
+Throgs Neck Bridge,2024,11,3720460
+Throgs Neck Bridge,2024,12,3802319
+Throgs Neck Bridge,2025,1,3436445
+Throgs Neck Bridge,2025,2,3152875
+Throgs Neck Bridge,2025,3,3763976
+Throgs Neck Bridge,2025,4,3727417
+Throgs Neck Bridge,2025,5,4028552
+Throgs Neck Bridge,2025,6,3890408
+Throgs Neck Bridge,2025,7,4035818
+Throgs Neck Bridge,2025,8,4113463
+Throgs Neck Bridge,2025,9,3819317
+Throgs Neck Bridge,2025,10,3919394
+Throgs Neck Bridge,2025,11,3706628
+Throgs Neck Bridge,2025,12,3651326
+Throgs Neck Bridge,2026,1,3223309
+Throgs Neck Bridge,2026,2,2980332
+Throgs Neck Bridge,2026,3,3723143
+Throgs Neck Bridge,2026,4,3750451
+Throgs Neck Bridge,2026,5,3988016
+Throgs Neck Bridge,2026,6,3976515
+Throgs Neck Bridge,2026,7,4039483
+Throgs Neck Bridge,2026,8,4169758
+Throgs Neck Bridge,2026,9,2896155
+Verrazzano - Narrows Bridge,2019,1,2979775
+Verrazzano - Narrows Bridge,2019,2,2760899
+Verrazzano - Narrows Bridge,2019,3,3170703
+Verrazzano - Narrows Bridge,2019,4,3173796
+Verrazzano - Narrows Bridge,2019,5,3327579
+Verrazzano - Narrows Bridge,2019,6,3326261
+Verrazzano - Narrows Bridge,2019,7,3348912
+Verrazzano - Narrows Bridge,2019,8,3402136
+Verrazzano - Narrows Bridge,2019,9,3203915
+Verrazzano - Narrows Bridge,2019,10,3236561
+Verrazzano - Narrows Bridge,2019,11,3125296
+Verrazzano - Narrows Bridge,2019,12,3217576
+Verrazzano - Narrows Bridge,2020,1,3036039
+Verrazzano - Narrows Bridge,2020,2,2896815
+Verrazzano - Narrows Bridge,2020,3,2379953
+Verrazzano - Narrows Bridge,2020,4,1386860
+Verrazzano - Narrows Bridge,2020,5,2032327
+Verrazzano - Narrows Bridge,2020,6,2555980
+Verrazzano - Narrows Bridge,2020,7,2868027
+Verrazzano - Narrows Bridge,2020,8,2992010
+Verrazzano - Narrows Bridge,2020,9,2934641
+Verrazzano - Narrows Bridge,2020,10,2978650
+Verrazzano - Narrows Bridge,2020,11,2710525
+Verrazzano - Narrows Bridge,2020,12,5735857
+Verrazzano - Narrows Bridge,2021,1,5490621
+Verrazzano - Narrows Bridge,2021,2,4723580
+Verrazzano - Narrows Bridge,2021,3,6063598
+Verrazzano - Narrows Bridge,2021,4,6183139
+Verrazzano - Narrows Bridge,2021,5,6625569
+Verrazzano - Narrows Bridge,2021,6,6786228
+Verrazzano - Narrows Bridge,2021,7,6853657
+Verrazzano - Narrows Bridge,2021,8,6841231
+Verrazzano - Narrows Bridge,2021,9,6448102
+Verrazzano - Narrows Bridge,2021,10,6785805
+Verrazzano - Narrows Bridge,2021,11,6454395
+Verrazzano - Narrows Bridge,2021,12,6469354
+Verrazzano - Narrows Bridge,2022,1,5591004
+Verrazzano - Narrows Bridge,2022,2,5752924
+Verrazzano - Narrows Bridge,2022,3,6603707
+Verrazzano - Narrows Bridge,2022,4,6570160
+Verrazzano - Narrows Bridge,2022,5,6884838
+Verrazzano - Narrows Bridge,2022,6,6888518
+Verrazzano - Narrows Bridge,2022,7,6887977
+Verrazzano - Narrows Bridge,2022,8,6963276
+Verrazzano - Narrows Bridge,2022,9,6702053
+Verrazzano - Narrows Bridge,2022,10,6742374
+Verrazzano - Narrows Bridge,2022,11,6458935
+Verrazzano - Narrows Bridge,2022,12,6706587
+Verrazzano - Narrows Bridge,2023,1,6362382
+Verrazzano - Narrows Bridge,2023,2,5846393
+Verrazzano - Narrows Bridge,2023,3,6750813
+Verrazzano - Narrows Bridge,2023,4,6607964
+Verrazzano - Narrows Bridge,2023,5,7088210
+Verrazzano - Narrows Bridge,2023,6,7077113
+Verrazzano - Narrows Bridge,2023,7,7032783
+Verrazzano - Narrows Bridge,2023,8,7086072
+Verrazzano - Narrows Bridge,2023,9,6602525
+Verrazzano - Narrows Bridge,2023,10,6874603
+Verrazzano - Narrows Bridge,2023,11,6601810
+Verrazzano - Narrows Bridge,2023,12,6830771
+Verrazzano - Narrows Bridge,2024,1,6235764
+Verrazzano - Narrows Bridge,2024,2,6095128
+Verrazzano - Narrows Bridge,2024,3,6734944
+Verrazzano - Narrows Bridge,2024,4,6582949
+Verrazzano - Narrows Bridge,2024,5,7051379
+Verrazzano - Narrows Bridge,2024,6,7031853
+Verrazzano - Narrows Bridge,2024,7,7002889
+Verrazzano - Narrows Bridge,2024,8,7048701
+Verrazzano - Narrows Bridge,2024,9,6773969
+Verrazzano - Narrows Bridge,2024,10,6900107
+Verrazzano - Narrows Bridge,2024,11,6609227
+Verrazzano - Narrows Bridge,2024,12,6933697
+Verrazzano - Narrows Bridge,2025,1,6343023
+Verrazzano - Narrows Bridge,2025,2,5811229
+Verrazzano - Narrows Bridge,2025,3,6813796
+Verrazzano - Narrows Bridge,2025,4,6768975
+Verrazzano - Narrows Bridge,2025,5,7100002
+Verrazzano - Narrows Bridge,2025,6,7000901
+Verrazzano - Narrows Bridge,2025,7,7096627
+Verrazzano - Narrows Bridge,2025,8,7136781
+Verrazzano - Narrows Bridge,2025,9,6797390
+Verrazzano - Narrows Bridge,2025,10,6906871
+Verrazzano - Narrows Bridge,2025,11,6623828
+Verrazzano - Narrows Bridge,2025,12,6760644
+Verrazzano - Narrows Bridge,2026,1,6058676
+Verrazzano - Narrows Bridge,2026,2,5475889
+Verrazzano - Narrows Bridge,2026,3,6812248
+Verrazzano - Narrows Bridge,2026,4,6647726
+Verrazzano - Narrows Bridge,2026,5,7038360
+Verrazzano - Narrows Bridge,2026,6,7107824
+Verrazzano - Narrows Bridge,2026,7,7019275
+Verrazzano - Narrows Bridge,2026,8,7074617
+Verrazzano - Narrows Bridge,2026,9,4959060
